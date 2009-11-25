@@ -550,9 +550,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget font="Enigma;18" halign="right" position="495,353" render="Label" size="55,20" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="482,356" size="14,14" zPosition="3"/>
+		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="450,356" size="14,14" zPosition="4"/>
 		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="450,356" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
-			<convert type="ConditionalShowHide">Blink</convert>
+			<convert type="ConditionalShowHide" />
 		</widget>
 		<eLabel backgroundColor="darkgrey" position="0,350" size="620,2" zPosition="5"/>
 		<eLabel backgroundColor="darkgrey" position="0,374" size="620,2" zPosition="5"/>
@@ -609,10 +609,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</widget>
 		<widget font="Enigma;18" name="freeDiskSpace" position="4,421" size="270,23" transparent="1" zPosition="4"/>
 		<ePixmap alphatest="on" pixmap="Magic/buttons/key-menu.png" position="515,421" size="41,22" transparent="1" zPosition="4"/>
-			<widget font="Enigma;18" halign="right" position="447,422" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
+		<widget font="Enigma;18" halign="right" position="447,422" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="435,426" size="14,14" zPosition="3"/>
+		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="435,426" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="435,426" size="14,14" zPosition="4"/>
 		<eLabel backgroundColor="darkgrey" position="0,416" size="560,2" zPosition="5"/>
 	</screen>
 	
@@ -639,7 +642,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget font="Regular;19" noWrap="1" position="10,337" render="Label" size="460,20" source="Event" zPosition="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="483,339" size="14,14" zPosition="1"/>
+		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="483,339" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="483,339" size="14,14" zPosition="4"/>
 		<widget font="Regular;19" halign="right" position="485,337" render="Label" size="65,20" source="global.CurrentTime" zPosition="1">
 			<convert type="ClockToText"/>
 		</widget>
@@ -692,10 +698,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Default</convert>
 		</widget>
 		<eLabel backgroundColor="darkgrey" position="0,405" size="560,2" zPosition="5"/>
-		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="475,416" size="14,14" zPosition="3"/>
-		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="445,417" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
-			<convert type="ConditionalShowHide">Blink</convert>
+		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="475,416" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
+			<convert type="ConditionalShowHide" />
 		</widget>
+		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="475,416" size="14,14" zPosition="4"/>
   </screen>
 	
 	<screen name="EPGSelectionMulti" position="80,85" size="560,440" title="EPG Selection">
@@ -731,7 +737,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Default</convert>
 		</widget>
 		<eLabel backgroundColor="darkgrey" position="0,405" size="560,2" zPosition="5"/>
-		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="475,416" size="14,14" zPosition="3"/>
+		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="475,416" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="475,416" size="14,14" zPosition="4"/>
 	</screen>
 	
 	<screen name="TimerEntry" position="80,85" size="560,440" title="Timer entry">
