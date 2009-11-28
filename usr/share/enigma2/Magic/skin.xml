@@ -276,11 +276,19 @@
 	</screen>
 	
 	<!--  ##### Menus #####  -->
-	<screen name="Menu" position="210,150" size="300,285" title="Main menu">
+	<screen name="Menu" position="center,center" size="300,310" title="Main menu">
 		<widget font="Enigma;22" halign="center" position="10,5" render="Label" size="280,35" source="title" valign="center"/>
 		<widget position="10,55" render="Listbox" scrollbarMode="showOnDemand" size="280,225" source="menu">
 			<convert type="StringList"/>
 		</widget>
+		<widget font="Enigma;18" halign="right" position="240,285" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="226,285" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="226,289" size="14,14" zPosition="4"/>
+		<eLabel backgroundColor="darkgrey" position="0,282" size="300,2" zPosition="5"/>
 	</screen>
 	
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_mainmenu" position="0,128" size="720,320" title="Main menu">
@@ -325,6 +333,13 @@
 			<convert type="MenuEntryCompare">subtitle_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,14" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
 	</screen>
 	
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_information" position="0,128" size="720,320" title="Main menu">
@@ -334,6 +349,13 @@
 		<widget position="269,63" render="Listbox" scrollbarMode="showOnDemand" size="310,227" source="menu" transparent="1" zPosition="1">
 			<convert type="StringList"/>
 		</widget>
+		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,14" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
 	</screen>
 	
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_shutdown" position="0,128" size="720,320" title="Main menu">
@@ -343,6 +365,13 @@
 		<widget position="269,63" render="Listbox" scrollbarMode="showOnDemand" size="310,227" source="menu" transparent="1" zPosition="1">
 			<convert type="StringList"/>
 		</widget>
+		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,14" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
 	</screen>
 	
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_harddisk" position="0,128" size="720,320" title="Main menu">
@@ -352,6 +381,13 @@
 		<widget position="269,63" render="Listbox" scrollbarMode="showOnDemand" size="310,227" source="menu" transparent="1" zPosition="1">
 			<convert type="StringList"/>
 		</widget>
+		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,14" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
 	</screen>
 	
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_network" position="0,128" size="720,320" title="Main menu">
@@ -361,6 +397,13 @@
 		<widget position="269,63" render="Listbox" scrollbarMode="showOnDemand" size="310,227" source="menu" transparent="1" zPosition="1">
 			<convert type="StringList"/>
 		</widget>
+		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,14" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
 	</screen>
 	
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_setup" position="0,115" size="720,345" title="Main menu">
@@ -370,6 +413,13 @@
 		<widget position="269,63" render="Listbox" scrollbarMode="showOnDemand" size="310,252" source="menu" transparent="1" zPosition="1">
 			<convert type="StringList"/>
 		</widget>
+		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,14" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
 	</screen>
 	
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_scan" position="0,128" size="720,320" title="Main menu">
@@ -379,6 +429,13 @@
 		<widget position="269,63" render="Listbox" scrollbarMode="showOnDemand" size="310,227" source="menu" transparent="1" zPosition="1">
 			<convert type="StringList"/>
 		</widget>
+		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,14" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
 	</screen>
 	
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_system" position="0,115" size="720,345" title="Main menu">
@@ -388,16 +445,23 @@
 		<widget position="269,63" render="Listbox" scrollbarMode="showOnDemand" size="310,252" source="menu" transparent="1" zPosition="1">
 			<convert type="StringList"/>
 		</widget>
+		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,14" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
 	</screen>
 	
 	
 	<!--  ##### Input and Output Boxes #####  -->
-	<screen backgroundColor="transBG" flags="wfNoBorder" name="NumberZap" position="267,310" size="185,60" title="Channel">
+	<screen backgroundColor="transBG" flags="wfNoBorder" name="NumberZap" position="127,310" size="185,60" title="Channel">
 		<widget font="Enigma;20" name="channel" noWrap="1" position="0,0" size="185,24" transparent="1"/>
 		<widget font="Enigma;32" halign="center" name="number" noWrap="1" position="0,24" size="185,36" transparent="1" valign="center" zPosition="1"/>
 	</screen>
 	
-	<screen backgroundColor="transBG" flags="wfNoBorder" name="ChapterZap" position="267,310" size="185,58" title="Chapter">
+	<screen backgroundColor="transBG" flags="wfNoBorder" name="ChapterZap" position="127,310" size="185,58" title="Chapter">
 		<widget font="Enigma;18" halign="left" name="chapter" position="5,5" size="180,20" transparent="1" valign="center"/>
 		<widget font="Regular;32" halign="center" name="number" position="0,26" size="185,32" transparent="1" valign="center" zPosition="1"/>
 	</screen> 
@@ -558,7 +622,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel backgroundColor="darkgrey" position="0,374" size="620,2" zPosition="5"/>
 	</screen>
 	
-		<screen name="ChannelSelectionRadio" position="80,85" size="560,440" title="Channel Selection">
+	<screen name="ChannelSelectionRadio" position="80,85" size="560,440" title="Channel Selection">
 		<ePixmap alphatest="on" name="red" pixmap="Magic/buttons/key-red.png" position="0,0" size="140,40" transparent="1"/>
 		<ePixmap alphatest="on" name="green" pixmap="Magic/buttons/key-green.png" position="140,0" size="140,40" transparent="1"/>
 		<ePixmap alphatest="on" name="yellow" pixmap="Magic/buttons/key-yellow.png" position="280,0" size="140,40" transparent="1"/>
