@@ -109,6 +109,9 @@
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
+		<widget backgroundColor="#080808" font="Enigma;16" noWrap="1" position="280,400" render="Label" size="300,22" source="session.CurrentService" transparent="1" halign="center" valign="bottom" zPosition="3">
+			<convert type="CryptoInfo">VerboseInfo</convert>
+		</widget>
 		<widget font="Enigma;22" position="200,460" render="Label" size="375,28" source="session.Event_Now" transparent="1" zPosition="3">
 			<convert type="EventName">Name</convert>
 		</widget>
@@ -153,7 +156,7 @@
 		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="548,429" render="Pixmap" size="14,14" source="session.RecordState" zPosition="4">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget backgroundColor="#080808" font="Enigma;16" foregroundColor="foreground" halign="right" position="567,403" render="Label" size="66,24" source="session.FrontendStatus" transparent="1" zPosition="3">
+		<widget backgroundColor="#080808" font="Enigma;16" foregroundColor="foreground" halign="right" position="567,400" render="Label" size="66,24" source="session.FrontendStatus" transparent="1" zPosition="3">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 		<widget alphatest="on" pixmap="Magic/infobar/nimA.png" position="54,422" render="Pixmap" size="24,24" source="session.TunerInfo" zPosition="6">
