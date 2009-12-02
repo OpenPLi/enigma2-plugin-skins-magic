@@ -458,12 +458,12 @@
 	
 	
 	<!--  ##### Input and Output Boxes #####  -->
-	<screen backgroundColor="transBG" flags="wfNoBorder" name="NumberZap" position="127,310" size="185,60" title="Channel">
+	<screen backgroundColor="transBG" flags="wfNoBorder" name="NumberZap" position="60,center" size="185,60" title="Channel">
 		<widget font="Enigma;20" name="channel" noWrap="1" position="0,0" size="185,24" transparent="1"/>
 		<widget font="Enigma;32" halign="center" name="number" noWrap="1" position="0,24" size="185,36" transparent="1" valign="center" zPosition="1"/>
 	</screen>
 	
-	<screen backgroundColor="transBG" flags="wfNoBorder" name="ChapterZap" position="127,310" size="185,58" title="Chapter">
+	<screen backgroundColor="transBG" flags="wfNoBorder" name="ChapterZap" position="60,center" size="185,58" title="Chapter">
 		<widget font="Enigma;18" halign="left" name="chapter" position="5,5" size="180,20" transparent="1" valign="center"/>
 		<widget font="Regular;32" halign="center" name="number" position="0,26" size="185,32" transparent="1" valign="center" zPosition="1"/>
 	</screen> 
