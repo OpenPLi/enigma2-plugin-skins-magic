@@ -108,7 +108,7 @@
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget backgroundColor="#080808" font="Enigma;16" noWrap="1" position="280,100" render="Label" size="300,22" source="session.CurrentService" transparent="1" halign="center" valign="bottom" zPosition="3">
+		<widget backgroundColor="#080808" font="Enigma;16" noWrap="1" position="54,214" render="Label" size="300,22" source="session.CurrentService" transparent="1" halign="center" valign="bottom" zPosition="3">
 			<convert type="CryptoInfo">VerboseInfo</convert>
 		</widget>
 		<widget font="Enigma;22" position="200,160" render="Label" size="375,28" source="session.Event_Now" transparent="1" zPosition="3">
