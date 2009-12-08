@@ -456,9 +456,9 @@
 	</screen>	
 	
 	<!--  ##### Input and Output Boxes #####  -->
-	<screen backgroundColor="transBG" flags="wfNoBorder" name="NumberZap" position="50,50" size="160,30" title="Channel">
-		<widget font="Enigma;20" halign="right" name="channel" noWrap="1" position="0,3" size="100,24" valign="center" zPosition="1" />
-		<widget font="Enigma;20" halign="left" name="number" noWrap="1" position="105,3" size="55,24" valign="center" zPosition="2"/>
+	<screen backgroundColor="background" flags="wfNoBorder" name="NumberZap" position="50,50" size="160,24" title="Channel">
+		<widget font="Enigma;20" halign="right" name="channel" noWrap="1" position="0,0" size="100,24" valign="center" zPosition="1" />
+		<widget font="Enigma;20" halign="left" name="number" noWrap="1" position="105,0" size="55,24" valign="center" zPosition="2"/>
 	</screen>	
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="ChapterZap" position="50,center" size="185,58" title="Chapter">
 		<widget font="Enigma;18" halign="left" name="chapter" position="5,5" size="180,20" transparent="1" valign="center"/>
