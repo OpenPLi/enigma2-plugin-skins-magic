@@ -1044,6 +1044,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="parent.ServiceEvent" render="Label" position="3,1" size="126,20" font="Regular;20" halign="left" noWrap="1" >
 			<convert type="ServiceName">Name</convert>
 		</widget>
+		<widget source="parent.ServiceEvent" render="Label" position="3,21" size="126,14" font="Regular;14" halign="left" noWrap="1">
+			<convert type="EventName">Name</convert>
+		</widget>
 		<widget source="parent.ServiceEvent" render="Progress" position="2,36" size="127,4" borderWidth="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
