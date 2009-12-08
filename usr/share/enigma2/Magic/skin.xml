@@ -377,7 +377,7 @@
 	</screen>
 	
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_harddisk" position="0,128" size="720,320" title="Main menu">
-		<eLabel backgroundColor="background" position="130,10" size="470,302" zPosition="-1"/>
+		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
 		<ePixmap alphatest="on" pixmap="Magic/menu/hdd_on.png" position="161,35" size="90,250" zPosition="1"/>
 		<widget font="Enigma;22" position="269,14" render="Label" size="310,26" source="title" transparent="1" zPosition="1"/>
 		<widget position="269,63" render="Listbox" scrollbarMode="showOnDemand" size="310,227" source="menu" transparent="1" zPosition="1">
@@ -393,8 +393,8 @@
 	</screen>
 	
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_network" position="0,128" size="720,320" title="Main menu">
-		<eLabel backgroundColor="background" position="130,10" size="470,302" zPosition="-1"/>
-		<ePixmap alphatest="on" pixmap="Magic/menu/network_on.png" position="161,35" size="90,250" zPosition="1"/>
+		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
+		<ePixmap alphatest="on" pixmap="Magic/menu/network_on.png" position="123,63" size="128,128" zPosition="1"/>
 		<widget font="Enigma;22" position="269,14" render="Label" size="310,26" source="title" transparent="1" zPosition="1"/>
 		<widget position="269,63" render="Listbox" scrollbarMode="showOnDemand" size="310,227" source="menu" transparent="1" zPosition="1">
 			<convert type="StringList"/>
@@ -408,8 +408,8 @@
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
 	</screen>
 	
-	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_setup" position="0,115" size="720,345" title="Main menu">
-		<eLabel backgroundColor="background" position="120,10" size="480,327" zPosition="-1"/>
+	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_setup" position="0,128" size="720,320" title="Main menu">
+		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
 		<ePixmap alphatest="on" pixmap="skin_default/menu/setup.png" position="123,63" size="128,128" zPosition="1"/>
 		<widget font="Enigma;22" position="269,14" render="Label" size="310,26" source="title" transparent="1" zPosition="1"/>
 		<widget position="269,63" render="Listbox" scrollbarMode="showOnDemand" size="310,252" source="menu" transparent="1" zPosition="1">
@@ -440,8 +440,8 @@
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
 	</screen>
 	
-	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_system" position="0,115" size="720,345" title="Main menu">
-		<eLabel backgroundColor="background" position="120,10" size="480,327" zPosition="-1"/>
+	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_system" position="0,128" size="720,320" title="Main menu">
+		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
 		<ePixmap alphatest="on" pixmap="skin_default/menu/setup.png" position="123,63" size="128,128" zPosition="1"/>
 		<widget font="Enigma;22" position="269,14" render="Label" size="310,26" source="title" transparent="1" zPosition="1"/>
 		<widget position="269,63" render="Listbox" scrollbarMode="showOnDemand" size="310,252" source="menu" transparent="1" zPosition="1">
@@ -454,8 +454,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
-	</screen>
-	
+	</screen>	
 	
 	<!--  ##### Input and Output Boxes #####  -->
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="NumberZap" position="50,50" size="160,30" title="Channel">
