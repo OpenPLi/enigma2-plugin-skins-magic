@@ -91,7 +91,7 @@
 	
 	
 	<!--  ##### InfoBars #####  -->
-	<screen flags="wfNoBorder" name="InfoBar" position="0,300" size="720,276" title="InfoBar">
+	<screen flags="wfNoBorder" name="InfoBar" position="0,325" size="720,276" title="InfoBar">
 		<ePixmap alphatest="off" name="ValiOSD" pixmap="Magic/infobar/infobar.png" position="0,0" size="720,276" zPosition="1"/>
 		<eLabel position="0,156" size="720,110" zPosition="2"/>
 		<widget backgroundColor="#080808" font="Enigma;24" foregroundColor="foreground" halign="left" noWrap="1" position="88,120" render="Label" size="68,28" source="global.CurrentTime" transparent="1" zPosition="3">
