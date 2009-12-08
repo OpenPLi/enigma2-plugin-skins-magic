@@ -337,7 +337,7 @@
 		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,14" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
+		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,18" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
@@ -353,7 +353,7 @@
 		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,14" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
+		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,18" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
@@ -369,7 +369,7 @@
 		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,14" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
+		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,18" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
@@ -385,7 +385,7 @@
 		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,14" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
+		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,18" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
@@ -401,7 +401,7 @@
 		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,14" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
+		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,18" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
@@ -417,7 +417,7 @@
 		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,14" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
+		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,18" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
@@ -433,7 +433,7 @@
 		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,14" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
+		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,18" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
@@ -449,7 +449,7 @@
 		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,14" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
+		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,18" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
