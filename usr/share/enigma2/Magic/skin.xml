@@ -285,7 +285,7 @@
 		<widget font="Enigma;18" halign="right" position="240,285" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="226,285" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
+		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="226,289" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="226,289" size="14,14" zPosition="4"/>
@@ -1093,9 +1093,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	
 <!-- LCD screen (setup) -->
 	<screen name="SetupSummary" position="0,0" size="132,64">
-		<widget name="SetupTitle" position="6,0" size="120,16" font="Regular;12" />
-		<widget name="SetupEntry" position="6,16" size="120,32" font="Regular;12" />
-		<widget name="SetupValue" position="6,48" size="120,16" font="Regular;12" />
+		<widget name="SetupTitle" position="6,0" size="120,16" font="Regular;12" halign="left"/>
+		<widget name="SetupEntry" position="6,16" size="120,32" font="Regular;12" halign="left"/>
+		<widget name="SetupValue" position="6,48" size="120,16" font="Regular;12" halign="left"/>
 	</screen>
 
 <!-- LCD screen (misc) -->
@@ -1108,7 +1108,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="global.CurrentTime" render="Label" position="6,0" size="120,64" font="Regular;48" halign="center" valign="center">
 			<convert type="ClockToText"></convert>
 		</widget>
-		   <widget source="session.RecordState" render="FixedLabel" text="Rec" position="3,52" size="36,12" font="Regular;12" zPosition="1">
+		   <widget source="session.RecordState" render="FixedLabel" text="Rec" position="3,50" size="36,12" font="Regular;12" zPosition="2" valign="bottom" halign="left">
 			<convert type="ConditionalShowHide">Blink</convert>
 		   </widget>
 	</screen>
