@@ -84,7 +84,7 @@
 		<eLabel backgroundColor="#1f1f1f" font="Enigma;18" foregroundColor="#c0c0c0" halign="center" position="8,4" size="48,20" text="Vol" transparent="1" valign="center" zPosition="3"/>
 	</screen>
 	
-	<screen flags="wfNoBorder" name="Mute" position="50,50" size="45,45" title="Mute" zPosition="10">
+	<screen flags="wfNoBorder" name="Mute" position="center,50" size="45,45" title="Mute" zPosition="10">
 		<ePixmap pixmap="Magic/infobar/mute.png" position="0,0" size="45,45"/>
 	</screen>
 	
@@ -411,7 +411,7 @@
 		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
 		<ePixmap alphatest="on" pixmap="skin_default/menu/setup.png" position="123,63" size="128,128" zPosition="1"/>
 		<widget font="Enigma;22" position="269,14" render="Label" size="310,26" source="title" transparent="1" zPosition="1"/>
-		<widget position="269,63" render="Listbox" scrollbarMode="showOnDemand" size="310,252" source="menu" transparent="1" zPosition="1">
+		<widget position="269,63" render="Listbox" scrollbarMode="showOnDemand" size="310,227" source="menu" transparent="1" zPosition="1">
 			<convert type="StringList"/>
 		</widget>
 		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
@@ -443,7 +443,7 @@
 		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
 		<ePixmap alphatest="on" pixmap="skin_default/menu/setup.png" position="123,63" size="128,128" zPosition="1"/>
 		<widget font="Enigma;22" position="269,14" render="Label" size="310,26" source="title" transparent="1" zPosition="1"/>
-		<widget position="269,63" render="Listbox" scrollbarMode="showOnDemand" size="310,252" source="menu" transparent="1" zPosition="1">
+		<widget position="269,63" render="Listbox" scrollbarMode="showOnDemand" size="310,227" source="menu" transparent="1" zPosition="1">
 			<convert type="StringList"/>
 		</widget>
 		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
