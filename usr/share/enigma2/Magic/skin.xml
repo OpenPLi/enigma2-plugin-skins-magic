@@ -533,11 +533,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget font="Enigma;25" halign="center" name="state" position="0,3" size="80,30" transparent="1"/>
 	</screen>
 	
-	<screen name="LocationBox" position="80,85" size="560,440">
-		<ePixmap alphatest="on" name="red" pixmap="Magic/buttons/key-red.png" position="0,0" size="140,40" transparent="1"/>
-		<ePixmap alphatest="on" name="green" pixmap="Magic/buttons/key-green.png" position="140,0" size="140,40" transparent="1"/>
-		<ePixmap alphatest="on" name="yellow" pixmap="Magic/buttons/key-yellow.png" position="280,0" size="140,40" transparent="1"/>
-		<ePixmap alphatest="on" name="blue" pixmap="Magic/buttons/key-blue.png" position="420,0" size="140,40" transparent="1"/>
+	<screen name="LocationBox" position="center,center" size="560,440">
+		<widget alphatest="on" name="red" pixmap="Magic/buttons/key-red.png" position="0,0" size="140,40" transparent="1"/>
+		<widget alphatest="on" name="green" pixmap="Magic/buttons/key-green.png" position="140,0" size="140,40" transparent="1"/>
+		<widget alphatest="on" name="yellow" pixmap="Magic/buttons/key-yellow.png" position="280,0" size="140,40" transparent="1"/>
+		<widget alphatest="on" name="blue" pixmap="Magic/buttons/key-blue.png" position="420,0" size="140,40" transparent="1"/>
 		<widget backgroundColor="#7C1C1C" font="Enigma;18" halign="center" name="key_red" position="0,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
 		<widget backgroundColor="#266926" font="Enigma;18" halign="center" name="key_green" position="140,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
 		<widget backgroundColor="#8C5900" font="Enigma;18" halign="center" name="key_yellow" position="280,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
@@ -550,11 +550,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel backgroundColor="darkgrey" position="5,305" size="550,2" zPosition="5"/>
 	</screen>
 	
-	<screen name="MovieLocationBox" position="80,85" size="560,440">
-		<ePixmap alphatest="on" name="red" pixmap="Magic/buttons/key-red.png" position="0,0" size="140,40" transparent="1"/>
-		<ePixmap alphatest="on" name="green" pixmap="Magic/buttons/key-green.png" position="140,0" size="140,40" transparent="1"/>
-		<ePixmap alphatest="on" name="yellow" pixmap="Magic/buttons/key-yellow.png" position="280,0" size="140,40" transparent="1"/>
-		<ePixmap alphatest="on" name="blue" pixmap="Magic/buttons/key-blue.png" position="420,0" size="140,40" transparent="1"/>
+	<screen name="MovieLocationBox" position="center,center" size="560,440">
+		<widget alphatest="on" name="red" pixmap="Magic/buttons/key-red.png" position="0,0" size="140,40" transparent="1"/>
+		<widget alphatest="on" name="green" pixmap="Magic/buttons/key-green.png" position="140,0" size="140,40" transparent="1"/>
+		<widget alphatest="on" name="yellow" pixmap="Magic/buttons/key-yellow.png" position="280,0" size="140,40" transparent="1"/>
+		<widget alphatest="on" name="blue" pixmap="Magic/buttons/key-blue.png" position="420,0" size="140,40" transparent="1"/>
 		<widget backgroundColor="#7C1C1C" font="Enigma;18" halign="center" name="key_red" position="0,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
 		<widget backgroundColor="#266926" font="Enigma;18" halign="center" name="key_green" position="140,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
 		<widget backgroundColor="#8C5900" font="Enigma;18" halign="center" name="key_yellow" position="280,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
@@ -650,10 +650,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap alphatest="on" name="green" pixmap="Magic/buttons/key-green.png" position="140,0" size="140,40" transparent="1"/>
 		<ePixmap alphatest="on" name="yellow" pixmap="Magic/buttons/key-yellow.png" position="280,0" size="140,40" transparent="1"/>
 		<ePixmap alphatest="on" name="blue" pixmap="Magic/buttons/key-blue.png" position="420,0" size="140,40" transparent="1"/>
-		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="key_red" position="0,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
-		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="key_green" position="140,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
-		<widget backgroundColor="#a08500" font="Regular;20" halign="center" name="key_yellow" position="280,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
-		<widget backgroundColor="#18188b" font="Regular;20" halign="center" name="key_blue" position="420,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="#9f1313" font="Enigma;18" halign="center" name="key_red" position="0,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="#1f771f" font="Enigma;18" halign="center" name="key_green" position="140,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="#a08500" font="Enigma;18" halign="center" name="key_yellow" position="280,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="#18188b" font="Enigma;18" halign="center" name="key_blue" position="420,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
 		<widget font="Regular;22" halign="center" name="waitingtext" position="0,45" size="560,378" valign="center" zPosition="4"/>
 		<widget name="list" position="0,40" scrollbarMode="showOnDemand" size="560,378" zPosition="2"/>
 		<widget alphatest="on" name="DescriptionBorder" pixmap="skin_default/border_eventinfo.png" position="0,316" size="560,103" transparent="1" zPosition="1"/>
