@@ -34,6 +34,10 @@
 		<color name="transparent" value="#ffffffff"/>
 		<color name="transpBlack" value="#16000000"/>
 		<color name="transpWhite" value="#16ffffff"/>
+		<color name="buttonRed" value="#9f1313"/>
+		<color name="buttonGreen" value="#1f771f"/>
+		<color name="buttonYellow" value="#a08500"/>
+		<color name="buttonBlue" value="#18188b"/>
 	</colors>
 	
 	<windowstyle id="0" type="skinned">
@@ -519,8 +523,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	<screen name="PluginBrowser" position="160,95" size="400,405" title="Plugin browser">
 		<ePixmap alphatest="on" pixmap="skin_default/buttons/red-big.png" position="0,0" size="200,40"/>
 		<ePixmap alphatest="on" pixmap="skin_default/buttons/green-big.png" position="200,0" size="200,40"/>
-		<widget backgroundColor="#9f1313" font="Enigma;20" halign="center" name="red" position="0,0" size="200,40" transparent="1" valign="center" zPosition="1"/>
-		<widget backgroundColor="#1f771f" font="Enigma;20" halign="center" name="green" position="200,0" size="200,40" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="buttonRed" font="Enigma;20" halign="center" name="red" position="0,0" size="200,40" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="buttonGreen" font="Enigma;20" halign="center" name="green" position="200,0" size="200,40" transparent="1" valign="center" zPosition="1"/>
 		<widget name="list" position="0,45" scrollbarMode="showOnDemand" size="400,355"/>
 	</screen>
 	<!-- Plugin downloads -->
@@ -650,10 +654,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap alphatest="on" name="green" pixmap="Magic/buttons/key-green.png" position="140,0" size="140,40" transparent="1"/>
 		<ePixmap alphatest="on" name="yellow" pixmap="Magic/buttons/key-yellow.png" position="280,0" size="140,40" transparent="1"/>
 		<ePixmap alphatest="on" name="blue" pixmap="Magic/buttons/key-blue.png" position="420,0" size="140,40" transparent="1"/>
-		<widget backgroundColor="#9f1313" font="Enigma;18" halign="center" name="key_red" position="0,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
-		<widget backgroundColor="#1f771f" font="Enigma;18" halign="center" name="key_green" position="140,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
-		<widget backgroundColor="#a08500" font="Enigma;18" halign="center" name="key_yellow" position="280,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
-		<widget backgroundColor="#18188b" font="Enigma;18" halign="center" name="key_blue" position="420,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="buttonRed" font="Enigma;18" halign="center" name="key_red" position="0,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="buttonGreen" font="Enigma;18" halign="center" name="key_green" position="140,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="buttonYellow" font="Enigma;18" halign="center" name="key_yellow" position="280,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="buttonBlue" font="Enigma;18" halign="center" name="key_blue" position="420,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
 		<widget font="Regular;22" halign="center" name="waitingtext" position="0,45" size="560,378" valign="center" zPosition="4"/>
 		<widget name="list" fontName="Enigma" fontSizesOriginal="20,16,14" fontSizesCompact="18,14" fontSizesMinimal="20,16" 
 			position="0,40" scrollbarMode="showOnDemand" size="560,378" zPosition="2"/>
@@ -691,8 +695,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap alphatest="on" pixmap="skin_default/buttons/green.png" position="140,0" size="140,40"/>
 		<ePixmap alphatest="on" pixmap="skin_default/buttons/yellow.png" position="280,0" size="140,40"/>
 		<ePixmap alphatest="on" pixmap="skin_default/buttons/blue.png" position="420,0" size="140,40"/>
-		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" name="key_red" position="0,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
-		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" name="key_green" position="140,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="buttonRed" font="Regular;20" halign="center" name="key_red" position="0,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="buttonGreen" font="Regular;20" halign="center" name="key_green" position="140,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
 		<widget name="timeline_text" position="0,41" size="560,20"/>
 		<widget EntryBackgroundColor="#2f4964" EntryBackgroundColorSelected="#25688caf" EntryBorderColor="#071930" name="list" position="0,65" scrollbarMode="showOnDemand" size="560,270"/>
 		<widget name="timeline0" pixmap="skin_default/timeline.png" position="0,65" size="1,270" zPosition="1"/>
@@ -850,9 +854,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap alphatest="on" pixmap="skin_default/buttons/red.png" position="0,0" size="140,40"/>
 		<ePixmap alphatest="on" pixmap="skin_default/buttons/green.png" position="140,0" size="140,40"/>
 		<ePixmap alphatest="on" pixmap="skin_default/buttons/yellow.png" position="280,0" size="140,40"/>
-		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" position="0,0" render="Label" size="140,40" source="key_red" transparent="1" valign="center" zPosition="1"/>
-		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" position="140,0" render="Label" size="140,40" source="key_green" transparent="1" valign="center" zPosition="1"/>
-		<widget backgroundColor="#a08500" font="Regular;20" halign="center" position="280,0" render="Label" size="140,40" source="key_yellow" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="buttonRed" font="Regular;20" halign="center" position="0,0" render="Label" size="140,40" source="key_red" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="buttonGreen" font="Regular;20" halign="center" position="140,0" render="Label" size="140,40" source="key_green" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="buttonYellow" font="Regular;20" halign="center" position="280,0" render="Label" size="140,40" source="key_yellow" transparent="1" valign="center" zPosition="1"/>
 		<widget name="list" position="5,50" scrollbarMode="showOnDemand" size="550,280" zPosition="10"/>
     	<ePixmap pixmap="Magic/border/div_h.png" position="5,340" size="550,2" zPosition="1"/>
 		<widget backgroundColor="#25062748" font="Regular;21" halign="center" position="0,350" render="Label" size="560,50" source="introduction" transparent="1" valign="center" zPosition="10"/>
@@ -863,9 +867,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap alphatest="on" pixmap="skin_default/buttons/red.png" position="0,0" size="140,40"/>
 		<ePixmap alphatest="on" pixmap="skin_default/buttons/green.png" position="140,0" size="140,40"/>
 		<ePixmap alphatest="on" pixmap="skin_default/buttons/yellow.png" position="280,0" size="140,40"/>
-		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" position="0,0" render="Label" size="140,40" source="key_red" transparent="1" valign="center" zPosition="1"/>
-		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" position="140,0" render="Label" size="140,40" source="key_green" transparent="1" valign="center" zPosition="1"/>
-		<widget backgroundColor="#a08500" font="Regular;20" halign="center" position="280,0" render="Label" size="140,40" source="key_yellow" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="buttonRed" font="Regular;20" halign="center" position="0,0" render="Label" size="140,40" source="key_red" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="buttonGreen" font="Regular;20" halign="center" position="140,0" render="Label" size="140,40" source="key_green" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="buttonYellow" font="Regular;20" halign="center" position="280,0" render="Label" size="140,40" source="key_yellow" transparent="1" valign="center" zPosition="1"/>
 		<widget font="Regular;19" foregroundColors="#8c8c93,#1cff1c" name="Adaptertext" position="10,70" size="120,21" zPosition="1"/>
 		<widget font="Regular;19" foregroundColors="#8c8c93,#f23d21,#1cff1c" halign="center" name="Adapter" position="130,70" size="270,21" zPosition="1"/>
 		<widget alphatest="on" name="AdapterInfo" pixmaps="skin_default/buttons/blue.png,skin_default/buttons/blue_pressed.png" position="425,60" size="140,40" transparent="1" zPosition="1"/>
@@ -900,8 +904,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <screen name="AdapterSetup" position="center,center" size="560,400" title="Network Setup">
         <ePixmap alphatest="on" pixmap="skin_default/buttons/red.png" position="0,0" size="140,40"/>
         <ePixmap alphatest="on" pixmap="skin_default/buttons/blue.png" position="420,0" size="140,40"/>
-        <widget backgroundColor="#9f1313" font="Regular;20" halign="center" position="0,0" render="Label" size="140,40" source="key_red" transparent="1" valign="center" zPosition="1"/>
-        <widget backgroundColor="#18188b" font="Regular;20" halign="center" position="420,0" render="Label" size="140,40" source="key_blue" transparent="1" valign="center" zPosition="1"/>
+        <widget backgroundColor="buttonRed" font="Regular;20" halign="center" position="0,0" render="Label" size="140,40" source="key_red" transparent="1" valign="center" zPosition="1"/>
+        <widget backgroundColor="buttonBlue" font="Regular;20" halign="center" position="420,0" render="Label" size="140,40" source="key_blue" transparent="1" valign="center" zPosition="1"/>
         <widget name="config" position="5,40" scrollbarMode="showOnDemand" size="550,150"/>
 		<ePixmap pixmap="Magic/border/div_h.png" position="5,195" size="550,2" zPosition="1"/>		
         <widget backgroundColor="#25062748" font="Regular;19" halign="left" position="5,200" render="Label" size="190,21" source="DNS1text" transparent="1" valign="center" zPosition="1"/>
@@ -925,7 +929,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     </screen>	
 	<screen name="AdapterSetupConfiguration" position="center,center" size="560,400" title="Network Configuration...">
 		<ePixmap alphatest="on" pixmap="skin_default/buttons/red.png" position="0,0" size="140,40"/>
-		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" position="0,0" render="Label" size="140,40" source="key_red" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="buttonRed" font="Regular;20" halign="center" position="0,0" render="Label" size="140,40" source="key_red" transparent="1" valign="center" zPosition="1"/>
 		<eLabel backgroundColor="darkgrey" position="13,53" size="234,264" zPosition="1"/>
 		<widget name="menulist" position="15,55" scrollbarMode="showOnDemand" size="230,260" zPosition="10"/>
 		<widget backgroundColor="#25062748" font="Regular;19" halign="center" position="305,50" render="Label" size="230,300" source="description" transparent="1" valign="center"/>
@@ -940,9 +944,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap alphatest="on" pixmap="skin_default/buttons/red.png" position="0,0" size="140,40"/>
 		<ePixmap alphatest="on" pixmap="skin_default/buttons/green.png" position="140,0" size="140,40"/>
 		<ePixmap alphatest="on" pixmap="skin_default/buttons/yellow.png" position="280,0" size="140,40"/>
-		<widget backgroundColor="#9f1313" font="Regular;20" halign="center" position="0,0" render="Label" size="140,40" source="key_red" transparent="1" valign="center" zPosition="1"/>
-		<widget backgroundColor="#1f771f" font="Regular;20" halign="center" position="140,0" render="Label" size="140,40" source="key_green" transparent="1" valign="center" zPosition="1"/>
-		<widget backgroundColor="#a08500" font="Regular;20" halign="center" position="280,0" render="Label" size="140,40" source="key_yellow" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="buttonRed" font="Regular;20" halign="center" position="0,0" render="Label" size="140,40" source="key_red" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="buttonGreen" font="Regular;20" halign="center" position="140,0" render="Label" size="140,40" source="key_green" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="buttonYellow" font="Regular;20" halign="center" position="280,0" render="Label" size="140,40" source="key_yellow" transparent="1" valign="center" zPosition="1"/>
 		<widget name="config" position="5,50" scrollbarMode="showOnDemand" size="550,280"/>
     	<ePixmap pixmap="Magic/border/div_h.png" position="5,340" size="550,2" zPosition="1"/>
 		<widget backgroundColor="#25062748" font="Regular;21" halign="center" position="0,350" render="Label" size="560,50" source="introduction" transparent="1" valign="center" zPosition="10"/>
@@ -950,7 +954,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	<!-- NetworkBrowser Plugin -->
 		<screen name="AutoMountManager" position="center,center" size="560,350" title="AutoMountManager">
 			<ePixmap alphatest="on" pixmap="skin_default/buttons/red.png" position="0,0" size="140,40"/>
-			<widget backgroundColor="#9f1313" font="Enigma;20" halign="center" position="0,0" render="Label" size="140,40" source="key_red" transparent="1" valign="center" zPosition="1"/>
+			<widget backgroundColor="buttonRed" font="Enigma;20" halign="center" position="0,0" render="Label" size="140,40" source="key_red" transparent="1" valign="center" zPosition="1"/>
 			<widget position="5,50" render="Listbox" scrollbarMode="showOnDemand" size="540,300" source="config">
 				<convert type="TemplatedMultiContent">
 					{"template": [
@@ -971,10 +975,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<ePixmap alphatest="on" pixmap="skin_default/buttons/green.png" position="140,0" size="140,40"/>
 			<ePixmap alphatest="on" pixmap="skin_default/buttons/yellow.png" position="280,0" size="140,40"/>
 			<ePixmap alphatest="on" pixmap="skin_default/buttons/blue.png" position="420,0" size="140,40"/>
-			<widget backgroundColor="#9f1313" font="Regular;20" halign="center" position="0,0" render="Label" size="140,40" source="key_red" transparent="1" valign="center" zPosition="1"/>
-			<widget backgroundColor="#1f771f" font="Regular;20" halign="center" position="140,0" render="Label" size="140,40" source="key_green" transparent="1" valign="center" zPosition="1"/>
-			<widget backgroundColor="#a08500" font="Regular;20" halign="center" position="280,0" render="Label" size="140,40" source="key_yellow" transparent="1" valign="center" zPosition="1"/>
-			<widget backgroundColor="#18188b" font="Regular;20" halign="center" position="420,0" render="Label" size="140,40" source="key_blue" transparent="1" valign="center" zPosition="1"/>
+			<widget backgroundColor="buttonRed" font="Regular;20" halign="center" position="0,0" render="Label" size="140,40" source="key_red" transparent="1" valign="center" zPosition="1"/>
+			<widget backgroundColor="buttonGreen" font="Regular;20" halign="center" position="140,0" render="Label" size="140,40" source="key_green" transparent="1" valign="center" zPosition="1"/>
+			<widget backgroundColor="buttonYellow" font="Regular;20" halign="center" position="280,0" render="Label" size="140,40" source="key_yellow" transparent="1" valign="center" zPosition="1"/>
+			<widget backgroundColor="buttonBlue" font="Regular;20" halign="center" position="420,0" render="Label" size="140,40" source="key_blue" transparent="1" valign="center" zPosition="1"/>
 			<widget position="5,50" render="Listbox" scrollbarMode="showOnDemand" size="540,350" source="list" zPosition="10">
 				<convert type="TemplatedMultiContent">
 					{"template": [
