@@ -98,20 +98,20 @@
 	<screen flags="wfNoBorder" name="InfoBar" position="0,325" size="720,276" title="InfoBar">
 		<ePixmap alphatest="off" name="ValiOSD" pixmap="Magic/infobar/infobar.png" position="0,0" size="720,276" zPosition="1"/>
 		<eLabel position="0,156" size="720,110" zPosition="2"/>
-		<widget backgroundColor="#080808" font="Enigma;24" foregroundColor="foreground" halign="left" noWrap="1" position="88,120" render="Label" size="68,28" source="global.CurrentTime" transparent="1" zPosition="3">
+		<widget backgroundColor="black" font="Enigma;24" foregroundColor="foreground" halign="left" noWrap="1" position="88,120" render="Label" size="68,28" source="global.CurrentTime" transparent="1" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>		
-		<widget backgroundColor="#080808" font="Enigma;24" foregroundColor="foreground" halign="center" position="160,120" render="Label" size="400,28" source="session.CurrentService" transparent="1" valign="bottom" zPosition="3">
+		<widget backgroundColor="black" font="Enigma;24" foregroundColor="foreground" halign="center" position="160,120" render="Label" size="400,28" source="session.CurrentService" transparent="1" valign="bottom" zPosition="3">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget backgroundColor="#080808" font="Enigma;16" noWrap="1" position="54,100" render="Label" size="220,22" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="3">
+		<widget backgroundColor="black" font="Enigma;16" noWrap="1" position="54,100" render="Label" size="220,22" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="3">
 			<convert type="ClockToText">Date</convert>
 		</widget>
 		<widget font="Enigma;22" position="140,160" render="Label" size="60,28" source="session.Event_Now" transparent="1" zPosition="3">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget backgroundColor="#080808" font="Enigma;16" noWrap="1" position="54,214" render="Label" size="300,22" source="session.CurrentService" transparent="1" halign="left" valign="top" zPosition="3">
+		<widget backgroundColor="black" font="Enigma;16" noWrap="1" position="54,214" render="Label" size="300,22" source="session.CurrentService" transparent="1" halign="left" valign="top" zPosition="3">
 			<convert type="CryptoInfo">VerboseInfo</convert>
 		</widget>
 		<widget font="Enigma;22" position="200,160" render="Label" size="375,28" source="session.Event_Now" transparent="1" zPosition="3">
@@ -158,7 +158,7 @@
 		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="548,129" render="Pixmap" size="14,14" source="session.RecordState" zPosition="4">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget backgroundColor="#080808" font="Enigma;16" foregroundColor="foreground" halign="right" position="567,100" render="Label" size="66,24" source="session.FrontendStatus" transparent="1" zPosition="3">
+		<widget backgroundColor="black" font="Enigma;16" foregroundColor="foreground" halign="right" position="567,100" render="Label" size="66,24" source="session.FrontendStatus" transparent="1" zPosition="3">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 		<widget alphatest="on" pixmap="Magic/infobar/nimA.png" position="54,122" render="Pixmap" size="24,24" source="session.TunerInfo" zPosition="6">
