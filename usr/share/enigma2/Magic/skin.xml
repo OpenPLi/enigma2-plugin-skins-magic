@@ -662,17 +662,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="list" fontName="Enigma" fontSizesOriginal="20,16,14" fontSizesCompact="18,14" fontSizesMinimal="20,16" 
 			position="0,40" scrollbarMode="showOnDemand" size="560,378" zPosition="2"/>
 		<widget alphatest="on" name="DescriptionBorder" pixmap="skin_default/border_eventinfo.png" position="0,316" size="560,103" transparent="1" zPosition="1"/>
-		<widget font="Enigma;18" foregroundColor="#cccccc" position="5,322" render="Label" size="365,25" source="Service" zPosition="1">
+		<widget font="Enigma;18" foregroundColor="#cccccc" position="5,320" render="Label" size="365,25" source="Service" zPosition="1">
 			<convert type="MovieInfo">ShortDescription</convert>
 		</widget>
-		<widget font="Enigma;18" halign="right" position="495,322" render="Label" size="60,25" source="Service" zPosition="1">
+		<widget font="Enigma;18" halign="right" position="495,320" render="Label" size="60,25" source="Service" zPosition="1">
 			<convert type="ServiceTime">Duration</convert>
 			<convert type="ClockToText">AsLength</convert>
 		</widget>
-		<widget font="Enigma;18" halign="right" position="370,322" render="Label" size="105,25" source="Service" zPosition="2">
+		<widget font="Enigma;18" halign="right" position="370,320" render="Label" size="105,25" source="Service" zPosition="2">
 			<convert type="MovieInfo">RecordServiceName</convert>
 		</widget>
-		<widget font="Regular;19" position="5,349" render="Label" size="550,60" source="Service" zPosition="1">
+		<widget font="Enigma;18" position="5,345" render="Label" size="550,70" source="Service" zPosition="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<widget font="Enigma;18" name="freeDiskSpace" position="4,421" size="270,23" transparent="1" zPosition="4"/>
