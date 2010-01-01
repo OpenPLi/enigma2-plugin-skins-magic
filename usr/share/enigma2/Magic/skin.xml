@@ -661,7 +661,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget font="Regular;22" halign="center" name="waitingtext" position="0,45" size="560,378" valign="center" zPosition="4"/>
 		<widget name="list" fontName="Enigma" fontSizesOriginal="20,16,14" fontSizesCompact="18,14" fontSizesMinimal="20,16" 
 			position="0,40" scrollbarMode="showOnDemand" size="560,378" zPosition="2"/>
-		<widget name="DescriptionBorder" pixmap="Magic/border/div_h.png" position="5,316" size="550,2" zPosition="2"/>
+		<widget name="DescriptionBorder" pixmap="Magic/border/div_h.png" position="5,316" size="550,103" zPosition="1"/>
 		<widget font="Enigma;18" foregroundColor="#cccccc" position="5,320" render="Label" size="365,25" source="Service" zPosition="1">
 			<convert type="MovieInfo">ShortDescription</convert>
 		</widget>
