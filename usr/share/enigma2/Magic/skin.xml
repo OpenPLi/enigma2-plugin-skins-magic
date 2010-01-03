@@ -791,7 +791,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	
 	
 	<!-- ########## Timers ########## -->
-	<screen name="TimerEditList" position="80,85" size="560,440" title="Timer Editor">
+	<screen name="TimerEditList" position="center,center" size="560,420" title="Timer Editor">
 		<ePixmap alphatest="on" name="red" pixmap="Magic/buttons/key-red.png" position="0,0" size="140,40" transparent="1"/>
 		<ePixmap alphatest="on" name="green" pixmap="Magic/buttons/key-green.png" position="140,0" size="140,40" transparent="1"/>
 		<ePixmap alphatest="on" name="yellow" pixmap="Magic/buttons/key-yellow.png" position="280,0" size="140,40" transparent="1"/>
@@ -800,15 +800,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget backgroundColor="#266926" font="Enigma;18" halign="center" name="key_green" position="140,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
 		<widget backgroundColor="#8C5900" font="Enigma;18" halign="center" name="key_yellow" position="280,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
 		<widget backgroundColor="#254177" font="Enigma;18" halign="center" name="key_blue" position="420,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
-		<widget name="timerlist" position="5,40" scrollbarMode="showOnDemand" size="550,355"/>
-                <widget font="Enigma;18" halign="right" position="490,412" render="Label" size="55,24" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
+		<widget name="timerlist" position="5,40" scrollbarMode="showOnDemand" size="550,350"/>
+		<eLabel backgroundColor="darkgrey" position="0,392" size="560,2" zPosition="5"/>
+                <widget font="Enigma;18" halign="right" position="490,396" render="Label" size="55,24" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<eLabel backgroundColor="darkgrey" position="0,405" size="560,2" zPosition="5"/>
-		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="475,416" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
+		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="475,400" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="475,416" size="14,14" zPosition="4"/>
+		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="475,400" size="14,14" zPosition="4"/>
 	</screen>
 	
 	<screen name="TimerEntry" position="80,85" size="560,440" title="Timer entry">
