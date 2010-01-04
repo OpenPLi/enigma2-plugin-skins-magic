@@ -114,6 +114,9 @@
 		<widget backgroundColor="black" font="Enigma;16" noWrap="1" position="54,214" render="Label" size="300,22" source="session.CurrentService" transparent="1" halign="left" valign="top" zPosition="3">
 			<convert type="CryptoInfo">VerboseInfo</convert>
 		</widget>
+		<widget backgroundColor="black" font="Enigma;16" noWrap="1" position="500,214" render="Label" size="165,22" source="session.CurrentService" transparent="1" halign="right" valign="top" zPosition="3">
+			<convert type="ServiceOrbitalPosition"></convert>
+		</widget>
 		<widget font="Enigma;22" position="200,160" render="Label" size="375,28" source="session.Event_Now" transparent="1" zPosition="3">
 			<convert type="EventName">Name</convert>
 		</widget>
