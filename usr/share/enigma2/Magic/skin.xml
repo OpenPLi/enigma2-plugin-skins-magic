@@ -1032,17 +1032,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="session.Event_Now" render="Label" position="3,21" size="126,14" font="Regular;14" halign="left" noWrap="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Progress" position="2,36" size="127,4" borderWidth="1" >
+		<widget source="session.Event_Now" render="Progress" position="3,36" size="127,4" borderWidth="1" >
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="session.RecordState" render="FixedLabel" text="Rec" position="3,52" size="36,12" font="Regular;12" zPosition="1">
+		<widget source="session.RecordState" render="FixedLabel" text="Rec" position="4,52" size="24,12" font="Regular;12" zPosition="1" noWrap="1">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="20,40" size="90,24" font="Regular;24" halign="right" valign="top">
-			<convert type="ClockToText"></convert>
+		<widget source="session.Event_Now" render="Label" position="4,40" size="40,12" font="Regular;12" halign="left" noWrap="1">
+			<convert type="EventTime">Remaining</convert>
+			<convert type="RemainingToText">NoSeconds</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="112,48" zPosition="1" size="26,14" font="Regular;14" valign="top">
-			<convert type="ClockToText">Format:%S</convert>
+		<widget source="global.CurrentTime" render="Label" position="68,40" size="60,24" font="Regular;24" halign="right" valign="top" noWrap="1">
+			<convert type="ClockToText"></convert>
 		</widget>
 	</screen>
     
@@ -1058,13 +1059,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="parent.ServiceEvent" render="Progress" position="2,36" size="127,4" borderWidth="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-			<widget source="global.CurrentTime" render="Label" position="20,40" size="90,24" font="Regular;24" halign="right" valign="top">
+		<widget source="global.CurrentTime" render="Label" position="68,40" size="60,24" font="Regular;24" halign="right" valign="top" noWrap="1">
 			<convert type="ClockToText"></convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="112,48" zPosition="1" size="26,14" font="Regular;14" valign="top">
-			<convert type="ClockToText">Format:%S</convert>
-		</widget>
-		<widget source="session.RecordState" render="FixedLabel" text="Rec" position="3,52" size="36,12" font="Regular;12" zPosition="1">
+		<widget source="session.RecordState" render="FixedLabel" text="Rec" position="3,52" size="24,12" font="Regular;12" zPosition="1" noWrap="1">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 	</screen>
@@ -1076,8 +1074,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="StringListSelection" />
 		</widget>
 	</screen>
-	
-	
+
 <!-- LCD screen (movieplayer) -->
 	<screen name="InfoBarMoviePlayerSummary" position="0,0" size="132,64">
 		<widget source="session.CurrentService" render="Label" position="4,0" size="124,25" font="Regular;14" halign="left" valign="center" >
@@ -1086,16 +1083,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="session.CurrentService" render="Progress" position="2,36" size="127,4" borderWidth="1">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-
-		<widget source="session.RecordState" render="FixedLabel" text="Rec" position="3,52" size="36,12" font="Regular;12" zPosition="1">
+		<widget source="session.CurrentService" render="Label" position="4,40" size="42,12" font="Regular;12" halign="left" noWrap="1">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.RecordState" render="FixedLabel" text="Rec" position="3,52" size="24,12" font="Regular;12" zPosition="1" noWrap="1">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<eLabel position="3,42" size="30,18" font="Regular;12" text="Play" noWrap="1" />
-		<widget source="global.CurrentTime" render="Label" position="20,40" size="90,24" font="Regular;24" halign="right" valign="top">
+		<widget source="global.CurrentTime" render="Label" position="68,40" size="60,24" font="Regular;24" halign="right" valign="top" noWrap="1">
 			<convert type="ClockToText"></convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="112,48" zPosition="1" size="26,14" font="Regular;14" valign="top">
-			<convert type="ClockToText">Format:%S</convert>
 		</widget>
 	</screen>
 	
@@ -1112,11 +1107,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	    	<widget source="session.RecordState" render="FixedLabel" text="Rec" position="3,52" size="36,12" font="Regular;12" zPosition="1">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="20,42" size="90,22" font="Regular;24" halign="right" valign="top">
+		<widget source="global.CurrentTime" render="Label" position="68,40" size="60,24" font="Regular;24" halign="right" valign="top" noWrap="1">
 			<convert type="ClockToText"></convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="112,50" zPosition="1" size="26,14" font="Regular;14" valign="top">
-			<convert type="ClockToText">Format:%S</convert>
 		</widget>
 	</screen>
 
@@ -1125,7 +1117,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="global.CurrentTime" render="Label" position="6,0" size="120,64" font="Regular;48" halign="center" valign="center">
 			<convert type="ClockToText"></convert>
 		</widget>
-		<widget source="session.RecordState" render="FixedLabel" text="Rec" position="3,50" size="36,12" font="Regular;12" zPosition="2" valign="bottom" halign="left">
+		<widget source="session.RecordState" render="FixedLabel" text="Recording" position="3,50" size="36,12" font="Regular;12" zPosition="2" valign="bottom" halign="left">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 	</screen>
