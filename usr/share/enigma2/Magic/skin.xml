@@ -1118,6 +1118,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText"></convert>
 		</widget>
 		<widget source="session.RecordState" render="FixedLabel" text="Recording" position="4,50" size="120,12" font="Regular;12" zPosition="2" valign="bottom" halign="left">
+			<convert type="ConditionalShowHide"></convert>
 		</widget>
 	</screen>
   
