@@ -96,46 +96,46 @@
 	
 	<!--  ##### InfoBars #####  -->
 	<screen flags="wfNoBorder" name="InfoBar" position="0,325" size="720,276" title="InfoBar">
-		<ePixmap alphatest="off" name="ValiOSD" pixmap="Magic/infobar/infobar.png" position="0,0" size="720,276" zPosition="1"/>
+		<ePixmap alphatest="off" name="ValiOSD" pixmap="Magic/infobar/infobar.png" position="0,0" size="720,156" zPosition="1"/>
 		<eLabel position="0,156" size="720,110" zPosition="2"/>
-		<widget backgroundColor="black" font="Enigma;24" foregroundColor="foreground" halign="left" noWrap="1" position="88,120" render="Label" size="68,28" source="global.CurrentTime" transparent="1" zPosition="3">
+		<widget borderColor="black" borderWidth="1" backgroundColor="transpBlack" font="Enigma;24" foregroundColor="foreground" halign="left" noWrap="1" position="88,120" render="Label" size="68,28" source="global.CurrentTime" transparent="1" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>		
-		<widget backgroundColor="black" font="Enigma;24" foregroundColor="foreground" halign="center" position="160,120" render="Label" size="400,28" source="session.CurrentService" transparent="1" valign="bottom" zPosition="3">
+		<widget borderColor="black" borderWidth="1" backgroundColor="transpBlack" font="Enigma;24" foregroundColor="foreground" halign="center" position="160,120" render="Label" size="400,28" source="session.CurrentService" transparent="1" valign="bottom" zPosition="3">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget backgroundColor="black" font="Enigma;16" noWrap="1" position="54,100" render="Label" size="220,22" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="3">
+		<widget borderColor="black" borderWidth="1" backgroundColor="transpBlack" font="Enigma;16" noWrap="1" position="54,100" render="Label" size="220,22" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="3">
 			<convert type="ClockToText">Date</convert>
 		</widget>
-		<widget font="Enigma;22" position="140,160" render="Label" size="60,28" source="session.Event_Now" transparent="1" zPosition="3">
+		<widget font="Enigma;22" position="140,160" render="Label" size="60,28" source="session.Event_Now" zPosition="3">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget backgroundColor="black" font="Enigma;16" noWrap="1" position="54,214" render="Label" size="300,22" source="session.CurrentService" transparent="1" halign="left" valign="top" zPosition="3">
+		<widget font="Enigma;16" noWrap="1" position="54,214" foregroundColor="grey81" render="Label" size="300,22" source="session.CurrentService" halign="left" valign="top" zPosition="3">
 			<convert type="CryptoInfo">VerboseInfo</convert>
 		</widget>
-		<widget backgroundColor="black" font="Enigma;16" noWrap="1" position="500,214" render="Label" size="165,22" source="session.CurrentService" transparent="1" halign="right" valign="top" zPosition="3">
+		<widget font="Enigma;16" noWrap="1" position="500,214" foregroundColor="grey81" render="Label" size="165,22" source="session.CurrentService" halign="right" valign="top" zPosition="3">
 			<convert type="ServiceOrbitalPosition"></convert>
 		</widget>
-		<widget font="Enigma;22" position="200,160" render="Label" size="375,28" source="session.Event_Now" transparent="1" zPosition="3">
+		<widget font="Enigma;22" position="200,160" render="Label" size="375,28" source="session.Event_Now" zPosition="3">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget font="Enigma;22" halign="right" position="580,160" render="Label" size="85,28" source="session.Event_Now" transparent="1" zPosition="3">
+		<widget font="Enigma;22" halign="right" position="580,160" render="Label" size="85,28" source="session.Event_Now" zPosition="3">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
-		<widget font="Enigma;22" position="140,186" render="Label" size="60,28" source="session.Event_Next" transparent="1" zPosition="3">
+		<widget font="Enigma;22" position="140,186" render="Label" size="60,28" source="session.Event_Next" zPosition="3">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget font="Enigma;22" position="200,186" render="Label" size="375,28" source="session.Event_Next" transparent="1" zPosition="3">
+		<widget font="Enigma;22" position="200,186" render="Label" size="375,28" source="session.Event_Next" zPosition="3">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget font="Enigma;22" halign="right" position="580,186" render="Label" size="85,28" source="session.Event_Next" transparent="1" zPosition="3">
+		<widget font="Enigma;22" halign="right" position="580,186" render="Label" size="85,28" source="session.Event_Next" zPosition="3">
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">InMinutes</convert>
 		</widget>	
-		<widget pixmap="Magic/infobar/p_bar.png" position="55,153" render="Progress" size="610,3" source="session.Event_Now" transparent="1" zPosition="3">
+		<widget pixmap="Magic/infobar/p_bar.png" position="55,153" render="Progress" size="610,3" source="session.Event_Now" zPosition="3">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<widget alphatest="on" pixmap="Magic/infobar/ico_crypt_on.png" position="644,105" render="Pixmap" size="20,16" source="session.CurrentService" zPosition="3">
@@ -161,7 +161,7 @@
 		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="548,129" render="Pixmap" size="14,14" source="session.RecordState" zPosition="4">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget backgroundColor="black" font="Enigma;16" foregroundColor="foreground" halign="right" position="567,100" render="Label" size="66,24" source="session.FrontendStatus" transparent="1" zPosition="3">
+		<widget borderColor="black" borderWidth="1" font="Enigma;16" foregroundColor="foreground" halign="right" position="567,100" render="Label" size="66,24" source="session.FrontendStatus" transparent="1" zPosition="3">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 		<widget alphatest="on" pixmap="Magic/infobar/nimA.png" position="54,122" render="Pixmap" size="24,24" source="session.TunerInfo" zPosition="6">
@@ -184,7 +184,7 @@
 			<convert type="ValueBitTest">8</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget alphatest="on" position="54,160" render="Picon" size="70,53" source="session.CurrentService" transparent="1" zPosition="5">
+		<widget alphatest="on" position="54,160" render="Picon" size="70,53" source="session.CurrentService" zPosition="5">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 	</screen>
@@ -195,13 +195,13 @@
 		<widget pointer="Magic/dvr/position_pointer.png:572,0" position="68,85" render="PositionGauge" size="584,12" source="session.CurrentService" transparent="1" zPosition="4">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
-		<widget font="Enigma;22" foregroundColor="foreground" halign="center" noWrap="1" position="185,43" render="Label" shadowColor="background" shadowOffset="-1,-1" size="350,36" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
+		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;22" foregroundColor="foreground" halign="center" noWrap="1" position="185,43" render="Label" shadowColor="background" shadowOffset="-1,-1" size="350,36" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget font="Enigma;20" foregroundColor="foreground" halign="left" noWrap="1" position="65,45" render="Label" shadowColor="background" shadowOffset="-1,-1" size="117,32" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
+		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;20" foregroundColor="foreground" halign="left" noWrap="1" position="65,45" render="Label" shadowColor="background" shadowOffset="-1,-1" size="117,32" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
 			<convert type="ServicePosition">Position,ShowHours</convert>
 		</widget>
-		<widget font="Enigma;20" foregroundColor="foreground" halign="right" noWrap="1" position="540,45" render="Label" shadowColor="background" shadowOffset="-1,-1" size="117,32" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
+		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;20" foregroundColor="foreground" halign="right" noWrap="1" position="540,45" render="Label" shadowColor="background" shadowOffset="-1,-1" size="117,32" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
 			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
 		</widget>
 	</screen>
