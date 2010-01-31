@@ -190,8 +190,8 @@
 		</widget>
 	</screen>
 	
-	<screen backgroundColor="transparent" flags="wfNoBorder" name="MoviePlayer" position="0,0" size="720,140" title="MoviePlayer">
-		<eLabel backgroundColor="transBG" position="60,80" size="600,22" zPosition="0"/>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="MoviePlayer" position="0,0" size="720,102" title="MoviePlayer">
+		<eLabel backgroundColor="infobarBG" position="60,80" size="600,22" zPosition="0"/>
 		<ePixmap alphatest="on" pixmap="Magic/dvr/scale.png" position="68,85" size="584,12" zPosition="1"/>
 		<widget pointer="Magic/dvr/position_pointer.png:572,0" position="68,85" render="PositionGauge" size="584,12" source="session.CurrentService" transparent="1" zPosition="4">
 			<convert type="ServicePosition">Gauge</convert>
@@ -537,8 +537,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="list" position="10,10" scrollbarMode="showOnDemand" size="540,405" zPosition="2"/>
 	</screen>
 
-	<screen backgroundColor="transBG" flags="wfNoBorder" name="PVRState" position="50,100" size="80,36" zPosition="2">
-		<widget font="Enigma;25" halign="center" name="state" position="0,3" size="80,30" transparent="1"/>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="PVRState" position="60,102" size="80,34" zPosition="2">
+		<widget font="Enigma;24" halign="left" name="state" position="0,0" size="80,34" backgroundColor="transparent" borderColor="black" borderWidth="2" />
 	</screen>
 	
 	<screen name="LocationBox" position="center,center" size="560,440">
