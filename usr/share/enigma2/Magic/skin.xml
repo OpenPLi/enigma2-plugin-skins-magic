@@ -38,6 +38,7 @@
 		<color name="buttonGreen" value="#1f771f"/>
 		<color name="buttonYellow" value="#a08500"/>
 		<color name="buttonBlue" value="#18188b"/>
+		<color name="infobarBG" value="#41080808"/>
 	</colors>
 	
 	<windowstyle id="0" type="skinned">
@@ -97,7 +98,7 @@
 	<!--  ##### InfoBars #####  -->
 	<screen flags="wfNoBorder" name="InfoBar" position="0,325" size="720,276" title="InfoBar">
 		<ePixmap alphatest="off" name="ValiOSD" pixmap="Magic/infobar/infobar.png" position="0,0" size="720,156" zPosition="1"/>
-		<eLabel position="0,156" size="720,110" zPosition="2"/>
+		<eLabel backgroundColor="infobarBG" position="0,156" size="720,110" zPosition="2"/>
 		<widget borderColor="black" borderWidth="1" backgroundColor="transpBlack" font="Enigma;24" foregroundColor="foreground" halign="left" noWrap="1" position="88,120" render="Label" size="68,28" source="global.CurrentTime" transparent="1" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>		
@@ -107,31 +108,31 @@
 		<widget borderColor="black" borderWidth="1" backgroundColor="transpBlack" font="Enigma;16" noWrap="1" position="54,100" render="Label" size="220,22" source="global.CurrentTime" transparent="1" valign="bottom" zPosition="3">
 			<convert type="ClockToText">Date</convert>
 		</widget>
-		<widget font="Enigma;22" position="140,160" render="Label" size="60,28" source="session.Event_Now" zPosition="3">
+		<widget backgroundColor="infobarBG" font="Enigma;22" position="140,160" render="Label" size="60,28" source="session.Event_Now" zPosition="3">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget font="Enigma;16" noWrap="1" position="54,214" foregroundColor="grey81" render="Label" size="300,22" source="session.CurrentService" halign="left" valign="top" zPosition="3">
+		<widget backgroundColor="infobarBG" font="Enigma;16" noWrap="1" position="54,214" foregroundColor="grey81" render="Label" size="300,22" source="session.CurrentService" halign="left" valign="top" zPosition="3">
 			<convert type="CryptoInfo">VerboseInfo</convert>
 		</widget>
-		<widget font="Enigma;16" noWrap="1" position="500,214" foregroundColor="grey81" render="Label" size="165,22" source="session.CurrentService" halign="right" valign="top" zPosition="3">
+		<widget backgroundColor="infobarBG" font="Enigma;16" noWrap="1" position="500,214" foregroundColor="grey81" render="Label" size="165,22" source="session.CurrentService" halign="right" valign="top" zPosition="3">
 			<convert type="ServiceOrbitalPosition"></convert>
 		</widget>
-		<widget font="Enigma;22" position="200,160" render="Label" size="375,28" source="session.Event_Now" zPosition="3">
+		<widget backgroundColor="infobarBG" font="Enigma;22" position="200,160" render="Label" size="375,28" source="session.Event_Now" zPosition="3">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget font="Enigma;22" halign="right" position="580,160" render="Label" size="85,28" source="session.Event_Now" zPosition="3">
+		<widget backgroundColor="infobarBG" font="Enigma;22" halign="right" position="580,160" render="Label" size="85,28" source="session.Event_Now" zPosition="3">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
-		<widget font="Enigma;22" position="140,186" render="Label" size="60,28" source="session.Event_Next" zPosition="3">
+		<widget backgroundColor="infobarBG" font="Enigma;22" position="140,186" render="Label" size="60,28" source="session.Event_Next" zPosition="3">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget font="Enigma;22" position="200,186" render="Label" size="375,28" source="session.Event_Next" zPosition="3">
+		<widget backgroundColor="infobarBG" font="Enigma;22" position="200,186" render="Label" size="375,28" source="session.Event_Next" zPosition="3">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget font="Enigma;22" halign="right" position="580,186" render="Label" size="85,28" source="session.Event_Next" zPosition="3">
+		<widget backgroundColor="infobarBG" font="Enigma;22" halign="right" position="580,186" render="Label" size="85,28" source="session.Event_Next" zPosition="3">
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">InMinutes</convert>
 		</widget>	
