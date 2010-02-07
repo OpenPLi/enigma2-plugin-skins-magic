@@ -31,7 +31,7 @@
 		<color name="greentransparent" value="#21004C00"/>
 		<color name="bluetransparent" value="#21001E4B"/>
 		<color name="yellowtransparent" value="#214B4B00"/>
-		<color name="transparent" value="#ffffffff"/>
+		<color name="transparent" value="#ff000000"/>
 		<color name="transpBlack" value="#16000000"/>
 		<color name="transpWhite" value="#16ffffff"/>
 		<color name="buttonRed" value="#9f1313"/>
@@ -464,9 +464,9 @@
 	</screen>	
 	
 	<!--  ##### Input and Output Boxes #####  -->
-	<screen backgroundColor="background" flags="wfNoBorder" name="NumberZap" position="50,50" size="160,24" title="Channel">
-		<widget font="Enigma;20" halign="right" name="channel" noWrap="1" position="0,0" size="100,24" valign="center" zPosition="1" />
-		<widget font="Enigma;20" halign="left" name="number" noWrap="1" position="105,0" size="55,24" valign="center" zPosition="2"/>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="NumberZap" position="50,50" size="160,26" title="Channel">
+		<widget font="Enigma;22" halign="right" name="channel" noWrap="1" position="0,0" size="100,26" valign="center" zPosition="1" borderWidth="2" borderColor="black" backgroundColor="transparent" />
+		<widget font="Enigma;22" halign="left" name="number" noWrap="1" position="105,0" size="55,26" valign="center" zPosition="2" borderWidth="2" borderColor="black" backgroundColor="transparent" />
 	</screen>	
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="ChapterZap" position="50,center" size="185,58" title="Chapter">
 		<widget font="Enigma;18" halign="left" name="chapter" position="5,5" size="180,20" transparent="1" valign="center"/>
