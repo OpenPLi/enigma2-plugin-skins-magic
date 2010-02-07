@@ -618,6 +618,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget font="Enigma;17" position="3,377" render="Label" size="555,62" source="ServiceEvent">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
+                <widget font="Enigma;17" noWrap="1" position="370,353" render="Label" size="80,20" source="ServiceEvent">
+                        <convert type="ServiceOrbitalPosition"></convert>
+                </widget>
 		<widget font="Enigma;18" halign="right" position="495,353" render="Label" size="55,20" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>
