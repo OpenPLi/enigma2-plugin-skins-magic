@@ -468,9 +468,9 @@
 		<widget font="Enigma;22" halign="right" name="channel" noWrap="1" position="0,0" size="100,26" valign="center" zPosition="1" borderWidth="2" borderColor="black" backgroundColor="transparent" />
 		<widget font="Enigma;22" halign="left" name="number" noWrap="1" position="105,0" size="55,26" valign="center" zPosition="2" borderWidth="2" borderColor="black" backgroundColor="transparent" />
 	</screen>	
-	<screen backgroundColor="transBG" flags="wfNoBorder" name="ChapterZap" position="50,center" size="185,58" title="Chapter">
-		<widget font="Enigma;18" halign="left" name="chapter" position="5,5" size="180,20" transparent="1" valign="center"/>
-		<widget font="Regular;32" halign="center" name="number" position="0,26" size="185,32" transparent="1" valign="center" zPosition="1"/>
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="ChapterZap" position="50,center" size="185,52" title="Chapter">
+		<widget font="Enigma;22" halign="right" name="chapter" noWrap="1" position="0,0" size="100,26" valign="center" zPosition="1" borderWidth="2" borderColor="black" backgroundColor="transparent" />
+		<widget font="Enigma;22" halign="left" name="number" noWrap="1" position="105,0" size="55,26" valign="center" zPosition="2" borderWidth="2" borderColor="black" backgroundColor="transparent" />
 	</screen> 
 	
 	<screen name="MessageBox" position="60,245" size="600,10" title="Message">
@@ -516,9 +516,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap alphatest="on" pixmap="skin_default/icons/dmm_logo.png" position="80,330" size="200,10"/>
 	</screen>
 	
-	<screen backgroundColor="transBG" flags="wfNoBorder" name="TimeshiftState" position="50,310" size="150,60" zPosition="2">
-		<widget font="Enigma;23" halign="center" name="state" position="0,0" size="150,30" transparent="1"/>
-		<widget font="Enigma;23" halign="center" position="0,30" render="Label" size="150,30" source="session.CurrentService" transparent="1">
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="TimeshiftState" position="50,310" size="150,60" zPosition="2">
+		<widget font="Enigma;24" halign="center" name="state" position="0,0" size="150,30" backgroundColor="transparent" borderColor="black" borderWidth="2" />
+		<widget font="Enigma;24" halign="center" position="0,30" render="Label" size="150,30" source="session.CurrentService" backgroundColor="transparent" borderColor="black" borderWidth="2">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
 	</screen>
