@@ -766,9 +766,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget backgroundColor="#8C5900" font="Enigma;18" halign="center" name="key_yellow" position="280,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
 		<widget backgroundColor="#254177" font="Enigma;18" halign="center" name="key_blue" position="420,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
 		<widget font="Enigma;22" name="epg_description" position="5,50" size="547,350"/>
-		<widget font="Enigma;22" name="datetime" position="70,492" size="140,30"/>
-		<widget font="Enigma;22" name="duration" position="220,492" size="120,30"/>
-		<widget font="Enigma;22" name="channel" position="370,492" size="300,30"/> 
+		<widget font="Enigma;22" name="datetime" position="5,410" size="140,30" noWrap="1" />
+		<widget font="Enigma;22" name="duration" position="150,410" size="115,30" noWrap="1" />
+		<widget font="Enigma;22" name="channel" position="270,410" size="220,30" noWrap="1" /> 
 		<widget font="Enigma;18" halign="right" position="490,412" render="Label" size="55,24" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -777,7 +777,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="475,416" size="14,14" zPosition="4"/>
-  </screen>
+	</screen>
 	
 	<screen name="EPGSelectionMulti" position="80,85" size="560,440" title="EPG Selection">
 		<ePixmap alphatest="on" name="red" pixmap="Magic/buttons/key-red.png" position="0,0" size="140,40" transparent="1"/>
