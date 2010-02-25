@@ -270,18 +270,18 @@
 		<widget pointer="Magic/dvr/position_pointer.png:572,0" position="68,85" render="PositionGauge" size="584,12" source="session.CurrentService" transparent="1" zPosition="4">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
-		<widget font="Enigma;22" foregroundColor="foreground" halign="center" noWrap="1" position="165,45" render="Label" shadowColor="background" shadowOffset="-2,-2" size="390,35" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
+		<widget font="Enigma;22" backgroundColor="transparent" borderColor="black" borderWidth="2" foregroundColor="foreground" halign="center" noWrap="1" position="165,45" render="Label" size="390,35" source="session.CurrentService" valign="bottom" zPosition="2">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget font="Enigma;20" foregroundColor="foreground" halign="left" noWrap="1" position="65,48" render="Label" shadowColor="background" shadowOffset="-2,-2" size="95,30" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
+		<widget font="Enigma;20" backgroundColor="transparent" borderColor="black" borderWidth="2" foregroundColor="foreground" halign="left" noWrap="1" position="65,48" render="Label" size="95,30" source="session.CurrentService" valign="bottom" zPosition="2">
 			<convert type="ServicePosition">Position,ShowHours</convert>
 		</widget>
-		<widget font="Enigma;20" foregroundColor="foreground" halign="right" noWrap="1" position="560,48" render="Label" shadowColor="background" shadowOffset="-2,-2" size="95,30" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
+		<widget font="Enigma;20" backgroundColor="transparent" borderColor="black" borderWidth="2" foregroundColor="foreground" halign="right" noWrap="1" position="560,48" render="Label" size="95,30" source="session.CurrentService" valign="bottom" zPosition="2">
 			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
 		</widget>
-		<widget font="Enigma;20" halign="left" name="chapterLabel" noWrap="1" position="65,105" shadowColor="background" shadowOffset="-2,-2" size="290,35" transparent="1" zPosition="3"/>
-		<widget font="Enigma;20" halign="right" name="audioLabel" noWrap="1" position="360,105" shadowColor="background" shadowOffset="-2,-2" size="146,24" transparent="1" zPosition="3"/>
-		<widget font="Enigma;20" halign="right" name="subtitleLabel" noWrap="1" position="510,105" shadowColor="background" shadowOffset="-2,-2" size="140,24" transparent="1" zPosition="3"/>
+		<widget font="Enigma;20" halign="left" name="chapterLabel" noWrap="1" position="65,105" borderColor="black" borderWidth="2" size="290,35" backgroundColor="transparent" zPosition="3"/>
+		<widget font="Enigma;20" halign="right" name="audioLabel" noWrap="1" position="360,105" borderColor="black" borderWidth="2" size="146,24" backgroundColor="transparent" zPosition="3"/>
+		<widget font="Enigma;20" halign="right" name="subtitleLabel" noWrap="1" position="510,105" borderColor="black" borderWidth="2" size="140,24" backgroundColor="transparent" zPosition="3"/>
 	</screen>
 	
 	<!--  ##### Menus #####  -->
