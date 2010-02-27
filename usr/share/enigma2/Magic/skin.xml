@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><skin>
-  <!--  Skin: Magic by MiLo, based on Merlin Magic 2.0 Picons -->
+<!--  Skin: Magic by MiLo, based on Merlin Magic 2.0 Picons -->
 	
 	<!--  ##### Head #####  -->
 	<output id="0">
@@ -196,13 +196,13 @@
 		<widget pointer="Magic/dvr/position_pointer.png:572,0" position="68,85" render="PositionGauge" size="584,12" source="session.CurrentService" transparent="1" zPosition="4">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
-		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;22" foregroundColor="foreground" halign="center" noWrap="1" position="185,43" render="Label" shadowColor="background" shadowOffset="-1,-1" size="350,36" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
+		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;22" foregroundColor="foreground" halign="center" noWrap="1" position="185,43" render="Label" size="350,36" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;20" foregroundColor="foreground" halign="left" noWrap="1" position="65,45" render="Label" shadowColor="background" shadowOffset="-1,-1" size="117,32" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
+		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;20" foregroundColor="foreground" halign="left" noWrap="1" position="65,45" render="Label" size="117,32" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
 			<convert type="ServicePosition">Position,ShowHours</convert>
 		</widget>
-		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;20" foregroundColor="foreground" halign="right" noWrap="1" position="540,45" render="Label" shadowColor="background" shadowOffset="-1,-1" size="117,32" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
+		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;20" foregroundColor="foreground" halign="right" noWrap="1" position="540,45" render="Label" size="117,32" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
 			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
 		</widget>
 	</screen>
