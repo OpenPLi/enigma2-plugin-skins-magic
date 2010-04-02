@@ -754,7 +754,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget backgroundColor="#266926" font="Enigma;18" halign="center" name="key_green" position="140,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
 		<widget backgroundColor="#8C5900" font="Enigma;18" halign="center" name="key_yellow" position="280,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
 		<widget backgroundColor="#254177" font="Enigma;18" halign="center" name="key_blue" position="420,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
-		<widget name="list" position="5,38" scrollbarMode="showOnDemand" size="550,400"/>
+		<widget name="list" position="5,38" scrollbarMode="showOnDemand" size="550,350"/>
+		<eLabel backgroundColor="darkgrey" position="0,389" size="560,2" zPosition="5"/>
+		<widget source="Event" render="Label" position="5,392" size="550,48" font="Enigma;18" foregroundColor="white">
+			<convert type="EventName">ExtendedDescription</convert>
+		</widget>
 	</screen>
 	
 	<screen name="EventView" position="80,85" size="560,440" title="Eventview">
