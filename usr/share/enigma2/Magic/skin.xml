@@ -191,19 +191,19 @@
 		</widget>
 	</screen>
 	
-	<screen backgroundColor="transparent" flags="wfNoBorder" name="MoviePlayer" position="0,0" size="720,102" title="MoviePlayer">
-		<eLabel backgroundColor="infobarBG" position="60,80" size="600,22" zPosition="0"/>
-		<ePixmap alphatest="on" pixmap="Magic/dvr/scale.png" position="68,85" size="584,12" zPosition="1"/>
-		<widget pointer="Magic/dvr/position_pointer.png:572,0" position="68,85" render="PositionGauge" size="584,12" source="session.CurrentService" transparent="1" zPosition="4">
+	<screen backgroundColor="transparent" flags="wfNoBorder" name="MoviePlayer" position="60,40" size="600,102" title="MoviePlayer">
+		<eLabel backgroundColor="infobarBG" position="6,44" size="588,14" zPosition="0"/>
+		<ePixmap alphatest="on" pixmap="Magic/dvr/scale.png" position="8,45" size="584,12" zPosition="1"/>
+		<widget pointer="Magic/dvr/position_pointer.png:572,0" position="8,45" render="PositionGauge" size="584,12" source="session.CurrentService" transparent="1" zPosition="4">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
-		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;22" foregroundColor="foreground" halign="center" noWrap="1" position="185,43" render="Label" size="350,36" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
+		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;22" foregroundColor="foreground" halign="center" noWrap="1" position="88,3" render="Label" size="424,36" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;20" foregroundColor="foreground" halign="left" noWrap="1" position="65,45" render="Label" size="117,32" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
+		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;20" foregroundColor="foreground" halign="left" noWrap="1" position="8,5" render="Label" size="80,32" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
 			<convert type="ServicePosition">Position,ShowHours</convert>
 		</widget>
-		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;20" foregroundColor="foreground" halign="right" noWrap="1" position="540,45" render="Label" size="117,32" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
+		<widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Enigma;20" foregroundColor="foreground" halign="right" noWrap="1" position="512,5" render="Label" size="80,32" source="session.CurrentService" transparent="1" valign="bottom" zPosition="2">
 			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
 		</widget>
 	</screen>
