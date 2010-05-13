@@ -7,10 +7,10 @@
     <resolution bpp="32" xres="1280" yres="720" />
   </output>
   <fonts>
-    <font filename="/usr/share/enigma2/fonts/hd.ttf" name="Regular" scale="100" />
-    <font filename="/usr/share/enigma2/fonts/hdi.ttf" name="Crs" scale="100" />
-    <font filename="/usr/share/enigma2/fonts/lcd.ttf" name="LCD" scale="100" />
-    <font filename="/usr/share/enigma2/fonts/tuxtxt.ttf" name="Console" scale="100" />
+    <font filename="/usr/share/fonts/hd.ttf" name="Regular" scale="100" />
+    <font filename="/usr/share/fonts/hdi.ttf" name="Crs" scale="100" />
+    <font filename="/usr/share/fonts/lcd.ttf" name="LCD" scale="100" />
+    <font filename="/usr/share/fonts/tuxtxt.ttf" name="Console" scale="100" />
   </fonts>
   <!--  ##### Colors ##### -->
   <colors>
