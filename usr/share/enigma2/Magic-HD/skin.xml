@@ -285,7 +285,7 @@
       </convert>
     </widget>
     <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%a %d %b, %H:%M</convert>
+      <convert type="ClockToText">Full</convert>
     </widget>
     <widget backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" source="session.VideoPicture" zPosition="1" />
     <ePixmap alphatest="on" pixmap="Magic-HD/buttons/red.png" position="100,643" size="30,30" />
@@ -320,7 +320,7 @@
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
     <widget backgroundColor="secondBG" font="Regular;22" position="60, 35" render="Label" size="730, 50" source="Title" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%a %d %b, %H:%M</convert>
+      <convert type="ClockToText">Full</convert>
     </widget>
     <widget backgroundColor="transparent" position="70, 110" render="Pig" size="464, 261" source="session.VideoPicture" zPosition="1" />
     <ePixmap alphatest="on" pixmap="Magic-HD/buttons/red.png" position="100,643" size="30,30" />
@@ -344,7 +344,7 @@
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
     <widget backgroundColor="secondBG" font="Regular;22" position="60, 35" render="Label" size="700, 50" source="Title" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%a %d %b, %H:%M</convert>
+      <convert type="ClockToText">Full</convert>
     </widget>
     <widget backgroundColor="transparent" position="70, 110" render="Pig" size="480, 270" source="session.VideoPicture" zPosition="1" />
     <ePixmap alphatest="on" pixmap="Magic-HD/buttons/red.png" position="100,643" size="30,30" />
@@ -366,7 +366,7 @@
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
     <widget backgroundColor="secondBG" font="Regular;22" position="514, 35" render="Label" size="250,50" source="Title" transparent="1" valign="center" zPosition="1" halign="center" />
     <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%a %d %b, %H:%M</convert>
+      <convert type="ClockToText">Full</convert>
     </widget>
     <widget backgroundColor="transparent" position="70, 110" render="Pig" size="528, 297" source="session.VideoPicture" zPosition="1" />
     <widget position="645, 100" render="Listbox" scrollbarMode="showOnDemand" size="580, 500" source="menu" transparent="1">
@@ -383,7 +383,7 @@
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
     <widget backgroundColor="secondBG" font="Regular;22" position="514, 35" render="Label" size="250,50" source="Title" transparent="1" valign="center" zPosition="1" halign="center" />
     <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%a %d %b, %H:%M</convert>
+      <convert type="ClockToText">Full</convert>
     </widget>
     <widget backgroundColor="transparent" position="70, 110" render="Pig" size="528, 297" source="session.VideoPicture" zPosition="1" />
     <widget position="645, 100" render="Listbox" scrollbarMode="showOnDemand" size="580, 500" source="menu" transparent="1">
@@ -400,7 +400,7 @@
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
     <widget backgroundColor="secondBG" font="Regular;22" position="514, 35" render="Label" size="250,50" source="Title" transparent="1" valign="center" zPosition="1" halign="center" />
     <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%a %d %b, %H:%M</convert>
+      <convert type="ClockToText">Full</convert>
     </widget>
     <widget backgroundColor="transparent" position="70, 110" render="Pig" size="528, 297" source="session.VideoPicture" zPosition="1" />
     <widget position="645, 100" render="Listbox" scrollbarMode="showOnDemand" size="580, 500" source="menu" transparent="1">
@@ -417,7 +417,7 @@
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
     <widget backgroundColor="secondBG" font="Regular;22" position="514, 35" render="Label" size="250,50" source="Title" transparent="1" valign="center" zPosition="1" halign="center" />
     <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%a %d %b, %H:%M</convert>
+      <convert type="ClockToText">Full</convert>
     </widget>
     <widget backgroundColor="transparent" position="70, 110" render="Pig" size="528, 297" source="session.VideoPicture" zPosition="1" />
     <widget position="645, 100" render="Listbox" scrollbarMode="showOnDemand" size="580, 500" source="menu" transparent="1">
@@ -434,7 +434,7 @@
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
     <widget backgroundColor="secondBG" font="Regular;22" position="514, 35" render="Label" size="250,50" source="Title" transparent="1" valign="center" zPosition="1" halign="center" />
     <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%a %d %b, %H:%M</convert>
+      <convert type="ClockToText">Full</convert>
     </widget>
     <widget backgroundColor="transparent" position="70, 110" render="Pig" size="528, 297" source="session.VideoPicture" zPosition="1" />
     <widget position="645, 100" render="Listbox" scrollbarMode="showOnDemand" size="580, 500" source="menu" transparent="1">
@@ -451,7 +451,7 @@
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
     <widget backgroundColor="secondBG" font="Regular;22" position="514, 35" render="Label" size="250,50" source="Title" transparent="1" valign="center" zPosition="1" halign="center" />
     <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%a %d %b, %H:%M</convert>
+      <convert type="ClockToText">Full</convert>
     </widget>
     <widget backgroundColor="transparent" position="70, 110" render="Pig" size="528, 297" source="session.VideoPicture" zPosition="1" />
     <widget position="645, 100" render="Listbox" scrollbarMode="showOnDemand" size="580, 500" source="menu" transparent="1">
@@ -468,7 +468,7 @@
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
     <widget backgroundColor="secondBG" font="Regular;22" position="514, 35" render="Label" size="250,50" source="Title" transparent="1" valign="center" zPosition="1" halign="center" />
     <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%a %d %b, %H:%M</convert>
+      <convert type="ClockToText">Full</convert>
     </widget>
     <widget backgroundColor="transparent" position="70, 110" render="Pig" size="528, 297" source="session.VideoPicture" zPosition="1" />
     <widget position="645, 100" render="Listbox" scrollbarMode="showOnDemand" size="580, 500" source="menu" transparent="1">
@@ -487,13 +487,13 @@
     </widget>
   </screen>
   <screen flags="wfNoBorder" name="About" position="2, -2" size="1280,720" title="Main menu"> title="About"&gt;
-    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" /><ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" /><widget backgroundColor="secondBG" font="Regular;22" position="514, 35" render="Label" size="250,50" source="Title" transparent="1" valign="center" zPosition="1" halign="center" /><widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1"><convert type="ClockToText">Format:%a %d %b, %H:%M</convert></widget><widget backgroundColor="transparent" position="70, 110" render="Pig" size="528, 297" source="session.VideoPicture" zPosition="1" /><widget backgroundColor="background" font="Regular;21" halign="center" position="635, 120" render="Label" size="580,25" source="EnigmaVersion" transparent="1" /><widget backgroundColor="background" font="Regular;21" halign="center" position="635, 160" render="Label" size="580,25" source="ImageVersion" transparent="1" /><widget backgroundColor="background" font="Regular;21" halign="center" position="635, 200" render="Label" size="580,25" source="FPVersion" transparent="1" /><widget backgroundColor="background" font="Regular;21" halign="center" position="635, 250" render="Label" size="580,25" source="TunerHeader" transparent="1" /><widget backgroundColor="background" font="Regular;21" halign="center" position="635, 290" render="Label" size="580,25" source="Tuner0" transparent="1" /><widget backgroundColor="background" font="Regular;21" halign="center" position="635, 325" render="Label" size="580,25" source="Tuner1" transparent="1" /><widget backgroundColor="background" font="Regular;21" halign="center" position="635, 360" render="Label" size="580,25" source="Tuner2" transparent="1" /><widget backgroundColor="background" font="Regular;21" halign="center" position="635, 395" render="Label" size="580,25" source="Tuner3" transparent="1" /><widget backgroundColor="background" font="Regular;21" halign="center" position="635, 445" render="Label" size="580,25" source="HDDHeader" transparent="1" /><widget backgroundColor="background" font="Regular;21" halign="center" position="635, 485" render="Label" size="580,50" source="hddA" transparent="1" /></screen>
+    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" /><ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" /><widget backgroundColor="secondBG" font="Regular;22" position="514, 35" render="Label" size="250,50" source="Title" transparent="1" valign="center" zPosition="1" halign="center" /><widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1"><convert type="ClockToText">Full</convert></widget><widget backgroundColor="transparent" position="70, 110" render="Pig" size="528, 297" source="session.VideoPicture" zPosition="1" /><widget backgroundColor="background" font="Regular;21" halign="center" position="635, 120" render="Label" size="580,25" source="EnigmaVersion" transparent="1" /><widget backgroundColor="background" font="Regular;21" halign="center" position="635, 160" render="Label" size="580,25" source="ImageVersion" transparent="1" /><widget backgroundColor="background" font="Regular;21" halign="center" position="635, 200" render="Label" size="580,25" source="FPVersion" transparent="1" /><widget backgroundColor="background" font="Regular;21" halign="center" position="635, 250" render="Label" size="580,25" source="TunerHeader" transparent="1" /><widget backgroundColor="background" font="Regular;21" halign="center" position="635, 290" render="Label" size="580,25" source="Tuner0" transparent="1" /><widget backgroundColor="background" font="Regular;21" halign="center" position="635, 325" render="Label" size="580,25" source="Tuner1" transparent="1" /><widget backgroundColor="background" font="Regular;21" halign="center" position="635, 360" render="Label" size="580,25" source="Tuner2" transparent="1" /><widget backgroundColor="background" font="Regular;21" halign="center" position="635, 395" render="Label" size="580,25" source="Tuner3" transparent="1" /><widget backgroundColor="background" font="Regular;21" halign="center" position="635, 445" render="Label" size="580,25" source="HDDHeader" transparent="1" /><widget backgroundColor="background" font="Regular;21" halign="center" position="635, 485" render="Label" size="580,50" source="hddA" transparent="1" /></screen>
   <screen flags="wfNoBorder" name="menu" position="2, -2" size="1280,720" title="Main menu">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
     <widget backgroundColor="secondBG" font="Regular;22" position="514, 35" render="Label" size="250,50" source="Title" transparent="1" valign="center" zPosition="1" halign="center" />
     <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%a %d %b, %H:%M</convert>
+      <convert type="ClockToText">Full</convert>
     </widget>
     <widget backgroundColor="transparent" position="70, 110" render="Pig" size="528, 297" source="session.VideoPicture" zPosition="1" />
     <widget position="645, 100" render="Listbox" scrollbarMode="showOnDemand" size="580, 500" source="menu" transparent="1">
@@ -536,7 +536,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
     <widget backgroundColor="secondBG" font="Regular;22" position="514, 35" render="Label" size="250,50" source="Title" transparent="1" valign="center" zPosition="1" halign="center" />
     <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%a %d %b, %H:%M</convert>
+      <convert type="ClockToText">Full</convert>
     </widget>
     <widget backgroundColor="transparent" position="70, 110" render="Pig" size="528, 297" source="session.VideoPicture" zPosition="1" />
     <widget position="645, 100" render="Listbox" scrollbarMode="showOnDemand" size="580, 500" source="menu" transparent="1">
@@ -831,7 +831,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
     <widget backgroundColor="secondBG" font="Regular;22" position="78, 35" render="Label" size="850,50" source="Title" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="930,35" render="Label" size="270,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%a %d %b, %H:%M</convert>
+      <convert type="ClockToText">Full</convert>
     </widget>
     <widget backgroundColor="transparent" position="-4, 95" render="Pig" size="475,262" source="session.VideoPicture" zPosition="1" />
     <ePixmap alphatest="on" pixmap="Magic-HD/buttons/red.png" position="100,643" size="30,30" />
@@ -952,7 +952,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
     <widget backgroundColor="secondBG" font="Regular;22" position="514, 35" render="Label" size="250,50" source="Title" transparent="1" valign="center" zPosition="1" halign="center" />
     <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%a %d %b, %H:%M</convert>
+      <convert type="ClockToText">Full</convert>
     </widget>
     <widget backgroundColor="transparent" position="70, 110" render="Pig" size="528, 297" source="session.VideoPicture" zPosition="1" />
   </screen>
@@ -964,7 +964,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
     <widget backgroundColor="secondBG" font="Regular;22" position="424, 35" render="Label" size="250,50" source="Title" transparent="1" valign="left" zPosition="1" />
     <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="930,35" render="Label" size="270,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
-      <convert type="ClockToText">Format:%a %d %b, %H:%M</convert>
+      <convert type="ClockToText">Full</convert>
     </widget>
     <widget backgroundColor="transparent" position="70, 110" render="Pig" size="528,297" source="session.VideoPicture" zPosition="1" />
     <ePixmap alphatest="on" pixmap="Magic-HD/buttons/red.png" position="60, 648" size="30,30" zPosition="1" />
