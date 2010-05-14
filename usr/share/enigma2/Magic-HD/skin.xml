@@ -122,7 +122,7 @@
     <widget alphatest="blend" position="85, 72" render="Picon" size="100,60" source="session.CurrentService" transparent="1" zPosition="1">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget backgroundColor="background" font="Regular;19" foregroundColor="foreground" halign="left" position="221, 75" render="chNumberHD" size="80,36" source="session.CurrentService" transparent="1" valign="center" zPosition="1" />
+    <!-- <widget backgroundColor="background" font="Regular;19" foregroundColor="foreground" halign="left" position="221, 75" render="chNumberHD" size="80,36" source="session.CurrentService" transparent="1" valign="center" zPosition="1" /> -->
     <widget backgroundColor="background" font="Regular;24" foregroundColor="foreground" halign="left" position="303, 70" render="Label" size="542,36" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
       <convert type="ServiceName">Name</convert>
     </widget>
@@ -160,7 +160,7 @@
     <widget backgroundColor="un33333a" borderWidth="0" pixmap="Magic-HD/infobar/pbar.png" position="220, 117" render="Progress" size="840,8" source="session.Event_Now" transparent="0" zPosition="2">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget backgroundColor="secondBG" font="Regular;19" foregroundColor="foreground" halign="left" position="1100, 109" render="vSizeHD" size="101,27" source="session.CurrentService" transparent="1" valign="top" zPosition="1" />
+    <!-- <widget backgroundColor="secondBG" font="Regular;19" foregroundColor="foreground" halign="left" position="1100, 109" render="vSizeHD" size="101,27" source="session.CurrentService" transparent="1" valign="top" zPosition="1" /> -->
     <widget alphatest="on" pixmap="Magic-HD/infobar/ico_dolby_on.png" position="905, 77" render="Pixmap" size="60,24" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
@@ -1872,7 +1872,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     <widget backgroundColor="secondBG" font="Regular;18" foregroundColor="secondFG" halign="center" position="60,160" render="Label" size="128,24" source="global.CurrentTime" transparent="1" zPosition="1">
       <convert type="ClockToText">Format:%a %d. %b</convert>
     </widget>
-    <widget backgroundColor="secondBG" font="Regular;20" foregroundColor="foreground" halign="center" position="60,100" render="vSizeHD" size="130,24" source="session.CurrentService" transparent="1" zPosition="1" />
+    <!-- <widget backgroundColor="secondBG" font="Regular;20" foregroundColor="foreground" halign="center" position="60,100" render="vSizeHD" size="130,24" source="session.CurrentService" transparent="1" zPosition="1" /> -->
     <ePixmap alphatest="blend" pixmap="Magic-HD/dvr/mpslider.png" position="345,80" size="600,16" zPosition="3" />
     <widget pointer="Magic-HD/dvr/pointer.png:13,3" position="360,81" render="PositionGauge" size="560,14" source="session.CurrentService" zPosition="2">
       <convert type="ServicePosition">Gauge</convert>
