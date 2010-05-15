@@ -1076,6 +1076,19 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     <widget font="Regular;18" halign="left" position="500,0" render="Label" size="180,40" source="key_yellow" transparent="1" valign="center" zPosition="2" />
     <widget font="Regular;18" halign="left" position="725,0" render="Label" size="170,40" source="key_blue" transparent="1" valign="center" zPosition="2" />
     <widget position="5,50" render="Listbox" scrollbarMode="showOnDemand" size="890,350" source="list" zPosition="10">
+	<convert type="TemplatedMultiContent">
+		{"template": [
+				MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (48, 48), png = 1), # index 1 is the expandable/expanded/verticalline icon
+				MultiContentEntryText(pos = (50, 4), size = (420, 26), font=2, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the Hostname
+				MultiContentEntryText(pos = (140, 5), size = (320, 25), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is the sharename
+				MultiContentEntryText(pos = (140, 26), size = (320, 17), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is the sharedescription
+				MultiContentEntryPixmapAlphaTest(pos = (45, 0), size = (48, 48), png = 5), # index 5 is the nfs/cifs icon
+				MultiContentEntryPixmapAlphaTest(pos = (90, 0), size = (48, 48), png = 6), # index 6 is the isMounted icon
+			],
+		"fonts": [gFont("Regular", 18),gFont("Regular", 13),gFont("Regular", 22)],
+		"itemHeight": 50
+		}
+	</convert>
     </widget>
     <widget font="Regular;20" halign="center" position="0,420" render="Label" size="891,30" source="infotext" transparent="1" valign="center" zPosition="10" />
   </screen>
