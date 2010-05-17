@@ -1236,7 +1236,20 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     <widget font="Regular;18" halign="left" position="145, 645" render="Label" size="220,26" source="key_red" transparent="1" valign="center" zPosition="2" />
     <widget font="Regular;18" halign="left" position="435, 645" render="Label" size="220,26" source="key_green" transparent="1" valign="center" zPosition="2" />
     <widget font="Regular;18" halign="left" position="725, 645" render="Label" size="220,26" source="key_yellow" transparent="1" valign="center" zPosition="2" />
-    <widget itemHeight="28" name="list" position="653, 109" scrollbarMode="showOnDemand" size="600, 450" zPosition="10" />
+	<widget source="list" render="Listbox" position="5,50" size="550,280" zPosition="10" scrollbarMode="showOnDemand">
+		<convert type="TemplatedMultiContent"> <!--  iface, name, description, interfacepng, defaultpng, activepng, divpng  -->
+				{"template": [
+					MultiContentEntryText(pos = (85, 6), size = (440, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1), # index 1 is the interfacename
+ 					MultiContentEntryText(pos = (85, 43), size = (440, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM, text = 2), # index 2 is the description
+ 					MultiContentEntryPixmapAlphaTest(pos = (2, 8), size = (54, 54), png = 3), # index 3 is the interface pixmap
+ 					MultiContentEntryPixmapAlphaTest(pos = (63, 46), size = (15, 16), png = 4), # index 4 is the default pixmap
+ 				],
+ 				"fonts": [gFont("Regular", 28),gFont("Regular", 20)],
+ 				"itemHeight": 70
+ 				}
+		</convert>
+	</widget>
+
     <widget font="Regular;21" halign="center" position="149, 561" render="Label" size="800,60" source="introduction" transparent="1" valign="center" zPosition="10" />
   </screen>
   <screen flags="wfNoBorder" name="NetworkAdapterTest" position="-1, 1" size="1280,720" title="Network test">
