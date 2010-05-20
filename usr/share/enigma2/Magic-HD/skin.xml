@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic_HD Vs 0.72 by MiLo, MrNiceNL & VU+NL, based on Magic_HD_Shadow_MiniTV   by Vali (c)2009-2010   Ver: 1.7   -->
+  <!--  Skin:  Magic_HD Vs 0.73 by MiLo, MrNiceNL & VU+NL, based on Magic_HD_Shadow_MiniTV   by Vali (c)2009-2010   Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  ##### Head ##### -->
@@ -840,10 +840,10 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     <widget backgroundColor="background" font="Regular;22" foregroundColor="foreground" halign="left" name="key_blue" position="1015,645" size="220,26" transparent="1" />
     <widget alphatest="on" name="now_button_sel" pixmap="Magic-HD/border/epg_now.png" position="60,60" size="1100,35" zPosition="3" />
     <widget alphatest="on" name="next_button_sel" pixmap="Magic-HD/border/epg_next.png" position="60,60" size="1100,35" zPosition="3" />
-    <widget alphatest="on" name="more_button_sel" pixmap="Magic-HD/border/epg_more.png" position="60,60" size="1100,35" zPosition="3" />
+    <widget alphatest="on" name="more_button_sel" pixmap="Magic-HD/border/epg_more.png" position="60,60" size="1100, 35" zPosition="3" />
     <widget backgroundColor="background" font="Regular;20" halign="center" name="now_text" position="90,65" size="250,25" text="NOW" transparent="1" zPosition="4" />
     <widget backgroundColor="background" font="Regular;20" halign="center" name="next_text" position="340,65" size="250,25" text="NEXT" transparent="1" zPosition="4" />
-    <widget backgroundColor="background" font="Regular;20" halign="center" name="more_text" position="585,65" size="250,25" text="MORE" transparent="1" zPosition="4" />
+    <widget backgroundColor="background" font="Regular;20" halign="center" name="more_text" position="590, 65" size="250,25" text="MORE" transparent="1" zPosition="4" />
     <widget backgroundColor="background" font="Regular;24" halign="right" name="date" position="1015,65" size="200,28" transparent="1" valign="center" />
     <widget itemHeight="28" name="list" position="60,110" scrollbarMode="showOnDemand" size="1156,504" />
   </screen>
@@ -900,11 +900,11 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
   <screen flags="wfNoBorder" name="MovieSelection" position="0,0" size="1280,720" title="MovieSelection">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
-    <widget backgroundColor="secondBG" font="Regular;22" position="78, 35" render="Label" size="850,50" source="Title" transparent="1" valign="center" zPosition="1" />
-    <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="930,35" render="Label" size="270,50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+    <widget backgroundColor="secondBG" font="Regular;22" position="60, 35" render="Label" size="750, 50" source="Title" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Full</convert>
     </widget>
-    <widget backgroundColor="transparent" position="-4, 95" render="Pig" size="432, 243" source="session.VideoPicture" zPosition="1" />
+    <widget backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" source="session.VideoPicture" zPosition="1" />
     <ePixmap alphatest="on" pixmap="Magic-HD/buttons/red.png" position="100,643" size="30,30" />
     <ePixmap alphatest="on" pixmap="Magic-HD/buttons/green.png" position="390,643" size="30,30" />
     <ePixmap alphatest="on" pixmap="Magic-HD/buttons/yellow.png" position="680,643" size="30,30" />
@@ -913,15 +913,15 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_green" position="435,645" size="220,26" transparent="1" zPosition="1" />
     <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_yellow" position="725,645" size="220,26" transparent="1" zPosition="1" />
     <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_blue" position="1015,645" size="220,26" transparent="1" zPosition="1" />
-    <widget name="list" position="520,100" scrollbarMode="showOnDemand" size="690,525" />
-    <widget font="Regular;22" foregroundColor="secondFG" position="60, 394" render="Label" size="400,195" source="Service" valign="center">
+    <widget name="list" position="530, 100" scrollbarMode="showOnDemand" size="690,525" />
+    <widget font="Regular;22" foregroundColor="secondFG" position="60, 394" render="Label" size="450, 195" source="Service" valign="center">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget font="Regular;20" foregroundColor="grey" position="63, 602" render="Label" size="120,20" source="Service" transparent="1">
+    <widget font="Regular;20" foregroundColor="grey" position="60, 600" render="Label" size="120, 25" source="Service" transparent="1">
       <convert type="MovieInfo">FileSize</convert>
     </widget>
-    <widget font="Regular;20" foregroundColor="grey" name="freeDiskSpace" position="178, 602" size="350,25" />
-    <widget font="Regular;20" foregroundColor="grey" halign="right" position="62, 366" render="Label" size="348,25" source="Service" zPosition="1">
+    <widget font="Regular;20" foregroundColor="grey" name="freeDiskSpace" position="180, 600" size="350,25" />
+    <widget font="Regular;20" foregroundColor="grey" halign="right" position="60, 366" render="Label" size="400, 25" source="Service" zPosition="1">
       <convert type="MovieInfo">RecordServiceName</convert>
     </widget>
   </screen>
@@ -1231,9 +1231,9 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
  					MultiContentEntryPixmapAlphaTest(pos = (2, 8), size = (54, 54), png = 3), # index 3 is the interface pixmap
  					MultiContentEntryPixmapAlphaTest(pos = (63, 46), size = (15, 16), png = 4), # index 4 is the default pixmap
  				],
- 				"fonts": [gFont("Regular", 28),gFont("Regular", 20)],
- 				"itemHeight": 70
- 				}
+				"fonts": [gFont("Regular", 28),gFont("Regular", 20)],
+				"itemHeight": 70
+				}
 		</convert>
     </widget>
     <widget font="Regular;21" halign="center" position="149, 561" render="Label" size="800,60" source="introduction" transparent="1" valign="center" zPosition="10" />
@@ -2139,8 +2139,8 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
 							MultiContentEntryText(size=(125, 20), text = 1, backcolor = MultiContentTemplateColor(3)),
 							MultiContentEntryText(pos=(125,0), size=(50, 20), text = 2, flags = RT_HALIGN_RIGHT, backcolor = MultiContentTemplateColor(3))
 						],
-				 	"fonts": [gFont("Regular", 18)],
-				 	"itemHeight": 20
+					"fonts": [gFont("Regular", 18)],
+					"itemHeight": 20
 					}
 				</convert>
     </widget>
