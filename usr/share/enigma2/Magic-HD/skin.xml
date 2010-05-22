@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic_HD Vs 0.75 by MiLo, MrNiceNL & VU+NL, based on Magic_HD_Shadow_MiniTV   by Vali (c)2009-2010   Ver: 1.7   -->
+  <!--  Skin:  Magic_HD Vs 0.76 by MiLo, MrNiceNL & VU+NL, based on Magic_HD_Shadow_MiniTV   by Vali (c)2009-2010   Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  ##### Head ##### -->
@@ -581,66 +581,17 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     <widget backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" source="session.VideoPicture" zPosition="1" />
     <widget font="Console;19" name="text" position="530, 105" size="690, 476" />
   </screen>
-  <screen name="MessageBox" position="350,175" size="600,10" title="Message">
-    <widget font="Regular;22" name="text" position="75,8" size="520,0" />
-    <widget alphatest="on" name="ErrorPixmap" pixmap="Magic-HD/window/input_error.png" position="10,10" size="54,54" />
-    <widget alphatest="on" name="QuestionPixmap" pixmap="Magic-HD/window/input_question.png" position="10,10" size="54,54" />
-    <widget alphatest="on" name="InfoPixmap" pixmap="Magic-HD/window/input_info.png" position="10,10" size="54,54" />
-    <widget name="list" position="100,100" size="480,375" />
-    <applet type="onLayoutFinish">
-from enigma import eSize, ePoint
-orgwidth = self.instance.size().width()
-orgpos = self.instance.position()
-textsize = self["text"].getSize()
-textsize = (textsize[0] + 80, textsize[1] + 80)
-offset = 20
-if self.type == self.TYPE_YESNO:
-	offset = 80
-wsizex = textsize[0] + 80
-wsizey = textsize[1] + offset
-if (600 &gt; wsizex):
-	wsizex = 600
-wsize = (wsizex, wsizey)
-self.instance.resize(eSize(*wsize))
-self["text"].instance.resize(eSize(*textsize))
-listsize = (wsizex - 20, 50)
-self["list"].instance.move(ePoint(10, textsize[1]))
-self["list"].instance.resize(eSize(*listsize))
-self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
-		</applet>
-  </screen>
   <screen flags="wfNoBorder" name="ChoiceBox" position="0,0" size="1280,720" title="Input">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
-    <widget backgroundColor="secondBG" font="Regular;22" position="60, 35" render="Label" size="700, 50" source="Title" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;22" position="120, 35" render="Label" size="639, 50" source="Title" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Full</convert>
     </widget>
-    <ePixmap alphatest="on" pixmap="Magic-HD/window/input_choice.png" position="5,5" size="50,50" />
-    <widget font="Regular;20" name="text" position="70,8" size="480,25" />
-    <widget name="list" position="530, 105" scrollbarMode="showOnDemand" size="690, 335" />
-    <applet type="onLayoutFinish">
-from enigma import eSize, ePoint
-orgwidth = self.instance.size().width()
-orgpos = self.instance.position()
-textsize = self["text"].getSize()
-textsize = (textsize[0] + 80, textsize[1] + 80)
-count = len(self.list)
-if count &gt; 10:
-	count = 10
-offset = 25 * count
-wsizex = textsize[0] + 80
-wsizey = textsize[1] + offset + 10
-if (640 &gt; wsizex):
-	wsizex = 640
-wsize = (wsizex, wsizey)
-self.instance.resize(eSize(*wsize))
-self["text"].instance.resize(eSize(*textsize))
-listsize = (wsizex - 20, 25 * count)
-self["list"].instance.move(ePoint(10, textsize[1]))
-self["list"].instance.resize(eSize(*listsize))
-self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
-		</applet>
+    <ePixmap alphatest="on" pixmap="Magic-HD/window/input_choice.png" position="60, 35" size="50,50" zPosition="4" />
+    <widget font="Regular;20" name="text" position="60, 400" size="445, 30" zPosition="2" />
+    <widget backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" source="session.VideoPicture" zPosition="8" />
+    <widget name="list" position="575, 100" scrollbarMode="showOnDemand" size="645, 510" />
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="SubtitleDisplay" position="0,0" size="1280,720" zPosition="-1" />
   <screen backgroundColor="transparent" name="Scart" position="0,0" size="1280,720" />
