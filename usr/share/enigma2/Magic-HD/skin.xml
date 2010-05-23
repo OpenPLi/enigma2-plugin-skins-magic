@@ -1001,6 +1001,17 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     <ePixmap alphatest="on" pixmap="Magic-HD/buttons/green.png" position="390,643" size="30,30" />
     <widget backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" source="session.VideoPicture" zPosition="1" />
   </screen>
+  <screen flags="wfNoBorder" name="PluginDownloadBrowser" position="0,0" size="1280,720" title="Downloadable plugins">
+    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget backgroundColor="secondBG" font="Regular;22" position="60, 35" render="Label" size="700, 50" source="Title" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" source="session.VideoPicture" zPosition="1" />
+    <widget name="text" position="591, 108" size="600,50" zPosition="2" font="Regular;23" halign="center" valign="center" transparent="1" />
+    <widget name="list" position="590, 106" size="600,500" zPosition="3" scrollbarMode="showNever" backgroundColor="darkgrey" transparent="1" />
+  </screen>
   <screen flags="wfNoBorder" name="DirectoryBrowser" position="0,0" size="1280,720" title="Directory browser">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
@@ -1291,6 +1302,83 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
                                 </convert>
     </widget>
     <widget font="Regular;20" halign="center" position="60, 600" render="Label" size="891,20" source="introduction" transparent="1" valign="center" zPosition="10" />
+  </screen>
+  <screen flags="wfNoBorder" name="ScanSetup" position="0,0" size="1280,720" title="Service scan">
+    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget backgroundColor="secondBG" font="Regular;22" position="60, 35" render="Label" size="700, 50" source="Title" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" source="session.VideoPicture" zPosition="1" />
+    <widget name="config" position="590, 110" size="600,500" zPosition="3" scrollbarMode="showOnDemand" backgroundColor="darkgrey" transparent="1" />
+    <widget name="introduction" position="590,600" size="600,27" zPosition="1" font="Regular;24" halign="center" foregroundColor="white" backgroundColor="grey" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
+  </screen>
+  <screen flags="wfNoBorder" name="ScanSimple" position="0,0" size="1280,720" title="Service scan">
+    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget backgroundColor="secondBG" font="Regular;22" position="60, 35" render="Label" size="700, 50" source="Title" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" source="session.VideoPicture" zPosition="1" />
+    <widget name="header" position="590,120" size="600,28" font="Regular;24" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
+    <widget name="config" position="590,180" size="600,350" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="footer" position="590,600" size="600,27" zPosition="1" font="Regular;24" halign="center" foregroundColor="white" backgroundColor="grey" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
+  </screen>
+  <screen flags="wfNoBorder" name="ServiceScan" position="0,0" size="1280,720" title="Service scan">
+    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget backgroundColor="secondBG" font="Regular;22" position="60, 35" render="Label" size="700, 50" source="Title" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" source="session.VideoPicture" zPosition="1" />
+    <widget name="network" position="590,125" size="660,28" font="Regular;24" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
+    <widget name="transponder" position="590,155" size="660,28" font="Regular;24" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
+    <widget name="scan_state" position="590,205" size="660,28" font="Regular;24" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
+    <widget name="pass" position="590,235" size="660,28" font="Regular;24" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
+    <widget name="scan_progress" position="590,270" size="660,20" borderWidth="2" borderColor="un777777" />
+    <widget name="servicelist" position="590,300" size="660,300" selectionDisabled="1" backgroundColor="darkgrey" transparent="1" />
+  </screen>
+  <screen flags="wfNoBorder" name="Satfinder" position="0,0" size="1280,720" title="Satfinder">
+    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget backgroundColor="secondBG" font="Regular;22" position="60, 35" render="Label" size="700, 50" source="Title" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" source="session.VideoPicture" zPosition="1" />
+    <widget source="Frontend" render="Label" position="590,120" size="410,24" font="Regular;22" halign="center" valign="center" backgroundColor="darkgrey" transparent="1">
+      <convert type="FrontendInfo">SNRdB</convert>
+    </widget>
+    <eLabel name="snr" text="SNR:" position="590,150" size="120,28" font="Regular;24" backgroundColor="darkgrey" transparent="1" />
+    <widget source="Frontend" render="Progress" position="670,150" size="410,20" borderWidth="2" borderColor="grey">
+      <convert type="FrontendInfo">SNR</convert>
+    </widget>
+    <widget source="Frontend" render="Label" position="1140,150" size="80,28" font="Regular;24" backgroundColor="darkgrey" transparent="1">
+      <convert type="FrontendInfo">SNR</convert>
+    </widget>
+    <eLabel name="ber" text="BER:" position="590, 178" size="120,28" font="Regular;24" backgroundColor="darkgrey" transparent="1" />
+    <widget source="Frontend" render="Progress" position="670,180" size="410,20" borderWidth="2" borderColor="grey">
+      <convert type="FrontendInfo">BER</convert>
+    </widget>
+    <widget source="Frontend" render="Label" position="1140,180" size="80,28" font="Regular;24" backgroundColor="darkgrey" transparent="1">
+      <convert type="FrontendInfo">BER</convert>
+    </widget>
+    <eLabel name="lock" text="Lock:" position="550,245" size="120,28" font="Regular;24" backgroundColor="darkgrey" transparent="1" />
+    <widget source="Frontend" render="Pixmap" position="689, 244" size="38,31" pixmap="skin_default/icons/lock_on.png" alphatest="on">
+      <convert type="FrontendInfo">LOCK</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="Frontend" render="Pixmap" position="689, 244" size="38,31" pixmap="skin_default/icons/lock_off.png" alphatest="on">
+      <convert type="FrontendInfo">LOCK</convert>
+      <convert type="ConditionalShowHide">Invert</convert>
+    </widget>
+    <eLabel position="550,298" size="660,2" backgroundColor="black" />
+    <eLabel position="550,300" size="660,2" backgroundColor="grey" />
+    <widget name="config" position="550,310" size="660,225" scrollbarMode="showOnDemand" backgroundColor="darkgrey" transparent="1" />
+    <widget name="introduction" position="0,0" size="0,0" />
   </screen>
   <!--  ##### Wizards #####  -->
   <screen flags="wfNoBorder" name="NetworkWizard" position="0,0" size="1280,720" title="Network Wizard">
