@@ -1881,6 +1881,80 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
       <convert type="StringList" />
     </widget>
   </screen>
+<!-- WeatherPlugin -->
+	<screen name="WeatherPluginEntriesListConfigScreen" position="center,center" size=" 840,560" title="WeatherPlugin: List of Entries">
+		<widget source="global.CurrentTime" render="Label" 	position=" 20,20" size=" 80,25" font="Regular;23" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" 	position="110,20" size="280,25" font="Regular;23" transparent="1">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<eLabel text="WeatherPlugin: List of Entries" position="393,20" size="420,43" font="Regular;28" halign="right" transparent="1"/>
+
+		<widget source="city" 		render="Label" 	position=" 30, 80" size="150, 28" font="Regular;24" transparent="1" />
+		<widget source="language" 	render="Label" 	position="180, 80" size="580, 28" font="Regular;24" transparent="1" />
+		<eLabel 									position=" 30,120" size="780,  2"/>
+		<widget name="entrylist"					position=" 30,130" size="780,375" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+
+		<widget source="key_red" render="Label"		position=" 80,528" 	size="200,26" zPosition="1" font="Regular;22" halign="left" transparent="1" />
+		<widget source="key_yellow" render="Label"	position="340,528" 	size="200,26" zPosition="1" font="Regular;22" halign="left" transparent="1" />
+		<widget source="key_blue" render="Label"	position="600,528" 	size="200,26" zPosition="1" font="Regular;20" halign="left" transparent="1" />
+		<ePixmap alphatest="on" pixmap="Vali_HD/buttons/red.png" position="30,525" size="30,30"/>
+		<ePixmap alphatest="on" pixmap="Vali_HD/buttons/yellow.png" position="290,525" size="30,30"/>
+		<ePixmap alphatest="on" pixmap="Vali_HD/buttons/blue.png" position="550,525" size="30,30"/>
+	</screen>
+
+	<screen name="WeatherPluginEntryConfigScreen" 	position="center,center" size=" 840,560" title="WeatherPlugin: Edit Entry">
+		<widget source="global.CurrentTime" render="Label" 	position=" 20,20" size=" 80,25" font="Regular;23" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" 	position="110,20" size="280,25" font="Regular;23" transparent="1">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<eLabel text="WeatherPlugin: Edit Entry" position="393,20" size="420,43" font="Regular;28" halign="right" transparent="1"/>
+
+		<widget name="config"	position=" 30,90" size="780,405" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
+
+		<widget source="key_red" render="Label"		position=" 80,528" 	size="200,26" zPosition="1" font="Regular;22" halign="left" transparent="1" />
+		<widget source="key_green" render="Label"	position="340,528" 	size="200,26" zPosition="1" font="Regular;22" halign="left" transparent="1" />
+		<widget source="key_blue" render="Label"	position="600,528" 	size="200,26" zPosition="1" font="Regular;20" halign="left" transparent="1" />
+		<ePixmap alphatest="on" pixmap="Vali_HD/buttons/red.png" position="30,525" size="30,30"/>
+		<ePixmap alphatest="on" pixmap="Vali_HD/buttons/green.png" position="290,525" size="30,30"/>
+		<ePixmap alphatest="on" pixmap="Vali_HD/buttons/blue.png" position="550,525" size="30,30"/>
+	</screen>
+
+		<screen name="WeatherPlugin" position="center,center" size="840,560" title="WeatherPlugin">
+		<widget source="global.CurrentTime" render="Label" 	position=" 20,20" zPosition="1" size=" 80,25" font="Regular;23" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" 	position="110,20" zPosition="1" size="280,25" font="Regular;23" transparent="1">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<eLabel text="WeatherPlugin" position="320,20" zPosition="1" size="420,43" font="Regular;28" halign="right" transparent="1"/>
+		<widget source="caption" 		render="Label" 	position=" 70,100" 	zPosition="1" size="370,27" font="Regular;24" transparent="1"/>
+		<widget source="currentTemp" 	render="Label" 	position=" 70,140" 	zPosition="1" size="370,27" font="Regular;24" transparent="1"/>
+		<widget source="condition" 		render="Label" 	position=" 70,200" 	zPosition="1" size="370,25" font="Regular;22" transparent="1"/>
+		<widget source="wind_condition" render="Label" 	position=" 70,230" 	zPosition="1" size="370,25" font="Regular;22" transparent="1"/>
+		<widget source="humidity" 		render="Label" 	position=" 70,260" 	zPosition="1" size="370,25" font="Regular;22" transparent="1"/>
+
+		<widget source="weekday1" 		render="Label" 	position="490,105" 	zPosition="1" size="150,25" halign="center" font="Regular;22" transparent="1"/>
+		<widget source="weekday1_temp" 	render="Label" 	position="490,135" 	zPosition="1" size="150,25" halign="center" font="Regular;22" transparent="1"/>
+		<widget name="weekday1_icon" 					position="670,100" 	zPosition="1" size=" 72,72" alphatest="blend"/>
+
+		<widget source="weekday2" 		render="Label" 	position="490,225" 	zPosition="1" size="150,25" halign="center" font="Regular;22" transparent="1"/>
+		<widget source="weekday2_temp" 	render="Label" 	position="490,255" 	zPosition="1" size="150,25" halign="center" font="Regular;22" transparent="1"/>
+		<widget name="weekday2_icon" 					position="670,220" 	zPosition="1" size=" 72,72" alphatest="blend"/>
+
+		<widget source="weekday3" 		render="Label" 	position="490,345" 	zPosition="1" size="150,25" halign="center" font="Regular;22" transparent="1"/>
+		<widget source="weekday3_temp" 	render="Label" 	position="490,375" 	zPosition="1" size="150,25" halign="center" font="Regular;22" transparent="1"/>
+		<widget name="weekday3_icon" 					position="670,340" 	zPosition="1" size=" 72,72" alphatest="blend"/>
+
+		<widget source="weekday4" 		render="Label" 	position="490,465" 	zPosition="1" size="150,25" halign="center" font="Regular;22" transparent="1"/>
+		<widget source="weekday4_temp" 	render="Label" 	position="490,495" 	zPosition="1" size="150,25" halign="center" font="Regular;22" transparent="1"/>
+		<widget name="weekday4_icon" 					position="670,460" 	zPosition="1" size=" 72,72" alphatest="blend"/>
+
+		<widget source="statustext" 	render="Label" 	position=" 70,100" 	zPosition="1" size="700,200" font="Regular;24" halign="center" valign="center" transparent="1"/>
+		</screen>
   <screen flags="wfNoBorder" name="weather" position="0,0" size="1280,720" title="Weather">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
