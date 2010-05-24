@@ -616,9 +616,8 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
   <screen backgroundColor="transparent" flags="wfNoBorder" name="SubtitleDisplay" position="0,0" size="1280,720" zPosition="-1" />
   <screen backgroundColor="transparent" name="Scart" position="0,0" size="1280,720" />
   <screen flags="wfNoBorder" name="Standby" position="1280,720" size="720,576" title="Standby" />
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="NumberZap" position="50,50" size="160,26" title="Channel">
-    <widget font="Enigma;22" halign="right" name="channel" noWrap="1" position="0,0" size="100,26" valign="center" zPosition="1" borderWidth="2" borderColor="black" backgroundColor="transparent" />
-    <widget font="Enigma;22" halign="left" name="number" noWrap="1" position="105,0" size="55,26" valign="center" zPosition="2" borderWidth="2" borderColor="black" backgroundColor="transparent" />
+  <screen backgroundColor="transpBlack" flags="wfNoBorder" name="NumberZap" position="center,center" size="280,60" title="Channel">
+    <widget backgroundColor="transpBlack" font="Regular;34" halign="center" name="number" position="0,0" size="280,60" transparent="1" valign="center" />
   </screen>
   <screen flags="wfNoBorder" name="Subtitles" position="0,0" size="1280,720" title="Subtitle selection">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
@@ -777,9 +776,9 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <eLabel text="UserDialog" position="80,110" size="322,95" zPosition="3" font="Regular;27" foregroundColor="grey" backgroundColor="darkgrey" shadowColor="black" shadowOffset="2,2" transparent="1" />
-    <ePixmap position="70,200" size="390,225" zPosition="2" pixmap="Magic-HD/frame/pig_bg.png" />
+    <ePixmap position="70,200" size="390,225" zPosition="2" />
     <widget source="session.VideoPicture" render="Pig" position="75,205" size="380,215" zPosition="3" backgroundColor="unff000000" />
-    <widget name="config" position="550,120" size="660,275" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/frame/sel660_25.png" backgroundColor="darkgrey" transparent="1" />
+    <widget name="config" position="550,120" size="660,275" zPosition="3" scrollbarMode="showOnDemand" backgroundColor="darkgrey" transparent="1" />
     <eLabel position="550,608" size="660,2" backgroundColor="black" zPosition="5" />
     <eLabel position="550,610" size="660,2" backgroundColor="grey" zPosition="5" />
     <widget source="introduction" render="Label" position="550,615" size="660,27" zPosition="1" font="Regular;24" halign="center" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
@@ -1314,7 +1313,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     </widget>
     <widget backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" source="session.VideoPicture" zPosition="1" />
     <widget name="text" position="590,120" size="600,30" font="Regular;25" backgroundColor="background" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
-    <widget name="entries" position="590, 180" size="600,375" scrollbarMode="showOnDemand" backgroundColor="darkgrey" selectionPixmap="Magic-HD/frame/sel660_25.png" transparent="1" />
+    <widget name="entries" position="590, 180" size="600,375" scrollbarMode="showOnDemand" backgroundColor="darkgrey" />
   </screen>
   <screen flags="wfNoBorder" name="CIselectMainMenu" position="0,0" size="1280,720" title="CI Assignment">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
@@ -1345,7 +1344,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     <widget source="ServiceList_desc" render="Label" position="550,265" size="660,30" font="Regular;24" backgroundColor="background" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
     <eLabel position="550,304" size="660,2" backgroundColor="black" />
     <eLabel position="550,306" size="660,2" backgroundColor="grey" />
-    <widget name="ServiceList" position="590,315" size="600,300" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="background" selectionPixmap="Magic-HD/frame/sel660_25.png" transparent="1" />
+    <widget name="ServiceList" position="590,315" size="600,300" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="background" transparent="1" />
     <widget source="ServiceList_info" render="Label" position="550,315" size="660,300" zPosition="2" font="Regular;22" backgroundColor="background" transparent="1" />
     <widget source="key_red" render="Label" position="145,645" size="220,26" zPosition="2" font="Regular;24" halign="left" foregroundColor="grey" backgroundColor="darkgrey" shadowColor="black" shadowOffset="2,2" transparent="1" />
     <widget source="key_green" render="Label" position="435,645" size="220,26" zPosition="2" font="Regular;24" halign="left" foregroundColor="grey" backgroundColor="darkgrey" shadowColor="black" shadowOffset="2,2" transparent="1" />
@@ -2158,14 +2157,14 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_blue" position="1015,645" size="220,26" transparent="1" zPosition="1" />
     <widget name="starsbg" position="149, 425" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" zPosition="2" alphatest="blend" />
     <widget name="stars" position="152, 571" size="210,21" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" zPosition="3" transparent="1" />
-    <widget name="ratinglabel" position="151, 484" size="210,24" font="Regular;20" halign="center"  backgroundColor="darkgrey" transparent="1" />
+    <widget name="ratinglabel" position="151, 484" size="210,24" font="Regular;20" halign="center" backgroundColor="darkgrey" transparent="1" />
     <widget name="titellabel" position="550,110" size="660,28" font="Regular;25" valign="center" backgroundColor="darkgrey" transparent="1" />
     <widget name="poster" position="553, 152" size="110,180" alphatest="blend" />
     <widget name="detailslabel" position="700,150" size="510,175" font="Regular;20" backgroundColor="darkgrey" transparent="1" />
     <widget name="menu" position="550,190" size="660,400" zPosition="3" scrollbarMode="showOnDemand" backgroundColor="darkgrey" transparent="1" />
     <widget name="castlabel" position="550,335" size="660,240" font="Regular;20" backgroundColor="darkgrey" transparent="1" />
     <widget name="extralabel" position="550,150" size="660,450" font="Regular;20" backgroundColor="darkgrey" transparent="1" />
-    <widget name="statusbar" position="550,605" size="660,24" font="Regular;20" halign="right"  backgroundColor="darkgrey" transparent="1" />
+    <widget name="statusbar" position="550,605" size="660,24" font="Regular;20" halign="right" backgroundColor="darkgrey" transparent="1" />
   </screen>
   <!-- WeatherPlugin -->
   <screen flags="wfNoBorder" name="WeatherPluginEntriesListConfigScreen" position="0,0" size="1280,720" title="WeatherPlugin: List of Entries">
