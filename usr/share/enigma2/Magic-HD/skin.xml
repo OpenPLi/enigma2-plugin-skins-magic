@@ -1721,7 +1721,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     <widget name="transponder" position="590,155" size="660,28" font="Regular;24" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
     <widget name="scan_state" position="590,205" size="660,28" font="Regular;24" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
     <widget name="pass" position="590,235" size="660,28" font="Regular;24" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
-    <widget name="scan_progress" position="590,270" size="660,20" borderWidth="2" borderColor="un777777" />
+    <widget name="scan_progress" position="590,270" size="660,20" borderWidth="2" borderColor="black" />
     <widget name="servicelist" position="590,300" size="660,300" selectionDisabled="1" backgroundColor="darkgrey" transparent="1" />
   </screen>
   <screen flags="wfNoBorder" name="Satfinder" position="0,0" size="1280,720" title="Satfinder">
