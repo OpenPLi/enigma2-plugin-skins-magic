@@ -603,8 +603,9 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
   <screen backgroundColor="transparent" flags="wfNoBorder" name="SubtitleDisplay" position="0,0" size="1280,720" zPosition="-1" />
   <screen backgroundColor="transparent" name="Scart" position="0,0" size="1280,720" />
   <screen flags="wfNoBorder" name="Standby" position="1280,720" size="720,576" title="Standby" />
-  <screen backgroundColor="transpBlack" flags="wfNoBorder" name="NumberZap" position="center,center" size="280,60" title="Channel">
-    <widget backgroundColor="transpBlack" font="Regular;34" halign="center" name="number" position="0,0" size="280,60" transparent="1" valign="center" />
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="NumberZap" position="center,center" size="280,60" title="Channel">
+    <widget backgroundColor="white" font="Regular;34" halign="center" name="channel" position="0,0" size="150,60" transparent="1" valign="center" />
+    <widget backgroundColor="white" font="Regular;36" halign="center" name="number" position="34, 0" size="280,60" transparent="1" valign="center" />
   </screen>
   <screen flags="wfNoBorder" name="Subtitles" position="0,0" size="1280,720" title="Subtitle selection">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
