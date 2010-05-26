@@ -126,13 +126,13 @@
     <widget backgroundColor="background" font="Regular;24" foregroundColor="foreground" halign="left" position="305, 70" render="Label" size="500, 36" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget backgroundColor="secondBG" font="Regular;28" foregroundColor="secondFG" halign="right" position="65, 135" render="Label" size="80,30" source="global.CurrentTime" transparent="1" valign="top" zPosition="1">
+    <widget backgroundColor="secondBG" font="Regular;28" foregroundColor="secondFG" halign="right" position="46, 135" render="Label" size="80,30" source="global.CurrentTime" transparent="1" valign="top" zPosition="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget backgroundColor="secondBG" font="Regular;18" foregroundColor="secondFG" halign="left" position="152, 145" render="Label" size="30,20" source="global.CurrentTime" transparent="1" valign="top" zPosition="1">
+    <widget backgroundColor="secondBG" font="Regular;18" foregroundColor="secondFG" halign="left" position="129, 143" render="Label" size="30,20" source="global.CurrentTime" transparent="1" valign="top" zPosition="1">
       <convert type="ClockToText">Format:%S</convert>
     </widget>
-    <widget backgroundColor="secondBG" font="Regular;20" foregroundColor="secondFG" halign="left" position="65, 168" render="Label" size="128,24" source="global.CurrentTime" transparent="1" zPosition="1">
+    <widget backgroundColor="secondBG" font="Regular;17" foregroundColor="secondFG" halign="left" position="10, 166" render="Label" size="220,24" source="global.CurrentTime" transparent="1" zPosition="1">
       <convert type="ClockToText">Date</convert>
     </widget>
     <widget backgroundColor="background" font="Regular;24" foregroundColor="foreground" halign="left" position="220, 130" render="Label" size="70,30" source="session.Event_Now" transparent="1" zPosition="1">
@@ -1110,8 +1110,8 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" source="session.VideoPicture" zPosition="1" />
-    <widget name="text" position="591, 108" size="600,50" zPosition="2" font="Regular;23" halign="center" valign="center" transparent="1" />
-    <widget name="list" position="590, 106" size="600,500" zPosition="3" scrollbarMode="showNever" backgroundColor="darkgrey" transparent="1" />
+    <widget name="text" position="590, 100" size="600,50" zPosition="2" font="Regular;23" halign="center" valign="center" transparent="1" />
+    <widget name="list" position="590, 160" size="600,450" zPosition="3" scrollbarMode="showOnDemand" backgroundColor="darkgrey" transparent="1" />
   </screen>
   <screen flags="wfNoBorder" name="DirectoryBrowser" position="0,0" size="1280,720" title="Directory browser">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
@@ -1159,8 +1159,15 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     </widget>
     <widget backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" source="session.VideoPicture" zPosition="1" />
   </screen>
-  <screen backgroundColor="noTransBG" name="VideoFinetune" position="280,78" size="720,576">
-    <widget position="0,0" render="Canvas" size="720,576" source="Canvas" />
+  <screen flags="wfNoBorder" name="VideoFinetune" position="0,0" size="1280,720" title="VideoFinetune">
+    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget backgroundColor="secondBG" font="Regular;22" position="60, 35" render="Label" size="700, 50" source="Title" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" source="session.VideoPicture" zPosition="1" />
+    <widget position="541, 110" render="Canvas" size="720,500" source="Canvas" />
   </screen>
   <screen flags="wfNoBorder" name="SkinSelector" position="0,0" size="1280,720" title="Choose your Skin">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
@@ -1307,7 +1314,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     <widget backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" source="session.VideoPicture" zPosition="1" />
     <ePixmap alphatest="on" pixmap="Magic-HD/buttons/red.png" position="100,643" size="30,30" />
     <widget source="key_red" render="Label" position="145,645" size="220,26" font="Regular;24" halign="left" foregroundColor="grey" backgroundColor="darkgrey" shadowColor="black" shadowOffset="2,2" transparent="1" />
-    <widget source="menu" render="Listbox" enableWrapAround="1" position="590,120" size="600,350" zPosition="3" scrollbarMode="showNever" transparent="1">
+    <widget source="menu" render="Listbox" enableWrapAround="1" position="590,120" size="600,350" zPosition="3" scrollbarMode="showOnDemand" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (35, 12), size = (590, 40), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
@@ -1317,7 +1324,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
 				}
 			</convert>
     </widget>
-    <widget source="menu" render="Listbox" position="590,460" size="600,140" zPosition="3" scrollbarMode="showNever" selectionDisabled="1" foregroundColor="white" backgroundColor="darkgrey" transparent="1">
+    <widget source="menu" render="Listbox" position="590, 469" size="600,140" zPosition="3" scrollbarMode="showOnDemand" selectionDisabled="1" foregroundColor="white" backgroundColor="darkgrey" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (0, 0), size = (660, 140), flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER|RT_WRAP, text = 2), # index 0 is the MenuText,
@@ -2078,6 +2085,39 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     <widget font="Regular;20" name="label" position="60, 370" size="260,250" transparent="1" />
     <widget alphatest="on" name="thn" position="60, 99" size="260,250" />
     <widget itemHeight="28" name="filelist" position="502, 104" scrollbarMode="showOnDemand" size="760,476" zPosition="3" />
+  </screen>
+  <screen flags="wfNoBorder" name="Pic_Exif" position="0,0" size="1280,720" title="Info">
+    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget backgroundColor="secondBG" font="Regular;22" position="60, 35" render="Label" size="700, 50" source="Title" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" source="session.VideoPicture" zPosition="1" />
+    <ePixmap alphatest="on" pixmap="Magic-HD/buttons/red.png" position="100,643" size="30,30" />
+    <widget source="key_red" render="Label" position="145,645" size="220,26" font="Regular;24" halign="left" foregroundColor="grey" backgroundColor="black" shadowColor="black" shadowOffset="2,2" transparent="1" />
+    <widget source="menu" render="Listbox" position="590,110" size="600,500" scrollbarMode="showOnDemand" selectionDisabled="1" transparent="1">
+      <convert type="TemplatedMultiContent">
+				{"template": [  MultiContentEntryText(pos = (5, 7), size = (350, 30), flags = RT_HALIGN_LEFT, text = 0),
+				MultiContentEntryText(pos = (360, 7), size = (390, 30), flags = RT_HALIGN_LEFT, text = 1)],
+				"fonts": [gFont("Regular", 20)],
+				"itemHeight": 35 }
+			</convert>
+    </widget>
+  </screen>
+  <screen flags="wfNoBorder" name="Pic_Setup" position="0,0" size="1280,720" title="Settings">
+    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget backgroundColor="secondBG" font="Regular;22" position="60, 35" render="Label" size="700, 50" source="Title" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" source="session.VideoPicture" zPosition="1" />
+    <ePixmap alphatest="on" pixmap="Magic-HD/buttons/red.png" position="100,643" size="30,30" />
+    <ePixmap alphatest="on" pixmap="Magic-HD/buttons/green.png" position="390,643" size="30,30" />
+    <widget source="key_red" render="Label" position="145,645" size="220,26" font="Regular;24" halign="left" foregroundColor="grey" backgroundColor="black" shadowColor="black" shadowOffset="2,2" transparent="1" />
+    <widget source="key_green" render="Label" position="435,645" size="220,26" font="Regular;24" halign="left" foregroundColor="grey" backgroundColor="black" shadowColor="black" shadowOffset="2,2" transparent="1" />
+    <widget name="config" position="590,110" size="600,500" itemHeight="29" scrollbarMode="showOnDemand" transparent="1" />
   </screen>
   <!-- ########## GP2 ########## -->
   <gstyle>
