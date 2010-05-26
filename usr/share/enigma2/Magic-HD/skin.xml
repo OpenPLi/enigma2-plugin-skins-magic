@@ -847,8 +847,10 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     </widget>
     <ePixmap alphatest="on" pixmap="Magic-HD/buttons/red.png" position="100,643" size="30,30" />
     <ePixmap alphatest="on" pixmap="Magic-HD/buttons/green.png" position="100, 677" size="30,30" />
+    <ePixmap alphatest="on" pixmap="Magic-HD/buttons/blue.png" position="989, 676" size="30,30" />
     <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_red" position="138, 645" size="220,26" transparent="1" zPosition="1" />
     <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_green" position="138, 680" size="220,26" transparent="1" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;22" halign="left" name="key_blue" position="1033, 678" size="220,26" transparent="1" zPosition="1" />
     <widget name="timeline_text" position="81, 91" size="1182,30" />
     <widget EntryBackgroundColor="#16071230" EntryBackgroundColorSelected="selectedBG" EntryBorderColor="darkgrey" name="list" position="80, 121" scrollbarMode="showNever" size="1130,486" transparent="1" />
     <widget name="timeline0" pixmap="Magic-HD/window/timeline.png" position="60,105" size="1,496" zPosition="1" />
@@ -869,10 +871,24 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText" />
     </widget>
-    <widget font="Regular;20" halign="left" position="978,644" render="Label" size="77,27" source="Event" zPosition="1">
+    <widget font="Regular;20" halign="left" position="972, 645" render="Label" size="77,27" source="Event" zPosition="1">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:- %H:%M</convert>
     </widget>
+  </screen>
+  <screen flags="wfNoBorder" name="GraphMultiEpgSetup" position="0,0" size="1280,720" title="Electronic Program Guide Setup">
+    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget backgroundColor="secondBG" font="Regular;22" position="60, 35" render="Label" size="700, 50" source="Title" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" source="session.VideoPicture" zPosition="1" />
+    <ePixmap alphatest="on" pixmap="Magic-HD/buttons/red.png" position="100,643" size="30,30" />
+    <ePixmap alphatest="on" pixmap="Magic-HD/buttons/green.png" position="390,643" size="30,30" />
+    <widget name="canceltext" position="145,645" zPosition="1" size="220,26" font="Regular;20" halign="center" valign="center" backgroundColor="un9f1313" transparent="1" />
+    <widget name="oktext" position="435,645" zPosition="1" size="220,26" font="Regular;20" halign="center" valign="center" backgroundColor="un1f771f" transparent="1" />
+    <widget name="config" position="590, 110" size="600,500" />
   </screen>
   <screen flags="wfNoBorder" name="LocationBox" position="0,0" size="1280,720" title="Location Box">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
