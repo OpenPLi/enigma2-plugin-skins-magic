@@ -705,6 +705,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap alphatest="on" pixmap="skin_default/buttons/blue.png" position="420,0" size="140,40"/>
 		<widget backgroundColor="buttonRed" font="Regular;20" halign="center" name="key_red" position="0,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
 		<widget backgroundColor="buttonGreen" font="Regular;20" halign="center" name="key_green" position="140,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
+		<widget backgroundColor="buttonBlue" font="Regular;20" halign="center" name="key_blue" position="420,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
 		<widget name="timeline_text" position="0,41" size="560,20"/>
 		<widget EntryBackgroundColor="#2f4964" EntryBackgroundColorSelected="#25688caf" EntryBorderColor="#071930" name="list" position="0,65" scrollbarMode="showOnDemand" size="560,270"/>
 		<widget name="timeline0" pixmap="skin_default/timeline.png" position="0,65" size="1,270" zPosition="1"/>
@@ -714,7 +715,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="timeline4" pixmap="skin_default/timeline.png" position="0,65" size="1,270" zPosition="1"/>
 		<widget name="timeline5" pixmap="skin_default/timeline.png" position="0,65" size="1,270" zPosition="1"/>
 		<widget alphatest="on" name="timeline_now" pixmap="skin_default/timeline-now.png" position="0,64" size="19,273" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="skin_default/border_multiepg.png" position="0,42" size="560,393" transparent="1" zPosition="1"/>
+		<eLabel position="0,41" size="560,1" backgroundColor="#2f4964" zPosition="1" />       
+		<eLabel position="0,65" size="560,2" backgroundColor="#2f4964" zPosition="1" />
+		<eLabel position="0,335" size="560,2" backgroundColor="#2f4964" zPosition="1" />
+		<eLabel position="530,65" size="1,270" backgroundColor="#2f4964" zPosition="1" />  
 		<widget font="Regular;19" noWrap="1" position="10,337" render="Label" size="460,20" source="Event" zPosition="1">
 			<convert type="EventName">Name</convert>
 		</widget>
