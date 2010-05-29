@@ -525,9 +525,7 @@
     </widget>
   </screen>
   <!-- ## Input & Output Boxes ########## -->
-______________
  	<!-- SelectPath -->
- 	
  <screen flags="wfNoBorder" name="SelectPath" position="0,0" size="1280,720" title="Select path">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
@@ -543,8 +541,20 @@ ______________
 		<widget name="target" 	position="590,115" size="600,28" font="Regular;23" backgroundColor="background" transparent="1"/>
 		<widget name="filelist" position="590,165" size="600,450" zPosition="3" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="background" transparent="1" />
   </screen>
-    	
-
+  <screen flags="wfNoBorder" name="RecordPathsSettings" position="0,0" size="1280,720" title="Recording paths">
+    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget backgroundColor="secondBG" font="Regular;22" position="60, 35" render="Label" size="700, 50" source="Title" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" source="session.VideoPicture" zPosition="1" />
+    <ePixmap alphatest="on" pixmap="Magic-HD/buttons/red.png" position="100,643" size="26,26" />
+    <ePixmap alphatest="on" pixmap="Magic-HD/buttons/green.png" position="390,643" size="26,26" />
+    <widget source="key_red" render="Label" position="145,645" size="176, 24" zPosition="2" font="Regular; 19" halign="left" foregroundColor="grey" backgroundColor="darkgrey" shadowColor="black" shadowOffset="2,2" transparent="1" />
+    <widget source="key_green" render="Label" position="435,645" size="176, 24" zPosition="2" font="Regular; 19" halign="left" foregroundColor="grey" backgroundColor="darkgrey" shadowColor="black" shadowOffset="2,2" transparent="1" />
+    <widget name="config" position="590, 110" size="600,500" zPosition="3" itemHeight="29" scrollbarMode="showOnDemand" backgroundColor="darkgrey" transparent="1" />
+  </screen>
   <screen backgroundColor="transpBlack" flags="wfNoBorder" name="SecondInfoBar" position="0,0" size="1280,78" title="Second InfoBar" zPosition="-1">
     <widget backgroundColor="transpBlack" font="Regular;18" foregroundColor="foreground" halign="left" position="99, 20" render="Label" size="1080,44" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
       <convert type="vSmartInfoHD">ExpertInfo</convert>
@@ -2296,7 +2306,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
   <screen backgroundColor="black" flags="wfNoBorder" name="SHOUTcastWidget" position="0,0" size="1280,720" title="SHOUTcast">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
-    <widget backgroundColor="secondBG" font="Regular;22" position="60, 35" render="Label" size="700, 50" source="Title" transparent="1" valign="center" zPosition="1" />
+    <widget backgroundColor="secondBG" font="Regular;22" position="60, 35" render="Label" size="260, 50" source="Title" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35" render="Label" size="250, 50" source="global.CurrentTime" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Full</convert>
     </widget>
@@ -2309,14 +2319,15 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     <widget source="key_green" render="Label" position="435,645" size="220,26" zPosition="1" font="Regular;20" halign="left" backgroundColor="black" transparent="1" />
     <widget source="key_yellow" render="Label" position="725,645" size="220,26" zPosition="1" font="Regular;20" halign="left" backgroundColor="black" transparent="1" />
     <widget source="key_blue" render="Label" position="1015,645" size="220,26" zPosition="1" font="Regular;20" halign="left" backgroundColor="black" transparent="1" />
-    <widget name="headertext" position="60,95" size="560,45" font="Regular;25" backgroundColor="background" transparent="1" />
-    <widget name="statustext" position=" 650,105" size="500,208" zPosition="1" font="Regular;17" halign="center" valign="center" backgroundColor="black" transparent="0" />
-    <widget name="list" position=" 60,140" size="560, 485" zPosition="2" scrollbarMode="showOnDemand" backgroundColor="black" transparent="0" />
-    <widget name="cover" position=" 625,340" size="235,280" backgroundColor="background" alphatest="blend" />
-    <widget name="titel" position="870,360" size="370,50" font="Regular;20" backgroundColor="background" transparent="1" />
-    <widget name="station" position="870,460" size="370,50" font="Regular;20" backgroundColor="background" transparent="1" />
-    <widget name="console" position="870,560" size="370,50" font="Regular;20" backgroundColor="background" transparent="1" />
+    <widget name="headertext" backgroundColor="secondBG" font="Regular;22" position="320,35" size="400, 50" transparent="1" valign="center" zPosition="1" />
+    <widget name="statustext" position=" 665,95" size="500,100" zPosition="1" font="Regular;17" halign="center" valign="center" backgroundColor="black" transparent="0" />
+    <widget name="list" position=" 60,95" size="595, 525" zPosition="2" scrollbarMode="showOnDemand" backgroundColor="black" transparent="0" />
+    <widget name="cover" position=" 665,245" size="315,365" backgroundColor="background" alphatest="blend" />
+    <widget name="titel" position="665,195" size="500,25" font="Regular;20" backgroundColor="background" transparent="1" />
+    <widget name="station" position="665,220" size="500,25" font="Regular;20" backgroundColor="background" transparent="1" />
+    <widget name="console" position="985,250" size="200,350" font="Regular;20" backgroundColor="background" transparent="1" />
   </screen>
+
   <screen backgroundColor="black" flags="wfNoBorder" name="SHOUTcastSetup" position="0,0" size="1280,720" title="SHOUTcast Setup">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
