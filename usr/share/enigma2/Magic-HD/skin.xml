@@ -14,7 +14,7 @@
   </fonts>
   <!--  ## Colors ##### -->
   <colors>
-    <color name="background" value="#18101214" />
+    <color name="background" value="#18101214" />   
     <color name="black" value="#00040404" />
     <color name="blue" value="#00879ce1" />
     <color name="bluetransparent" value="#08001e4b" />
@@ -117,14 +117,12 @@
     <ePixmap alphatest="on" pixmap="Magic-HD/infobar/mute.png" position="0,0" size="45,45" zPosition="0" />
   </screen>
   <!--  ## InfoBars ##### -->
-
-
   <screen backgroundColor="transparent" flags="wfNoBorder" name="InfoBar" position="0,508" size="1280,400" title="InfoBar">
     <ePixmap alphatest="off" pixmap="Magic-HD/infobar/infobar.png" position="0, 29" size="1280,400" zPosition="-1" />
     <widget alphatest="blend" position="60, 70" render="Picon" size="100,60" source="session.CurrentService" transparent="1" zPosition="1">
       <convert type="ServiceName">Reference</convert>
     </widget>
-  <!--      <widget backgroundColor="background" font="Regular;19" foregroundColor="foreground" halign="left" position="221, 75" render="chNumberHD" size="80,36" source="session.CurrentService" transparent="1" valign="center" zPosition="1" /> -->
+    <widget backgroundColor="background" font="Regular;19" foregroundColor="foreground" halign="left" position="221, 75" render="chNumberHD" size="80,36" source="session.CurrentService" transparent="1" valign="center" zPosition="1" /> -->
     <widget backgroundColor="background" font="Regular;24" foregroundColor="foreground" halign="left" position="305, 75" render="Label" size="500, 36" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
       <convert type="ServiceName">Name</convert>
     </widget>
@@ -605,8 +603,9 @@
     <widget alphatest="on" name="InfoPixmap" pixmap="Magic-HD/window/input_info.png" position="100,643" size="54,54" />
     <eLabel font="Regular;22" halign="center" position="200,640" size="700,30" text="'Choose 'Exit' to leave          Choose 'OK' to accept" />
   </screen>
-   <!-- ##Dit is de oorspronkelijke messagebox## -->
-  <screen name="XXXX MessageBox" position="350,175" size="600,10" title="Message">
+   <!-- ##Dit is de oorspronkelijke messagebox##
+        ##Hieruit moet de applet worden gemodificeerd en overgenomen## 
+  <screen name="MessageBox" position="350,175" size="600,10" title="Message">
     <widget font="Regular;22" name="text" position="75,8" size="520,0" />
     <widget alphatest="on" name="ErrorPixmap" pixmap="Magic-HD/window/input_error.png" position="10,10" size="54,54" />
     <widget alphatest="on" name="QuestionPixmap" pixmap="Magic-HD/window/input_question.png" position="10,10" size="54,54" />
@@ -633,8 +632,8 @@ self["list"].instance.move(ePoint(10, textsize[1]))
 self["list"].instance.resize(eSize(*listsize))
 self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
 		</applet>
-  </screen>
-   <!-- ##Einde van de oorspronkelijke messagebox## -->
+  </screen> -->
+  
   <screen flags="wfNoBorder" name="LanguageSelection" position="0,0" size="1280,720" title="Language selection">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
@@ -680,8 +679,8 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
   <screen backgroundColor="transparent" name="Scart" position="0,0" size="1280,720" />
   <screen flags="wfNoBorder" name="Standby" position="1280,720" size="720,576" title="Standby" />
   <screen backgroundColor="transparent" flags="wfNoBorder" name="NumberZap" position="center,center" size="280,60" title="Channel">
-    <widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Regular;34" halign="center" name="channel" position="0,0" size="150,60" transparent="1" valign="center" />
-    <widget backgroundColor="transparent" borderColor="black" borderWidth="2" font="Regular;36" halign="center" name="number" position="34, 0" size="280,60" transparent="1" valign="center" />
+    <widget backgroundColor="transparent" borderColor="black" borderWidth="3" font="Regular;34" halign="center" name="channel" position="0,0" size="150,60" transparent="1" valign="center" />
+    <widget backgroundColor="transparent" borderColor="black" borderWidth="3" font="Regular;36" halign="center" name="number" position="34, 0" size="280,60" transparent="1" valign="center" />
   </screen>
   <screen flags="wfNoBorder" name="Subtitles" position="0,0" size="1280,720" title="Subtitle selection">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
@@ -697,6 +696,25 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     <widget backgroundColor="transpBlack" font="Regular;23" name="chapter" position="35,15" size="110,25" />
     <widget backgroundColor="transpBlack" font="Regular;23" halign="right" name="number" position="145,15" size="97,25" />
   </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="TimeshiftState" position="4,22" size="1280,70" title="InfoBar">
+
+
+
+    <widget backgroundColor="transparent" font="Regular;24" foregroundColor="foreground" borderColor="black" borderWidth="2" halign="center" position="190, 47" render="Label" size="70,25" source="session.CurrentService" transparent="1" valign="center" zPosition="4">
+     <convert type="ServicePosition">Length</convert>
+    </widget>
+    <widget backgroundColor="transparent" font="Regular;22" foregroundColor="foreground" borderColor="black" borderWidth="2" halign="right" position="264, 47" render="Label" size="70,25" source="session.CurrentService" transparent="1" valign="center" zPosition="4">
+     <convert type="ServicePosition">Position</convert>
+    </widget>
+    <ePixmap alphatest="blend" pixmap="Magic-HD/dvr/mpslider.png" position="345,50" size="600,16" zPosition="3" />
+    <widget backgroundColor="transparent" font="Regular;22" foregroundColor="foreground" borderColor="black" borderWidth="2" halign="left" position="952, 48" render="Label" size="117,25" source="session.CurrentService" transparent="1" valign="center" zPosition="4">
+     <convert type="ServicePosition">Remaining</convert>
+    </widget>
+    <widget pointer="Magic-HD/dvr/pointer.png:13,3" position="364, 51" render="PositionGauge" size="560,14" source="session.CurrentService" zPosition="2">
+     <convert type="ServicePosition">Gauge</convert>
+    </widget>
+
+<!--##De oude TimeshiftState: deze is vervangen door dezelfde als bij de movieplayer
   <screen backgroundColor="transpBlack" flags="wfNoBorder" name="TimeshiftState" position="center,30" size="860,60" zPosition="2">
     <widget backgroundColor="transpBlack" font="Regular;22" halign="center" name="state" position="10, 5" size="150,27" />
     <widget backgroundColor="transpBlack" font="Regular;22" halign="left" position="160,5" render="Label" size="150,27" source="session.CurrentService">
@@ -711,7 +729,8 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     </widget>
     <widget backgroundColor="un444444a" pixmap="Magic-HD/infobar/pbar.png" position="10,33" render="Progress" size="840,8" source="session.CurrentService" zPosition="3">
       <convert type="ServicePosition">Position</convert>
-    </widget>
+    </widget>  ##-->
+    
   </screen>
   <screen backgroundColor="transparent" flags="wfNoBorder" name="PVRState" position="40,100" size="150,30" zPosition="2">
     <widget backgroundColor="transparent" font="Regular;25" borderColor="black" borderWidth="2" halign="center" name="state" position="0,0" size="150,30" transparent="1" />
@@ -1944,14 +1963,25 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" source="session.VideoPicture" zPosition="1" />
-    <widget source="nimlist" render="Listbox" scrollbarMode="showOnDemand" position="590,110" size="600,500" backgroundColor="darkgrey" transparent="1">
-      <convert type="TemplatedMultiContent">
+    <widget source="nimlist" render="Listbox" scrollbarMode="showOnDemand" position="590,110" size="650,500" backgroundColor="darkgrey" transparent="1">
+      <convert type="TemplatedMultiContent"> 
+      <!--##Onderstaande template moet worden aangepast: bij uitgebreide settings past niet alle text in het scherm -->
+      <!--##Dit is de originele template
 				{"template": [
 						MultiContentEntryText(pos = (10, 7), size = (560, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
 						MultiContentEntryText(pos = (50, 39), size = (520, 30), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
 					],
 				 "fonts": [gFont("Regular", 22), gFont("Regular", 20)],
 				 "itemHeight": 100
+				}
+			</convert>   ##-->
+
+				{"template": [
+						MultiContentEntryText(pos = (10, 7), size = (560, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
+						MultiContentEntryText(pos = (50, 39), size = (520, 100), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
+					],
+				 "fonts": [gFont("Regular", 22), gFont("Regular", 20)],
+				 "itemHeight": 350
 				}
 			</convert>
     </widget>
@@ -2012,21 +2042,40 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" source="session.VideoPicture" zPosition="1" />
-    <widget source="Frontend" render="Label" position="590,120" size="410,24" font="Regular;22" halign="center" valign="center" backgroundColor="darkgrey" transparent="1">
+  <!--SNR-->>
+   <widget source="Frontend" render="Label" position="590,120" size="410,24" font="Regular;22" halign="center" valign="center" backgroundColor="darkgrey" transparent="1">
       <convert type="FrontendInfo">SNRdB</convert>
-    </widget>
+    </widget> 
     <eLabel name="snr" text="SNR:" position="590,150" size="120,28" font="Regular;24" backgroundColor="darkgrey" transparent="1" />
-    <widget source="Frontend" render="Progress" position="670,150" size="410,20" borderWidth="2" borderColor="grey">
+<!-- de oude    <widget source="Frontend" render="Progress" position="670,150" size="410,20" borderWidth="2" borderColor="grey">
       <convert type="FrontendInfo">SNR</convert>
-    </widget>
+    </widget> -->
+    
+    <widget source="Frontend" render="Progress" position="670,150" size="410,20" pixmap="skin_default/bar_snr.png" borderWidth="2" borderColor="uncccccc">
+  <convert type="FrontendInfo">SNR</convert>
+  </widget>
     <widget source="Frontend" render="Label" position="1140,150" size="80,28" font="Regular;24" backgroundColor="darkgrey" transparent="1">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <eLabel name="ber" text="BER:" position="590, 178" size="120,28" font="Regular;24" backgroundColor="darkgrey" transparent="1" />
-    <widget source="Frontend" render="Progress" position="670,180" size="410,20" borderWidth="2" borderColor="grey">
+<!--AGC-->
+<eLabel name="agc" text="AGC:" position="590, 178" size="120,28" font="Regular;24" backgroundColor="darkgrey" transparent="1" />
+
+<widget source="Frontend" render="Progress" position="670,180" size="410,20" pixmap="skin_default/bar_snr.png" borderWidth="2" borderColor="uncccccc">
+  <convert type="FrontendInfo">AGC</convert>
+</widget>
+
+<widget source="Frontend" render="Label" position="1140,178" size="80,28" font="Regular;24" backgroundColor="darkgrey" transparent="1">
+  <convert type="FrontendInfo">AGC</convert>
+</widget>
+
+  <!--BER-->
+    <eLabel name="ber" text="BER:" position="590, 206" size="120,28" font="Regular;24" backgroundColor="darkgrey" transparent="1" />
+
+    <widget source="Frontend" render="Progress" position="670,208" size="410,20" borderWidth="2" borderColor="grey">
       <convert type="FrontendInfo">BER</convert>
     </widget>
-    <widget source="Frontend" render="Label" position="1140,180" size="80,28" font="Regular;24" backgroundColor="darkgrey" transparent="1">
+
+    <widget source="Frontend" render="Label" position="1140,206" size="80,28" font="Regular;24" backgroundColor="darkgrey" transparent="1">
       <convert type="FrontendInfo">BER</convert>
     </widget>
     <eLabel name="lock" text="Lock:" position="550,245" size="120,28" font="Regular;24" backgroundColor="darkgrey" transparent="1" />
@@ -3731,6 +3780,12 @@ ______________
   <eLabel position="590,412" size="600,2" backgroundColor="grey" />
   <widget name="slist" position="590,420" size="600,200" scrollbarMode="showOnDemand" backgroundColor="darkgrey" transparent="1" />
   </screen>
+	<subtitles>
+		<sub name="Subtitle_TTX" font="Subs;30" borderColor="#000000" borderWidth="3" />
+		<sub name="Subtitle_Regular" font="Subs;30" foregroundColor="#ffffff" borderColor="#000000" borderWidth="3" />
+		<sub name="Subtitle_Bold" font="Subs;30" foregroundColor="#ffffff" borderColor="#000000" borderWidth="3" />
+		<sub name="Subtitle_Italic" font="Subs;30" foregroundColor="#ffffff" borderColor="#000000" borderWidth="3" />
+	</subtitles>
   
   <!--  End of Magic-HD     -->
 </skin>
