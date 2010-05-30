@@ -122,16 +122,9 @@
     <widget alphatest="blend" position="60, 70" render="Picon" size="100,60" source="session.CurrentService" transparent="1" zPosition="1">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <!-- widget backgroundColor="background" font="Regular;19" foregroundColor="foreground" halign="left" position="221, 75" render="chNumberHD" size="80,36" source="session.CurrentService" transparent="1" valign="center" zPosition="1" /> -->
+    <widget backgroundColor="background" font="Regular;19" foregroundColor="foreground" halign="left" position="221, 75" render="ChannelNumber" size="80,36" source="session.CurrentService" transparent="1" valign="center" zPosition="1" />
     <widget backgroundColor="background" font="Regular;24" foregroundColor="foreground" halign="left" position="305, 75" render="Label" size="500, 36" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
       <convert type="ServiceName">Name</convert>
-    </widget>
-   <widget source="session.CurrentService" render="Label" position="1093, 110" size="50, 20" font="Regular;18" halign="right" backgroundColor="black" transparent="1">
-      <convert type="ServiceInfo">VideoWidth</convert>
-    </widget>
-    <eLabel text="x" position="1144, 110" size="15, 20" font="Regular;18" halign="center" backgroundColor="black" transparent="1" />
-    <widget source="session.CurrentService" render="Label" position="1160, 110" size="50, 20" font="Regular;18" halign="left" backgroundColor="black" transparent="1">
-      <convert type="ServiceInfo">VideoHeight</convert>
     </widget>
     <widget backgroundColor="secondBG" font="Regular;28" foregroundColor="secondFG" halign="right" position="46, 135" render="Label" size="80,30" source="global.CurrentTime" transparent="1" valign="top" zPosition="1">
      <convert type="ClockToText">Default</convert>
@@ -170,7 +163,14 @@
     <widget backgroundColor="un33333a" borderWidth="0" pixmap="Magic-HD/infobar/pbar.png" position="220, 115" render="Progress" size="840,8" source="session.Event_Now" transparent="0" zPosition="2">
      <convert type="EventTime">Progress</convert>
     </widget>
-    <!-- <widget backgroundColor="secondBG" font="Regular;19" foregroundColor="foreground" halign="left" position="1100, 109" render="vSizeHD" size="101,27" source="session.CurrentService" transparent="1" valign="top" zPosition="1" /> -->
+   <widget source="session.CurrentService" render="Label" position="1093, 110" size="50, 20" font="Regular;18" halign="right" backgroundColor="black" transparent="1">
+      <convert type="ServiceInfo">VideoWidth</convert>
+    </widget>
+    <eLabel text="x" position="1144, 110" size="15, 20" font="Regular;18" halign="center" backgroundColor="black" transparent="1" />
+    <widget source="session.CurrentService" render="Label" position="1160, 110" size="50, 20" font="Regular;18" halign="left" backgroundColor="black" transparent="1">
+      <convert type="ServiceInfo">VideoHeight</convert>
+    </widget>
+    <!-- <widget backgroundColor="secondBG" font="Regular;19" foregroundColor="foreground" halign="left" position="1100, 109" render="VideoSize" size="101,27" source="session.CurrentService" transparent="1" valign="top" zPosition="1" /> -->
     <widget alphatest="on" pixmap="Magic-HD/infobar/ico_dolby_on.png" position="905, 76" render="Pixmap" size="60,24" source="session.CurrentService" zPosition="2">
      <convert type="ServiceInfo">IsMultichannel</convert>
      <convert type="ConditionalShowHide" />
@@ -554,7 +554,7 @@
   </screen>
   <screen backgroundColor="transpBlack" flags="wfNoBorder" name="SecondInfoBar" position="0,0" size="1280,78" title="Second InfoBar" zPosition="-1">
     <widget backgroundColor="transpBlack" font="Regular;18" foregroundColor="foreground" halign="left" position="99, 20" render="Label" size="1080,44" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
-      <convert type="vSmartInfoHD">ExpertInfo</convert>
+      <convert type="pliExpertInfo">ExpertInfo</convert>
     </widget>
   </screen>
   <screen flags="wfNoBorder" name="About" position="0,0" size="1280,720" title="Main menu"> title="About"&gt;
