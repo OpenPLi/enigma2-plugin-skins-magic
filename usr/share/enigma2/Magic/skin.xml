@@ -698,53 +698,47 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	
 	
 	<!-- ########## EGP selection ########## -->	
-	<screen name="GraphMultiEPG" position="80,85" size="560,435" title="Electronic Program Guide">
+	<screen name="GraphMultiEPG" position="center,70" size="640,460" title="Electronic Program Guide">
 		<ePixmap alphatest="on" pixmap="skin_default/buttons/red.png" position="0,0" size="140,40"/>
 		<ePixmap alphatest="on" pixmap="skin_default/buttons/green.png" position="140,0" size="140,40"/>
 		<ePixmap alphatest="on" pixmap="skin_default/buttons/yellow.png" position="280,0" size="140,40"/>
 		<ePixmap alphatest="on" pixmap="skin_default/buttons/blue.png" position="420,0" size="140,40"/>
-		<widget backgroundColor="buttonRed" font="Regular;20" halign="center" name="key_red" position="0,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
-		<widget backgroundColor="buttonGreen" font="Regular;20" halign="center" name="key_green" position="140,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
-		<widget backgroundColor="buttonBlue" font="Regular;20" halign="center" name="key_blue" position="420,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
-		<widget name="timeline_text" position="0,41" size="560,20"/>
-		<widget EntryBackgroundColor="#2f4964" EntryBackgroundColorSelected="#25688caf" EntryBorderColor="#071930" name="list" position="0,65" scrollbarMode="showOnDemand" size="560,270"/>
-		<widget name="timeline0" pixmap="skin_default/timeline.png" position="0,65" size="1,270" zPosition="1"/>
-		<widget name="timeline1" pixmap="skin_default/timeline.png" position="0,65" size="1,270" zPosition="1"/>
-		<widget name="timeline2" pixmap="skin_default/timeline.png" position="0,65" size="1,270" zPosition="1"/>
-		<widget name="timeline3" pixmap="skin_default/timeline.png" position="0,65" size="1,270" zPosition="1"/>
-		<widget name="timeline4" pixmap="skin_default/timeline.png" position="0,65" size="1,270" zPosition="1"/>
-		<widget name="timeline5" pixmap="skin_default/timeline.png" position="0,65" size="1,270" zPosition="1"/>
-		<widget alphatest="on" name="timeline_now" pixmap="skin_default/timeline-now.png" position="0,64" size="19,273" zPosition="2"/>
-		<eLabel position="0,41" size="560,1" backgroundColor="#2f4964" zPosition="1" />       
-		<eLabel position="0,65" size="560,2" backgroundColor="#2f4964" zPosition="1" />
-		<eLabel position="0,335" size="560,2" backgroundColor="#2f4964" zPosition="1" />
-		<eLabel position="530,65" size="1,270" backgroundColor="#2f4964" zPosition="1" />  
-		<widget font="Regular;19" noWrap="1" position="10,337" render="Label" size="460,20" source="Event" zPosition="1">
-			<convert type="EventName">Name</convert>
-		</widget>
-		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="483,339" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
+		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="564,4" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="483,339" size="14,14" zPosition="4"/>
-		<widget font="Regular;19" halign="right" position="485,337" render="Label" size="65,20" source="global.CurrentTime" zPosition="1">
+		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="564,4" size="14,14" zPosition="4"/>
+		<widget font="Regular;20" halign="right" position="580,0" render="Label" size="60,40" source="global.CurrentTime" zPosition="1">
 			<convert type="ClockToText"/>
 		</widget>
-		<widget font="Regular;18" position="10,357" render="Label" size="50,22" source="Event" zPosition="1">
+		<widget name="key_red" backgroundColor="buttonRed" font="Regular;20" halign="center" position="0,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
+		<widget name="key_green" backgroundColor="buttonGreen" font="Regular;20" halign="center" position="140,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
+		<widget name="key_blue" backgroundColor="buttonBlue" font="Regular;20" halign="center" position="420,0" size="140,40" transparent="1" valign="center" zPosition="1"/>
+		<widget name="timeline_text" position="0,40" size="640,23"/>
+		<widget name="list" EntryBackgroundColor="#2f4964" EntryBackgroundColorSelected="#25688caf" EntryBorderColor="#071930" position="0,65" scrollbarMode="showOnDemand" size="640,295"/>
+		<widget name="timeline0" pixmap="skin_default/timeline.png" position="0,65" size="1,295" zPosition="1"/>
+		<widget name="timeline1" pixmap="skin_default/timeline.png" position="0,65" size="1,295" zPosition="1"/>
+		<widget name="timeline2" pixmap="skin_default/timeline.png" position="0,65" size="1,295" zPosition="1"/>
+		<widget name="timeline3" pixmap="skin_default/timeline.png" position="0,65" size="1,295" zPosition="1"/>
+		<widget name="timeline4" pixmap="skin_default/timeline.png" position="0,65" size="1,295" zPosition="1"/>
+		<widget name="timeline5" pixmap="skin_default/timeline.png" position="0,65" size="1,295" zPosition="1"/>
+		<widget name="timeline_now" alphatest="on" pixmap="skin_default/timeline-now.png" position="0,64" size="19,273" zPosition="2"/>
+		<eLabel position="0,63" size="640,2" backgroundColor="#2f4964" zPosition="1" />
+		<eLabel position="0,360" size="640,2" backgroundColor="#2f4964" zPosition="1" />
+		<widget font="Regular;18" position="5,362" render="Label" size="50,22" source="Event" zPosition="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText"/>
 		</widget>
-		<widget font="Regular;18" position="60,357" render="Label" size="70,22" source="Event" zPosition="1">
+		<widget font="Regular;18" position="55,362" render="Label" size="70,22" source="Event" zPosition="1">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %1H:%M</convert>
 		</widget>
-		<widget borderColor="#cccccc" borderWidth="2" pixmap="skin_default/progress_medium.png" position="120,360" render="Progress" size="65,11" source="Event" zPosition="1">
+		<widget borderColor="#cccccc" borderWidth="2" pixmap="skin_default/progress_medium.png" position="115,365" render="Progress" size="65,11" source="Event" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget font="Regular;18" noWrap="1" position="200,357" render="Label" size="350,20" source="Event" zPosition="1">
-			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText">Format:(%A)</convert>
+		<widget font="Regular;18" noWrap="1" position="185,362" render="Label" size="450,22" source="Event" zPosition="1">
+			<convert type="EventName">Name</convert>
 		</widget>
-		<widget font="Regular;18" foregroundColor="#cccccc" position="10,377" render="Label" size="540,53" source="Event" zPosition="1">
+		<widget font="Regular;18" foregroundColor="#cccccc" position="0,384" render="Label" size="620,76" source="Event" zPosition="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 	</screen>
