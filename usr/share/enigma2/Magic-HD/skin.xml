@@ -120,58 +120,58 @@
   <!--  ## InfoBars ##### -->
   <screen name="InfoBar" title="InfoBar" position="0,508" size="1280,400" backgroundColor="transparent" flags="wfNoBorder">
 		<ePixmap alphatest="off" pixmap="Magic-HD/infobar/hd.png" position="0,0" size="1280,220" zPosition="-1"/>
-    <widget source="session.CurrentService" render="Picon" position="60, 70" size="100,60" alphatest="blend" backgroundColor="transparent" transparent="1"  zPosition="1">
+    <widget source="session.CurrentService" render="Picon" position="60, 70" size="100,60" alphatest="blend" backgroundColor="secondBG" transparent="1"  zPosition="1">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="485,85" size="320, 17"  backgroundColor="transparent" transparent="1" noWrap="1" font="Regular; 14" valign="top" halign="right">
+    <widget source="session.CurrentService" render="Label" position="485,85" size="320, 17"  backgroundColor="secondBG" transparent="1" noWrap="1" font="Regular; 14" valign="top" halign="right">
       <convert type="ServiceName">Provider</convert>
     </widget>
-    <widget source="session.CurrentService" render="ChannelNumber" position="221, 75" size="80,36"  backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;19" valign="center" halign="left"/>
-    <widget source="session.CurrentService" render="Label" position="305, 75" size="500, 36" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" valign="center" halign="left">
+    <widget source="session.CurrentService" render="ChannelNumber" position="221, 75" size="80,36"  backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;19" valign="center" halign="left"/>
+    <widget source="session.CurrentService" render="Label" position="305, 75" size="500, 36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" valign="center" halign="left">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="46, 135" size="80,30" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;28" valign="top" halign="right">
+    <widget source="global.CurrentTime" render="Label" position="46, 135" size="80,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;28" valign="top" halign="right">
      <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="129, 143" size="30,20" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;18" valign="top" halign="left">
+    <widget source="global.CurrentTime" render="Label" position="129, 143" size="30,20" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;18" valign="top" halign="left">
      <convert type="ClockToText">Format:%S</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="35, 166" size="220,24" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;17" halign="left">
+    <widget source="global.CurrentTime" render="Label" position="35, 166" size="220,24" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;17" halign="left">
     <convert type="ClockToText">Date</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="100, 60" size="1080,24" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;14" valign="center" halign="center">
+    <widget source="session.CurrentService" render="Label" position="100, 60" size="1080,24" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;14" valign="center" halign="center">
     <convert type="CryptoInfo">VerboseInfo</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="220, 130" size="70,30" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" halign="left">
+    <widget source="session.Event_Now" render="Label" position="220, 130" size="70,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" halign="left">
     <convert type="EventTime">StartTime</convert>
      <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="305, 130" size="620, 30" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="foreground" noWrap="1" font="Regular;24" halign="left">
+    <widget source="session.Event_Now" render="Label" position="305, 130" size="620, 30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" noWrap="1" font="Regular;24" halign="left">
      <convert type="EventName">Name</convert>
     </widget>
-    <widget source="session.Event_Now" render="Label" position="940, 130" size="120,30" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" halign="right">
+    <widget source="session.Event_Now" render="Label" position="940, 130" size="120,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" halign="right">
      <convert type="EventTime">Remaining</convert>
      <convert type="RemainingToText">InMinutes</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="220, 162" size="70,30" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;24" halign="left">
+    <widget source="session.Event_Next" render="Label" position="220, 162" size="70,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;24" halign="left">
      <convert type="EventTime">StartTime</convert>
      <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="305, 162" size="620, 30" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="grey" noWrap="1" font="Regular;24" halign="left">
+    <widget source="session.Event_Next" render="Label" position="305, 162" size="620, 30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" noWrap="1" font="Regular;24" halign="left">
      <convert type="EventName">Name</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="940, 162" size="120,30" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;24" halign="right">
+    <widget source="session.Event_Next" render="Label" position="940, 162" size="120,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="grey" font="Regular;24" halign="right">
      <convert type="EventTime">Duration</convert>
      <convert type="ClockToText">InMinutes</convert>
     </widget>
     <widget source="session.Event_Now" render="Progress" pixmap="Magic-HD/infobar/pbar.png" position="220, 115" size="840,8" backgroundColor="un33333a" transparent="0" zPosition="2" borderWidth="0">
      <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="1093, 110" size="50, 20" backgroundColor="transparent" transparent="1" font="Regular;18" halign="right">
+    <widget source="session.CurrentService" render="Label" position="1093, 110" size="50, 20" backgroundColor="secondBG" transparent="1" font="Regular;18" halign="right">
      <convert type="ServiceInfo">VideoWidth</convert>
     </widget>
-    <eLabel position="1144, 110" size="15, 20" backgroundColor="transparent" borderWidth="2" text="x" font="Regular;18" halign="center"/>
-    <widget source="session.CurrentService" render="Label" position="1160, 110" size="50, 20" backgroundColor="transparent" transparent="1" font="Regular;18" halign="left">
+    <eLabel position="1144, 110" size="15, 20" backgroundColor="secondBG" transparent="1" text="x" font="Regular;18" halign="center"/>
+    <widget source="session.CurrentService" render="Label" position="1160, 110" size="50, 20" backgroundColor="secondBG" transparent="1" font="Regular;18" halign="left">
     <convert type="ServiceInfo">VideoHeight</convert>
     </widget>
     <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD/infobar/ico_dolby_on.png" position="905, 76" size="60,24" zPosition="2" alphatest="on">
@@ -203,25 +203,25 @@
     <widget source="session.RecordState" render="Pixmap" pixmap="Magic-HD/buttons/rec.png" position="1216, 83" size="14,14" zPosition="3" alphatest="on">
      <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="session.FrontendStatus" render="Label" position="1100, 137" size="110, 22" backgroundColor="transparent" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;19">
+    <widget source="session.FrontendStatus" render="Label" position="1100, 137" size="110, 22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;19">
      <convert type="FrontendInfo">SNRdB</convert>
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" position="1100, 80" size="20,20" backgroundColor="transparent" transparent="1" zPosition="2" text="A" foregroundColor="orange" font="Regular;20">
+    <widget source="session.TunerInfo" render="FixedLabel" position="1100, 80" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="A" foregroundColor="orange" font="Regular;20">
      <convert type="TunerInfo">TunerUseMask</convert>
      <convert type="ValueBitTest">1</convert>
      <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" position="1130, 80" size="20,20" backgroundColor="transparent" transparent="1" zPosition="2" text="B" foregroundColor="orange" font="Regular;20">
+    <widget source="session.TunerInfo" render="FixedLabel" position="1130, 80" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="B" foregroundColor="orange" font="Regular;20">
      <convert type="TunerInfo">TunerUseMask</convert>
      <convert type="ValueBitTest">2</convert>
      <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" position="1160, 80" size="20,20" backgroundColor="transparent" transparent="1" zPosition="2" text="C" foregroundColor="orange" font="Regular;20">
+    <widget source="session.TunerInfo" render="FixedLabel" position="1160, 80" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="C" foregroundColor="orange" font="Regular;20">
     <convert type="TunerInfo">TunerUseMask</convert>
     <convert type="ValueBitTest">4</convert>
     <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.TunerInfo" render="FixedLabel" position="1190, 80" size="20,20" backgroundColor="transparent" transparent="1" zPosition="2" text="D" foregroundColor="orange" font="Regular;20">
+    <widget source="session.TunerInfo" render="FixedLabel" position="1190, 80" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="2" text="D" foregroundColor="orange" font="Regular;20">
     <convert type="TunerInfo">TunerUseMask</convert>
     <convert type="ValueBitTest">8</convert>
      <convert type="ConditionalShowHide" />
@@ -231,31 +231,31 @@
      <convert type="ValueRange">800,2000</convert>
      <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" position="1100, 80" size="20,20" backgroundColor="transparent" transparent="1" zPosition="3" text="A" foregroundColor="green" font="Regular;20" halign="left">
+    <widget source="session.FrontendInfo" render="FixedLabel" position="1100, 80" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="3" text="A" foregroundColor="green" font="Regular;20" halign="left">
      <convert type="FrontendInfo">NUMBER</convert>
      <convert type="ValueRange">0,0</convert>
      <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" position="1130, 80" size="20,20" backgroundColor="transparent" transparent="1" zPosition="3" text="B" foregroundColor="green" font="Regular;20" halign="left">
+    <widget source="session.FrontendInfo" render="FixedLabel" position="1130, 80" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="3" text="B" foregroundColor="green" font="Regular;20" halign="left">
      <convert type="FrontendInfo">NUMBER</convert>
      <convert type="ValueRange">1,1</convert>
      <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" position="1160, 80" size="20,20" backgroundColor="transparent" transparent="1" zPosition="3" text="C" foregroundColor="green" font="Regular;20" halign="left">
+    <widget source="session.FrontendInfo" render="FixedLabel" position="1160, 80" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="3" text="C" foregroundColor="green" font="Regular;20" halign="left">
      <convert type="FrontendInfo">NUMBER</convert>
      <convert type="ValueRange">2,2</convert>
      <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" position="1190, 80" size="20,20" backgroundColor="transparent" transparent="1" zPosition="3" text="D" foregroundColor="green" font="Regular;20" halign="left">
+    <widget source="session.FrontendInfo" render="FixedLabel" position="1190, 80" size="20,20" backgroundColor="secondBG" transparent="1" zPosition="3" text="D" foregroundColor="green" font="Regular;20" halign="left">
      <convert type="FrontendInfo">NUMBER</convert>
      <convert type="ValueRange">3,3</convert>
      <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Label" position="1100, 165" size="110, 22" backgroundColor="transparent" transparent="1"  zPosition="1" text="DVB-S" font="Regular;19">
+    <widget source="session.CurrentService" render="Label" position="1100, 165" size="110, 22" backgroundColor="secondBG" transparent="1"  zPosition="1" text="DVB-S" font="Regular;19">
      <convert type="ServiceOrbitalPosition">
      </convert>
     </widget>
-   </screen>> 
+   </screen> 
    <screen name="MoviePlayer" title="InfoBar" position="4,22" size="1280,70" backgroundColor="transparent" flags="wfNoBorder">
     <widget source="session.CurrentService" render="Label" position="219, 0" size="840,40" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
@@ -290,15 +290,39 @@
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
-<!-- ##Try-out version>  <screen name="SecondInfoBar" title="Second InfoBar" position="50,470" size="1280,78" backgroundColor="transparent" flags="wfNoBorder">
-     <widget source="session.CurrentService" render="Label" position="100, 20" size="1080,44" backgroundColor="transparent" transparent="1" borderWidth="2" zPosition="1" foregroundColor="foreground" font="Regular;18" valign="center" halign="center">
-      <convert type="pliExpertInfo">ExpertInfo</convert>
+  <screen name="SecondInfoBar" title="Second InfoBar" position="0,0" size="1280,220" backgroundColor="transparent" flags="wfNoBorder">
+    <ePixmap alphatest="off" pixmap="Magic-HD/infobar/hdi.png" position="0,0" size="1280,220" zPosition="-1"/>
+    <widget source="session.CurrentService" render="Label" position="50, 20" size="600,66" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;16"  borderWidth="2" borderColor="black" valign="top" halign="center">
+     <convert type="pliExpertInfo">ExpertInfo</convert>
     </widget>
-  </screen>-->
-  <screen name="SecondInfoBar" title="Second InfoBar" position="0,0" size="1280,78" backgroundColor="transpBlack" zPosition="-1" flags="wfNoBorder">
-     <widget source="session.CurrentService" render="Label" position="99, 20" size="1080,44" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;18" valign="center" halign="left">
-      <convert type="pliExpertInfo">ExpertInfo</convert>
+    <eLabel name="snr" position="685,15" size="80,28" backgroundColor="transpBlack" halign="center" transparent="1" text="  SNR"  borderWidth="2" borderColor="black" font="Regular;14" />
+    <widget source="session.FrontendStatus" render="Progress" pixmap="skin_default/bar_snr.png" position="760,15" size="410,20" borderWidth="2" borderColor="uncccccc">
+     <convert type="FrontendInfo">SNR</convert>
     </widget>
+    <widget source="session.FrontendStatus" render="Label" position="1174,15" size="80,28" backgroundColor="transpBlack" transparent="1"  borderWidth="2" borderColor="black" halign="center" font="Regular;14">
+     <convert type="FrontendInfo">SNR</convert>
+    </widget>
+    <eLabel name="agc" position="685, 45" size="80,28" backgroundColor="transpBlack" halign="center" transparent="1" text="  AGC"  borderWidth="2" borderColor="black" font="Regular;14" />
+    <widget source="session.FrontendStatus" render="Progress" pixmap="skin_default/bar_snr.png" position="760,45" size="410,20" borderWidth="2" borderColor="uncccccc">
+     <convert type="FrontendInfo">AGC</convert>
+    </widget>
+    <widget source="session.FrontendStatus" render="Label" position="1174,45" size="80,28" backgroundColor="transpBlack" transparent="1"  borderWidth="2" borderColor="black" halign="center" font="Regular;14">
+     <convert type="FrontendInfo">AGC</convert>
+    </widget>
+    <!-- TryOut for BER: not usefull??-->
+    <eLabel name="ber" position="685,75" size="80,28" backgroundColor="transpBlack" halign="center" transparent="1" text="  BER:"  borderWidth="2" borderColor="black" font="Regular;14" />
+    <widget source="session.FrontendStatus" render="Progress" position="760,75" size="410,20" borderWidth="2" borderColor="grey">
+      <convert type="FrontendInfo">BER</convert>
+    </widget>
+    <widget source="session.FrontendStatus" render="Label" position="1174,75" size="80,28" backgroundColor="transpBlack" transparent="1" borderWidth="2" borderColor="black" halign="center" font="Regular;14">
+      <convert type="FrontendInfo">BER</convert>
+    </widget>
+    <!--##TryOut for Lock: does not work!!##
+    <eLabel name="lock" position="685,105" size="80,28" backgroundColor="darkgrey" halign="center" transparent="1" text="Lock:"  borderWidth="2" borderColor="black" zPosition="1" font="Regular;14" />
+    <widget source="session.FrontendStatus" render="Pixmap" pixmap="skin_default/icons/lock_off.png" position="760,105" zPosition="1"  size="38,31" >
+     <convert type="FrontendInfo">LOCK</convert>
+     <convert type="ConditionalShowHide">Invert</convert>
+    </widget>-->
   </screen>
   <screen name="DVDPlayer" title="InfoBar" position="0,508" size="1280,220" backgroundColor="transparent" flags="wfNoBorder">
     <widget source="session.CurrentService" render="Label" position="167, -501" size="840,40" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
@@ -943,7 +967,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     <widget name="date" position="590,110" size="250,24" transparent="1" font="Regular;20" valign="center" halign="right"/>
     <widget name="list" position="590,140" size="600,450" itemHeight="30" backgroundColor="background" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png"/>
     <widget source="Event" render="Label" position="70,378" size="430,240" backgroundColor="background" transparent="1" foregroundColor="grey" font="Regular;20">
-	<convert type="EventName">ExtendedDescription</convert>
+    	<convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget name="now_button_sel" pixmap="Magic-HD/border/epg_now.png" position="560,105" size="600,35" backgroundColor="background" zPosition="2"/>
     <widget name="next_button_sel" pixmap="Magic-HD/border/epg_next.png" position="560,105" size="600,35" backgroundColor="background" zPosition="2"/>
@@ -1139,6 +1163,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     <widget source="global.CurrentTime" render="Label" position="970, 35" size="250, 50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
       <convert type="ClockToText">Full</convert>
     </widget>
+    <widget backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" source="session.VideoPicture" zPosition="1" />
     <ePixmap pixmap="Magic-HD/buttons/red.png" position="100,643" size="26,26" alphatest="on"/>
     <ePixmap pixmap="Magic-HD/buttons/green.png" position="390,643" size="26,26" alphatest="on"/>
     <ePixmap pixmap="Magic-HD/buttons/yellow.png" position="680,643" size="26,26" alphatest="on"/>
@@ -1147,9 +1172,9 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     <widget name="key_green" position="435,645" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left"/>
     <widget name="key_yellow" position="725,645" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left"/>
     <widget name="key_blue" position="1015,645" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left"/>
-    <widget name="list" position="center, 370" size="1160, 250" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png"/>
-    <widget name="timer1" position="60, 100" size="530,260" scrollbarMode="showNever"/>
-    <widget name="timer2" position="690, 100" size="530,260" scrollbarMode="showNever"/>
+    <widget name="list" position="590, 370" size="600, 250" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png"/>
+    <widget name="timer1" position="70, 365" size="500,260" scrollbarMode="showNever" selectionPixmap="Magic-HD/buttons/sel.png"/>
+    <widget name="timer2" position="590, 100" size="600,250" scrollbarMode="showNever" selectionPixmap="Magic-HD/buttons/sel.png"/>
   </screen>
   <!-- ## Setup ########## -->
   <screen name="WebIfConfigScreen" title="Main Setup" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4095,7 +4120,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     <widget source="TranslatorName" render="Label" position="590, 110" size="590,110" font="Regular;27" halign="center" backgroundColor="background" transparent="1" />
     <widget source="TranslationInfo" render="Label" position="590, 180" size="590,380" font="Regular;27" halign="center" backgroundColor="background" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" transparent="1" />
   </screen>
-	<!--##ACDInfo##-->
+ 	<!--##ACDInfo##--> 
   <screen flags="wfNoBorder" name="CDInfo" position="0,0" size="1280,720" title="CDInfo">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
