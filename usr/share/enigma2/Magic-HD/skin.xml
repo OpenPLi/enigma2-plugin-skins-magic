@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-HD Vs 0.95 by MiLo, MrNiceNL & VU+NL, based on Magic_HD_Shadow_MiniTV   by Vali (c)2009-2010   Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 0.96 by MiLo, MrNiceNL & VU+NL, based on Magic_HD_Shadow_MiniTV   by Vali (c)2009-2010   Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea -->
@@ -3711,14 +3711,14 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
   </screen>
 <!-- CutListEditor -->
   <screen name="CutListEditor" title="CutListEditor" position="0,0" size="1280,720" flags="wfNoBorder">
-    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90"/>
-    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2"/>
+    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" zPosition="-1" size="1280,90"/>
+    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" zPosition="-1" size="1280,2"/>
     <widget source="Title" render="Label" position="60, 35" size="700, 50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center"/>
     <widget source="global.CurrentTime" render="Label" position="970, 35" size="250, 50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
       <convert type="ClockToText">Full</convert>
     </widget>
-  <widget source="cutlist" render="Listbox" position="90,125" size="340,400" backgroundColor="black" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png">
-    <convert type="TemplatedMultiContent">
+    <widget source="cutlist" render="Listbox" position="90,125" size="340,400" backgroundColor="black" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png">
+      <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos=(10,2), size=(170, 20), text = 1, backcolor = MultiContentTemplateColor(3)),
 						MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CENTER, backcolor = MultiContentTemplateColor(3))
@@ -3727,52 +3727,18 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
 				 "itemHeight": 25
 				}
 			</convert>
-  </widget>
-  <widget name="Video" position="510,124" size="696,377" zPosition="-10"/>
-  <widget source="session.CurrentService" render="Label" position="450,510" size="790,30" backgroundColor="black" zPosition="3" transparent="1" font="Regular;24" valign="center" halign="center">
-    <convert type="ServiceName">Name</convert>
-  </widget>
-  <widget source="session.CurrentService" render="Label" position="450,550" size="790,25" backgroundColor="black" zPosition="3" transparent="1" font="Regular;20" valign="center" halign="center">
-    <convert type="ServicePosition">Position,Detailed</convert>
-  </widget>
-  <widget name="Timeline" position="479,587" size="696,20" backgroundColor="background" zPosition="3" pointer="skin_default/position_arrow.png:3,5" foregroundColor="black"/>
-  <eLabel position="1060,630" size="140,22" backgroundColor="black" zPosition="1" transparent="1" text="OK = Menu" font="Regular;20"/>
+    </widget>
+    <widget name="Video" position="510,124" backgroundColor="transparent" size="696,377" zPosition="1"/>
+    <widget source="session.CurrentService" render="Label" position="450,510" size="790,30" backgroundColor="black" zPosition="1" transparent="1" font="Regular;24" valign="center" halign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="450,550" size="790,25" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" valign="center" halign="center">
+      <convert type="ServicePosition">Position,Detailed</convert>
+    </widget>
+    <widget name="Timeline" position="479,587" size="696,20" backgroundColor="background" zPosition="3" pointer="skin_default/position_arrow.png:3,5" foregroundColor="black"/>
+    <ePixmap pixmap="Magic-HD/buttons/mp_buttons.png" alphatest="on" position="680,643" size="220,50" />
+    <eLabel position="970,643" size="140,22" backgroundColor="black" zPosition="1" transparent="1" text="OK = Menu" font="Regular;20"/>
   </screen>
-  <!--##Check if all functinality of the below cutlisteditor is implemented on the active one above##
-      ##There is a problem with the brightnes of the screen: far to dark##
-  <screen name="CutListEditor" position="0,0" size="1280,720" title="Cutlist editor" flags="wfNoBorder">
-    <ePixmap position="   0,  0" size="1280,720" zPosition="-1" pixmap="Elgato-HD/back1.png" />
-    <widget source="global.CurrentTime" render="Label" position="  65, 44" size="180,25" zPosition="1" font="Regular;25" halign="left" backgroundColor="background1" shadowColor="black" shadowOffset="-2,-2" transparent="1">
-     <convert type="ClockToText">Format:%d.%m.%Y</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="1130, 44" size="80,25" zPosition="1" font="Regular;25" halign="right" backgroundColor="background1" shadowColor="black" shadowOffset="-2,-2" transparent="1">
-     <convert type="ClockToText">Default</convert>
-    </widget>
-    <eLabel text="Cutlist editor" position=" 500, 44" size="280,33" zPosition="1" halign="center" font="Regular;30" backgroundColor="background" shadowColor="black" shadowOffset="-3,-3" transparent="1" />
-    <eLabel position="100,132" size="300,420" zPosition="1" backgroundColor="grey" />
-    <eLabel position="102,134" size="296,416" zPosition="2" backgroundColor="black" />
-    <widget source="cutlist" position="110,142" size="280,400" zPosition="3" scrollbarMode="showOnDemand" selectionPixmap="Elgato-HD/selpic/sel25.png" transparent="1" render="Listbox">
-     <convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos=(10,2), size=(170, 20), text = 1, backcolor = MultiContentTemplateColor(3)),
-						MultiContentEntryText(pos=(190,2), size=(80, 20), text = 2, flags = RT_HALIGN_CENTER, backcolor = MultiContentTemplateColor(3))
-					],
-				 "fonts": [gFont("Regular", 20)],
-				 "itemHeight": 25
-				}
-			</convert>
-    </widget>
-    <eLabel position="477,132" size="700,381" zPosition="2" backgroundColor="grey" />
-    <eLabel position="479,134" size="696,377" zPosition="3" backgroundColor="unff000000" />
-    <widget name="Video" position="270,110" zPosition="-10" size="390,300" />
-    <widget source="session.CurrentService" render="Label" position="450,540" size="790,30" zPosition="3" font="Regular;24" halign="center" valign="center" backgroundColor="black" transparent="1">
-     <convert type="ServiceName">Name</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="450,580" size="790,25" zPosition="3" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1">
-     <convert type="ServicePosition">Position,Detailed</convert>
-    </widget>
-    <widget name="Timeline" position="479,620" size="696,20" zPosition="3" backgroundColor="un808888" pointer="skin_default/position_arrow.png:3,5" foregroundColor="black" />
-  </screen>  -->
  <!-- ##VLC Player##-->
   <screen name="VlcServerConfigScreen" title="Edit VLC Server" position="190,135" size="900,450">
     <ePixmap pixmap="Magic-HD/buttons/key-red.png" position="15,5" size="140,40" alphatest="on"/>
@@ -3924,7 +3890,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     </widget>
   </screen>
   <screen name="MyTubePlayer" title="MoviePlayer" position="0,508" size="1280,220" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Magic-HD/infobar/infobar.png" position="0,24" size="1280,220" zPosition="-1" alphatest="off"/>
+    <ePixmap pixmap="Magic-HD/infobar/hd.png" position="0,24" size="1280,220" zPosition="-1" alphatest="off"/>
     <widget source="session.CurrentService" render="Label" position="220,105" size="840,77" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
