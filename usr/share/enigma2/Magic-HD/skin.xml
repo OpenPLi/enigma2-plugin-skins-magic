@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-HD Vs 0.99.1 by MiLo, MrNiceNL & VU+NL, based on Magic_HD_Shadow_MiniTV   by Vali (c)2009-2010   Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 0.99.2 by MiLo, MrNiceNL & VU+NL, based on Magic_HD_Shadow_MiniTV   by Vali (c)2009-2010   Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea -->
@@ -567,7 +567,7 @@
   <screen name="menu_harddisk" title="Main menu" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90"/>
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2"/>
-    <widget source="Title" render="Label" position="514, 35" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center"/>
+    <widget source="Title" render="Label" position="60, 35" size="700, 50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="center"/>
     <widget source="global.CurrentTime" render="Label" position="970, 35" size="250, 50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
       <convert type="ClockToText">Full</convert>
     </widget>
@@ -731,7 +731,45 @@
     <widget source="session.VideoPicture" backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" zPosition="1" />
     <widget name="minutes" position="590, 110" size="600,500" halign="right" font="Regular;23" transparent="1" />
   </screen>
- 	<!-- JobView -->
+  <screen flags="wfNoBorder" name="ParentalControlChangePin" position="0,0" size="1280,720" title="Change pin code">
+    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;22" position="60, 35" size="700, 50" transparent="1" valign="center" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35"  size="250, 50" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" zPosition="1" />
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" position="590, 110" enableWrapAround="1" size="600,500" transparent="1" />
+	</screen>
+  <screen flags="wfNoBorder" name="ParentalControlEditor" position="0,0" size="1280,720" title="Parental control services Editor">
+    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;22" position="60, 35" size="700, 50" transparent="1" valign="center" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35"  size="250, 50" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" zPosition="1" />
+    <widget name="servicelist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" enableWrapAround="1" position="590, 110" size="600,500" transparent="1" />
+		<eLabel text="Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
+    <ePixmap pixmap="Magic-HD/buttons/red.png" alphatest="on" position="100,643" size="26,26" />
+    <ePixmap pixmap="Magic-HD/buttons/green.png" alphatest="on" position="390,643" size="26,26" /> 
+		<eLabel text="OK" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" /> 
+	</screen>
+  <screen flags="wfNoBorder" name="ParentalControlSetup" position="0,0" size="1280,720" title="Parental control setup">
+    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;22" position="60, 35" size="700, 50" transparent="1" valign="center" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35"  size="250, 50" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" zPosition="1" />
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" enableWrapAround="1" position="590, 110" size="600,500" transparent="1" />
+		<eLabel text="Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
+    <ePixmap pixmap="Magic-HD/buttons/red.png" alphatest="on" position="100,643" size="26,26" />
+    <ePixmap pixmap="Magic-HD/buttons/green.png" alphatest="on" position="390,643" size="26,26" /> 
+		<eLabel text="OK" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" /> 
+	</screen>
+ 	<!-- ##JobView## -->
   <screen flags="wfNoBorder" name="JobView" position="0,0" size="1280,720" title="Job View">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
@@ -1637,7 +1675,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     <widget source="global.CurrentTime" render="Label" position="970, 35" size="250, 50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
       <convert type="ClockToText">Full</convert>
     </widget>
-    <ePixmap pixmap="Magic-HD/buttons/red.png" position="100,643" size="26,26" alphatest="on"/>
+    <widget source="session.VideoPicture" render="Pig" position="680,643" size="5,5" backgroundColor="transparent" zPosition="1"/>    <ePixmap pixmap="Magic-HD/buttons/red.png" position="100,643" size="26,26" alphatest="on"/>
     <ePixmap pixmap="Magic-HD/buttons/green.png" position="390,643" size="26,26" alphatest="on"/>
     <ePixmap pixmap="Magic-HD/buttons/yellow.png" position="680,643" size="26,26" alphatest="on"/>
     <ePixmap pixmap="Magic-HD/buttons/blue.png" position="970,643" size="26,26" alphatest="on"/>
@@ -3093,9 +3131,6 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
 		<widget name="repeat" position="700,120" size="50,25" pixmaps="Magic-HD/dvr/placeholder1.png,Magic-HD/dvr/repeat.png" alphatest="on"/>
 		<widget name="PositionGauge" position="0,0" size="0,0"/>
   </screen>
-  
-  
-  
   <screen name="MerlinMusicPlayerScreenSaver" title="Merlin Music Player ScreenSaver" position="0,0" size="1280,720" flags="wfNoBorder">
  		<widget name="coverArt" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MerlinMusicPlayer/images/no_coverArt.png" position="200,77" size="238,238" transparent="1" alphatest="blend"/>
 		<widget name="display" position="200,315" size="1280,24" zPosition="1" transparent="1" foregroundColor="#fcc000" font="Regular;20"/>
@@ -3253,6 +3288,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     <widget source="global.CurrentTime" render="Label" position="970, 35" size="250, 50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
       <convert type="ClockToText">Full</convert>
     </widget>
+    <widget source="session.VideoPicture" render="Pig" position="680,643" size="5,5" backgroundColor="transparent" zPosition="1"/>    <ePixmap pixmap="Magic-HD/buttons/red.png" position="100,643" size="26,26" alphatest="on"/>
     <ePixmap pixmap="Magic-HD/buttons/red.png" position="100,643" size="26,26" alphatest="on"/>
     <ePixmap pixmap="Magic-HD/buttons/green.png" position="390,643" size="26,26" alphatest="on"/>
     <ePixmap pixmap="Magic-HD/buttons/yellow.png" position="680,643" size="26,26" alphatest="on"/>
@@ -3312,7 +3348,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
   <eLabel position="40,30" size=" 40,30" zPosition="2" backgroundColor="black" />
   <widget name="point" position="40,30" size=" 21,21" zPosition="3" pixmap="skin_default/icons/epgclock.png" alphatest="on" />
   <widget name="play_icon" position="42,32" size=" 16,16" zPosition="3" pixmap="skin_default/icons/ico_mp_play.png" alphatest="on" />
-  <widget source="file" render="Label" position="70,30" size="300,25" zPosition="3" font="Regular;22" halign="left" noWrap="1" backgroundColor="black" />
+  <widget source="file" render="Label" position="70,30" size="600,25" zPosition="3" font="Regular;22" halign="left" noWrap="1" backgroundColor="black" />
   </screen>
   <!-- ##GP2## -->
   <gstyle>
@@ -3716,6 +3752,25 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/2))
     <widget name="key_yellow" position="725,645" size="220,26" backgroundColor="black" shadowColor="black" shadowOffset="2,2" zPosition="1" transparent="1" foregroundColor="grey" font="Regular;24" halign="left"/>
     <widget name="key_blue" position="1015,645" size="220,26" backgroundColor="black" shadowColor="black" shadowOffset="2,2" zPosition="1" transparent="1" foregroundColor="grey" font="Regular;24" halign="left"/>
     <widget name="thumbnail" position="200,400" size="100,75" alphatest="on"/>
+  </screen>
+ 	<!-- MovieTagEditor -->
+  <screen flags="wfNoBorder" name="MovieTagEditor" position="0,0" size="1280,720" title="Edit tags">
+    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;22" position="60, 35" size="700, 50" transparent="1" valign="center" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35"  size="250, 50" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" zPosition="1" />
+    <ePixmap pixmap="Magic-HD/buttons/red.png" alphatest="on" position="100,643" size="26,26" />
+    <ePixmap pixmap="Magic-HD/buttons/green.png" alphatest="on" position="390,643" size="26,26" />
+    <ePixmap pixmap="Magic-HD/buttons/yellow.png" alphatest="on" position="680,643" size="26,26" />
+    <ePixmap pixmap="Magic-HD/buttons/blue.png" alphatest="on" position="970,643" size="26,26" />
+    <widget source="key_red" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
+    <widget source="key_green" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
+    <widget source="key_yellow" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="725,645" size="220,26" transparent="1" zPosition="1" />
+    <widget source="key_blue" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="1015,645" size="220,26" transparent="1" zPosition="1" />
+    <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" position="590, 110" size="600,500" transparent="1" />
   </screen>
   <!-- ##IMDB Plugin## -->
   <screen name="IMDB" title="IMDb Details Plugin" position="0,0" size="1280,720" flags="wfNoBorder">
