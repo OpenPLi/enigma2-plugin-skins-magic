@@ -5558,10 +5558,10 @@
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" zPosition="1" />
     <ePixmap pixmap="Magic-HD/buttons/red.png" alphatest="on" position="100,643" size="26,26" />
-    <widget name="key_red" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
-    <widget name="detailtext" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" position="590, 110" size="600,500" transparent="1" />
+     <widget name="key_red" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
+    <widget name="detailtext" font="Regular;22" position="590, 110" size="600,500" valign="top" transparent="1" />
   </screen>
-  <screen name="MyTubeTasksScreen" position="128,78" size="1024,576" title="MyTubePlayerMainScreen...">
+   <screen name="MyTubeTasksScreen" position="128,78" size="1024,576" title="MyTubePlayerMainScreen...">
     <ePixmap alphatest="on" name="red" pixmap="Magic-HD/buttons/key-red.png" position="155,55" size="140,40" transparent="1" />
     <widget backgroundColor="un7c1c1c" font="Regular;18" halign="center" name="key_red" position="155,55" size="140,40" transparent="1" valign="center" zPosition="2" />
     <widget font="Regular;20" foregroundColor="foreground" halign="left" name="title" position="320,50" size="597,50" transparent="1" valign="center" zPosition="5" />
