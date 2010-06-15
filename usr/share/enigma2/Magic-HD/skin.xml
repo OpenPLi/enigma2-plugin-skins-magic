@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-HD Vs 0.99.5 by MiLo, MrNiceNL & VU+NL, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 0.99.7 by MiLo, MrNiceNL & VU+NL, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea -->
@@ -170,7 +170,7 @@
     <widget source="session.CurrentService" render="Label" position="1093, 110" size="50, 20" backgroundColor="secondBG" transparent="1" font="Regular;18" halign="right">
      <convert type="ServiceInfo">VideoWidth</convert>
     </widget>
-    <eLabel position="1144, 110" size="15, 20" backgroundColor="secondBG" transparent="1" text="x" font="Regular;18" halign="center"/>
+    <eLabel position="1144, 110" size="15, 20" backgroundColor="secondBG" transparent="1" text="x" font="Regular;16" halign="center"/>
     <widget source="session.CurrentService" render="Label" position="1160, 110" size="50, 20" backgroundColor="secondBG" transparent="1" font="Regular;18" halign="left">
     <convert type="ServiceInfo">VideoHeight</convert>
     </widget>
@@ -902,9 +902,9 @@
     <widget backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" source="session.VideoPicture" zPosition="1" />
     <ePixmap alphatest="on" pixmap="Magic-HD/buttons/red.png" position="100,643" size="26,26" />
     <ePixmap alphatest="on" pixmap="Magic-HD/buttons/green.png" position="390,643" size="26,26" />
-  <widget name="canceltext" position="145,645" zPosition="1" size="220,26" font="Regular;24" halign="center" backgroundColor="background" transparent="1" />
-  <widget name="oktext" position="435,645" zPosition="1" size="220,26" font="Regular;24" halign="center" backgroundColor="background" transparent="1" />
-    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" position="590, 110" size="600,500" transparent="1" />
+    <widget name="canceltext" position="145,645" zPosition="1" size="220,26" font="Regular;24" halign="left" backgroundColor="background" transparent="1" />
+    <widget name="oktext" position="435,645" zPosition="1" size="220,26" font="Regular;24" halign="left" backgroundColor="background" transparent="1" />
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" position="590, 110" font="Regular;22" size="600,500" transparent="1" />
   </screen>
   <screen name="LanguageSelection" title="Language selection" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90"/>
@@ -1410,8 +1410,8 @@
     <widget source="session.VideoPicture" render="Pig" position="70, 110" size="432, 243" backgroundColor="transparent" zPosition="1"/>
     <ePixmap pixmap="Magic-HD/buttons/red.png" position="100,643" size="26,26" alphatest="on"/>
     <ePixmap pixmap="Magic-HD/buttons/green.png" position="390,643" size="26,26" alphatest="on"/>
-    <widget name="canceltext" position="145,645" size="220,26" backgroundColor="un9f1313" zPosition="1" transparent="1" font="Regular;20" valign="left" halign="left"/>
-    <widget name="oktext" position="435,645" size="220,26" backgroundColor="un1f771f" zPosition="1" transparent="1" font="Regular;20" valign="left" halign="left"/>
+		<eLabel text="Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
+		<eLabel text="OK" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
     <widget name="config" position="590, 110" size="600,500"/>
   </screen>
   <screen name="LocationBox" title="Location Box" position="0,0" size="1280,720" flags="wfNoBorder">
