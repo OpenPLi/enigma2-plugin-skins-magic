@@ -892,6 +892,21 @@
     <ePixmap pixmap="Magic-HD/buttons/green.png" alphatest="on" position="390,643" size="26,26" /> 
 		<eLabel text="OK" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" /> 
 	</screen>
+ 	<!-- VideoSetup (VideoMode Plugin) -->
+  <screen flags="wfNoBorder" name="VideoSetup" position="0,0" size="1280,720" title="Video Setup">
+    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="60, 30" size="700, 55" halign="left" transparent="1" valign="center" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35"  size="250, 50" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" zPosition="1" />
+    <ePixmap pixmap="Magic-HD/buttons/red.png" alphatest="on" position="100,643" size="26,26" />
+    <ePixmap pixmap="Magic-HD/buttons/green.png" alphatest="on" position="390,643" size="26,26" />
+    <widget source="key_red" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
+    <widget source="key_green" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" position="590, 110" size="600,500" transparent="1" />
+  </screen>
   <!-- ##Change Passwordd## -->	
   <screen flags="wfNoBorder" name="ChangePasswdScreen" position="0,0" size="1280,720" title="Change Password">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
@@ -2166,6 +2181,32 @@
     <widget source="key_yellow" render="Label" position="725,645" size="220,26" backgroundColor="black" transparent="1" font="Regular;22" halign="left"/>
     <widget name="filelist" position="590,110" size="600,500" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png"/>
   </screen>
+  <!-- ##FPUpgrade## -->
+  <screen flags="wfNoBorder" name="FPUpgrade" position="0,0" size="1280,720" title="FP upgrade required">
+    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="60, 30" size="700, 55" halign="left" transparent="1" valign="center" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35"  size="250, 50" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" zPosition="1" />
+    <widget name="text" font="Regular;22" position="590, 110" size="600,60" transparent="1" />
+    <widget name="oldversion_label" font="Regular;22" position="590, 180" size="290,30" transparent="1" />
+    <widget name="newversion_label" font="Regular;22" position="590, 210" size="290,30" transparent="1" />
+    <widget name="oldversion" font="Regular;22" position="880, 180" size="50,25" transparent="1" />
+    <widget name="text" font="Regular;22" position="880,210" size="50,25" transparent="1" />
+  </screen>
+  <screen flags="wfNoBorder" name="XXX SystemMessage" position="0,0" size="1280,720" title="System Message">
+    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="60, 30" size="700, 55" halign="left" transparent="1" valign="center" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35"  size="250, 50" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" zPosition="1" />
+		<widget source="text" position="680,110" size="450,200" font="Regular;20" halign="center" valign="center" render="Label" />
+		<ePixmap pixmap="skin_default/icons/input_error.png" position="590,110" size="53,53" alphatest="on" />
+  </screen>
   <!-- ##VideoEnhancement## -->
   <screen name="VideoEnhancementPreview" title="VideoEnhancementPreview" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90"/>
@@ -2884,7 +2925,7 @@
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="70, 110" size="432, 243" backgroundColor="transparent" zPosition="1"/>
   <!-- ##SNR## -->
-    <!-- ##Doesn't really work as dB indicator##
+    <!-- ##Doesn't really work as dB indicator, at least not on VU+##
      <widget source="Frontend" render="Label" position="590,120" size="410,24" font="Regular;22" halign="center" valign="center" backgroundColor="darkgrey" transparent="1">
       <convert type="FrontendInfo">SNRdB</convert>
     </widget> -->
@@ -2958,6 +2999,29 @@
     <widget name="symbolrate_value" position="1110,490" size="100,24" backgroundColor="darkgrey" transparent="1" font="Regular;21"/>
     <eLabel position="960,520" size="150,24" backgroundColor="darkgrey" transparent="1" text="FEC:" font="Regular;21"/>
     <widget name="fec_value" position="1110,520" size="100,24" backgroundColor="darkgrey" transparent="1" font="Regular;21"/>
+  </screen>
+  <screen flags="wfNoBorder" name="FastScanScreen" position="0,0" size="1280,720" title="Fast Scan">
+    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="60, 30" size="700, 55" halign="left" transparent="1" valign="center" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35"  size="250, 50" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" zPosition="1" />
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" position="590, 110" size="600,400" transparent="1" />
+    <widget name="introduction" font="Regular;22" position="590, 510" size="600,25" halign="center" transparent="1" />
+  </screen>
+ <screen flags="wfNoBorder" name="FastScanStatus" position="0,0" size="1280,720" title="Fast Scan">
+    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="60, 30" size="700, 55" halign="left" transparent="1" valign="center" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35"  size="250, 50" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" zPosition="1" />
+		<widget name="frontend" pixmap="skin_default/icons/scan-s.png" position="590,110" size="64,64" transparent="1" alphatest="on" />
+		<widget name="scan_state" position="660,110" zPosition="2" size="400,30" font="Regular;18" />
+		<widget name="scan_progress" position="660,145" size="400,15" pixmap="skin_default/progress_big.png" borderWidth="2" borderColor="black" />
   </screen>
   <!-- ##Wizards## -->
   <screen name="NetworkWizard" title="Network Wizard" position="0,0" size="1280,720" flags="wfNoBorder">
