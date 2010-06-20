@@ -2196,7 +2196,7 @@
     <widget name="oldversion" font="Regular;22" position="880, 180" size="50,25" transparent="1" />
     <widget name="text" font="Regular;22" position="880,210" size="50,25" transparent="1" />
   </screen>
-  <screen flags="wfNoBorder" name="XXX SystemMessage" position="0,0" size="1280,720" title="System Message">
+  <screen flags="wfNoBorder" name="SystemMessage" position="0,0" size="1280,720" title="System Message">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
     <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="60, 30" size="700, 55" halign="left" transparent="1" valign="center" zPosition="1" />
@@ -3463,8 +3463,7 @@
 		<eLabel position="70,155" size="700,2" backgroundColor="grey"/>
 		<widget name="list" position="70,165" size="700,450" itemHeight="30" backgroundColor="background" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png"/>
   </screen>
-
-  <screen flags="wfNoBorder" name="XXX Merlin_PGd" position="0,0" size="1280,720" title="Merlin_PG">
+  <screen flags="wfNoBorder" name="Merlin_PGd" position="0,0" size="1280,720" title="Merlin_PG">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
     <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="60, 30" size="700, 55" halign="left" transparent="1" valign="center" zPosition="1" />
@@ -3472,20 +3471,16 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" zPosition="1" />
-			<!--<eLabel backgroundColor="#00111112" position="0,292" size="520,450" zPosition="1"/>
-			<eLabel backgroundColor="#00111112" position="520,0" size="760,720" zPosition="1"/>-->
-			<!--<ePixmap alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Merlin_PG/epg.png" position="1136,105" size="85,77" zPosition="2"/>
-			<ePixmap alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Merlin_PG/channels.png" position="395,306" size="80,80" zPosition="2"/>-->
+		<ePixmap alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Merlin_PG/epg.png" position="1136,105" size="85,77" zPosition="2"/>
+		<ePixmap alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Merlin_PG/channels.png" position="440,380" size="80,80" zPosition="2"/>
     <ePixmap pixmap="Magic-HD/buttons/red.png" alphatest="on" position="100,643" size="26,26" />
     <ePixmap pixmap="Magic-HD/buttons/green.png" alphatest="on" position="390,643" size="26,26" />
 		<eLabel text="ZAP" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
 		<eLabel text="TIMERS" backgroundColor="secondBG" font="Regular;22" halign="left"  position="435,645" size="220,26" transparent="1" zPosition="1" />
-		<widget itemHeight="25" name="prg_list" position="75,380" scrollbarMode="showNever" size="450,240" transparent="1" zPosition="4"/>
-		<widget itemHeight="27" name="epg_list" position="570,105" scrollbarMode="showNever" size="600,500" transparent="1" zPosition="4"/>
-		<widget backgroundColor="#00111112" font="Regular;22" foregroundColor="#fcc000" halign="center" name="currCh" position="555,55" size="651,24" transparent="1" valign="center" zPosition="2"/>
+		<widget name="prg_list" position="70,380" scrollbarMode="showNever" selectionPixmap="Magic-HD/buttons/sel.png" size="450,228" itemHeight="25" transparent="1" zPosition="4"/>
+		<widget name="epg_list" position="570,120" scrollbarMode="showNever" selectionPixmap="Magic-HD/buttons/sel.png" size="650,488" itemHeight="27" transparent="1" zPosition="4"/>
+		<widget backgroundColor="#00111112" font="Regular;22" foregroundColor="#fcc000" halign="center" name="currCh" position="570,95" size="650,24" transparent="1" valign="center" zPosition="2"/>
   </screen>
-
-  
   <screen name="MerlinDownloadBrowser" title="Addon Manager" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90"/>
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2"/>
