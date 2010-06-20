@@ -324,8 +324,8 @@
      <convert type="ConditionalShowHide">Invert</convert>
     </widget>
   </screen>
-  <screen backgroundColor="transparent" flags="wfNoBorder" name="DVDPlayer" position="0,508" size="1280,220" title="InfoBar">
-    <widget backgroundColor="background" font="Regular;24" borderColor="black" borderWidth="2" foregroundColor="foreground" halign="center" position="167, -501" render="Label" size="840,40" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
+  <screen name="DVDPlayer" title="InfoBar" position="4,22" size="1280,70" backgroundColor="transparent" flags="wfNoBorder" >
+    <widget source="session.CurrentService" render="Label" position="219, 0" size="840,40" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget alphatest="on" pixmap="Magic-HD/infobar/ico_dolby_on.png" position="1054, -451" render="Pixmap" size="60,24" source="session.CurrentService" zPosition="2">
@@ -344,22 +344,22 @@
     <widget alphatest="on" pixmap="Magic-HD/buttons/rec.png" position="1035, -450" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <ePixmap alphatest="blend" pixmap="Magic-HD/dvr/mpslider.png" position="300, -447" size="600,16" zPosition="3" />
-    <widget pointer="Magic-HD/dvr/pointer.png:13,3" position="320,-445" render="PositionGauge" size="560,14" source="session.CurrentService" zPosition="2">
+	 <ePixmap pixmap="Magic-HD/dvr/mpslider.png" position="345,50" size="600,16" zPosition="3" alphatest="blend"/>
+    <widget source="session.CurrentService" render="PositionGauge" position="364, 51" size="560,14" zPosition="2" pointer="Magic-HD/dvr/pointer.png:13,3">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
-    <widget backgroundColor="background" font="Regular;22" borderColor="black" borderWidth="2" foregroundColor="foreground" halign="right" position="177, -450" render="Label" size="121,25" source="session.CurrentService" transparent="1" valign="center" zPosition="4">
+    <widget source="session.CurrentService" render="Label" position="264, 47" size="70,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="right">
       <convert type="ServicePosition">Position</convert>
     </widget>
-    <widget backgroundColor="background" font="Regular;22" borderColor="black" borderWidth="2" foregroundColor="foreground" halign="left" position="911, -452" render="Label" size="117,25" source="session.CurrentService" transparent="1" valign="center" zPosition="4">
+    <widget source="session.CurrentService" render="Label" position="952, 48" size="117,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
       <convert type="ServicePosition">Remaining</convert>
     </widget>
-    <widget backgroundColor="background" font="Regular;24" borderColor="black" borderWidth="2" foregroundColor="foreground" halign="center" position="45, -450" render="Label" size="130,25" source="session.CurrentService" transparent="1" valign="center" zPosition="4">
+    <widget source="session.CurrentService" render="Label" position="190, 47" size="70,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
       <convert type="ServicePosition">Length</convert>
-    </widget>
-		<widget font="Enigma;20" halign="left" name="chapterLabel" noWrap="1" position="47,-360" borderColor="black" borderWidth="2" size="290,35" backgroundColor="transparent" zPosition="3"/>
+    </widget>  
+	<!--	<widget font="Enigma;20" halign="left" name="chapterLabel" noWrap="1" position="47,-360" borderColor="black" borderWidth="2" size="290,35" backgroundColor="transparent" zPosition="3"/>
 		<widget font="Enigma;20" halign="right" name="audioLabel" noWrap="1" position="460,-365" borderColor="black" borderWidth="2" size="146,24" backgroundColor="transparent" zPosition="3"/>
-		<widget font="Enigma;20" halign="right" name="subtitleLabel" noWrap="1" position="710,-365" borderColor="black" borderWidth="2" size="140,24" backgroundColor="transparent" zPosition="3"/>
+		<widget font="Enigma;20" halign="right" name="subtitleLabel" noWrap="1" position="710,-365" borderColor="black" borderWidth="2" size="140,24" backgroundColor="transparent" zPosition="3"/>-->
   </screen>
   <!-- ## Channel, EPG, EventInfo ## -->
   <screen name="ChannelSelection" title="Channel Selection" position="0,0" size="1280,720" flags="wfNoBorder">
