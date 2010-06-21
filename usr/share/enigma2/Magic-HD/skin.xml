@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-HD Vs 1.05 by MiLo, MrNiceNL & VU+NL, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 1.06 by MiLo, MrNiceNL & VU+NL, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea -->
@@ -324,11 +324,25 @@
      <convert type="ConditionalShowHide">Invert</convert>
     </widget>
   </screen>
+ <screen flags="wfNoBorder" name="SIBsetupScreen" position="0,0" size="1280,720" title="Second-InfoBar setup">
+    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="60, 30" size="700, 55" halign="left" transparent="1" valign="center" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35"  size="250, 50" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" zPosition="1" />
+    <ePixmap pixmap="Magic-HD/buttons/red.png" alphatest="on" position="100,643" size="26,26" />
+    <ePixmap pixmap="Magic-HD/buttons/green.png" alphatest="on" position="390,643" size="26,26" />
+    <eLabel text="Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
+    <eLabel text="Save" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" position="590, 110" size="600,500" transparent="1" />
+		</screen>
   <screen name="DVDPlayer" title="InfoBar" position="4,22" size="1280,215" backgroundColor="transparent" flags="wfNoBorder" >
     <widget source="session.CurrentService" render="Label" position="219, 0" size="840,40" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
- 	 <ePixmap pixmap="Magic-HD/dvr/mpslider.png" position="345,50" size="600,16" zPosition="3" alphatest="blend"/>
+ 	  <ePixmap pixmap="Magic-HD/dvr/mpslider.png" position="345,50" size="600,16" zPosition="3" alphatest="blend"/>
     <widget source="session.CurrentService" render="PositionGauge" position="364, 51" size="560,14" zPosition="2" pointer="Magic-HD/dvr/pointer.png:13,3">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
@@ -346,12 +360,6 @@
 		<widget name="audioLabel" position="370,115" size="290,35" font="Regular;20" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3"/>
 		<eLabel text="Subtitle:  " position="280, 150" size="90, 35" backgroundColor="secondBG" transparent="1" borderColor="black" borderWidth="2" font="Regular;20" valign="center" halign="left" />
 		<widget name="subtitleLabel" position="370,150" size="290,35" font="Regular;20" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3"/>
-  <!-- ##Working!##
-  	<widget font="Regular;20" halign="left" name="chapterLabel" noWrap="1" position="10,80" borderColor="black" borderWidth="2" size="290,35" backgroundColor="transparent" zPosition="3"/>
-  	<eLabel position="10, 130" size="90, 35" backgroundColor="secondBG" transparent="1" text="Audio: " font="Regular;20" halign="left" />
-		<widget font="Regular;20" halign="left" name="audioLabel" noWrap="1" position="90,130" borderColor="black" borderWidth="2" size="290,35" backgroundColor="transparent" zPosition="3"/>
-		<eLabel position="10, 180" size="90, 35" backgroundColor="secondBG" transparent="1" text="Subtitle: " font="Regular;20" halign="left" />
-		<widget font="Regular;20" halign="left" name="subtitleLabel" noWrap="1" position="90,180" borderColor="black" borderWidth="2" size="290,35" backgroundColor="transparent" zPosition="3"/>-->
     </screen>
   <!-- ## Channel, EPG, EventInfo ## -->
   <screen name="ChannelSelection" title="Channel Selection" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -714,6 +722,7 @@
 		<widget name="theClock" position="590, 160" size="280,50" />
     <widget name="title" position="590, 220" size="280,50" />
   </screen>
+  <!-- ##Not in fullscreen##
   <screen flags="wfNoBorder" name="MinuteInput" position="0,0" size="1280,720" title="Seek">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
@@ -722,8 +731,8 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" zPosition="1" />
-    <widget name="minutes" position="590, 110" size="600,500" halign="right" font="Regular;23" transparent="1" />
-  </screen>
+    <widget name="minutes" position="590, 110" size="600,25" halign="right" font="Regular;23" transparent="1" />
+  </screen>-->
   <screen flags="wfNoBorder" name="ParentalControlChangePin" position="0,0" size="1280,720" title="Change pin code">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
@@ -1071,6 +1080,7 @@
     <widget name="channel" position="0,-200" size="150,60" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="3" valign="center" halign="center"/>
     <widget name="number" position="34,-200" size="280,60" backgroundColor="transparent" transparent="1" font="Regular;36" borderColor="black" borderWidth="3" valign="center" halign="center"/>
   </screen>
+  <!--## Not in fullscreen##
   <screen name="Subtitles" title="Subtitle selection" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90"/>
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2"/>
@@ -1080,7 +1090,7 @@
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="70, 110" size="432, 243" backgroundColor="transparent" zPosition="1"/>
     <widget name="config" position="590, 110" size="600,500" backgroundColor="darkgrey" zPosition="3" transparent="1" font="Regular;24" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png"/>
-  </screen>
+  </screen>-->
   <screen name="ChapterZap" title="Chapter" position="center,center" size="280,60" backgroundColor="transparent" flags="wfNoBorder">
     <widget name="chapter" position="0,-200" size="200,40" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="4" valign="center" halign="right"/>
     <widget name="number" position="200,-200" size="150,40" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" borderWidth="4" valign="center" halign="left"/>
@@ -1459,8 +1469,6 @@
     <widget name="key_yellow" position="725,645" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left"/>
     <widget name="key_blue" position="1015,645" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left"/>
   </screen>
-  
-  
   <screen name="MovieSelection" title="MovieSelection" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90"/>
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2"/>
@@ -3171,7 +3179,7 @@
     <widget name="liste" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" position="590, 110" size="600,500" transparent="1" />
   </screen>
   <!-- ##SHOUTcast## -->
-  <screen name="SHOUTcastWidget" title="SHOUTcast" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
+  <screen name="SHOUTcastWidget" title="SHOUTcast" position="0,0" size="1280,720" transparent="0" backgroundColor="black" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90"/>
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2"/>
     <widget source="Title" render="Label" position="60, 30" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center"/>
@@ -3195,7 +3203,7 @@
     <widget name="station" position="665,145" size="565,50" backgroundColor="background" transparent="1" font="Regular;20"/>
     <widget name="console" position="1030,195" size="200,430" backgroundColor="background" transparent="1" font="Regular;20"/>
   </screen>
-  <screen name="SHOUTcastSetup" title="SHOUTcast Setup" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
+  <screen name="SHOUTcastSetup" title="SHOUTcast Setup" position="0,0" size="1280,720" transparent="0" backgroundColor="black" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90"/>
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2"/>
     <widget source="Title" render="Label" position="60, 30" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center"/>
@@ -3208,7 +3216,7 @@
     <widget source="key_green" render="Label" position="435,645" size="220,26" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left"/>
     <widget name="config" position="590, 110" size="600,500" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png"/>
   </screen>
-  <screen name="SHOUTcastStreamripperRecordingPath" title="Select record path for streamripper" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
+  <screen name="SHOUTcastStreamripperRecordingPath" title="Select record path for streamripper" position="0,0" size="1280,720" transparent="0" backgroundColor="black" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90"/>
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2"/>
     <widget source="Title" render="Label" position="60, 30" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center"/>
