@@ -341,14 +341,17 @@
     <widget source="session.CurrentService" render="Label" position="190, 47" size="70,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
       <convert type="ServicePosition">Length</convert>
     </widget>  
-	<widget font="Regular;20" halign="left" name="chapterLabel" noWrap="1" position="10,80" borderColor="black" borderWidth="2" size="290,35" backgroundColor="transparent" zPosition="3"/>
-	<eLabel position="10, 130" size="90, 35" backgroundColor="secondBG" transparent="1" text="Audio: " font="Regular;20" halign="left" />
+  	<widget name="chapterLabel" position="280,80"  size="380,35" font="Regular;20" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3"/>
+  	<eLabel text="Audio:  " position="280, 115" size="90, 35" backgroundColor="secondBG" transparent="1" font="Regular;20" borderColor="black" borderWidth="2" valign="center" halign="left" />
+		<widget name="audioLabel" position="370,115" size="290,35" font="Regular;20" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3"/>
+		<eLabel text="Subtitle:  " position="280, 150" size="90, 35" backgroundColor="secondBG" transparent="1" borderColor="black" borderWidth="2" font="Regular;20" valign="center" halign="left" />
+		<widget name="subtitleLabel" position="370,150" size="290,35" font="Regular;20" halign="left" valign="center" noWrap="1" borderColor="black" borderWidth="2" backgroundColor="transparent" zPosition="3"/>
+  <!-- ##Working!##
+  	<widget font="Regular;20" halign="left" name="chapterLabel" noWrap="1" position="10,80" borderColor="black" borderWidth="2" size="290,35" backgroundColor="transparent" zPosition="3"/>
+  	<eLabel position="10, 130" size="90, 35" backgroundColor="secondBG" transparent="1" text="Audio: " font="Regular;20" halign="left" />
 		<widget font="Regular;20" halign="left" name="audioLabel" noWrap="1" position="90,130" borderColor="black" borderWidth="2" size="290,35" backgroundColor="transparent" zPosition="3"/>
 		<eLabel position="10, 180" size="90, 35" backgroundColor="secondBG" transparent="1" text="Subtitle: " font="Regular;20" halign="left" />
-		<widget font="Regular;20" halign="left" name="subtitleLabel" noWrap="1" position="90,180" borderColor="black" borderWidth="2" size="290,35" backgroundColor="transparent" zPosition="3"/>
-  <!-- origineel<widget font="Enigma;20" halign="left" name="chapterLabel" noWrap="1" position="47,-360" borderColor="black" borderWidth="2" size="290,35" backgroundColor="transparent" zPosition="3"/>
-		<widget font="Enigma;20" halign="right" name="audioLabel" noWrap="1" position="460,-365" borderColor="black" borderWidth="2" size="146,24" backgroundColor="transparent" zPosition="3"/>
-		<widget font="Enigma;20" halign="right" name="subtitleLabel" noWrap="1" position="710,-365" borderColor="black" borderWidth="2" size="140,24" backgroundColor="transparent" zPosition="3"/>-->
+		<widget font="Regular;20" halign="left" name="subtitleLabel" noWrap="1" position="90,180" borderColor="black" borderWidth="2" size="290,35" backgroundColor="transparent" zPosition="3"/>-->
     </screen>
   <!-- ## Channel, EPG, EventInfo ## -->
   <screen name="ChannelSelection" title="Channel Selection" position="0,0" size="1280,720" flags="wfNoBorder">
