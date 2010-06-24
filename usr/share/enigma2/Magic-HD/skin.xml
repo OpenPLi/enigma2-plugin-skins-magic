@@ -1315,8 +1315,8 @@
     </widget>
   </screen>
   <screen name="RdsInfoDisplay" position="60,60" size="900,200" backgroundColor="transparent" zPosition="-2" flags="wfNoBorder">
-    <widget name="RadioText" position="0, 0" size="900,90" backgroundColor="transparent" zPosition="1" transparent="1" foregroundColor="secondFG" font="LCD;40" valign="center" halign="center" borderColor="black" borderWidth="4" />
-    <widget name="RtpText" position="0,100" size="900,90" backgroundColor="transparent" zPosition="1" transparent="1" foregroundColor="secondFG" font="LCD;40" valign="center" halign="center" borderColor="black" borderWidth="4" />
+    <widget name="RadioText" position="0, 0" size="1100,90" backgroundColor="transparent" zPosition="1" transparent="1" foregroundColor="secondFG" font="LCD;40" valign="center" halign="center" borderColor="black" borderWidth="4" />
+    <widget name="RtpText" position="0,100" size="1100,90" backgroundColor="transparent" zPosition="1" transparent="1" foregroundColor="secondFG" font="LCD;40" valign="center" halign="center" borderColor="black" borderWidth="4" />
     <widget name="RassLogo" position="0,0" size="0,0"/>
   </screen>
   <screen flags="wfNoBorder" name="RassInteractive" position="0,0" size="1280,720" title="RassInteractive">
@@ -3391,15 +3391,15 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" zPosition="1" />
-		<ePixmap alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Merlin_PG/epg.png" position="1136,105" size="85,77" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Merlin_PG/channels.png" position="440,380" size="80,80" zPosition="2"/>
+		<ePixmap alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Merlin_PG/epg.png" position="680,630" size="85,77" zPosition="2"/>
+		<ePixmap alphatest="on" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Merlin_PG/channels.png" position="260,630" size="80,80" zPosition="2"/>
     <ePixmap pixmap="Magic-HD/buttons/red.png" alphatest="on" position="100,643" size="26,26" />
     <ePixmap pixmap="Magic-HD/buttons/green.png" alphatest="on" position="390,643" size="26,26" />
 		<eLabel text="ZAP" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
 		<eLabel text="TIMERS" backgroundColor="secondBG" font="Regular;22" halign="left"  position="435,645" size="220,26" transparent="1" zPosition="1" />
 		<widget name="prg_list" position="70,380" scrollbarMode="showNever" selectionPixmap="Magic-HD/buttons/sel.png" size="450,228" itemHeight="25" transparent="1" zPosition="4"/>
-		<widget name="epg_list" position="570,120" scrollbarMode="showNever" selectionPixmap="Magic-HD/buttons/sel.png" size="650,488" itemHeight="27" transparent="1" zPosition="4"/>
-		<widget backgroundColor="#00111112" font="Regular;22" foregroundColor="#fcc000" halign="center" name="currCh" position="570,95" size="650,24" transparent="1" valign="center" zPosition="2"/>
+		<widget name="epg_list" position="570,118" scrollbarMode="showNever" selectionPixmap="Magic-HD/buttons/sel.png" size="650,510" itemHeight="27" transparent="1" zPosition="4"/>
+		<widget backgroundColor="#00111112" font="Regular;22" foregroundColor="#fcc000" halign="center" name="currCh" position="570,91" size="650,24" transparent="1" valign="center" zPosition="2"/>
   </screen>
   <screen flags="wfNoBorder" name="Merlin_PGII" position="0,0" size="1280,720" title="Merlin Program Guide">
     <widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1" />
@@ -3787,7 +3787,7 @@
 		<eLabel text="OK = Save" backgroundColor="secondBG" font="Regular;22" halign="left" position="725,645" size="220,26" transparent="1" zPosition="1" />  
 		<eLabel text="Exit = Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
   </screen> 
-<!-- ## CCCam Info ##-->
+  <!-- ## CCCam Info ##-->
   <screen flags="wfNoBorder" name="CCcamInfoMain" position="0,0" size="1280,720" title="CCCam Info Main">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
@@ -5149,7 +5149,7 @@
 		<eLabel text="'OK'= Accept" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
   </screen>
 	<screen name="PermanentClockScreen" position="0,0" size="120,30" zPosition="1" backgroundColor="transparent" title="%s" flags="wfNoBorder">
-		<widget source="global.CurrentTime" render="Label" position="1,1" size="120,30"   backgroundColor="transparent" transparent="1" zPosition="10" foregroundColor="foreground" borderWidth="2" font="Regular;26" borderColor="black" valign="center" halign="center">
+		<widget source="global.CurrentTime" render="Label" position="1,1" size="120,30"   backgroundColor="transparent" transparent="1" zPosition="0" foregroundColor="foreground" borderWidth="2" font="Regular;26" borderColor="black" valign="center" halign="center">
 			<convert type="ClockToText">Default</convert>
 		</widget>
 	</screen>
