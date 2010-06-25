@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-HD Vs 1.11 by VU+NL, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 1.13 by VU+NL, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea -->
@@ -288,7 +288,7 @@
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
-  <screen name="SecondInfoBar" title="Second InfoBar" position="0,0" size="1280,220" backgroundColor="transparent" flags="wfNoBorder">
+  <screen name="SecondInfoBar" title="Second InfoBar" position="0,0" size="1280,220" zPosition="-1" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap alphatest="off" pixmap="Magic-HD/infobar/hdi.png" position="0,0" size="1280,220" zPosition="-1"/>
     <widget source="session.CurrentService" render="Label" position="50, 20" size="600,66" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;16" valign="top" halign="left">
      <convert type="pliExpertInfo">ExpertInfo</convert>
@@ -1499,6 +1499,7 @@
     <widget source="Service" render="Label" position="60, 366" size="400, 25" zPosition="1" foregroundColor="grey" font="Regular;20" halign="right">
       <convert type="MovieInfo">RecordServiceName</convert>
     </widget>
+    <widget name="DescriptionBorder" position="0,0" size="0,0" />
   </screen>
   <!-- ## Timers ## -->
   <screen name="TimerSelection" title="Timer selection" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -3793,6 +3794,18 @@
 		<eLabel text="Exit = Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
   </screen> 
   <!-- ## CCCam Info ##-->
+		<screen flags="wfNoBorder" name="EcmInfoScreen" position="0,0" size="755,25" title="ECM Info" backgroundColor="transpBlack" zPosition="-1" >
+			<widget name="irdeto" position="0,0" size="15,25" font="Regular;16" text="I" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
+			<widget name="seca" position="15,0" size="15,25" font="Regular;16" text="S" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
+			<widget name="nagra" position="30,0" size="15,25" font="Regular;16" text="N" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
+			<widget name="via" position="45,0" size="15,25" font="Regular;16" text="V" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
+			<widget name="conax" position="60,0" size="30,25" font="Regular;16" text="CO" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
+			<widget name="betacrypt" position="90,0" size="25,25" font="Regular;16" text="BC" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
+			<widget name="crypto" position="115,0" size="35,25" font="Regular;16" text="CW" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
+			<widget name="dreamcrypt" position="150,0" size="25,25" font="Regular;16" text="DC" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
+			<widget name="nds" position="175,0" size="40,25" font="Regular;16" text="NDS" valign="center" halign="center" borderColor="black" borderWidth="2" transparent="1" />
+			<widget name="ecmInfo" position="225,0" size="530,25" font="Regular;16" valign="center" transparent="1" borderColor="black" borderWidth="2" noWrap="1" />
+		</screen>
   <screen flags="wfNoBorder" name="CCcamInfoMain" position="0,0" size="1280,720" title="CCCam Info Main">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
@@ -3946,6 +3959,7 @@
     <widget source="session.VideoPicture" backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" zPosition="1" />
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" position="590, 110" size="600,500" transparent="1" />
 		<eLabel text="'Exit' = Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
+		<eLabel text="'OK' = Accept" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
   </screen>
   <screen flags="wfNoBorder" name="CCcamInfoMenuConfig" position="0,0" size="1280,720" title="CCcam Menu Config">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
