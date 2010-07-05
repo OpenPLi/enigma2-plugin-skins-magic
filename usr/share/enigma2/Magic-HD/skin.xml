@@ -1120,15 +1120,15 @@
   <screen name="TimeshiftState" position="center,30" size="860,60" backgroundColor="transparent" zPosition="2" flags="wfNoBorder">
     <widget name="state" position="10,2" size="150,27" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" valign="center" halign="center" foregroundColor="foreground" borderWidth="2" />
     <widget source="session.CurrentService" render="Label" position="160,5" size="150,27" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" font="Regular;22" halign="left">
-      <convert type="ServicePosition">Remaining</convert>
+      <convert type="ServicePosition">Position,ShowHours</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="650,5" size="80,27" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" font="Regular;22" halign="right">
-      <convert type="ServicePosition">Position</convert>
+    <widget source="session.CurrentService" render="Label" position="650,5" size="150,27" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" font="Regular;22" halign="right">
+      <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
     </widget>
     <eLabel position="740,5" size="10,27" text="/" backgroundColor="transparent" foregroundColor="foreground" borderColor="black" borderWidth="2" font="Regular;22" halign="center" />
-    <widget source="session.CurrentService" render="Label" position="760,5" size="80,27" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" font="Regular;22" halign="left">
+    <!--<widget source="session.CurrentService" render="Label" position="760,5" size="80,27" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" font="Regular;22" halign="left">
       <convert type="ServicePosition">Length</convert>
-    </widget>
+    </widget>-->
     <widget source="session.CurrentService" render="Progress" pixmap="Magic-HD/infobar/pbar.png" position="10,33" size="840,8" backgroundColor="un444444a" zPosition="3">
       <convert type="ServicePosition">Position</convert>
     </widget>
