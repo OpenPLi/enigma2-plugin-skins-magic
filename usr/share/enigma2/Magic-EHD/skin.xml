@@ -4034,7 +4034,6 @@
     <widget name="key_blue" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,682"  size="220,26" transparent="1" zPosition="1" />
     <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-EHD/buttons/sel.png" position="520,90" size="740,575" transparent="1" />
     <ePixmap position="240,365" size="140,250" pixmap="/usr/share/enigma2/skin_default/rc.png" transparent="1" alphatest="on" />
-		<widget name="background" backgroundColor="#220a0a0a" zPosition="0" position="520,90" size="740,40" font="Regular;20" halign="left" valign="center" />
   </screen>
   <screen flags="wfNoBorder" name="QuickButton" position="0,0" size="1280,720" title="QuickButton">
     <ePixmap pixmap="Magic-EHD/border/top2_bg.png" position="0,0" size="1280,75" />
