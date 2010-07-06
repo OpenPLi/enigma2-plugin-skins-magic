@@ -924,8 +924,8 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget backgroundColor="transparent" position="70,110" render="Pig" size="432,243" source="session.VideoPicture" zPosition="1" />
-    <ePixmap alphatest="on" pixmap="Magic-HD/buttons/red.png" position="100,643" size="26,26" />
-    <ePixmap alphatest="on" pixmap="Magic-HD/buttons/green.png" position="390,643" size="26,26" />
+    <widget name="cancel" alphatest="on" pixmap="Magic-HD/buttons/red.png" position="100,643" size="26,26" />
+    <widget name="ok" alphatest="on" pixmap="Magic-HD/buttons/green.png" position="390,643" size="26,26" />
     <widget name="canceltext" position="145,645" zPosition="1" size="220,26" font="Regular;24" halign="left" backgroundColor="background" transparent="1" />
     <widget name="oktext" position="435,645" zPosition="1" size="220,26" font="Regular;24" halign="left" backgroundColor="background" transparent="1" />
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" position="590,110" font="Regular;22" size="600,500" transparent="1" />
@@ -1457,8 +1457,8 @@
     <widget source="session.VideoPicture" render="Pig" position="70,110" size="432,243" backgroundColor="transparent" zPosition="1" />
     <ePixmap pixmap="Magic-HD/buttons/red.png" position="100,643" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD/buttons/green.png" position="390,643" size="26,26" alphatest="on" />
-    <eLabel text="Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
-    <eLabel text="OK" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
+    <widget name="canceltext" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
+    <widget name="oktext" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
     <widget name="config" selectionPixmap="Magic-HD/buttons/sel.png" position="590,110" size="600,500" />
   </screen>
   <screen flags="wfNoBorder" name="SelectBouquet" position="0,0" size="1280,720" title="Choose bouquet">
@@ -1543,8 +1543,8 @@
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="70,110" size="432,243" backgroundColor="transparent" zPosition="1" />
     <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="50,665" size="35,25" />
-    <ePixmap pixmap="Magic-HD/buttons/red.png" position="100,643" size="26,26" alphatest="on" />
-    <ePixmap pixmap="Magic-HD/buttons/green.png" position="390,643" size="26,26" alphatest="on" />
+    <widget name="cancel" pixmap="Magic-HD/buttons/red.png" position="100,643" size="26,26" alphatest="on" />
+    <widget name="ok" pixmap="Magic-HD/buttons/green.png" position="390,643" size="26,26" alphatest="on" />
     <widget name="config" position="530,110" size="690,500" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" />
     <widget name="canceltext" position="145,645" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="oktext" position="435,645" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
@@ -4039,6 +4039,7 @@
     <widget name="key_blue" backgroundColor="secondBG" font="Regular;22" halign="left" position="1015,645" size="220,26" transparent="1" zPosition="1" />
     <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" position="590,110" size="600,500" transparent="1" />
     <ePixmap position="240,365" size="140,250" pixmap="/usr/share/enigma2/skin_default/rc.png" transparent="1" alphatest="on" />
+		<widget name="background" backgroundColor="#220a0a0a" zPosition="0" position="590,110" size="600,40" font="Regular;20" halign="left" valign="center" />
   </screen>
   <screen flags="wfNoBorder" name="QuickButton" position="0,0" size="1280,720" title="QuickButton">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
@@ -4988,7 +4989,7 @@
     <widget source="key_yellow" render="Label" position="725,645" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget source="key_blue" render="Label" position="1015,645" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget source="Title" render="Label" position="590,110" size="600,43" backgroundColor="background" transparent="1" font="Regular;26" />
-    <widget name="config" position="590,153" size="600,450" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" background="background" selectionPixmap="Magic-HD/buttons/sel.png" />
+    <widget name="config" position="590,153" size="600,450" itemHeight="30" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" />
     <widget source="help" render="Label" position="70,400" size="450,200" backgroundColor="background" transparent="1" font="Regular;20" />
   </screen>
   <screen name="AutoTimerFilterEditor" title="Edit AutoTimer Filters" position="0,0" size="1280,720" flags="wfNoBorder">
