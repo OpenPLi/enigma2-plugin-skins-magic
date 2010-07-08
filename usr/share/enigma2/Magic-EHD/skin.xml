@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.07 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
+  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.11 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea -->
@@ -633,7 +633,7 @@
     <widget source="session.VideoPicture" backgroundColor="transparent" position="15,90" render="Pig" size="477,270" zPosition="1" />
      <ePixmap pixmap="Magic-EHD/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-EHD/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
-    <widget name="config" position="520,82" size="740,577" scrollbarMode="showOnDemand" selectionPixmap="Magic-EHD/buttons/sel.png" />
+    <widget name="config" position="520,82" size="740,577" itemHeight="32" font="Regular;25" scrollbarMode="showOnDemand" selectionPixmap="Magic-EHD/buttons/sel.png" />
   </screen>
    <screen name="About" title="About" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-EHD/border/top2_bg.png" position="0,0" size="1280,75" />
@@ -1137,10 +1137,10 @@
   </screen>
   <screen name="TimeshiftState" position="center,30" size="860,60" backgroundColor="transparent" zPosition="2" flags="wfNoBorder">
     <widget name="state" position="10,2" size="150,27" backgroundColor="transparent" transparent="1" font="Regular;34" borderColor="black" valign="center" halign="center" foregroundColor="foreground" borderWidth="2" />
-    <widget source="session.CurrentService" render="Label" position="160,5" size="150,27" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" font="Regular;22" halign="left">
+    <widget source="session.CurrentService" render="Label" position="160,2" size="150,27" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" font="Regular;22" halign="left">
       <convert type="ServicePosition">Position,ShowHours</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="650,5" size="150,27" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" font="Regular;22" halign="right">
+    <widget source="session.CurrentService" render="Label" position="650,2" size="150,27" backgroundColor="transparent" foregroundColor="foreground" borderWidth="2" borderColor="black" font="Regular;22" halign="right">
       <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
     </widget>
     <!--<eLabel position="740,5" size="10,27" text="/" backgroundColor="transparent" foregroundColor="foreground" borderColor="black" borderWidth="2" font="Regular;22" halign="center" />
