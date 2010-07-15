@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-HD Vs 1.16 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 1.22 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -255,7 +255,7 @@
     </widget>
   </screen>
   <screen name="MoviePlayer" title="InfoBar" position="4,30" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
-    <widget source="session.CurrentService" render="Label" position="415,0" size="435,40" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
+    <widget source="session.CurrentService" render="Label" position="415,-10" size="435,52" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
     <!--<widget source="global.CurrentTime" render="Label" position="190,0" size=" 145,40" borderColor="black" borderWidth="2" font="Regular;20" foregroundColor="secondFG" halign="center" transparent="1" valign="center" zPosition="4">
@@ -5387,7 +5387,6 @@
       <convert type="ServicePosition">Position,Detailed</convert>
     </widget>
     <widget name="Timeline" position="479,587" size="696,20" backgroundColor="background" zPosition="3" pointer="skin_default/position_arrow.png:3,5" foregroundColor="black" />
-    <ePixmap pixmap="Magic-HD/dvr/dvr.png" alphatest="on" position="680,645" size="130,30" />
     <eLabel text="'OK' = Menu" position="970,645" size="220,26" backgroundColor="black" zPosition="1" transparent="1" halign="center" font="Regular;20" />
     <eLabel text="'o' = Mark" position="435,645" size="220,26" backgroundColor="black" zPosition="1" transparent="1" halign="center" font="Regular;20" />
   </screen>

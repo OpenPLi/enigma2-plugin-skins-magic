@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.14 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
+  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.15 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea -->
@@ -5383,7 +5383,6 @@
       <convert type="ServicePosition">Position,Detailed</convert>
     </widget>
     <widget name="Timeline" position="479,587" size="696,20" backgroundColor="background" zPosition="3" pointer="skin_default/position_arrow.png:3,5" foregroundColor="black" />
-    <ePixmap pixmap="Magic-EHD/dvr/dvr.png" alphatest="on" position="680,682" size="130,30" />
     <eLabel text="'OK' = Menu" position="970,682" size="220,26" backgroundColor="black" zPosition="1" transparent="1" halign="center" font="Regular;20" />
     <eLabel text="'o' = Mark" position="340,682" size="220,26" backgroundColor="black" zPosition="1" transparent="1" halign="center" font="Regular;20" />
   </screen>
