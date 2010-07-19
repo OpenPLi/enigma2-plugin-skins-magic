@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-HD Vs 1.24 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 1.26 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -4809,6 +4809,44 @@
     <widget name="rec_pic" pixmap="skin_default/icons/icon_rec.png" position="720,405" size="36,20" zPosition="2" alphatest="on" />
     <widget name="info_pic" pixmap="skin_default/buttons/key_info.png" position="760,402" size="36,20" zPosition="2" alphatest="on" />
   </screen>
+ <!-- ## EPGRefresh ## -->
+  <screen name="EPGRefreshConfiguration" title="EPGRefresh Configuration" position="0,0" size="1280,720" flags="wfNoBorder">
+    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget source="Title" render="Label" position="60,30" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+    <widget source="global.CurrentTime" render="Label" position="970,35" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" render="Pig" position="70,110" size="432,243" backgroundColor="transparent" zPosition="1" />
+    <ePixmap pixmap="Magic-HD/buttons/red.png" position="100,643" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD/buttons/green.png" position="390,643" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD/buttons/yellow.png" position="680,643" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD/buttons/blue.png" position="970,643" size="26,26" alphatest="on" />
+    <widget source="key_red" render="Label" position="145,645" size="220,26" backgroundColor="un7c1c1c" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
+    <widget source="key_green" render="Label" position="435,645" size="220,26" backgroundColor="un266926" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
+    <widget source="key_yellow" render="Label" position="725,645" size="220,26" backgroundColor="un8c5900" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
+    <widget source="key_blue" render="Label" position="1015,645" size="220,26" backgroundColor="un254177" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
+    <widget name="config" position="640,98" size="555,350" itemHeight="28" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" />
+    <widget source="help" render="Label" position="640,467" size="555,150" font="Regular;22" />
+  </screen>
+  <screen name="EPGRefreshServiceEditor" title="Edit Services to refresh" position="0,0" size="1280,720" flags="wfNoBorder">
+    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget source="Title" render="Label" position="60,30" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+    <widget source="global.CurrentTime" render="Label" position="970,35" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" render="Pig" position="70,110" size="432,243" backgroundColor="transparent" zPosition="1" />
+    <ePixmap pixmap="Magic-HD/buttons/red.png" position="100,643" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD/buttons/green.png" position="390,643" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD/buttons/yellow.png" position="680,643" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-HD/buttons/blue.png" position="970,643" size="26,26" alphatest="on" />
+    <widget source="key_red" render="Label" position="145,645" size="220,26" backgroundColor="un7c1c1c" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
+    <widget source="key_green" render="Label" position="435,645" size="220,26" backgroundColor="un266926" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
+    <widget source="key_yellow" render="Label" position="725,645" size="220,26" backgroundColor="un8c5900" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
+    <widget source="key_blue" render="Label" position="1015,645" size="220,26" backgroundColor="un254177" transparent="1" zPosition="1" font="Regular;22" valign="center" halign="left" />
+    <widget name="config" position="640,98" size="555,350" itemHeight="28" font="Regular;22" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" />
+  </screen>
   <screen name="epgrefresh" title="EPG Refresh" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
@@ -4820,9 +4858,9 @@
     <ePixmap pixmap="Magic-HD/buttons/red.png" position="100,643" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD/buttons/green.png" position="390,643" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD/buttons/blue.png" position="970,643" size="26,26" alphatest="on" />
-    <widget name="key_red" position="145,645" size="220,26" backgroundColor="un9f1313" transparent="1" zPosition="2" halign="left" font="Regular;20" />
-    <widget name="key_green" position="435,645" size="220,26" backgroundColor="un1f771f" transparent="1" zPosition="2" halign="left" font="Regular;20" />
-    <widget name="key_blue" position="1015,645" size="220,26" backgroundColor="un18188b" transparent="1" zPosition="2" halign="left" font="Regular;20" />
+    <widget name="key_red" position="145,645" size="220,26" backgroundColor="un9f1313" transparent="1" zPosition="2" halign="left" font="Regular;22" />
+    <widget name="key_green" position="435,645" size="220,26" backgroundColor="un1f771f" transparent="1" zPosition="2" halign="left" font="Regular;22" />
+    <widget name="key_blue" position="1015,645" size="220,26" backgroundColor="un18188b" transparent="1" zPosition="2" halign="left" font="Regular;22" />
     <widget name="liste" position="668,113" size="420,225" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" />
     <widget name="label" position="668,369" size="420,20" font="Regular;18" />
   </screen>
@@ -5340,27 +5378,7 @@
 			<convert type="ServicePosition">Length</convert>
 		</widget>
 	</screen>    
-  <!-- ## EPGRefresh ## -->
-  <screen name="EPGRefreshConfiguration" title="EPGRefresh Configuration" position="0,0" size="1280,720" flags="wfNoBorder">
-    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
-    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
-    <widget source="Title" render="Label" position="60,30" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
-    <widget source="global.CurrentTime" render="Label" position="970,35" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
-      <convert type="ClockToText">Full</convert>
-    </widget>
-    <widget source="session.VideoPicture" render="Pig" position="70,110" size="432,243" backgroundColor="transparent" zPosition="1" />
-    <ePixmap pixmap="Magic-HD/buttons/red.png" position="100,643" size="26,26" alphatest="on" />
-    <ePixmap pixmap="Magic-HD/buttons/green.png" position="390,643" size="26,26" alphatest="on" />
-    <ePixmap pixmap="Magic-HD/buttons/yellow.png" position="680,643" size="26,26" alphatest="on" />
-    <ePixmap pixmap="Magic-HD/buttons/blue.png" position="970,643" size="26,26" alphatest="on" />
-    <widget source="key_red" render="Label" position="145,645" size="220,26" backgroundColor="un7c1c1c" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="left" />
-    <widget source="key_green" render="Label" position="435,645" size="220,26" backgroundColor="un266926" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="left" />
-    <widget source="key_yellow" render="Label" position="725,645" size="220,26" backgroundColor="un8c5900" transparent="1" zPosition="1" font="Regular;18" valign="center" halign="left" />
-    <widget source="key_blue" render="Label" position="1015,645" size="220,26" backgroundColor="un254177" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget name="config" position="640,98" size="555,350" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" />
-    <widget source="help" render="Label" position="640,467" size="555,150" font="Regular;24" />
-  </screen>
-  <!-- ## CutListEditor ## -->
+   <!-- ## CutListEditor ## -->
   <screen name="CutListEditor" title="CutListEditor" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" zPosition="-1" size="1280,90" />
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" zPosition="-1" size="1280,2" />
