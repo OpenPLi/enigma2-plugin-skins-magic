@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-HD Vs 1.30 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 1.31 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -4629,7 +4629,7 @@
     <widget name="key_yellow" position="725,645" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="1015,645" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="starsbg" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_empty.png" position="149,425" size="210,21" zPosition="2" alphatest="blend" />
-    <widget name="stars" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" position="152,571" size="210,21" zPosition="3" transparent="1" />
+    <widget name="stars" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/IMDb/starsbar_filled.png" position="149,425" size="210,21" zPosition="3" transparent="1" />
     <widget name="ratinglabel" position="151,484" size="210,24" backgroundColor="darkgrey" transparent="1" font="Regular;20" halign="center" />
     <widget name="titellabel" position="550,110" size="660,28" backgroundColor="darkgrey" transparent="1" font="Regular;25" valign="center" />
     <widget name="poster" position="553,152" size="110,180" alphatest="blend" />
