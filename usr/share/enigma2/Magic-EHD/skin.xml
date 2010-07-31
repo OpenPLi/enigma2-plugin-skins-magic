@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.26 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
+  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.29 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -3671,6 +3671,7 @@
     <widget name="config" position="520,82" size="740,583" itemHeight="29" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-EHD/buttons/sel.png" />
   </screen>
   <screen flags="wfNoBorder" name="Pic_Full_View" position="0,0" size="1280,720" title="Picture">
+     <widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1" />
     <eLabel position="0,0" zPosition="0" size="1280,720" backgroundColor="black" />
     <widget name="pic" position="0,0" size="1280,720" zPosition="1" alphatest="on" />
     <eLabel position="40,30" size=" 40,30" zPosition="2" backgroundColor="black" />
@@ -3744,6 +3745,7 @@
     <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="1015,15" size="250,50" transparent="1" valign="center" zPosition="1">
       <convert type="ClockToText">Full</convert>
     </widget>
+    <widget source="session.VideoPicture" backgroundColor="transparent" position="-5,-5" render="Pig" size="5,5" zPosition="1" />
     <ePixmap pixmap="Magic-EHD/buttons/red.png" alphatest="on" position="15,682" size="26,26" />
     <ePixmap pixmap="Magic-EHD/buttons/green.png" alphatest="on" position="305,682" size="26,26" />
     <ePixmap pixmap="Magic-EHD/buttons/yellow.png" alphatest="on" position="580,682" size="26,26" />
@@ -5255,12 +5257,12 @@
     <ePixmap pixmap="Magic-EHD/buttons/red.png" alphatest="on" position="15,682" size="26,26" />
     <ePixmap pixmap="Magic-EHD/buttons/green.png" alphatest="on" position="305,682" size="26,26" />
     <ePixmap pixmap="Magic-EHD/buttons/yellow.png" alphatest="on" position="580,682" size="26,26" />
-    <widget name="red" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
-    <widget name="green" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
-    <widget name="yellow" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1" />
+    <widget name="key_red" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
+    <widget name="key_green" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
+    <widget name="key_yellow" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1" />
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-EHD/buttons/sel.png" font="Regular;22" position="520,90" size="740,575" transparent="1" />
-  </screen>
-  <!-- ## PPanel ## -->
+  </screen>  
+   <!-- ## PPanel ## -->
   <screen flags="wfNoBorder" name="ToplevelPPanel" position="0,0" size="1280,720" title="Toplevel PPanel">
     <ePixmap pixmap="Magic-EHD/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-EHD/border/bottom_bg.png" position="0,675" size="1280,2" />
