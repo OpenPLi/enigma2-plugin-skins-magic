@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.36 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
+  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.37 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -2843,7 +2843,7 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="15,90" size="477,270" backgroundColor="transparent" zPosition="1" />
-    <widget name="nimlist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" itemHeight="32" font="Regular;24" position="520,82" size="740,583" transparent="1" />
+    <widget name="nimlist" scrollbarMode="showOnDemand" selectionPixmap="Magic-EHD/buttons/sel.png" itemHeight="32" font="Regular;24" position="520,82" size="740,583" transparent="1" />
   </screen>
   <screen name="Satfinder" title="Satfinder" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-EHD/border/top2_bg.png" position="0,0" size="1280,75" />
@@ -5330,7 +5330,7 @@
   </screen>
   <!-- ## Seekbar ##-->
   <screen name="Seekbar" position="center,center" size="560,160" title="Seekbar">
-    <widget name="config" position="10,10" size="540,100" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" />
+    <widget name="config" position="10,10" size="540,100" scrollbarMode="showOnDemand" selectionPixmap="Magic-EHD/buttons/sel.png" />
     <widget name="cursor" position="0,125" size="8,18" pixmap="skin_default/position_arrow.png" alphatest="on" />
     <widget source="session.CurrentService" render="PositionGauge" position="145,140" size="270,10" zPosition="2" pointer="skin_default/position_pointer.png:540,0" transparent="1" foregroundColor="un20224f">
       <convert type="ServicePosition">Gauge</convert>
