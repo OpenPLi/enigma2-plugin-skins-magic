@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-HD Vs 1.37 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 1.39 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -1265,7 +1265,7 @@
     <widget name="key_green" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,425" size="220,26" transparent="1" zPosition="1" />
     <widget name="key_yellow" backgroundColor="secondBG" font="Regular;22" halign="left" position="725,425" size="220,26" transparent="1" zPosition="1" />
     <widget name="key_blue" backgroundColor="secondBG" font="Regular;22" halign="left" position="1015,425" size="220,26" transparent="1" zPosition="1" />
-    <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" serviceInfoFont="Crs;22" serviceNameFont="Regular;22" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" serviceNumberFont="Regular;24" position="590,95" size="630,305" transparent="1" />--&gt;
+    <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" serviceInfoFont="Crs;22" serviceNameFont="Regular;22" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" serviceNumberFont="Regular;24" position="590,95" size="630,305" transparent="1" />
     <widget source="session.Event_Now" render="Label" position="70,95" size="460,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" halign="center" valign="center">
     <convert type="EventName">Name</convert>
     </widget>
@@ -2927,6 +2927,18 @@
     <eLabel position="960,520" size="150,24" backgroundColor="darkgrey" transparent="1" text="FEC:" font="Regular;21" />
     <widget name="fec_value" position="1110,520" size="100,24" backgroundColor="darkgrey" transparent="1" font="Regular;21" />
   </screen>
+  <screen name="TunerScreen" title="Tune" position="0,0" size="1280,720" flags="wfNoBorder">
+    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget source="Title" render="Label" position="60,30" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
+    <widget source="global.CurrentTime" render="Label" position="970,35" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
+     <convert type="ClockToText">Full</convert>
+    </widget>
+		<eLabel text="'OK' = Accept" backgroundColor="secondBG" font="Regular;22" halign="left" position="390,643" size="220,26" transparent="1" zPosition="1" />
+    <widget source="session.VideoPicture" render="Pig" position="70,110" size="432,243" backgroundColor="transparent" zPosition="1" />
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" position="590, 140" size="600,470" transparent="1" />
+		<widget name="introduction" position="590,110" size="600,30" font="Regular;23" />
+    </screen>
   <screen flags="wfNoBorder" name="FastScanScreen" position="0,0" size="1280,720" title="Fast Scan">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
