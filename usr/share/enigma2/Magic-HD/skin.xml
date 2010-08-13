@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-HD Vs 1.39 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 1.40 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -2936,8 +2936,8 @@
     </widget>
 		<eLabel text="'OK' = Accept" backgroundColor="secondBG" font="Regular;22" halign="left" position="390,643" size="220,26" transparent="1" zPosition="1" />
     <widget source="session.VideoPicture" render="Pig" position="70,110" size="432,243" backgroundColor="transparent" zPosition="1" />
-    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" position="590, 140" size="600,470" transparent="1" />
-		<widget name="introduction" position="590,110" size="600,30" font="Regular;23" />
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" font="Regular;22" position="590, 140" size="600,470" transparent="1" /> 
+ 		<widget name="introduction" position="590,110" size="600,30" font="Regular;23" />
     </screen>
   <screen flags="wfNoBorder" name="FastScanScreen" position="0,0" size="1280,720" title="Fast Scan">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
@@ -3595,6 +3595,71 @@
     <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DreamCC/buttons.png" position="745,477" size="200,40" zPosition="5" alphatest="on" />
     <widget name="menu" position="590,110" size="600,500" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" />
   </screen>
+  <!-- ##Apple trailer player##-->  
+  <screen flags="wfNoBorder" name="TrailerInfoScreen" position="0,0" size="1280,720" title="Apple TrailerPlayer">
+    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="60, 30" size="700, 55" halign="left" transparent="1" valign="center" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35"  size="250, 50" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <ePixmap pixmap="Magic-HD/buttons/green.png" alphatest="on" position="390,643" size="26,26" />
+    <widget name="key_green" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" /> 
+ 		<widget name="trailerimg" position="60,155" zPosition="2" size="270,350" alphatest="on" />
+		<widget source="trailertitle" transparent="1" render="Label" zPosition="2" valign="center" halign="left" position="60,97" size="1200,45" font="Regular;40" backgroundColor="#080B0A" foregroundColor="#919FBB" /> 
+		<widget source="trailertext" transparent="1" render="Label" zPosition="2" valign="top" halign="left" position="380,155" size="490,460" font="Regular;20" backgroundColor="#080B0A" foregroundColor="#919FBB" />
+		<widget source="director" transparent="1" render="Label" zPosition="2" valign="top" halign="left" position="900,155" size="350,20" font="Regular;18" backgroundColor="#080B0A" foregroundColor="#919FBB" />
+		<widget source="cast" transparent="1" render="Label" zPosition="2" valign="top" halign="left" position="900,215" size="350,370" font="Regular;18" backgroundColor="#080B0A" foregroundColor="#919FBB" />
+		<widget source="release" transparent="1" render="Label" zPosition="2" valign="top" halign="left" position="900,605" size="350,19" font="Regular;18" backgroundColor="#080B0A" foregroundColor="#919FBB" />
+  </screen> 
+  
+  <screen flags="wfNoBorder" name="PlayTrailer" position="0,0" size="1280,720" title="Play Trailer">
+    <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="60, 30" size="700, 55" halign="left" transparent="1" valign="center" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="970, 35"  size="250, 50" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" backgroundColor="transparent" position="70, 110" render="Pig" size="432, 243" zPosition="1" />
+    <ePixmap pixmap="Magic-HD/buttons/red.png" alphatest="on" position="100,643" size="26,26" />
+    <ePixmap pixmap="Magic-HD/buttons/green.png" alphatest="on" position="390,643" size="26,26" />
+    <widget name="key_red" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
+    <widget name="key_green" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
+		<widget source="label_filename" transparent="1" render="Label" zPosition="2" position="620,110" size="480,30" font="Regular;20" />
+		<widget source="label_destination" transparent="1" render="Label" zPosition="2" position="620,150" size="480,30" font="Regular;20" />
+		<widget source="label_filesize" transparent="1" render="Label" zPosition="2" position="620,190" size="480,30" font="Regular;20" />
+		<widget source="label_localsize" transparent="1" render="Label" zPosition="2" position="620,230" size="480,30" font="Regular;20" />
+		<widget source="label_speed" transparent="1" render="Label" zPosition="2" position="620,270" size="480,30" font="Regular;20" />
+		<widget source="label_timeleft" transparent="1" render="Label" zPosition="2" position="620,310" size="480,30" font="Regular;20" />
+		<widget source="label_progress" transparent="1" render="Label" zPosition="2" position="620,350" size="480,30" font="Regular;20" />
+		<widget name="activityslider" position="70,550" size="1100,20" zPosition="3" transparent="0" />
+
+
+
+
+
+
+
+  </screen>
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <!-- ##Media-Player## -->
   <screen name="MediaPlayer" title="MediaPlayer" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
