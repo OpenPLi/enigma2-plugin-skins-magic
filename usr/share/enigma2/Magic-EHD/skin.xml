@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.41 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
+  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.42 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -2538,26 +2538,45 @@
     <widget name="Adaptertext" position="420,460" size="250,23" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;21" halign="left" />
     <widget name="Adapter" position="671,460" size="306,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;21" halign="center" />
     <widget name="AdapterInfo_Text" position="1020,460" size="200,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,#000000,#1cff1c" font="Regular;21" />
+   
+    <widget name="AdapterInfo" position="1020,460" size="200,23" transparent="1" zPosition="2" />   
+   
+   
     <widget name="AdapterInfo_OK" pixmap="skin_default/icons/lock_on.png" position="978,456" size="38,31" zPosition="2" alphatest="on" />
     <widget name="Networktext" position="420,495" size="250,23" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;21" halign="left" />
     <widget name="Network" position="671,495" size="306,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;21" halign="center" />
     <widget name="NetworkInfo_Text" position="1020,495" size="200,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,#000000,#1cff1c" font="Regular;21" />
+
+    <widget name="NetworkInfo" position="1020,495" size="200,23" transparent="1" zPosition="2" />
+
     <widget name="NetworkInfo_Check" position="978,491" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on" />
     <widget name="Dhcptext" position="420,530" size="250,23" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;21" halign="left" />
     <widget name="Dhcp" position="671,530" size="306,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;21" halign="center" />
+
+    <widget name="DhcpInfo" position="1020,530" size="200,23" transparent="1" />
+
     <widget name="DhcpInfo_Text" position="1020,530" size="200,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,#000000,#1cff1c" font="Regular;21" />
     <widget name="DhcpInfo_Check" position="978,526" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on" />
     <widget name="IPtext" position="420,565" size="250,23" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;21" halign="left" />
     <widget name="IP" position="671,565" size="306,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;21" halign="center" />
+
+    <widget name="IPInfo" position="1020,565" size="200,23" transparent="1" zPosition="2" />
+
     <widget name="IPInfo_Text" position="1020,565" size="200,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,#000000,#1cff1c" font="Regular;21" />
     <widget name="IPInfo_Check" position="978,561" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on" />
     <widget name="DNStext" position="420,600" size="250,23" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;21" halign="left" />
     <widget name="DNS" position="671,600" size="306,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;21" halign="center" />
+   
+    <widget name="DNSInfo" position="1020,600" size="200,23" transparent="1" zPosition="2"  /> 
+   
     <widget name="DNSInfo_Text" position="1020,600" size="200,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,#000000,#1cff1c" font="Regular;21" />
     <widget name="DNSInfo_Check" position="978,596" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on" />
     <widget name="EditSettingsButton" position="840,682" size="26,26" transparent="1" zPosition="1" pixmaps="Magic-EHD/buttons/grey.png,Magic-EHD/buttons/blue.png" alphatest="on" />
     <widget name="EditSettings_Text" position="875,682" size="200,26" transparent="1" zPosition="2" foregroundColors="#000000,#8c8c93,#1cff1c" font="Regular;21" />
     <widget name="InfoText" position="520,82" size="740,350" zPosition="25" font="Regular;21" />
+
+    <widget name="InfoTextBorder" position="520,82" size="740,350" />
+
   </screen>
   <screen name="NetworkBrowser" title="Network Neighbourhood" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-EHD/border/top2_bg.png" position="0,0" size="1280,75" />
@@ -3039,6 +3058,7 @@
     <widget name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
     <widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
     <widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" size="37,70" zPosition="11" alphatest="on" />
+		<widget name="HelpWindow" pixmap="skin_default/buttons/key_text.png" position="125,170" zPosition="1" size="1,1" transparent="1" alphatest="on" />
   </screen>
   <screen name="DefaultWizard" title="Wizard" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-EHD/border/top2_bg.png" position="0,0" size="1280,75" />
@@ -3653,6 +3673,7 @@
     <widget name="menu" position="520,90" size="740,575" scrollbarMode="showOnDemand" selectionPixmap="Magic-EHD/buttons/sel.png" />
   </screen>
   <!-- ##Apple trailer player##-->
+
   <!--<screen flags="wfNoBorder" name="TrailerListScreen" position="0,0" size="1280,720" title="Trailer List">
    <ePixmap pixmap="Magic-EHD/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-EHD/border/bottom_bg.png" position="0,675" size="1280,2" />
@@ -3667,6 +3688,7 @@
 	  <eLabel text="'CH +/- = Change Category" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="320,26" transparent="1" zPosition="1" />
 		<widget source="pageinfo" position="875,682" transparent="1" render="Label" zPosition="2" valign="center" halign="center" size="100,30" font="Regular;14" />
 		<widget name="frame" position="400,0" size="190,200" pixmap="pic_frame.png" zPosition="5" alphatest="on" />"  + skincontent + "</screen>"-->
+
   <screen flags="wfNoBorder" name="TrailerInfoScreen" position="0,0" size="1280,720" title="Apple TrailerPlayer">
    <ePixmap pixmap="Magic-EHD/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-EHD/border/bottom_bg.png" position="0,675" size="1280,2" />
