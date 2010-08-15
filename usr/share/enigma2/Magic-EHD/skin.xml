@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.42 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
+  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.43 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -1153,6 +1153,38 @@
       <convert type="ServicePosition">Position</convert>
     </widget>
   </screen>
+  
+ 		
+  <screen flags="wfNoBorder" name="TimeshiftLocationBox" position="0,0" size="1280,720" title="TimeshiftLocationBox">
+   <ePixmap pixmap="Magic-EHD/border/top2_bg.png" position="0,0" size="1280,75" />
+    <ePixmap pixmap="Magic-EHD/border/bottom_bg.png" position="0,675" size="1280,2" />
+    <widget source="Title" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
+     <widget source="global.CurrentTime" render="Label" position="1015,15" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" render="Pig" position="15,90" size="477,270" backgroundColor="transparent" zPosition="1" />
+
+    <ePixmap pixmap="Magic-EHD/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-EHD/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-EHD/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
+    <ePixmap pixmap="Magic-EHD/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
+
+    <widget name="key_red" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="key_blue" position="875,682"  size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+
+    <widget name="text" scrollbarMode="showOnDemand" selectionPixmap="Magic-EHD/buttons/sel.png" font="Regular;22" position="520,82" size="740,250" transparent="1" />
+
+    <widget name="textbook" scrollbarMode="showOnDemand" selectionPixmap="Magic-EHD/buttons/sel.png" font="Regular;22" position="520,350" size="740,250" transparent="1" />
+
+  </screen>
+  		
+  
+  
+  
+  
+  
   <screen name="PVRState" position="40,100" size="150,30" backgroundColor="transparent" zPosition="2" flags="wfNoBorder">
     <widget name="state" position="0,0" size="150,30" backgroundColor="transparent" transparent="1" borderWidth="2" font="Regular;25" borderColor="black" halign="center" />
   </screen>
@@ -5305,34 +5337,36 @@
     <widget name="key_green" position="340,682" size="220,26" backgroundColor="un266926" transparent="1" zPosition="2" font="Regular;18" valign="center" halign="left" />
     <widget name="key_yellow" position="614,682" size="220,26" backgroundColor="un8c5900" transparent="1" zPosition="2" font="Regular;18" valign="center" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" backgroundColor="un254177" transparent="1" zPosition="2" font="Regular;18" valign="center" halign="left" />
-    <widget name="list" position="520,82" size="740,330" itemHeight="28" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="Magic-EHD/buttons/sel.png" />
-    <widget name="DescriptionBorder" pixmap="skin_default/border_eventinfo.png" position="1400,600" size="560,103" transparent="1" zPosition="3" alphatest="on" />
-    <widget source="Service" render="Label" position="434,431" size="824,32" zPosition="1" foregroundColor="secondFG" font="Regular;22" valign="center" halign="left">
+    <widget name="list" position="520,82" size="740,583" itemHeight="28" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="Magic-EHD/buttons/sel.png" />
+ 		<widget name="wait" position="520,82" size="740,583" zPosition="3" font="Regular;21" halign="center" valign="center" />
+    <!--<widget name="DescriptionBorder" pixmap="skin_default/border_eventinfo.png" position="1400,600" size="560,103" transparent="1" zPosition="3" alphatest="on" />-->
+    <widget source="Service" render="Label" position="15,360" size="477,32" zPosition="1" foregroundColor="secondFG" font="Regular;22" valign="center" halign="left">
       <convert type="MovieInfo">RecordServiceName</convert>
     </widget>
-    <widget source="Service" render="Label" position="434,498" size="824,26" backgroundColor="background" zPosition="1" foregroundColor="foreground" font="Crs;18">
+    <!--<widget source="Service" render="Label" position="15,393" size="477,51" backgroundColor="background" zPosition="1" foregroundColor="foreground" font="Crs;18">
       <convert type="MovieInfo">ShortDescription</convert>
-    </widget>
-    <widget source="Service" render="Label" position="434,525" size="824,92" zPosition="1" foregroundColor="foreground" font="Regular;16">
+    </widget>-->
+    <widget source="Service" render="Label" position="15,395" size="477,200" zPosition="1" foregroundColor="foreground" font="Regular;16">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget source="Service" render="Label" position="957,470" size="300,22" zPosition="1" foregroundColor="grey" font="Regular;18" halign="right">
+    <widget source="Service" render="Label" position="193,610" size="300,22" zPosition="1" foregroundColor="grey" font="Regular;18" halign="right">
       <convert type="ServiceTime">StartTime</convert>
       <convert type="ClockToText">Date</convert>
     </widget>
-    <widget source="Service" render="Label" position="819,472" size="61,22" zPosition="1" foregroundColor="grey" font="Regular;18" halign="left">
+    <widget source="Service" render="Label" position="15,610" size="61,22" zPosition="1" foregroundColor="grey" font="Regular;18" halign="left">
       <convert type="ServiceTime">StartTime</convert>
       <convert type="ClockToText" />
     </widget>
-    <widget source="Service" render="Label" position="881,471" size="81,22" zPosition="1" foregroundColor="grey" font="Regular;18" halign="left">
+    <widget source="Service" render="Label" position="110,610" size="81,22" zPosition="1" foregroundColor="grey" font="Regular;18" halign="left">
       <convert type="ServiceTime">EndTime</convert>
       <convert type="ClockToText">Format:- %H:%M </convert>
     </widget>
-    <widget source="Service" render="Label" position="434,467" size="181,30" zPosition="1" foregroundColor="grey" font="Regular;20" halign="left">
+    <widget source="Service" render="Label" position="15,640" size="181,30" zPosition="1" foregroundColor="grey" font="Regular;20" halign="left">
       <convert type="ServiceTime">Duration</convert>
       <convert type="ClockToText">AsLength</convert>
     </widget>
-    <widget name="FileSize" position="616,467" size="201,30" zPosition="1" foregroundColor="grey" font="Regular;20" halign="left" />
+    <widget name="FileSize" position="295,640" size="201,30" zPosition="1" foregroundColor="grey" font="Regular;20" halign="left" />
+
   </screen>
   <screen name="SuomipoekaMenu" title="Suomipoeka-Setup" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-EHD/border/top2_bg.png" position="0,0" size="1280,75" />
