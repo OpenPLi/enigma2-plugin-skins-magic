@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.44 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
+  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.45 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -1153,8 +1153,6 @@
       <convert type="ServicePosition">Position</convert>
     </widget>
   </screen>
-  
- 		
   <screen flags="wfNoBorder" name="TimeshiftLocationBox" position="0,0" size="1280,720" title="TimeshiftLocationBox">
    <ePixmap pixmap="Magic-EHD/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-EHD/border/bottom_bg.png" position="0,675" size="1280,2" />
@@ -1163,28 +1161,17 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="15,90" size="477,270" backgroundColor="transparent" zPosition="1" />
-
     <ePixmap pixmap="Magic-EHD/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-EHD/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-EHD/buttons/yellow.png" position="580,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-EHD/buttons/blue.png" position="840,682" size="26,26" alphatest="on" />
-
     <widget name="key_red" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682"  size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-
     <widget name="text" scrollbarMode="showOnDemand" selectionPixmap="Magic-EHD/buttons/sel.png" font="Regular;22" position="520,82" size="740,250" transparent="1" />
-
     <widget name="textbook" scrollbarMode="showOnDemand" selectionPixmap="Magic-EHD/buttons/sel.png" font="Regular;22" position="520,350" size="740,250" transparent="1" />
-
   </screen>
-  		
-  
-  
-  
-  
-  
   <screen name="PVRState" position="40,100" size="150,30" backgroundColor="transparent" zPosition="2" flags="wfNoBorder">
     <widget name="state" position="0,0" size="150,30" backgroundColor="transparent" transparent="1" borderWidth="2" font="Regular;25" borderColor="black" halign="center" />
   </screen>
@@ -4084,7 +4071,7 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="15,90" render="Pig" size="477,270" zPosition="1" />
-    <widget name="text" position="520,90" size="740,575" transparent="1" />
+    <widget name="text" position="520,90" size="740,575" selectionPixmap="Magic-EHD/buttons/sel.png" transparent="1" />
     <eLabel text="Exit = Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
   </screen>
   <screen flags="wfNoBorder" name="CCcamInfoConfigMenu" position="0,0" size="1280,720" title="CCcam Info Config Menu">
@@ -4140,7 +4127,7 @@
     <eLabel text="Exit = Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
     <eLabel text="OK = Info" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
   </screen>
-  <screen flags="wfNoBorder" name="CCcamInfoRemoteBoxMenu" position="0,0" size="1280,720" title="CCcam Info RemoteBox Menu">
+  <screen name="CCcamInfoRemoteBoxMenu" flags="wfNoBorder" position="0,0" size="1280,720" title="CCcam Info RemoteBox Menu">
     <ePixmap pixmap="Magic-EHD/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-EHD/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;26" position="15,15" size="700,50" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -5503,6 +5490,7 @@
     <widget name="nodelist" scrollbarMode="showOnDemand" selectionPixmap="Magic-EHD/buttons/sel.png" position="520,90" size="740,575" />
     <eLabel text="'Exit' = Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
     <eLabel text="'OK' = Choose" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
+    <widget name="helptext" position="15,385" size="447,275" valign="center" halign="left" font="Regular;20" />
   </screen>
   <screen flags="wfNoBorder" name="PPanel" position="0,0" size="1280,720" title="PPanel">
     <ePixmap pixmap="Magic-EHD/border/top2_bg.png" position="0,0" size="1280,75" />
@@ -5512,7 +5500,7 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="15,90" render="Pig" size="477,270" zPosition="1" />
-    <widget name="nodelist" position="520,82" size="740,583" font="Fixed;22" />
+    <widget name="nodelist" position="520,82" size="740,583" selectionPixmap="Magic-EHD/buttons/sel.png" font="Fixed;22" />
     <widget name="helptext" position="15,385" size="447,275" valign="center" halign="left" font="Regular;20" />
     <eLabel text="'Exit' = Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
     <eLabel text="'OK' = Choose" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />

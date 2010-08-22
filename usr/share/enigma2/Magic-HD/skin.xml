@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-HD Vs 1.42 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 1.45 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -3975,7 +3975,7 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="70,110" render="Pig" size="432,243" zPosition="1" />
-    <widget name="text" position="590,110" size="600,500" transparent="1" />
+    <widget name="text" position="590,110" size="600,500" selectionPixmap="Magic-HD/buttons/sel.png" transparent="1" />
     <eLabel text="Exit = Return" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
   </screen>
   <screen flags="wfNoBorder" name="CCcamInfoConfigMenu" position="0,0" size="1280,720" title="CCcam Info Config Menu">
@@ -5397,6 +5397,7 @@
     <widget name="nodelist" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" position="590,110" size="600,500" />
     <eLabel text="'Exit' = Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
     <eLabel text="'OK' = Choose" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
+    <widget name="helptext" position="70,370" size="500,260" valign="center" halign="left" font="Regular;20" />
   </screen>
   <screen flags="wfNoBorder" name="PPanel" position="0,0" size="1280,720" title="PPanel">
     <ePixmap pixmap="Magic-HD/border/top_bg.png" position="0,0" size="1280,90" />
@@ -5406,7 +5407,7 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="70,110" render="Pig" size="432,243" zPosition="1" />
-    <widget name="nodelist" position="590,110" font="Fixed;22" size="600,500" />
+    <widget name="nodelist" position="590,110" font="Fixed;22" size="600,500" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" />
     <widget name="helptext" position="70,370" size="500,260" valign="center" halign="left" font="Regular;20" />
     <eLabel text="'Exit' = Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
     <eLabel text="'OK' = Choose" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
