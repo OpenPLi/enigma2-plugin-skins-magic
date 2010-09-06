@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.47 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
+  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.48 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -455,7 +455,19 @@
     <widget source="Service" render="Label" position="15,370" size="477,42" foregroundColor="secondFG" font="Regular;22">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="Event" render="Label" position="15,413" size="477,255" transparent="1" font="Regular; 21">
+    <widget source="Event" render="Label" position="15,412" size="150,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget source="Event" render="Label" position="165,412" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="right">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText" />
+    </widget>
+    <widget source="Event" render="Label" position="245,412" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="left">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Format:- %H:%M</convert>
+    </widget>    
+    <widget source="Event" render="Label" position="15,438" size="477,222" transparent="1" font="Regular; 21">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
   </screen>
@@ -1452,7 +1464,7 @@
     <widget source="session.VideoPicture" backgroundColor="transparent" position="15,90" render="Pig" size="477,270" zPosition="1" />
     <widget source="Event" render="Label" position="520,90" size="150,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
       <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Format:(%A)</convert>
+      <convert type="ClockToText">Format:%A</convert>
     </widget>
     <widget source="Event" render="Label" position="670,90" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="right">
       <convert type="EventTime">StartTime</convert>
@@ -1465,6 +1477,7 @@
     <widget source="Event" render="Label" position="830,90" size="380,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
       <convert type="EventName">Name</convert>
     </widget>
+    
     <widget source="Event" render="Label" position="520,115" size="740,205" backgroundColor="background" transparent="1" font="Regular;20">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
@@ -4876,7 +4889,7 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="15,90" render="Pig" size="477,270" zPosition="1" />
-    <widget source="key_red" render="Label" position=" 145,645" size="200,26" zPosition="1" transparent="1" font="Regular;22" halign="left" />
+    <widget source="key_red" render="Label" position="50,682" size="200,26" zPosition="1" transparent="1" font="Regular;22" halign="left" />
     <widget source="key_yellow" render="Label" position="614,682" size="200,26" zPosition="1" transparent="1" font="Regular;22" halign="left" />
     <widget source="key_blue" render="Label" position="875,682" size="200,26" zPosition="1" transparent="1" font="Regular;20" halign="left" />
     <ePixmap pixmap="Magic-EHD/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
@@ -4895,7 +4908,7 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="15,90" render="Pig" size="477,270" zPosition="1" />
-    <widget source="key_red" render="Label" position=" 145,645" size="200,26" zPosition="1" transparent="1" font="Regular;22" halign="left" />
+    <widget source="key_red" render="Label" position="50,682" size="200,26" zPosition="1" transparent="1" font="Regular;22" halign="left" />
     <widget source="key_green" render="Label" position="340,682" size="200,26" zPosition="1" transparent="1" font="Regular;22" halign="left" />
     <widget source="key_blue" render="Label" position="875,682" size="200,26" zPosition="1" transparent="1" font="Regular;20" halign="left" />
     <ePixmap pixmap="Magic-EHD/buttons/red.png" position="15,682" size="26,26" alphatest="on" />

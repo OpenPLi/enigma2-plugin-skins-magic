@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-HD Vs 1.47 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 1.48 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -453,6 +453,18 @@
     <widget source="Service" render="Label" position="60,370" size="460,42" foregroundColor="secondFG" font="Regular;22">
       <convert type="ServiceName">Name</convert>
     </widget>
+    <widget source="Event" render="Label" position="60,412" size="150,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Format:%A</convert>
+    </widget>
+    <widget source="Event" render="Label" position="210,412" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="right">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText" />
+    </widget>
+    <widget source="Event" render="Label" position="290,412" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="left">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Format:- %H:%M</convert>
+    </widget>    
     <widget source="Event" render="Label" position="60,440" size="460,165" transparent="1" foregroundColor="grey" font="Regular; 20">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
@@ -1413,7 +1425,7 @@
     <widget source="session.VideoPicture" render="Pig" position="70,110" size="432,243" backgroundColor="transparent" zPosition="1" />
     <widget source="Event" render="Label" position="547,110" size="150,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22">
       <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Format:(%A)</convert>
+      <convert type="ClockToText">Format:%A</convert>
     </widget>
     <widget source="Event" render="Label" position="697,110" size="80,25" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;22" halign="right">
       <convert type="EventTime">StartTime</convert>
