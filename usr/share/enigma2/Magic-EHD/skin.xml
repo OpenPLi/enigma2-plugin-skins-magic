@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.48 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
+  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.50 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -467,7 +467,7 @@
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Format:- %H:%M</convert>
     </widget>    
-    <widget source="Event" render="Label" position="15,438" size="477,222" transparent="1" font="Regular; 21">
+    <widget source="Event" render="Label" position="15,438" size="477,220" transparent="1" font="Regular; 21">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
   </screen>
@@ -3348,8 +3348,8 @@
     <widget name="list" position="15,82" size="650,510" backgroundColor="black" zPosition="2" transparent="0" scrollbarMode="showOnDemand" selectionPixmap="Magic-EHD/buttons/sel.png" />
     <widget name="cover" position=" 665,182" size="420,480" backgroundColor="background" alphatest="blend" />
     <widget name="titel" position="665,82" size="600,50" backgroundColor="background" transparent="1" font="Regular;20" />
-    <widget name="station" position="665,132" size="600,50" backgroundColor="background" transparent="1" font="Regular;20" />
-    <widget name="console" position="1085,181" size="160,480" backgroundColor="background" transparent="1" font="Regular;20" />
+    <widget name="station" position="682,132" size="600,50" backgroundColor="background" transparent="1" font="Regular;20" />
+    <widget name="console" position="1104,181" size="160,480" backgroundColor="background" transparent="1" font="Regular;20" />
   </screen>
   <screen name="SHOUTcastSetup" title="SHOUTcast Setup" position="0,0" size="1280,720" transparent="0" backgroundColor="black" flags="wfNoBorder">
     <ePixmap pixmap="Magic-EHD/border/top2_bg.png" position="0,0" size="1280,75" />
