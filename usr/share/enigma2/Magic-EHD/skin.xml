@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.50 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
+  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.51 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -3346,9 +3346,9 @@
     <widget name="headertext" position="320,16" size="400,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" valign="center" />
     <widget name="statustext" position="15,595" size="650,75" backgroundColor="black" zPosition="1" transparent="0" font="Regular;17" valign="center" halign="center" />
     <widget name="list" position="15,82" size="650,510" backgroundColor="black" zPosition="2" transparent="0" scrollbarMode="showOnDemand" selectionPixmap="Magic-EHD/buttons/sel.png" />
-    <widget name="cover" position=" 665,182" size="420,480" backgroundColor="background" alphatest="blend" />
-    <widget name="titel" position="665,82" size="600,50" backgroundColor="background" transparent="1" font="Regular;20" />
-    <widget name="station" position="682,132" size="600,50" backgroundColor="background" transparent="1" font="Regular;20" />
+    <widget name="cover" position=" 682,182" size="420,480" backgroundColor="background" alphatest="blend" />
+    <widget name="titel" position="682,82" size="583,50" backgroundColor="background" transparent="1" font="Regular;20" />
+    <widget name="station" position="682,132" size="583,50" backgroundColor="background" transparent="1" font="Regular;20" />
     <widget name="console" position="1104,181" size="160,480" backgroundColor="background" transparent="1" font="Regular;20" />
   </screen>
   <screen name="SHOUTcastSetup" title="SHOUTcast Setup" position="0,0" size="1280,720" transparent="0" backgroundColor="black" flags="wfNoBorder">
