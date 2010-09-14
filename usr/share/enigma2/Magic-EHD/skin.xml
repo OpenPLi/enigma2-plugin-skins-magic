@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.51 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
+  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.53 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -129,7 +129,7 @@
     <widget source="session.CurrentService" render="Picon" position="60,90" size="100,60" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="485,85" size="320,17" backgroundColor="secondBG" transparent="1" noWrap="1" font="Regular; 14" valign="top" halign="right">
+    <widget source="session.CurrentService" render="Label" position="305,55" size="500,17" backgroundColor="secondBG" transparent="1" noWrap="1" font="Regular; 14" halign="left">
       <convert type="ServiceName">Provider</convert>
     </widget>
     <widget source="session.CurrentService" render="ChannelNumber" position="221,75" size="80,36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;19" valign="center" halign="left" />
@@ -139,7 +139,7 @@
     <widget source="global.CurrentTime" render="Label" position="30,162" size="190,30" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;20" valign="top" halign="left">
       <convert type="ClockToText">ShortDate</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="100,60" size="1080,24" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;14" valign="center" halign="center">
+    <widget source="session.CurrentService" render="Label" position="305,192" size="620,18" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;14" halign="right">
       <convert type="CryptoInfo">VerboseInfo</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="220,130" size="70,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" halign="left">
@@ -200,7 +200,7 @@
       <convert type="ServiceInfo">SubservicesAvailable</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.RecordState" render="Pixmap" pixmap="Magic-EHD/buttons/rec.png" position="1216,83" size="20,20" zPosition="3" alphatest="on">
+    <widget source="session.RecordState" render="Pixmap" pixmap="Magic-EHD/buttons/rec.png" position="1216,80" size="20,20" zPosition="3" alphatest="on">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
     <widget source="session.FrontendStatus" render="Label" position="1100,137" size="110,22" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;19">
@@ -257,7 +257,7 @@
     </widget>
   </screen>
   <screen name="MoviePlayer" title="InfoBar" position="4,30" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
-    <widget source="session.CurrentService" render="Label" position="415,-10" size="455,52" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
+    <widget source="session.CurrentService" render="Label" position="415,-25" size="455,67" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="top" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
     <!--<widget source="global.CurrentTime" render="Label" position="190,0" size=" 145,40" borderColor="black" borderWidth="2" font="Regular;20" foregroundColor="secondFG" halign="center" transparent="1" valign="center" zPosition="4">
@@ -345,7 +345,7 @@
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-EHD/buttons/sel.png" font="Regular;22" position="520,82" size="740,583" transparent="1" />
   </screen>
   <screen name="DVDPlayer" title="InfoBar" position="4,30" size="1280,215" backgroundColor="transparent" flags="wfNoBorder">
-    <widget source="session.CurrentService" render="Label" position="415,-5" size="455,50" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
+    <widget source="session.CurrentService" render="Label" position="415,-25" size="455,70" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
     <!--<widget source="global.CurrentTime" render="Label" position="190,0" size=" 145,40" borderColor="black" borderWidth="2" font="Regular;20" foregroundColor="secondFG" halign="center" transparent="1" valign="center" zPosition="4">
