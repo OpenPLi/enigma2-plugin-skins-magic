@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.54 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
+  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.55 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -1608,10 +1608,10 @@
     <widget name="canceltext" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="oktext" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-EHD/buttons/sel.png" font="Regular;22" position="520,82" size="740,583" transparent="1" />
-		<eLabel text="Standard for (HD), (XD), (SD) Skin" position="15,430" size="490,60" font="Regular;20" halign="center" transparent="1" />
-  	<eLabel text="1 = Zap , 2 = Zap+Exit , 3 = Search , 4 = Channel Info" position="15,490" size="490,60" font="Regular;20" halign="center" transparent="1" />
-		<eLabel text="5 = Bouquet + , 6 = Bouquet - , 7 = Open Bouquetlist" position="15,540" size="490,60" font="Regular;20" halign="center" transparent="1" />
-		<eLabel text="change the number 1 - 7 to change your Buttons!" position="15,600" size="490,60" font="Regular;20" halign="center" transparent="1" />
+		<eLabel text="Standard for (HD), (XD), (SD) Skin" position="15,400" size="340,60" font="Regular;20" halign="left" transparent="1" />
+  	<eLabel text="1 = Zap , 2 = Zap+Exit , 3 = Search  4 = Channel Info" position="15,490" size="340,60" font="Regular;20" halign="left" transparent="1" />
+		<eLabel text="5 = Bouquet + , 6 = Bouquet -  7 = Open Bouquetlist" position="15,555" size="300,60" font="Regular;20" halign="left" transparent="1" />
+		<eLabel text="Change the number 1 - 7 to change your buttons" position="15,615" size="490,60" font="Regular;20" halign="left" transparent="1" />
   </screen>
 
   <screen flags="wfNoBorder" name="SelectBouquet" position="0,0" size="1280,720" title="Choose bouquet">
