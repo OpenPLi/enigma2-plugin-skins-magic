@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.56 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
+  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.58 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -512,7 +512,7 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="15,90" size="477,270" backgroundColor="transparent" zPosition="1" />
-  	<widget name="config" position="620,85" size="425,110" scrollbarMode="showOnDemand" />
+  	<widget name="config" position="620,85" size="425,110" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD/buttons/sel.png" />
 		<widget source="key_red" render="Pixmap" pixmap="skin_default/buttons/key_red.png" position="570,85" size="35,25" alphatest="on">
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -1536,8 +1536,8 @@
     <widget name="key_red" position="549,335" size="110,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_green" position="737,335" size="150,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="927,335" size="150,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="timeline_text" position="30,382" size="1230,28" backgroundColor="darkgrey" transparent="1" />
-    <widget name="list" position="30,410" size="1230,300" itemHeight="50" EntryBackgroundColorSelected="selectedBG" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EntryBorderColor="#cccccc" />
+    <widget name="timeline_text" position="30,382" size="1230,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
+    <widget name="list" position="30,410" size="1230,300" itemHeight="50" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EntryBorderColor="#cccccc" />
     <widget name="timeline0" pixmap="Magic-EHD/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
     <widget name="timeline1" pixmap="Magic-EHD/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
     <widget name="timeline2" pixmap="Magic-EHD/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
@@ -1597,7 +1597,7 @@
 		<eLabel text="Ch. Bouquet" backgroundColor="secondBG" font="Regular;22" halign="left" position="845,335" size="150,26" transparent="1" zPosition="1" />
 		<eLabel text="Autotimer" backgroundColor="secondBG" font="Regular;22" halign="left" position="1050,335" size="150,26" transparent="1" zPosition="1" />
     <widget name="timeline_text" position="30,382" size="1230,28" backgroundColor="darkgrey" transparent="1" />
-    <widget name="list" position="30,410" size="1230,300" itemHeight="50" EntryBackgroundColorSelected="selectedBG" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EntryBorderColor="#cccccc" />
+    <widget name="list" position="30,410" size="1230,300" itemHeight="50" transparent="1" scrollbarMode="showNever" />
     <widget name="timeline0" pixmap="Magic-EHD/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
     <widget name="timeline1" pixmap="Magic-EHD/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
     <widget name="timeline2" pixmap="Magic-EHD/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
