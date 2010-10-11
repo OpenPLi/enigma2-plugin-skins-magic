@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-HD Vs 1.58 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 1.61 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -1547,15 +1547,17 @@
     <widget source="Event" render="Label" position="547,138" size="680,160" backgroundColor="background" transparent="1" font="Regular;20">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1100,305" size="35,25" />
-    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1145,305" size="35,25" />
-    <ePixmap pixmap="Magic-HD/buttons/red.png" position="560,305" size="20,20" alphatest="on" />
-    <ePixmap pixmap="Magic-HD/buttons/green.png" position="740,305" size="20,20" alphatest="on" />
-    <ePixmap pixmap="Magic-HD/buttons/blue.png" position="920,305" size="20,20" alphatest="on" />
-    <widget name="key_red" position="590,305" size="150,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="key_green" position="765,305" size="150,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<eLabel text="Autotimer" backgroundColor="secondBG" font="Regular;22" halign="left" position="945,305" size="150,26" transparent="1" zPosition="1" />
-    <widget name="timeline_text" position="80,362" size="1150,28" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
+    <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1190,303" size="35,25" />
+    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1190,330" size="35,25" />
+    <ePixmap pixmap="Magic-HD/buttons/red.png" position="544,305" size="20,20" alphatest="on" />
+    <ePixmap pixmap="Magic-HD/buttons/green.png" position="718,305" size="20,20" alphatest="on" />
+    <ePixmap pixmap="Magic-HD/buttons/yellow.png" position="890,305" size="20,20" alphatest="on" />
+    <ePixmap pixmap="Magic-HD/buttons/blue.png" position="1017,305" size="20,20" alphatest="on" />
+    <widget name="key_red" position="566,305" size="150,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <widget name="key_green" position="741,305" size="150,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+		<widget name="key_yellow" backgroundColor="secondBG" font="Regular;22" halign="left" position="912,305" size="150,26" transparent="1" zPosition="1" />
+		<widget name="key_blue" backgroundColor="secondBG" font="Regular;22" halign="left" position="1045,305" size="150,26" transparent="1" zPosition="1" />
+    <widget name="timeline_text" position="80,362" size="1150,28" backgroundColor="#000000" transparent="1" />
     <widget name="list" position="80,390" size="1150,300" itemHeight="50" transparent="1" scrollbarMode="showNever" />
     <widget name="timeline0" pixmap="Magic-HD/window/timeline.png" position="0,387" size="1,306" zPosition="1" />
     <widget name="timeline1" pixmap="Magic-HD/window/timeline.png" position="0,387" size="1,306" zPosition="1" />

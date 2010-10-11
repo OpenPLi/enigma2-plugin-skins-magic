@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.59 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
+  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.61 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -1594,8 +1594,8 @@
     <ePixmap pixmap="Magic-EHD/buttons/blue.png" position="1020,335" size="26,26" alphatest="on" />
     <widget name="key_red" position="549,335" size="90,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_green" position="680,335" size="145,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-		<eLabel text="Ch. Bouquet" backgroundColor="secondBG" font="Regular;22" halign="left" position="845,335" size="150,26" transparent="1" zPosition="1" />
-		<eLabel text="Autotimer" backgroundColor="secondBG" font="Regular;22" halign="left" position="1050,335" size="150,26" transparent="1" zPosition="1" />
+    <widget name="key_yellow" backgroundColor="secondBG" font="Regular;22" halign="left" position="845,335" size="150,26" transparent="1" zPosition="1" />
+    <widget name="key_blue" backgroundColor="secondBG" font="Regular;22" halign="left" position="1050,335" size="150,26" transparent="1" zPosition="1" />
     <widget name="timeline_text" position="30,382" size="1230,28" backgroundColor="darkgrey" transparent="1" />
     <widget name="list" position="30,410" size="1230,300" itemHeight="50" transparent="1" scrollbarMode="showNever" />
     <widget name="timeline0" pixmap="Magic-EHD/window/timeline.png" position="0,407" size="1,306" zPosition="1" />
