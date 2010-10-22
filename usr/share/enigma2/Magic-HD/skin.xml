@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-HD Vs 1.62 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 1.63 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -1572,7 +1572,7 @@
     <widget name="config" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="590,110" size="600,500" />
   </screen>
 <!-- ## Cool TV Guide## -->  
-  <screen name="CoolTVGuide" title="Cool TV Guide" position="0,0" size="1280,720" flags="wfNoBorder">
+<!-->  <screen name="CoolTVGuide" title="Cool TV Guide" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
     <widget source="Title" render="Label" position="85,30" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
     <widget source="global.CurrentTime" render="Label" position="970,35" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
@@ -1653,7 +1653,7 @@
     <widget source="Event" render="Label" position="85,440" size="435,165" transparent="1" foregroundColor="grey" font="Regular; 20">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-  </screen>
+  </screen>-->
   <screen flags="wfNoBorder" name="CoolTVGuideSetup" position="0,0" size="1280,720" title="Cool TV Guide Setup">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,630" size="1280,2" />
