@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.70 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
+  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.71 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -1623,7 +1623,7 @@
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget name="canceltext" position="50,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="oktext" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;18" position="520,82" size="740,583" transparent="1" />
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;18" position="520,82" size="740,577" transparent="1" />
 		<eLabel text="Standard for (HD), (XD), (SD) Skin" position="15,400" size="340,60" font="Regular;20" halign="left" transparent="1" />
   	<eLabel text="1 = Zap , 2 = Zap+Exit , 3 = Search  4 = Channel Info" position="15,490" size="340,60" font="Regular;20" halign="left" transparent="1" />
 		<eLabel text="5 = Bouquet + , 6 = Bouquet -  7 = Open Bouquetlist" position="15,555" size="300,60" font="Regular;20" halign="left" transparent="1" />
@@ -1721,7 +1721,7 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget name="timeline_text" position="9,60" size="1230,30" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1"/>
-    <widget name="list" position="40,90" size="1200,480" scrollbarMode="showNever" transparent="1" />
+    <widget name="list" position="40,90" size="1200,482" scrollbarMode="showNever" transparent="1" />
     <widget name="timeline0" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline1" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline2" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />

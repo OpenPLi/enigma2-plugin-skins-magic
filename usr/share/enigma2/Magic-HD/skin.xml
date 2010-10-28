@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-HD Vs 1.70 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 1.71 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -1627,7 +1627,7 @@
     <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="65,638" size="35,25" />
     <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="65,665" size="35,25" />
     <widget name="timeline_text" position="9,60" size="1230,30" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1"/>
-    <widget name="list" position="40,90" size="1200,430" scrollbarMode="showNever" transparent="1" />
+    <widget name="list" position="40,90" size="1200,422" scrollbarMode="showNever" transparent="1" />
     <widget name="timeline0" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline1" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline2" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
@@ -1704,8 +1704,8 @@
     <widget source="Event" render="Label" position="490,90" zPosition="1" size="750,185" font="Regular;20" foregroundColor="#00dddddd" backgroundColor="#000000" shadowColor="#000000" transparent="1" valign="top">
 	    <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget name="timeline_text" position="85,286" size="1180,30" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
-    <widget name="list" position="85,313" size="1165,310" scrollbarMode="showNever" transparent="1" />
+    <widget name="timeline_text" position="85,286" size="1165,30" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
+    <widget name="list" position="85,313" size="1165,325" scrollbarMode="showNever" transparent="1" />
     <widget name="timeline0" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline1" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline2" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
