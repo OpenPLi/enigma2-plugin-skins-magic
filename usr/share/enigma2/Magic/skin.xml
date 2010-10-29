@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-<!--  Skin: Magic by MiLo Vs 1.01, based on Merlin Magic 2.0 Picons -->
+<!--  Skin: Magic by MiLo Vs 1.11, based on Merlin Magic 2.0 Picons -->
 	<!--  ##### Head #####  -->
 	<output id="0">
 		<resolution bpp="32" xres="720" yres="576"/>
@@ -493,7 +493,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget font="Enigma;18" position="10,190" render="Label" size="340,20" source="Tuner3"/>
 		<widget font="Enigma;18" position="10,210" render="Label" size="340,20" source="HDDHeader"/>
 		<widget font="Enigma;18" position="10,233" render="Label" size="340,50" source="hddA"/>
-		<ePixmap alphatest="on" pixmap="skin_default/icons/dmm_logo.png" position="80,330" size="200,10"/>
 	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="TimeshiftState" position="50,310" size="150,60" zPosition="2">
 		<widget font="Enigma;24" halign="center" name="state" position="0,0" size="150,30" backgroundColor="transparent" borderColor="black" borderWidth="2" />
