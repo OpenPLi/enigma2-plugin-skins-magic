@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.74 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
+  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.75 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -396,7 +396,7 @@
     <widget name="key_green" position="340,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="list" position="520,82" size="740,570" itemHeight="28" serviceNumberFont="Regular;22" scrollbarMode="showNever" serviceInfoFont="Crs;22" serviceNameFont="Regular;22" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+    <widget name="list" position="520,87" size="740,570" itemHeight="40" serviceNumberFont="Regular;24" scrollbarMode="showOnDemand" serviceInfoFont="Crs;24" serviceNameFont="Regular;24" serviceItemHeight="40" foregroundColorServiceNotAvail="#656565" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <widget source="ServiceEvent" render="Label" position="15,370" size="460,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" valign="center">
       <convert type="EventName">Name</convert>
     </widget>

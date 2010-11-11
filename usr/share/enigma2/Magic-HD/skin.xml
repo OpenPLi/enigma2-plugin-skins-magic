@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-HD Vs 1.74 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 1.75 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -127,17 +127,17 @@
     <widget source="session.CurrentService" render="Picon" position="60,70" size="100,60" alphatest="blend" backgroundColor="secondBG" transparent="1" zPosition="1">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="485,85" size="320,17" backgroundColor="secondBG" transparent="1" noWrap="1" font="Regular; 14" valign="top" halign="right">
+    <widget source="session.CurrentService" render="Label" position="900,58" size="320,17" backgroundColor="secondBG" transparent="1" noWrap="1" font="Regular; 14" valign="top" halign="right">
       <convert type="ServiceName">Provider</convert>
     </widget>
     <widget source="session.CurrentService" render="ChannelNumber" position="221,75" size="80,36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;19" valign="center" halign="left" />
-    <widget source="session.CurrentService" render="Label" position="305,75" size="500,36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" valign="center" halign="left">
+    <widget source="session.CurrentService" render="Label" position="305,63" size="500,50" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" valign="center" halign="left">
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="59,145" size="170,30" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;20" valign="top" halign="left">
       <convert type="ClockToText">ShortDate</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="100,60" size="1080,24" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;14" valign="center" halign="center">
+    <widget source="session.CurrentService" render="Label" position="100,35" size="1080,24" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;14" valign="center" halign="center">
       <convert type="CryptoInfo">VerboseInfo</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="220,130" size="70,30" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" halign="left">
@@ -394,7 +394,7 @@
     <widget name="key_green" position="435,645" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_yellow" position="725,645" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="1015,645" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="list" position="530,100" size="690,510" itemHeight="30" serviceNumberFont="Regular;22" scrollbarMode="showNever" serviceInfoFont="Crs;22" serviceNameFont="Regular;22" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+    <widget name="list" position="530,100" size="690,510" itemHeight="40" serviceNumberFont="Regular;24" scrollbarMode="showOnDemand" serviceInfoFont="Crs;24" serviceNameFont="Regular;24" serviceItemHeight="40" foregroundColorServiceNotAvail="#656565" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <widget source="ServiceEvent" render="Label" position="85,370" size="435,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
@@ -1040,7 +1040,7 @@
 			</convert>
 		</widget>
 		<widget source="introduction" render="Label" position="85,380" size="417,150" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="#25062748" transparent="1"/>
-</screen>
+  </screen>
   <screen flags="wfNoBorder" name="InputDeviceSetup" position="0,0" size="1280,720" title="Input device setup">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,630" size="1280,2" />
