@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.75 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
+  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.76 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -397,7 +397,7 @@
     <widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="list" position="520,87" size="740,570" itemHeight="40" serviceNumberFont="Regular;24" scrollbarMode="showOnDemand" serviceInfoFont="Crs;24" serviceNameFont="Regular;24" serviceItemHeight="40" foregroundColorServiceNotAvail="#656565" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
-    <widget source="ServiceEvent" render="Label" position="15,370" size="460,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" valign="center">
+     <widget source="ServiceEvent" render="Label" position="15,370" size="460,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="15,415" size="62,22" transparent="1" foregroundColor="foreground" font="Regular;19" halign="right">
@@ -491,7 +491,7 @@
     <widget name="channel" position="15,415" size="460,42" transparent="1" foregroundColor="secondFG" font="Regular;22" halign="left" />
     <widget name="datetime" position="15,458" size="460,30" transparent="1" font="Regular;22" halign="left" />
     <widget name="duration" position="15,488" size="460,30" transparent="1" font="Regular;22" halign="left" />
-    <widget name="epg_description" position="520,82" size="740,583" transparent="1" font="Regular;24" />
+    <widget name="epg_description" position="520,82" size="740,583" transparent="1" font="Regular;26" />
   </screen>
   <screen flags="wfNoBorder" name="EventViewContextMenu" position="0,0" size="1280,720" title="Eventview menu">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
@@ -1293,7 +1293,7 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="15,90" render="Pig" size="477,270" zPosition="1" />
-    <widget name="menu" position="520,90" size="740,565" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+    <widget name="menu" position="520,90" size="740,565" itemHeight="35" font="Regular;25" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
   </screen>
   <screen name="ChannelContextMenu" title="Channellist menu" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
@@ -1313,7 +1313,7 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="15,90" render="Pig" size="477,270" zPosition="1" />
-    <widget name="menu" position="520,82" size="740,583" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+    <widget name="menu" position="520,82" size="740,583" itemHeight="35" font="Regular;26" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
   </screen>
   <screen name="PictureInPicture" position="40,30" size="250,141" zPosition="-1" flags="wfNoBorder">
     <widget name="video" position="0,0" size="250,141" backgroundColor="transparent" />
@@ -1788,8 +1788,8 @@
     <widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="waitingtext" position="520,87" size="740,581" font="Regular;22" halign="center" valign="center" zPosition="4" />
-    <widget name="list" position="520,87" size="740,578" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png"
-	itemHeights="90,53,30" fontSizesOriginal="24,20,18" fontSizesCompact="24,18" fontSizesMinimal="24,20" />
+    <widget name="list" position="520,87" size="740,578" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" 
+  	itemHeights="90,53,30" fontSizesOriginal="24,20,18" fontSizesCompact="24,18" fontSizesMinimal="24,20" />
     <widget source="Service" render="Label" position="15,400" size="477,245" foregroundColor="secondFG" font="Regular;21" valign="center">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
@@ -1859,7 +1859,7 @@
     <widget name="key_green" position="340,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="key_yellow" position="614,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-    <widget name="timerlist" position="520,82" size="740,578" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+    <widget name="timerlist" position="520,82" size="740,578" font="Regular;26" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
   </screen>
   <screen name="TimerLog" title="Timer log" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
@@ -1877,8 +1877,8 @@
     <widget name="key_green" position="340,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="key_yellow" position="614,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
-    <widget name="loglist" position="520,90" size="740,275" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
-    <widget name="logentry" position="15,385" size="1230,285" font="Regular;20" />
+    <widget name="loglist" position="520,90" size="740,275" font="Regular;24" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+    <widget name="logentry" position="15,385" size="1230,285" font="Regular;24" />
   </screen>
   <screen name="TimerSanityConflict" title="Timer sanity error" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
