@@ -714,7 +714,8 @@
     <widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
     <widget name="key_blue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left"/>
     <widget name="waitingtext" position="520,87" size="740,581" font="Regular;22" halign="center" valign="center" zPosition="4"/>
-    <widget name="list" position="520,87" size="740,578" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png"/>
+    <widget name="list" position="520,87" size="740,578" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png"
+ 	itemHeights="75,53,30" fontSizesOriginal="24,20,18" fontSizesCompact="24,18" fontSizesMinimal="24,20" />
     <widget source="Service" render="Label" position="15,400" size="477,245" foregroundColor="secondFG" font="Regular;21" valign="center">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
