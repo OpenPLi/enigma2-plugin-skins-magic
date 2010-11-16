@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-HD Vs 1.79 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 1.81 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -759,7 +759,7 @@
     <widget source="key_green" render="Label" position="435,645" size="176,24" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1" />
     <widget name="config" position="590,110" size="600,500" itemHeight="29" font="Regular;22" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
   </screen>
-  <screen name="About" title="Your receiver" position="0,0" size="1280,720" flags="wfNoBorder">
+  <screen name="About" title="About" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,630" size="1280,2" />
     <widget source="Title" render="Label" position="85,30" size="700,55" font="Regular;25" backgroundColor="secondBG" transparent="1" zPosition="1" valign="center" halign="left" />
@@ -2048,11 +2048,13 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="85,110" size="417,243" backgroundColor="transparent" zPosition="1" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="60,648" size="26,26" zPosition="1" alphatest="on" />
-    <widget source="key_red" render="Label" position="112,643" size="200,40" transparent="1" zPosition="2" font="Regular;20" valign="center" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="115,643" size="26,26" zPosition="1" alphatest="on" />
+    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="65,665" size="35,25" />
+    <widget source="key_red" render="Label" position="150,645" size="200,40" transparent="1" zPosition="2" font="Regular;20" valign="center" />
     <widget name="SkinList" position="575,110" size="300,508" itemHeight="28" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <widget name="Preview" position="918,110" size="280,210" alphatest="on" />
-    <widget source="introduction" render="Label" position="575,650" size="640,30" transparent="1" zPosition="10" font="Regular;21" valign="center" halign="center" />
+    <widget source="introduction" render="Label" position="575,650" size="640,30" transparent="1" zPosition="10" font="Regular;22" valign="center" halign="center" />
+
   </screen>
   <!-- ##Softwaremanager## -->
   <screen name="BackupScreen" title="Backup is running" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -4007,7 +4009,7 @@
     </widget>
   </screen>
   <!-- ##Auto BackUp## -->
-  <screen flags="wfNoBorder" name="Config" position="0,0" size="1280,720" title="Configuration">
+<!--  <screen flags="wfNoBorder" name="Config" position="0,0" size="1280,720" title="Configuration">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,630" size="1280,2" />
     <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="85,30" size="700,55" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -4026,7 +4028,7 @@
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;24" position="590,110" size="600,200" transparent="1" />
     <widget name="status" position="590,320" size="540,130" font="Regular;24" />
     <widget name="statusbar" position="590,460" size="470,160" font="Regular;24" />
-  </screen>
+  </screen> -->
   <!-- ## Virtual ZAP##-->
   <screen flags="wfNoBorder" name="VirtualZapConfig" position="0,0" size="1280,720" title="VirtualZap Configuration">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
@@ -4101,7 +4103,7 @@
     <widget source="key_red" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
     <widget source="key_green" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
     <widget source="key_blue" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="1015,645" size="220,26" transparent="1" zPosition="1" />
-    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="590,110" size="600,500" transparent="1" />
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;24" position="590,110" size="600,500" transparent="1" />
   </screen>
   <screen flags="wfNoBorder" name="AutomaticVolumeAdjustmentEntriesListConfigScreen" position="0,0" size="1280,720" title="Automatic VolumeAdjustment EntriesList ConfigScreen">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
@@ -4119,9 +4121,9 @@
     <widget source="key_green" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
     <widget source="key_yellow" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="725,645" size="220,26" transparent="1" zPosition="1" />
     <widget source="key_blue" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="1015,645" size="220,26" transparent="1" zPosition="1" />
-		<widget render="Label" source="name" position="590,110" size="500,50" font="Regular;20" halign="left"/>
-		<widget render="Label" source="adjustvalue" position="590,170" size="500,50" font="Regular;20" halign="left"/>
-		<widget name="entrylist" position="590,230" size="500,300" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png"/>
+		<widget render="Label" source="name" position="590,110" size="500,50" font="Regular;24" halign="left"/>
+		<widget render="Label" source="adjustvalue" position="590,170" size="500,50" font="Regular;24" halign="left"/>
+		<widget name="entrylist" position="590,230" size="500,300" scrollbarMode="showOnDemand" font="Regular;24" selectionPixmap="Magic-HD-Common/buttons/sel.png"/>
   </screen>
   <screen flags="wfNoBorder" name="AutomaticVolumeAdjustmentEntryConfigScreen" position="0,0" size="1280,720" title="Automatic VolumeAdjustment Entry ConfigScreen">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
@@ -4135,7 +4137,7 @@
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="390,643" size="26,26" />
     <widget source="key_red" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
     <widget source="key_green" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
-    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="590,110" size="600,500" transparent="1" />
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;24" position="590,110" size="600,500" transparent="1" />
   </screen>
   <!-- ##Crashlogsettings## -->
   <screen flags="wfNoBorder" name="CrashlogAutoSubmitConfiguration" position="0,0" size="1280,720" title="CrashlogAutoSubmit settings">
@@ -5216,7 +5218,7 @@
     <widget name="epgliste" position="565,115" size="700,400" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
   </screen>
   <!-- ## EPG importer ## -->
-  <screen flags="wfNoBorder" name="Config" position="0,0" size="1280,720" title="EPG Import Configuration">
+  <screen flags="wfNoBorder" name="Config" position="0,0" size="1280,720" title="Configuration">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,630" size="1280,2" />
     <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="85,30" size="700,55" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -5235,7 +5237,7 @@
     <widget name="key_blue" backgroundColor="secondBG" font="Regular;22" halign="left" position="1015,645" size="220,26" transparent="1" zPosition="1" />
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;24" position="590,110" size="600,500" transparent="1" />
     <widget name="statusbar" position="85,510" size="470,100" font="Regular;24" />
-    <widget name="status" position="85,360" size="470,150" font="Regular;24" />
+    <widget name="status" position="85,400" size="470,150" font="Regular;24" />
   </screen>
   <screen flags="wfNoBorder" name="EPGImportSources" position="0,0" size="1280,720" title="EPG Import Sources">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
@@ -6343,9 +6345,9 @@
     <widget source="session.VideoPicture" backgroundColor="transparent" position="85,110" render="Pig" size="417,243" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="115,643" size="26,26" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="390,643" size="26,26" />
-    <widget source="buttonred" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="150,643" size="220,26" transparent="1" zPosition="1" />
-    <widget source="buttongreen" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,643" size="220,26" transparent="1" zPosition="1" />
-    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="590,110" size="600,500" transparent="1" />
+    <widget name="buttonred" backgroundColor="secondBG" font="Regular;22" halign="left" position="150,643" size="220,26" transparent="1" zPosition="1" />
+    <widget name="buttongreen" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,643" size="220,26" transparent="1" zPosition="1" />
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;24" position="590,110" size="600,500" transparent="1" />
   </screen>
  <!-- ## DMvidsDirect ## -->
   <screen flags="wfNoBorder" name="Vidtype" position="0,0" size="1280,720" title="Categories">
