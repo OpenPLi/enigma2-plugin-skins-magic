@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-HD Vs 1.81 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 1.82 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -292,7 +292,7 @@
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
-  <screen name="SecondInfoBar" title="Second InfoBar" position="0,0" size="1280,220" zPosition="-1" backgroundColor="transparent" flags="wfNoBorder">
+  <screen name="SecondInfoBar" title="Second InfoBar" position="0,0" size="1280,220" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap alphatest="off" pixmap="Magic-HD-Common/infobar/hdi.png" position="0,0" size="1280,220" zPosition="-1" />
     <widget source="session.CurrentService" render="Label" position="50,45" size="600,66" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;16" valign="top" halign="left">
       <convert type="pliExpertInfo">ExpertInfo</convert>
