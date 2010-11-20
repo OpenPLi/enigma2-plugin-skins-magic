@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.83 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
+  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.84 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -5077,7 +5077,7 @@
     <widget backgroundColor="secondBG" font="Regular;18" foregroundColor="foreground" halign="left" name="signal_info" position="70,445" size="461,50" transparent="1" zPosition="3" />
     <widget backgroundColor="secondBG" font="Regular;16" foregroundColor="foreground" halign="left" name="dataFileName" noWrap="1" position="922,140" size="300,22" transparent="1" zPosition="3" />
     <widget backgroundColor="secondBG" font="Regular;18" foregroundColor="foreground" halign="left" name="OrbitalPosition" noWrap="1" position="70,410" size="97,22" transparent="1" zPosition="4" />
-  </screen>
+  </screen>-->
   <!-- ## IMDB Plugin ## -->
   <screen name="IMDB" title="IMDb Details Plugin" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
