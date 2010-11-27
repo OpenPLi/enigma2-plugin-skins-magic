@@ -136,10 +136,10 @@
     <widget source="session.CurrentService" render="Label" position="305,75" size="500,36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;24" valign="center" halign="left">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="50,155" size="120,30" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;24" valign="top" halign="left">
+    <widget source="global.CurrentTime" render="Label" position="50,155" size="120,30" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;24" valign="center" halign="center">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="50,185" size="120,20" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;20" valign="top" halign="left">
+    <widget source="global.CurrentTime" render="Label" position="50,185" size="120,20" backgroundColor="secondBG" noWrap="1" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;20" valign="center" halign="center">
       <convert type="ClockToText">ShortDate</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="305,192" size="620,18" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="secondFG" font="Regular;14" halign="right">
