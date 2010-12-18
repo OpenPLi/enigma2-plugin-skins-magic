@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-HD Vs 1.86 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 1.87 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -5568,6 +5568,67 @@
     <widget name="canceltext" position="145,645" size="220,26" backgroundColor="un7c1c1c" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="center" />
     <widget name="oktext" position="435,645" size="220,26" backgroundColor="un266926" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="center" />
     <widget name="config" position="590,110" size="600,500" />
+  </screen>
+  <!-- ## Enhanced Movie Center ## -->
+  <screen name="XXXX EMCSelection" position="0,0" size="1280,720" title="Enhanced Movie Center" flags="wfNoBorder">
+	  <eLabel text="E n h a n c e d  M o v i e  C e n t e r" position="535,25" size="450,30" font="Regular;26" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" />
+	  <ePixmap pixmap="skin_default/icons/clock.png" position="50,33" zPosition="1" size="26,26" alphatest="on" />
+	  <widget source="global.CurrentTime" render="Label" position="70,25" size="160,30" font="Regular;26" foregroundColor="#00bab329" backgroundColor="#000000" shadowColor="#000000" halign="left" transparent="1">
+	  	<convert type="ClockToText">WithSeconds</convert>
+	  </widget>
+  	<widget source="global.CurrentTime" render="Label" position="1010,25" size="210,30" font="Regular;26" halign="right" foregroundColor="#00bab329" backgroundColor="#000000" shadowColor="#000000" transparent="1">
+	  	<convert type="ClockToText">Format:%d.%m.%Y</convert>
+  	</widget>
+  	<widget source="session.VideoPicture" render="Pig" position="85,65" size="393,221" zPosition="3" backgroundColor="#ff000000" />
+  	<widget name="list" position="533,65" size="700,570" itemHeight="30" CoolFont="Regular;20" CoolDirPos="570" CoolFolderSize="520" CoolMoviePos="30" CoolMovieSize="520" CoolDatePos="540" CoolTimePos="640" scrollbarMode="showNever" selectionPixmap="Magic-HD-Common/buttons/sel.png" backgroundColor="#18080911" transparent="1" />
+    <widget name="wait" position="0,center" size="1280,50" zPosition="1" font="Regular;32" foregroundColor="#FFFFFF" backgroundColor="#18080911" halign="center" valign="center" />
+  	<widget name="FileName" position="50,295" size="470,29" font="Regular;22" foregroundColor="#00bab329" backgroundColor="#000000" noWrap="1" transparent="1" />
+  	<widget source="Service" render="Label" position="50,325" size="70,24" font="Regular;20" halign="left" foregroundColor="#00bab329" backgroundColor="#000000" transparent="1">
+	  	<convert type="ServiceTime">StartTime</convert>
+		  <convert type="ClockToText">Format:%H:%M </convert>
+  	</widget>
+  	<widget source="Service" render="Label" position="110,325" size="70,24" font="Regular;20" foregroundColor="#00bab329" backgroundColor="#000000" halign="left" transparent="1">
+	  	<convert type="ServiceTime">EndTime</convert>
+  		<convert type="ClockToText">Format:- %H:%M </convert>
+  	</widget>
+  	<widget source="Service" render="Label" position="250,325" size="100,24" font="Regular;20" halign="left" foregroundColor="#00bab329" backgroundColor="#000000" transparent="1">
+  		<convert type="ServiceTime">Duration</convert>
+  		<convert type="ClockToText">InMinutes</convert>
+  	</widget>
+  	<widget name="FileSize" position="305,325" size="200,24" font="Regular;20" foregroundColor="#00bab329" halign="right" backgroundColor="#000000" transparent="1" />
+  	<widget source="Service" render="Label" position="50,350" size="470,287" font="Regular;19" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" halign="left" valign="top">
+  		<convert type="EventName">ExtendedDescription</convert>
+  	</widget>
+  	<widget source="Service" render="Label" position="50,640" size="200,24" font="Regular;20" foregroundColor="#00bab329" halign="left" backgroundColor="#000000" transparent="1">
+  		<convert type="MovieInfo">RecordServiceName</convert>
+  	</widget>
+  	<widget source="Service" render="Label" position="210,640" size="300,24" font="Regular;20" foregroundColor="#00bab329" halign="right" backgroundColor="#000000" transparent="1">
+  		<convert type="ServiceTime">StartTime</convert>
+  		<convert type="ClockToText">Date</convert>
+  	</widget>
+  	<widget source="Title" render="Label" position="560,640" size="500,43" font="Regular;20" foregroundColor="#00bab329" backgroundColor="#000000" transparent="1" />
+	<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="70,668" size="30,30" alphatest="on" />
+	<ePixmap pixmap="agic-HD-Common/buttons/green.png" position="375,668" size="30,30" alphatest="on" />
+	<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="680,668" size="30,30" alphatest="on" />
+	<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="985,668" size="30,30" alphatest="on" />
+	<widget name="key_red" position="105,670" size="190,30" zPosition="1" font="Regular;18" halign="left" foregroundColor="#9F1313" backgroundColor="#000000" transparent="1" />
+	<widget name="key_green" position="410,670" size="190,30" zPosition="1" font="Regular;18" halign="left" foregroundColor="#00389416" backgroundColor="#000000" transparent="1" />
+	<widget name="key_yellow" position="715,670" size="190,30" zPosition="1" font="Regular;18" halign="left" foregroundColor="#B59E01" backgroundColor="#000000" transparent="1" />
+	<widget name="key_blue" position="1020,670" size="190,30" zPosition="1" font="Regular;18" halign="left" foregroundColor="#1E28B6" backgroundColor="#000000" transparent="1" />
+  </screen>
+  <screen flags="wfNoBorder" name="EnhancedMovieCenterMenu" position="0,0" size="1280,720" title="EnhancedMovieCenterMenu">
+    <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
+    <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="85,30" size="700,55" halign="left" transparent="1" valign="center" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" backgroundColor="secondBG" font="Regular;20" halign="right" position="970,35"  size="250,50" transparent="1" valign="center" zPosition="1">
+      <convert type="ClockToText">Full</convert>
+    </widget>
+    <widget source="session.VideoPicture" backgroundColor="transparent" position="85,110" render="Pig" size="417,243" zPosition="1" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="115,643" size="26,26" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="390,643" size="26,26" />
+    <widget name="key_red" backgroundColor="secondBG" font="Regular;22" halign="left" position="150,645" size="220,26" transparent="1" zPosition="1" />
+    <widget name="key_green" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
+    <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="590,110" size="600,500" transparent="1" />
   </screen>
   <!-- ## PermanentClock ## -->
   <screen flags="wfNoBorder" name="PermanentClockMenu" position="0,0" size="1280,720" title="PermanentClock ConfigurationMenu">
