@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.87 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
+  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.88 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -414,7 +414,7 @@
     <widget source="ServiceEvent" render="Progress" pixmap="Magic-HD-Common/window/progress.png" position="95,420" size="190,12" transparent="1" borderWidth="1" borderColor="grey">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="15,445" size="490,215" transparent="1" font="Regular; 24">
+    <widget source="ServiceEvent" render="Label" position="15,445" size="490,220" transparent="1" font="Regular; 22">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
   </screen>
@@ -1791,18 +1791,28 @@
     <widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="waitingtext" position="520,87" size="740,581" font="Regular;22" halign="center" valign="center" zPosition="4" />
-    <widget name="list" position="520,87" size="740,578" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" 
- 	itemHeights="75,53,30" fontSizesOriginal="24,20,18" fontSizesCompact="24,18" fontSizesMinimal="24,20" />
-    <widget source="Service" render="Label" position="15,400" size="477,245" foregroundColor="secondFG" font="Regular;21" valign="center">
+    <widget name="list" position="520,87" size="740,570" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" itemHeights="75,53,30" fontSizesOriginal="24,20,18" fontSizesCompact="24,18" fontSizesMinimal="24,20" />
+    <widget source="Service" render="Label" position="15,400" size="477,50" foregroundColor="secondFG" font="Regular;20" transparent="1">
+      <convert type="MovieInfo">ShortDescription</convert>
+    </widget>
+    <widget source="Service" render="Label" position="15,450" size="477,195" font="Regular;21" valign="center">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget source="Service" render="Label" position="15,645" size="140,25" transparent="1" foregroundColor="grey" font="Regular;20">
       <convert type="MovieInfo">FileSize</convert>
     </widget>
-    <widget name="freeDiskSpace" position="155,645" size="350,25" foregroundColor="grey" font="Regular;20" />
-    <widget source="Service" render="Label" position="15,375" size="477,25" zPosition="1" foregroundColor="grey" font="Regular;20" halign="right">
+    <widget name="freeDiskSpace" position="155,645" size="250,25" foregroundColor="grey" font="Regular;20" />
+    <widget source="Service" render="Label" position="185,375" size="310,25" zPosition="1" foregroundColor="grey" font="Regular;20" halign="right">
       <convert type="MovieInfo">RecordServiceName</convert>
     </widget>
+    <widget source="Service" render="Label" position="15,375" size="80,24" font="Regular;20" foregroundColor="grey" halign="left" transparent="1">
+      <convert type="ServiceTime">Duration</convert>
+      <convert type="ClockToText">AsLength</convert>
+    </widget>
+  	<widget source="Service" render="Label" position="95,375" size="90,25" font="Regular;20" foregroundColor="grey" halign="center"  transparent="1">
+  		<convert type="ServiceTime">StartTime</convert>
+	  	<convert type="ClockToText">ShortDate</convert>
+	  </widget>
     <widget name="DescriptionBorder" position="0,0" size="0,0" />
   </screen>
   <!-- ## Timers ## -->
