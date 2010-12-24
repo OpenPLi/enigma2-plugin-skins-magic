@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-HD Vs 1.90 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 1.91 by VU+NL,based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -4968,7 +4968,7 @@
     <widget name="acur" position="840,370" size="80,26" font="Regular;22" backgroundColor="secondBG" transparent="1" />
     </screen>
   <!-- ## Sherlock ## -->
-<!-->  <screen flags="wfNoBorder" name="ConfigSherlock" position="0,0" size="1280,720" title="Sherlock settings">
+  <screen flags="wfNoBorder" name="ConfigSherlock" position="0,0" size="1280,720" title="Sherlock settings">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,630" size="1280,2" />
     <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="85,30" size="700,55" transparent="1" halign="left" valign="center" zPosition="1" />
@@ -5035,7 +5035,7 @@
     <widget backgroundColor="secondBG" font="Regular;18" foregroundColor="foreground" halign="left" name="signal_info" position="85,445" size="461,50" transparent="1" zPosition="3" />
     <widget backgroundColor="secondBG" font="Regular;16" foregroundColor="foreground" halign="left" name="dataFileName" noWrap="1" position="922,140" size="300,22" transparent="1" zPosition="3" />
     <widget backgroundColor="secondBG" font="Regular;18" foregroundColor="foreground" halign="left" name="OrbitalPosition" noWrap="1" position="85,410" size="97,22" transparent="1" zPosition="4" />
-  </screen>-->
+  </screen>
   <!-- ## IMDB Plugin ## -->
   <screen name="IMDB" title="IMDb Details Plugin" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
