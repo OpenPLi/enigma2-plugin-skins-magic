@@ -1321,9 +1321,6 @@
     <widget source="session.VideoPicture" backgroundColor="transparent" position="15,90" render="Pig" size="477,270" zPosition="1" />
     <widget name="menu" position="520,82" size="740,583" itemHeight="35" font="Regular;26" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
   </screen>
-  <screen name="PictureInPicture" position="40,30" size="250,141" zPosition="-1" flags="wfNoBorder">
-    <widget name="video" position="0,0" size="250,141" backgroundColor="transparent" />
-  </screen>
   <screen name="NumericalTextInputHelpDialog" position="center,450" size="454,164" backgroundColor="background" zPosition="2" flags="wfNoBorder">
     <eLabel position="0,0" size="454,164" backgroundColor="yellowtransparent" zPosition="-1" />
     <widget name="key1" position="2,2" size="150,40" font="Console;20" valign="center" halign="center" />
