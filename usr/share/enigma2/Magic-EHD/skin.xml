@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.91.03 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
+  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.91.04 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -716,6 +716,7 @@
     <widget source="menu" render="Listbox" position="520,82" size="740,575" font="Regular;24" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png">
       <convert type="StringList" />
     </widget>
+    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="25,590" size="420,55" alphatest="on" />
   </screen>
   <screen name="menu_mainmenu" title="Main menu" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
@@ -733,6 +734,7 @@
 			}
       </convert>
     </widget>
+    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="25,590" size="420,55" alphatest="on" />
   </screen>
   <screen name="menu_setup" title="Setup menu" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
@@ -750,6 +752,7 @@
 			}
       </convert>
     </widget>
+    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="25,590" size="420,55" alphatest="on" />
   </screen>
   <screen name="menu_system" title="System menu" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
@@ -767,6 +770,7 @@
 			}
       </convert>
     </widget>
+    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="25,590" size="420,55" alphatest="on" />
   </screen>
   <screen name="menu_information" title="Information menu" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
@@ -784,6 +788,7 @@
 			}
       </convert>
     </widget>
+    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="25,590" size="420,55" alphatest="on" />
   </screen>
   <screen name="menu_scan" title="Scan menu" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
@@ -870,6 +875,7 @@
     <widget source="Tuner3" render="Label" position="635,395" size="580,25" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />
     <widget source="HDDHeader" render="Label" position="635,445" size="580,25" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />
     <widget source="hddA" render="Label" position="635,485" size="580,50" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />
+    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="25,590" size="420,55" alphatest="on" />
 		<eLabel text="Skin Magic-EHD   by VU+ NL" foregroundColor="grey" backgroundColor="secondBG" font="Regular;19" halign="center" position="25,450" size="420,55" transparent="1" zPosition="1" />
 		<eLabel text="www.pli-images.org" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="center" position="25,510" size="420,55" transparent="1" zPosition="1" />
   </screen>
@@ -890,6 +896,9 @@
     <widget name="green" position="340,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="yellow" position="624,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget name="blue" position="875,682" size="220,26" foregroundColor="foreground" font="Regular;22" halign="left" />
+    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="25,590" size="420,55" alphatest="on" />
+		<eLabel text="Skin Magic-EHD   by VU+ NL" foregroundColor="grey" backgroundColor="secondBG" font="Regular;19" halign="center" position="25,450" size="420,55" transparent="1" zPosition="1" />
+		<eLabel text="www.pli-images.org" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="center" position="25,510" size="420,55" transparent="1" zPosition="1" />
   </screen>
   <screen name="HarddiskSelection" title="HDD Select" flags="wfNoBorder" position="0,0" size="1280,720">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
@@ -2145,7 +2154,7 @@
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="15,682" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="305,682" size="26,26" alphatest="on" />
     <widget name="red" position="50,682" size="220,30" foregroundColor="foreground" font="Regular;22" halign="left" />
-    <widget name="green" position="340,682" size="220,30" foregroundColor="foreground" font="Regular;22" halign="left" />
+    <widget name="green" position="340,682" size="420,30" foregroundColor="foreground" font="Regular;22" halign="left" />
     <widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
     <widget name="list" position="520,82" size="740,550" font="Regular;26" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
   </screen>
@@ -6594,6 +6603,9 @@
     <widget backgroundColor="transparent" position="15,90" render="Pig" size="477,270" source="session.VideoPicture" zPosition="1" />
     <widget source="TranslatorName" render="Label" position="590,90" size="520,90" font="Regular;27" halign="center" backgroundColor="background" transparent="1" />
     <widget source="TranslationInfo" render="Label" position="590,180" size="590,380" font="Regular;27" halign="center" backgroundColor="background" transparent="1" />
+    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="25,590" size="420,55" alphatest="on" />
+		<eLabel text="Skin Magic-EHD   by VU+ NL" foregroundColor="grey" backgroundColor="secondBG" font="Regular;19" halign="center" position="25,450" size="420,55" transparent="1" zPosition="1" />
+		<eLabel text="www.pli-images.org" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="center" position="25,510" size="420,55" transparent="1" zPosition="1" />
   </screen>
   <!-- ## CleanupWizard ## -->
   <screen flags="wfNoBorder" name="CleanupWizardConfiguration" position="0,0" size="1280,720" title="CleanupWizard settings">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-<!--  Skin: Magic by MiLo Vs 1.11, based on Merlin Magic 2.0 Picons -->
+<!--  Skin: Magic by MiLo Vs 1.12, based on Merlin Magic 2.0 Picons -->
 	<!--  ##### Head #####  -->
 	<output id="0">
 		<resolution bpp="32" xres="720" yres="576"/>
@@ -287,8 +287,9 @@
 		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="226,289" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="226,289" size="14,14" zPosition="4"/>
+<!--<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="226,289" size="14,14" zPosition="4"/>-->
 		<eLabel backgroundColor="darkgrey" position="0,282" size="300,2" zPosition="5"/>
+    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="-10,290" size="250,25" alphatest="on" />
 	</screen>
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_mainmenu" position="0,128" size="720,320" title="Main menu">
 		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
@@ -339,6 +340,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
+    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="110,290" size="340,25" alphatest="on" />
 	</screen>
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_information" position="0,128" size="720,320" title="Main menu">
 		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
@@ -354,6 +356,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
+    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="110,290" size="340,25" alphatest="on" />
 	</screen>
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_shutdown" position="0,128" size="720,320" title="Main menu">
 		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
@@ -369,6 +372,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
+    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="110,290" size="340,25" alphatest="on" />
 	</screen>
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_harddisk" position="0,128" size="720,320" title="Main menu">
 		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
@@ -384,6 +388,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
+    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="110,290" size="340,25" alphatest="on" />
 	</screen>
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_network" position="0,128" size="720,320" title="Main menu">
 		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
@@ -399,6 +404,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
+    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="110,290" size="340,25" alphatest="on" />
 	</screen>
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_setup" position="0,128" size="720,320" title="Main menu">
 		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
@@ -414,6 +420,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
+    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="110,290" size="340,25" alphatest="on" />
 	</screen>
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_scan" position="0,128" size="720,320" title="Main menu">
 		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
@@ -429,6 +436,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
+    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="110,290" size="340,25" alphatest="on" />
 	</screen>
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_system" position="0,128" size="720,320" title="Main menu">
 		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
@@ -444,6 +452,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
+    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="110,290" size="340,25" alphatest="on" />
 	</screen>	
 	<!--  ##### Input and Output Boxes #####  -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="NumberZap" position="50,50" size="160,26" title="Channel">
@@ -493,6 +502,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget font="Enigma;18" position="10,190" render="Label" size="340,20" source="Tuner3"/>
 		<widget font="Enigma;18" position="10,210" render="Label" size="340,20" source="HDDHeader"/>
 		<widget font="Enigma;18" position="10,233" render="Label" size="340,50" source="hddA"/>
+    <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="10,290" size="340,25" alphatest="on" />
+		<eLabel text="www.pli-images.org" foregroundColor="grey" backgroundColor="background" font="Regular;22" halign="center" position="10,320" size="340,25" transparent="1" zPosition="1" />
+
 	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="TimeshiftState" position="50,310" size="150,60" zPosition="2">
 		<widget font="Enigma;24" halign="center" name="state" position="0,0" size="150,30" backgroundColor="transparent" borderColor="black" borderWidth="2" />
