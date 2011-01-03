@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.91.04 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
+  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.91.05 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -1791,8 +1791,8 @@
     <widget name="key_yellow" position="614,682" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="875,682"  size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;20" position="520,82" size="740,583" transparent="1" enableWrapAround="1" />
-		<eLabel text="Standard for (HD), (XD), (SD) Skin" position="15,400" size="340,60" font="Regular;20" halign="left" transparent="1" />
-  	<eLabel text="press ( left OK right ) to change your Buttons" position="15,490" size="340,60" font="Regular;20" halign="left" transparent="1" />
+    <widget name="CoolText1" position="15,400" size="477,60" font="Regular;20" halign="left" transparent="1" />
+    <widget name="CoolText2" position="15,490" size="477,60" font="Regular;20" halign="left" transparent="1" />
   </screen>
   <screen name="CoolMultiGuide" position="center,center" size="1280,720" backgroundColor="#000000" title="Cool Multi Guide" flags="wfNoBorder">
     <widget source="Title" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />

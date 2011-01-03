@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-HD Vs 1.91.04 by VU+NL, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 1.91.05 by VU+NL, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -1735,9 +1735,9 @@
     <widget name="key_green" position="435,645" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_yellow" backgroundColor="secondBG" font="Regular;22" halign="left" position="725,645" size="220,26" transparent="1" zPosition="1" />
     <widget name="key_blue" backgroundColor="secondBG" font="Regular;22" halign="left" position="1015,645" size="220,26" transparent="1" zPosition="1" />
-		<eLabel text="Standard for (HD), (XD), (SD) Skin" position="85,380" size="490,60" font="Regular;20" halign="left" transparent="1" />
-  	<eLabel text="press ( left OK right ) to change your Buttons" position="85,450" size="340,60" font="Regular;20" halign="left" transparent="1" />
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;18" position="590,110" size="630,500" transparent="1" />
+    <widget name="CoolText1" position="85,400" size="417,60" font="Regular;20" halign="left" transparent="1" />
+    <widget name="CoolText2" position="85,490" size="417,60" font="Regular;20" halign="left" transparent="1" />
   </screen>
   <screen name="CoolTVGuide" position="center,center" size="1280,720" backgroundColor="#000000" title="Cool TV Guide">
     <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="85,30" size="700,30" halign="left" transparent="1" valign="center" zPosition="1" />
