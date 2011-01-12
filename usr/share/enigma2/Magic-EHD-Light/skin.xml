@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-EHD-Light (Extreme-HD) Vs 1.02 by VU+NL, based on Magic_EHD Vs 2.91.08 but now in "Light version" (not supporting as many screens)  -->
+  <!--  Skin:  Magic-EHD-Light (Extreme-HD) Vs 1.04 by VU+NL, based on Magic_EHD Vs 2.91.10 but now in "Light version" (not supporting as many screens)  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -731,7 +731,7 @@
     <widget source="HDDHeader" render="Label" position="635,445" size="580,25" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />
     <widget source="hddA" render="Label" position="635,485" size="580,50" backgroundColor="background" transparent="1" font="Regular;21" halign="center" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="25,650" size="300,25" alphatest="on" />
-		<eLabel text="Skin Magic-EHD   by VU+ NL" foregroundColor="grey" backgroundColor="secondBG" font="Regular;19" halign="center" position="25,450" size="420,55" transparent="1" zPosition="1" />
+		<eLabel text="Skin Magic-EHD Light  by VU+ NL" foregroundColor="grey" backgroundColor="secondBG" font="Regular;19" halign="center" position="25,450" size="420,55" transparent="1" zPosition="1" />
 		<eLabel text="www.pli-images.org" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="center" position="25,510" size="420,55" transparent="1" zPosition="1" />
   </screen>
   <screen name="ServiceInfo" title="Serviceinfo" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -1329,13 +1329,19 @@
     <ePixmap pixmap="Magic-HD-Common/dvr/dvr.png" position="950,682" size="150,20" zPosition="2" alphatest="on" />
     <widget name="repeat" position="1120,682" size=" 70,30" zPosition="10" pixmaps="Magic-HD-Common/buttons/repeat-off.png,Magic-HD-Common/buttons/repeat-on.png" alphatest="blend" />
   </screen>
+  <screen name="Dish" title="Dish" backgroundColor="transparent" flags="wfNoBorder" position="86,100" size="130,160" zPosition="100">
+    <widget name="Dishpixmap" pixmap="skin_default/icons/dish_scan.png" alphatest="off" position="0,0" size="130,160" />
+  </screen>
+  <screen name="UnhandledKey" title="UnhandledKey" position="1200,50" size="34,45" backgroundColor="transparent" zPosition="100" flags="wfNoBorder">
+    <widget name="UnhandledKeyPixmap" pixmap="skin_default/unhandled-key.png" position="0,0" size="34,45" alphatest="off" />
+  </screen>
   <!-- ##GP2## -->
   <gstyle>
     <gstyles filename="Magic-HD-Common/window/separator.png#cached"/>
   </gstyle>
   <!-- ##Permanent clock## -->  
   <screen name="PermanentClockScreen" position="0,0" size="120,30" zPosition="-1" backgroundColor="transparent" title="%s" flags="wfNoBorder">
-    <widget source="global.CurrentTime" render="Label" position="1,1" size="120,30" backgroundColor="transparent" transparent="1" zPosition="0" foregroundColor="foreground" borderWidth="2" font="Regular;26" borderColor="black" valign="center" halign="center">
+    <widget source="global.CurrentTime" render="Label" position="1,1" size="120,30" backgroundColor="transparent" transparent="1" zPosition="0" foregroundColor="foreground" borderWidth="3" font="Regular;26" borderColor="black" valign="center" halign="center">
       <convert type="ClockToText">Default</convert>
     </widget>
   </screen>  
@@ -1354,5 +1360,110 @@
 		<eLabel text="www.pli-images.org" foregroundColor="grey" backgroundColor="secondBG" font="Regular;22" halign="center" position="25,510" size="420,55" transparent="1" zPosition="1" />
   </screen>  
   <screen name="SubtitleDisplay" position="0,0" size="1280,720" backgroundColor="transparent" zPosition="-1" flags="wfNoBorder" />
+  <!-- ##Project Valerie## -->
+  <screen name="PVMC_Series" position="0,0" size="1280,720" title="Media Center - TV" flags="wfNoBorder" backgroundColor="#ff000000" >
+		<widget name="backdrop" position="0,0" zPosition="0" size="1280,720" text="/hdd/valerie/media/defaultbackdrop.m1v" />
+		<ePixmap name="mb_bg" position="0,0" zPosition="1" size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/fanart_overlay-fs8.png" />
+		<ePixmap name="mb_bg_list" position="333,50" zPosition="2" size="540,670" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/fanart_list_bg-fs8.png" />
+		<widget name="listview_itemsperpage" text="11" position="0,0" zPosition="0" size="1,1"/>
+		<widget source="listview" render="Listbox" zPosition="3" position="410,175" size="393,429" scrollbarMode="showNever" selectionPixmap="Magic-HD-Common/buttons/sel.png" transparent="1" backgroundColorSelected="#00272727" >
+			<convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (0, 0), size = (378, 30), flags = RT_HALIGN_LEFT, text = 0) ],
+				"fonts": [gFont("Regular", 25)],
+				"itemHeight": 39,
+				"scrollbarMode": "showNever"
+				}
+			</convert>
+		</widget>
+		<widget name="current" transparent="1" zPosition="5" halign="left" position="432,644" size="72,30" font="Regular;23" foregroundColor="#8BCAF6"/>
+		<widget name="total" transparent="1" zPosition="5" halign="right" position="522,644" size="252,30" font="Regular;23" foregroundColor="#8BCAF6"/>
+		<eLabel name="movies" text="tv shows" transparent="1" zPosition="5" halign="right" position="180,38" size="612,63" font="Regular;57" foregroundColor="#006CA4C5"/>
+		<widget name="title" transparent="1" zPosition="5" halign="right" position="40,113" size="763,55" font="Regular;40" foregroundColor="#00FFFFFF" />
+		<widget name="tag" transparent="1" zPosition="5" halign="left" position="813,128" size="400,34" font="Regular;26" foregroundColor="#00FFFFFF" />
+		<widget name="star0" transparent="1" zPosition="6" position="828,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/Star.png" alphatest="on" />
+		<widget name="star1" transparent="1" zPosition="6" position="859,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/Star.png" alphatest="on" />
+		<widget name="star2" transparent="1" zPosition="6" position="890,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/Star.png" alphatest="on" />
+		<widget name="star3" transparent="1" zPosition="6" position="920,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/Star.png" alphatest="on" />
+		<widget name="star4" transparent="1" zPosition="6" position="951,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/Star.png" alphatest="on" />
+		<widget name="star5" transparent="1" zPosition="6" position="981,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/Star.png" alphatest="on" />
+		<widget name="star6" transparent="1" zPosition="6" position="1012,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/Star.png" alphatest="on" />
+    <widget name="star7" transparent="1" zPosition="6" position="1042,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/Star.png" alphatest="on" />
+		<widget name="star8" transparent="1" zPosition="6" position="1073,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/Star.png" alphatest="on" />
+		<widget name="star9" transparent="1" zPosition="6" position="1103,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/Star.png" alphatest="on" />
+		<widget name="nostar0" transparent="1" zPosition="5" position="828,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/NoStar.png" alphatest="on" />
+		<widget name="nostar1" transparent="1" zPosition="5" position="859,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/NoStar.png" alphatest="on" />
+		<widget name="nostar2" transparent="1" zPosition="5" position="890,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/NoStar.png" alphatest="on" />
+		<widget name="nostar3" transparent="1" zPosition="5" position="920,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/NoStar.png" alphatest="on" />
+		<widget name="nostar4" transparent="1" zPosition="5" position="951,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/NoStar.png" alphatest="on" />
+		<widget name="nostar5" transparent="1" zPosition="5" position="981,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/NoStar.png" alphatest="on" />
+		<widget name="nostar6" transparent="1" zPosition="5" position="1012,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/NoStar.png" alphatest="on" />
+		<widget name="nostar7" transparent="1" zPosition="5" position="1042,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/NoStar.png" alphatest="on" />
+		<widget name="nostar8" transparent="1" zPosition="5" position="1073,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/NoStar.png" alphatest="on" />
+		<widget name="nostar9" transparent="1" zPosition="5" position="1103,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/NoStar.png" alphatest="on" />
+		<widget name="poster" transparent="1" zPosition="5" position="151,278" size="263,268"/>
+		<ePixmap name="posterborder" position="118,244" zPosition="6" size="385,354" alphatest="blend"  pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/blackborders_video_thumbnail-fs8.png" />
+		<widget name="shortDescription" text="" transparent="1" zPosition="5" halign="left" position="813,300" size="450,288" font="Regular;23" foregroundColor="#FFFFFF" />
+		<widget name="otitle" transparent="1" zPosition="5" halign="left" position="1280,402" size="196,16" font="Regular;16" foregroundColor="#FFFFFF"  backgroundColor="#F200FF"/>
+		<widget name="director" transparent="1" zPosition="5" halign="left" position="1280,425" size="196,16" font="Regular;16" foregroundColor="#FFFFFF"  backgroundColor="#F200FF"/>
+		<widget name="writer" transparent="1" zPosition="5" halign="left" position="1280,448" size="196,16" font="Regular;16" foregroundColor="#FFFFFF"  backgroundColor="#F200FF"/>
+		<widget name="genre" transparent="1" zPosition="5" halign="left" position="813,250" size="450,30" font="Regular;25" foregroundColor="#8BCAF6" />
+		<widget name="year" transparent="1" zPosition="5" halign="left" position="813,175" size="450,30" font="Regular;25" foregroundColor="#8BCAF6" />
+		<widget name="runtime" transparent="1" zPosition="5" halign="left" position="813,213" size="450,30" font="Regular;25" foregroundColor="#8BCAF6" />
+    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" zPosition="6" position="65,665" size="35,25" />
+	</screen>
+	<screen name="PVMC_Movies" position="0,0" size="1280,720" title="Media Center - Movies" flags="wfNoBorder" backgroundColor="#ff000000" >
+		<widget name="backdrop" position="0,0" zPosition="0" size="1280,720" text="/hdd/valerie/media/defaultbackdrop.m1v" />
+		<ePixmap name="mb_bg" position="0,0" zPosition="1" size="1280,720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/fanart_overlay-fs8.png" />
+		<ePixmap name="mb_bg_list" position="333,50" zPosition="2" size="540,670" alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/fanart_list_bg-fs8.png" />
+		<widget name="listview_itemsperpage" text="11" position="0,0" zPosition="0" size="1,1"/>
+		<widget source="listview" render="Listbox" zPosition="3" position="410,175" size="393,429" scrollbarMode="showNever" selectionPixmap="Magic-HD-Common/buttons/sel.png" transparent="1" backgroundColorSelected="#00272727" >
+			<convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (0, 0), size = (378, 30), flags = RT_HALIGN_LEFT, text = 0) ],
+				"fonts": [gFont("Regular", 25)],
+				"itemHeight": 39,
+				"scrollbarMode": "showNever"
+				}
+			</convert>
+		</widget>
+		<widget name="current" transparent="1" zPosition="5" halign="left" position="432,644" size="72,30" font="Regular;23" foregroundColor="#8BCAF6"/>
+		<widget name="total" transparent="1" zPosition="5" halign="right" position="522,644" size="252,30" font="Regular;23" foregroundColor="#8BCAF6"/>
+		<eLabel name="movies" text="movies" transparent="1" zPosition="5" halign="right" position="180,38" size="612,63" font="Regular;57" foregroundColor="#006CA4C5"/>
+		<widget name="title" transparent="1" zPosition="5" halign="right" position="40,113" size="763,55" font="Regular;40" foregroundColor="#00FFFFFF" />
+		<widget name="tag" transparent="1" zPosition="5" halign="left" position="813,128" size="400,34" font="Regular;26" foregroundColor="#00FFFFFF" />
+		<widget name="star0" transparent="1" zPosition="6" position="828,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/Star.png" alphatest="on" />
+		<widget name="star1" transparent="1" zPosition="6" position="859,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/Star.png" alphatest="on" />
+		<widget name="star2" transparent="1" zPosition="6" position="890,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/Star.png" alphatest="on" />
+		<widget name="star3" transparent="1" zPosition="6" position="920,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/Star.png" alphatest="on" />
+		<widget name="star4" transparent="1" zPosition="6" position="951,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/Star.png" alphatest="on" />
+		<widget name="star5" transparent="1" zPosition="6" position="981,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/Star.png" alphatest="on" />
+		<widget name="star6" transparent="1" zPosition="6" position="1012,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/Star.png" alphatest="on" />
+		<widget name="star7" transparent="1" zPosition="6" position="1042,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/Star.png" alphatest="on" />
+		<widget name="star8" transparent="1" zPosition="6" position="1073,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/Star.png" alphatest="on" />
+		<widget name="star9" transparent="1" zPosition="6" position="1103,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/Star.png" alphatest="on" />
+		<widget name="nostar0" transparent="1" zPosition="5" position="828,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/NoStar.png" alphatest="on" />
+		<widget name="nostar1" transparent="1" zPosition="5" position="859,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/NoStar.png" alphatest="on" />
+		<widget name="nostar2" transparent="1" zPosition="5" position="890,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/NoStar.png" alphatest="on" />
+		<widget name="nostar3" transparent="1" zPosition="5" position="920,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/NoStar.png" alphatest="on" />
+		<widget name="nostar4" transparent="1" zPosition="5" position="951,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/NoStar.png" alphatest="on" />
+		<widget name="nostar5" transparent="1" zPosition="5" position="981,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/NoStar.png" alphatest="on" />
+		<widget name="nostar6" transparent="1" zPosition="5" position="1012,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/NoStar.png" alphatest="on" />
+		<widget name="nostar7" transparent="1" zPosition="5" position="1042,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/NoStar.png" alphatest="on" />
+		<widget name="nostar8" transparent="1" zPosition="5" position="1073,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/NoStar.png" alphatest="on" />
+		<widget name="nostar9" transparent="1" zPosition="5" position="1103,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/NoStar.png" alphatest="on" />
+		<widget name="poster" transparent="1" zPosition="5" position="151,278" size="263,268"/>
+		<ePixmap name="posterborder" position="118,244" zPosition="6" size="385,354" alphatest="blend"  pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/blackborders_video_thumbnail-fs8.png" />
+		<widget name="shortDescription" text="" transparent="1" zPosition="5" halign="left" position="813,300" size="450,288" font="Regular;23" foregroundColor="#FFFFFF" />
+		<widget name="otitle" transparent="1" zPosition="5" halign="left" position="1280,402" size="196,16" font="Regular;16" foregroundColor="#FFFFFF"  backgroundColor="#F200FF"/>
+		<widget name="director" transparent="1" zPosition="5" halign="left" position="1280,425" size="196,16" font="Regular;16" foregroundColor="#FFFFFF"  backgroundColor="#F200FF"/>
+		<widget name="writer" transparent="1" zPosition="5" halign="left" position="1280,448" size="196,16" font="Regular;16" foregroundColor="#FFFFFF"  backgroundColor="#F200FF"/>
+		<widget name="genre" transparent="1" zPosition="5" halign="left" position="813,250" size="450,30" font="Regular;25" foregroundColor="#8BCAF6" />
+		<widget name="year" transparent="1" zPosition="5" halign="left" position="813,175" size="450,30" font="Regular;25" foregroundColor="#8BCAF6" />
+		<widget name="runtime" transparent="1" zPosition="5" halign="left" position="813,213" size="450,30" font="Regular;25" foregroundColor="#8BCAF6" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="115,643" size="26,26" zPosition="6" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="970,643" size="26,26" zPosition="6" alphatest="on" />
+	 	<eLabel text="Sort by Title/Year" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="6" />
+		<eLabel text="Select Category" backgroundColor="secondBG" font="Regular;22" halign="left" position="1015,645" size="220,26" transparent="1" zPosition="6" />
+    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" zPosition="6" position="65,665" size="35,25" />
+  </screen>
   <!-- ## End of Magic-EHD-Light ## -->
 </skin>
