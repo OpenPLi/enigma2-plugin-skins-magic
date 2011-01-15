@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-<!--  Skin: Magic by MiLo Vs 1.13, based on Merlin Magic 2.0 Picons -->
+<!--  Skin: Magic by MiLo Vs 1.14, based on Merlin Magic 2.0 Picons -->
 	<!--  ##### Head #####  -->
 	<output id="0">
 		<resolution bpp="32" xres="720" yres="576"/>
@@ -1148,4 +1148,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<ePixmap position="220,500" zPosition="4" size="140,40" pixmap="skin_default/buttons/red.png" transparent="1" alphatest="on" />
 			<widget name="key_red" position="220,500" zPosition="5" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" borderColor="black" borderWidth="2" />
 		</screen>
+  <!-- ## PiP ## -->
+  <screen name="PictureInPictureZapping" flags="wfNoBorder" backgroundColor="transparent" position="300,60" size="120,26" title="PiPZap" zPosition="-1">
+	  <eLabel text="PiP-Zap" position="0,0" size="120,26" backgroundColor="transparent" transparent="1" font="Regular;22" borderColor="black" borderWidth="3" valign="center" halign="center" />
+  </screen>  
 </skin>

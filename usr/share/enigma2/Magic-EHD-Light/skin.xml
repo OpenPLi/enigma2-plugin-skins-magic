@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-EHD-Light (Extreme-HD) Vs 1.05 by VU+NL, based on Magic_EHD Vs 2.91.10 but now in "Light version" (not supporting as many screens)  -->
+  <!--  Skin:  Magic-EHD-Light (Extreme-HD) Vs 1.06 by VU+NL, based on Magic_EHD Vs 2.91.12 but now in "Light version" (not supporting as many screens)  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -1464,5 +1464,9 @@
 		<eLabel text="Select Category" backgroundColor="secondBG" font="Regular;22" halign="left" position="1015,645" size="220,26" transparent="1" zPosition="6" />
     <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" zPosition="6" position="65,665" size="35,25" />
   </screen>
-  <!-- ## End of Magic-EHD-Light ## -->
+  <!-- ## PiP ## -->
+  <screen name="PictureInPictureZapping" flags="wfNoBorder" backgroundColor="transparent" position="580,60" size="120,26" title="PiPZap" zPosition="-1">
+	  <eLabel text="PiP-Zap" position="0,0" size="120,26" backgroundColor="transparent" transparent="1" font="Regular;22" borderColor="black" borderWidth="3" valign="center" halign="center" />
+  </screen>  
+   <!-- ## End of Magic-EHD-Light ## -->
 </skin>
