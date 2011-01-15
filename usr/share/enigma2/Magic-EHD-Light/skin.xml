@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-EHD-Light (Extreme-HD) Vs 1.04 by VU+NL, based on Magic_EHD Vs 2.91.10 but now in "Light version" (not supporting as many screens)  -->
+  <!--  Skin:  Magic-EHD-Light (Extreme-HD) Vs 1.05 by VU+NL, based on Magic_EHD Vs 2.91.10 but now in "Light version" (not supporting as many screens)  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -1326,7 +1326,6 @@
     <widget source="session.CurrentService" render="Label" position="820,645" size="100,25" backgroundColor="noTransBG" transparent="1" font="Regular;22" valign="center" halign="left">
       <convert type="ServicePosition">Remaining</convert>
     </widget>
-    <ePixmap pixmap="Magic-HD-Common/dvr/dvr.png" position="950,682" size="150,20" zPosition="2" alphatest="on" />
     <widget name="repeat" position="1120,682" size=" 70,30" zPosition="10" pixmaps="Magic-HD-Common/buttons/repeat-off.png,Magic-HD-Common/buttons/repeat-on.png" alphatest="blend" />
   </screen>
   <screen name="Dish" title="Dish" backgroundColor="transparent" flags="wfNoBorder" position="86,100" size="130,160" zPosition="100">

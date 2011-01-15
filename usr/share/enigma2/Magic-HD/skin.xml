@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-HD Vs 1.91.10 by VU+NL, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 1.91.11 by VU+NL, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -4238,7 +4238,6 @@
     <widget source="session.CurrentService" render="Label" position="820,645" size="100,25" backgroundColor="noTransBG" transparent="1" font="Regular;22" valign="center" halign="left">
       <convert type="ServicePosition">Remaining</convert>
     </widget>
-    <ePixmap pixmap="Magic-HD-Common/dvr/dvr.png" position="950,647" size="150,20" zPosition="2" alphatest="on" />
     <widget name="repeat" position="1120,645" size=" 70,30" zPosition="10" pixmaps="Magic-HD-Common/buttons/repeat-off.png,Magic-HD-Common/buttons/repeat-on.png" alphatest="blend" />
   </screen>
   <!-- ##Picture-Player## -->
@@ -4753,7 +4752,7 @@
     <widget name="key_yellow" backgroundColor="secondBG" font="Regular;22" halign="left" position="725,645" size="220,26" transparent="1" zPosition="1" />
     <widget name="key_blue" backgroundColor="secondBG" font="Regular;22" halign="left" position="1015,645" size="220,26" transparent="1" zPosition="1" />
     <widget name="list" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="590,110" size="600,500" transparent="1" />
-    <widget name="background" font="Regular;20" position="590,110" size="600,40" halign="left" valign="center" transparent="1" />
+<!-->    <widget name="background" font="Regular;20" position="590,110" size="600,40" halign="left" valign="center" transparent="1" />-->
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
   <!-- ## RSS ## -->
