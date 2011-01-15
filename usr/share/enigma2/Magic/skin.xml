@@ -204,16 +204,21 @@
 	<screen backgroundColor="#1f1f1f" flags="wfNoBorder" name="MediaPlayer" position="0,0" size="720,576" title="MediaPlayer">
 		<ePixmap alphatest="off" name="mp_bg" pixmap="Magic/dvr/media_player.png" position="0,0" size="720,576" zPosition="1"/>
 		<ePixmap alphatest="on" pixmap="Magic/dvr/scale.png" position="68,438" size="584,12" zPosition="2"/>
-		<ePixmap alphatest="on" pixmap="Magic/dvr/dvr.png" position="285,498" size="150,20" zPosition="2"/>
 		<widget name="filelist" position="65,64" scrollbarMode="showOnDemand" size="450,164" transparent="1" zPosition="2"/>
 		<widget name="playlist" position="62,253" scrollbarMode="showOnDemand" selectionDisabled="1" size="590,170" transparent="1" zPosition="2"/>	
-		<widget font="Enigma;21" foregroundColor="#f0f0f0" halign="center" name="title" position="60,461" size="600,26" transparent="1" zPosition="3"/>
-		<widget font="Enigma;18" foregroundColor="#ffc000" halign="left" name="artist" position="68,498" size="212,22" transparent="1" zPosition="3"/>
 		<widget font="Enigma;18" foregroundColor="#f0f0f0" halign="center" name="year" position="531,64" size="116,22" transparent="1" zPosition="3"/>
 		<widget alphatest="off" name="coverArt" pixmap="Magic/dvr/no_coverArt.png" position="531,92" size="116,116" transparent="1" zPosition="3"/>				
 		<widget name="PositionGauge" pointer="Magic/dvr/position_pointer.png:572,0" position="68,438" size="584,12" transparent="1" zPosition="4"/>	
-		<widget font="Enigma;18" foregroundColor="#ffc000" halign="right" position="445,498" render="Label" size="205,24" source="global.CurrentTime" transparent="1" zPosition="4">
-			<convert type="ClockToText">Format:%a %d %b  %H:%M</convert>
+		<widget font="Enigma;21" foregroundColor="#f0f0f0" halign="center" name="title" position="60,460" size="600,26" transparent="1" zPosition="3"/>
+		<widget source="session.CurrentService" render="Label" position="68,460" size="60,20" transparent="1" font="Enigma;18" valign="center" halign="left" zPosition="4">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="592,460" size="60,20" transparent="1" font="Enigma;18" valign="center" halign="right" zPosition="4">
+			<convert type="ServicePosition">Remaining,Negate</convert>
+		</widget>
+		<widget font="Enigma;18" foregroundColor="yellow" halign="left" name="artist" position="68,498" size="212,22" transparent="1" zPosition="3"/>
+		<widget font="Enigma;18" foregroundColor="yellow" halign="right" position="445,498" render="Label" size="205,24" source="global.CurrentTime" transparent="1" zPosition="4">
+			<convert type="ClockToText">Full</convert>
 		</widget>
 	</screen>
 	<screen flags="wfNoBorder" name="RadioInfoBar" position="0,416" size="720,160">
