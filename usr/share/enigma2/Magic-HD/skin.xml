@@ -640,7 +640,6 @@
     <widget name="channel" position="85,370" size="435,42" transparent="1" foregroundColor="secondFG" font="Regular;22" halign="left" />
     <widget name="datetime" position="85,440" size="435,30" transparent="1" font="Regular;22" halign="left" />
     <widget name="duration" position="85,485" size="435,30" transparent="1" font="Regular;22" halign="left" />
-    <widget name="description" position="85,525" size="435,60" transparent="1" font="Regular;22" halign="left" />
     <widget name="epg_description" position="540,110" size="680,500" transparent="1" font="Regular;26" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
@@ -6094,7 +6093,7 @@
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
   <!-- ## PPanel ## -->
-  <screen flags="wfNoBorder" name="ToplevelPPanel" position="0,0" size="1280,720" title="Toplevel PPanel">
+  <screen flags="wfNoBorder" name="ToplevelPPanel" position="0,0" size="1280,720" title="1 Toplevel PPanel">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,630" size="1280,2" />
     <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="85,30" size="700,55" transparent="1" valign="center" zPosition="1" />
@@ -6107,7 +6106,7 @@
     <eLabel text="'OK' = Choose" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
     <widget name="helptext" position="85,370" size="500,260" valign="center" halign="left" font="Regular;20" />
   </screen>
-  <screen flags="wfNoBorder" name="PPanel" position="0,0" size="1280,720" title="PPanel">
+  <screen flags="wfNoBorder" name="PPanel" position="0,0" size="1280,720" title="2 PPanel">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,630" size="1280,2" />
     <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="85,30" size="700,55" transparent="1" valign="center" zPosition="1" />
@@ -6120,7 +6119,7 @@
     <eLabel text="'Exit' = Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
     <eLabel text="'OK' = Choose" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
   </screen>
-  <screen flags="wfNoBorder" name="File" position="0,0" size="1280,720" title="PPanel File">
+  <screen flags="wfNoBorder" name="File" position="0,0" size="1280,720" title="3 PPanel File">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,630" size="1280,2" />
     <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="85,30" size="700,55" transparent="1" valign="center" zPosition="1" />
@@ -6133,7 +6132,7 @@
     <eLabel text="'OK' = Choose" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="Tarball" position="0,0" size="1280,720" title="PPanel Entry">
+  <screen flags="wfNoBorder" name="Tarball" position="0,0" size="1280,720" title="4 PPanel Entry">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,630" size="1280,2" />
     <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="85,30" size="700,55" transparent="1" valign="center" zPosition="1" />
@@ -6146,7 +6145,7 @@
     <eLabel text="'OK' = Choose" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="Execute" position="0,0" size="1280,720" title="PPanel Entry">
+  <screen flags="wfNoBorder" name="Execute" position="0,0" size="1280,720" title="5 PPanel Entry">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,630" size="1280,2" />
     <widget source="Title" render="Label" backgroundColor="secondBG" font="Regular;25" position="85,30" size="700,55" transparent="1" valign="center" zPosition="1" />
