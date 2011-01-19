@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.91.15 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
+  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.91.17 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -1237,7 +1237,7 @@
     <widget source="key_green" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
     <widget source="key_yellow" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1" />
     <widget source="key_blue" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="875,682" size="220,26" transparent="1" zPosition="1" />
-		<widget source="list" render="Listbox" position="520,82" size="740,583" zPosition="10" scrollbarMode="showOnDemand">
+		<widget source="list" render="Listbox" position="520,82" size="740,583" zPosition="10" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png">
 			<convert type="TemplatedMultiContent">
 			<!--  device, description, devicepng, divpng  -->
 							{"template": [
