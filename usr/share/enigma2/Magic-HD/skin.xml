@@ -1,5 +1,5 @@
 <skin>
-  <!--  Skin:  Magic-HD Vs 1.91.23 by VU+NL, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 1.91.24 by VU+NL, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -5959,6 +5959,14 @@
 	  	<convert type="ClockToText">Format:%d.%m.%Y</convert>
   	</widget>
   	<widget source="session.VideoPicture" render="Pig" position="85,65" size="393,221" zPosition="3" backgroundColor="#ff000000" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="70,668" size="30,30" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/green.png" position="375,668" size="30,30" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="680,668" size="30,30" alphatest="on" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="985,668" size="30,30" alphatest="on" />
+    <widget name="key_red" position="105,670" size="190,30" zPosition="1" font="Regular;18" halign="left" foregroundColor="#9F1313" backgroundColor="#000000" transparent="1" />
+    <widget name="key_green" position="410,670" size="190,30" zPosition="1" font="Regular;18" halign="left" foregroundColor="#00389416" backgroundColor="#000000" transparent="1" />
+    <widget name="key_yellow" position="715,670" size="190,30" zPosition="1" font="Regular;18" halign="left" foregroundColor="#B59E01" backgroundColor="#000000" transparent="1" />
+    <widget name="key_blue" position="1020,670" size="190,30" zPosition="1" font="Regular;18" halign="left" foregroundColor="#1E28B6" backgroundColor="#000000" transparent="1" />
   	<widget name="list" position="533,65" size="700,570" itemHeight="30" CoolFont="Regular;20" CoolDirPos="570" CoolFolderSize="520" CoolMoviePos="30" CoolMovieSize="520" CoolDatePos="540" CoolTimePos="640" scrollbarMode="showNever" selectionPixmap="Magic-HD-Common/buttons/sel.png" backgroundColor="#18080911" transparent="1" />
     <widget name="wait" position="0,center" size="1280,50" zPosition="1" font="Regular;32" foregroundColor="#FFFFFF" backgroundColor="#18080911" halign="center" valign="center" />
   	<widget name="FileName" position="50,295" size="470,29" font="Regular;22" foregroundColor="#00bab329" backgroundColor="#000000" noWrap="1" transparent="1" />
@@ -5986,14 +5994,6 @@
   		<convert type="ClockToText">Date</convert>
   	</widget>
   	<widget source="Title" render="Label" position="560,640" size="500,43" font="Regular;20" foregroundColor="#00bab329" backgroundColor="#000000" transparent="1" />
-	<ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="70,668" size="30,30" alphatest="on" />
-	<ePixmap pixmap="agic-HD-Common/buttons/green.png" position="375,668" size="30,30" alphatest="on" />
-	<ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" position="680,668" size="30,30" alphatest="on" />
-	<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="985,668" size="30,30" alphatest="on" />
-	<widget name="key_red" position="105,670" size="190,30" zPosition="1" font="Regular;18" halign="left" foregroundColor="#9F1313" backgroundColor="#000000" transparent="1" />
-	<widget name="key_green" position="410,670" size="190,30" zPosition="1" font="Regular;18" halign="left" foregroundColor="#00389416" backgroundColor="#000000" transparent="1" />
-	<widget name="key_yellow" position="715,670" size="190,30" zPosition="1" font="Regular;18" halign="left" foregroundColor="#B59E01" backgroundColor="#000000" transparent="1" />
-	<widget name="key_blue" position="1020,670" size="190,30" zPosition="1" font="Regular;18" halign="left" foregroundColor="#1E28B6" backgroundColor="#000000" transparent="1" />
   </screen>
   <screen flags="wfNoBorder" name="EnhancedMovieCenterMenu" position="0,0" size="1280,720" title="EnhancedMovieCenterMenu">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
