@@ -6965,9 +6965,10 @@
     <widget source="session.VideoPicture" backgroundColor="transparent" position="85,110" render="Pig" size="417,243" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="115,643" size="26,26" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="390,643" size="26,26" />
+    <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" alphatest="on" position="680,643" size="26,26" />
     <eLabel text="Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="150,645" size="220,26" transparent="1" zPosition="1" />
     <eLabel text="Save" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
-    <eLabel text="Add plugins" position="1015,643" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
+    <eLabel text="Add plugins" position="725,643" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="590,110" size="600,500" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
