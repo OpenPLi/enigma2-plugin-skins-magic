@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.91.27 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
+  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.91.28 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -2408,7 +2408,7 @@
     <widget name="package" position="590,130" size="600,28" backgroundColor="darkgrey" transparent="1" font="Regular;24" />
     <widget name="status" position="590,170" size="600,56" backgroundColor="darkgrey" transparent="1" font="Regular;24" />
     <widget name="slider" position="594,294" size="592,17" zPosition="2" transparent="1" />
-    <widget name="activityslider" position="44,594" size="1194,6" transparent="1" />
+    <widget name="activityslider" position="44,594" size="1194,6" pixmap="Magic-HD-Common/window/slider100.png" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <screen name="IpkgInstaller" title="Ipkg Installer" position="0,0" size="1280,720" flags="wfNoBorder">
@@ -2494,7 +2494,7 @@
     <widget source="package" render="Label" position="590,130" size="600,28" backgroundColor="darkgrey" transparent="1" font="Regular;24" />
     <widget source="status" render="Label" position="590,170" size="600,56" backgroundColor="darkgrey" transparent="1" font="Regular;24" />
     <widget name="slider" position="594,294" size="652,17" zPosition="2" transparent="1" />
-    <widget name="activityslider" position="49,609" size="1194,6" transparent="1" />
+    <widget name="activityslider" position="49,609" size="1194,6" pixmap="Magic-HD-Common/window/slider100.png" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <screen name="UpdatePluginMenu" title="Softwaremanager" position="0,0" size="1280,720" flags="wfNoBorder">
