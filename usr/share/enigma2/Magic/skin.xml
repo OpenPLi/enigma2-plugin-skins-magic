@@ -154,7 +154,7 @@
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<widget borderColor="black" borderWidth="1" font="Enigma;16" foregroundColor="foreground" halign="right" position="567,100" render="Label" size="66,24" source="session.FrontendStatus" transparent="1" zPosition="3">
-			<convert type="FrontendInfo">SNR</convert>
+			<convert type="FrontendInfo">SNRdB</convert>
 		</widget>
 		<widget alphatest="on" pixmap="Magic/infobar/nimA.png" position="54,122" render="Pixmap" size="24,24" source="session.TunerInfo" zPosition="6">
 			<convert type="TunerInfo">TunerUseMask</convert>
@@ -254,7 +254,7 @@
 			<convert type="RdsInfo">RadioText</convert>
 		</widget>
 		<widget backgroundColor="#1f1f1f" font="Enigma;15" foregroundColor="foreground" halign="right" position="567,5" render="Label" size="90,24" source="session.FrontendStatus" transparent="1" zPosition="3">
-			<convert type="FrontendInfo">SNR</convert>
+			<convert type="FrontendInfo">SNRdB</convert>
 		</widget>
 		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="574,10" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
 			<convert type="ConditionalShowHide">Blink</convert>
