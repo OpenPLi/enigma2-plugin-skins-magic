@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.91.28 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
+  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.91.29 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -6292,7 +6292,7 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="15,90" render="Pig" size="477,270" zPosition="1" />
-    <widget name="progress" position="44,594" size="1194,6" transparent="1" />
+    <widget name="progress" position="44,594" size="1194,6" pixmap="Magic-HD-Common/window/slider100.png" transparent="1" />
     <eLabel text="'Exit' = Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
     <eLabel text="'OK' = Choose" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="25,650" size="300,25" alphatest="on" />
@@ -6305,7 +6305,7 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="15,90" render="Pig" size="477,270" zPosition="1" />
-    <widget name="progress" position="44,594" size="1194,6" transparent="1" />
+    <widget name="progress" position="44,594" size="1194,6" pixmap="Magic-HD-Common/window/slider100.png" transparent="1" />
     <eLabel text="'Exit' = Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
     <eLabel text="'OK' = Choose" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="25,650" size="300,25" alphatest="on" />
