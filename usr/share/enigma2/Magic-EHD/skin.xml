@@ -261,41 +261,41 @@
     </widget>
   </screen>
   <screen name="MoviePlayer" title="InfoBar" position="4,30" size="1280,100" backgroundColor="transparent" flags="wfNoBorder">
-    <widget source="session.CurrentService" render="Label" position="415,-25" size="455,67" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="top" halign="center">
+    <widget source="session.CurrentService" render="Label" position="224,0" size="832,49" backgroundColor="transparent" zPosition="1" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
       <convert type="ServiceName">Name</convert>
     </widget>
     <!--<widget source="global.CurrentTime" render="Label" position="190,0" size=" 145,40" borderColor="black" borderWidth="2" font="Regular;20" foregroundColor="secondFG" halign="center" transparent="1" valign="center" zPosition="4">
       <convert type="ClockToText">ShortDate</convert>
     </widget>-->
-    <widget source="session.RecordState" render="Pixmap" pixmap="Magic-HD-Common/buttons/rec.png" position="950,44" size="20,20" zPosition="3" alphatest="on">
-      <convert type="ConditionalShowHide">Blink</convert>
-    </widget>
-    <eLabel backgroundColor="infobarBG" position="343,49" size="588,14" zPosition="0" />
-    <ePixmap pixmap="Magic-HD-Common/dvr/scale.png" position="345,50" size="584,12" zPosition="1" alphatest="on" />
-    <widget source="session.CurrentService" render="PositionGauge" position="345,50" size="584,12" transparent="1" zPosition="4" pointer="Magic-HD-Common/dvr/position_pointer.png:572,0">
+    <eLabel backgroundColor="infobarBG" position="120,49" size="1040,14" zPosition="0"/>
+    <ePixmap pixmap="Magic-HD-Common/dvr/scale1024.png" position="128,54" size="1024,4" zPosition="1" />
+    <widget source="session.CurrentService" render="PositionGauge" position="128,50" size="1024,12" transparent="1" zPosition="4" pointer="Magic-HD-Common/dvr/position_pointer1024.png:1012,0">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="325,13" size="90,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="right">
+    <widget source="session.CurrentService" render="Label" position="128,13" size="90,25" backgroundColor="transparent" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
       <convert type="ServicePosition">Position,ShowHours</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="870,13" size="117,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="left">
+    <widget source="session.CurrentService" render="Label" position="1035,13" size="117,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;22" borderColor="black" valign="center" halign="right">
       <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
     </widget>
     <!--<widget source="session.CurrentService" render="Label" position="190,47" size="70,25" backgroundColor="transparent" transparent="1" zPosition="4" foregroundColor="foreground" borderWidth="2" font="Regular;24" borderColor="black" valign="center" halign="center">
       <convert type="ServicePosition">Length</convert>
     </widget>-->
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_dolby_on.png" position="970,44" size="60,24" zPosition="2" alphatest="on">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_dolby_on.png" position="986,63" size="60,24" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_hd_on.png" position="1030,44" size="40,21" zPosition="4" alphatest="on">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_hd_on.png" position="1048,63" size="40,21" zPosition="4" alphatest="on">
       <convert type="ServiceInfo">VideoWidth</convert>
       <convert type="ValueRange">800,2000</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_format_on.png" position="1030,44" size="40,21" zPosition="2" alphatest="on">
+    <widget source="session.CurrentService" render="Pixmap" pixmap="Magic-HD-Common/infobar/ico_format_on.png" position="1090,63" size="40,21" zPosition="2" alphatest="on">
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.RecordState" render="Pixmap" pixmap="Magic-HD-Common/buttons/rec.png" position="1132,63" size="20,20" zPosition="3" alphatest="on">
+      <convert type="ConditionalShowHide">Blink</convert>
     </widget>
   </screen>
   <screen name="SecondInfoBar" title="Second InfoBar" position="0,0" size="1280,720" backgroundColor="transparent" flags="wfNoBorder">
