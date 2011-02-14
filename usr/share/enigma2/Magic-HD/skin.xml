@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-HD Vs 1.91.32 by VU+NL, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 1.91.33 by VU+NL, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -4222,7 +4222,7 @@
 		<widget source="label_speed" transparent="1" render="Label" zPosition="2" position="620,270" size="480,30" font="Regular;20" />
 		<widget source="label_timeleft" transparent="1" render="Label" zPosition="2" position="620,310" size="480,30" font="Regular;20" />
 		<widget source="label_progress" transparent="1" render="Label" zPosition="2" position="620,350" size="480,30" font="Regular;20" />
-		<widget name="activityslider" position="85,550" size="1100,20" zPosition="3" transparent="0" />
+		<widget name="activityslider" position="85,550" size="1100,20" zPosition="3" pixmap="Magic-HD-Common/window/slider100.png" transparent="0" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
   <!-- ##Media-Player## -->
