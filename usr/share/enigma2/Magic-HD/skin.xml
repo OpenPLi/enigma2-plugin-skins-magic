@@ -1482,7 +1482,7 @@
     <widget name="key0" position="122,122" size="210,40" font="Console;20" valign="center" halign="center" />
     <widget name="help2" position="332,122" size="120,40" font="Console;20" valign="center" halign="center" />
   </screen>
-  <screen name="VirtualKeyBoard" title="Virtual KeyBoard" position="-1,0" size="1280,720" flags="wfNoBorder">
+  <screen name="XXXVirtualKeyBoard" title="Virtual KeyBoard" position="5,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,630" size="1280,2" />
     <widget source="Title" render="Label" position="85,30" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -1548,7 +1548,8 @@
     <widget name="config" position="590,110" size="600,275" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <widget source="introduction" render="Label" position="566,572" size="660,27" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;24" halign="center" />
     <widget name="HelpWindow" position="588,400" size="1,1" zPosition="1" transparent="1" alphatest="on" />
-    <widget name="VKeyIcon" pixmap="skin_default/vkey_icon.png" position="391,643" size="220,26" zPosition="10" transparent="1" alphatest="on" />
+<!--<widget name="VKeyIcon" pixmap="skin_default/vkey_icon.png" position="391,643" size="220,26" zPosition="10" transparent="1" alphatest="on" />-->
+    <eLabel text="'Text' = Virtual Keyboard" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="290,26" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
   <screen flags="wfNoBorder" name="ChannelSelectionRadio" position="0,0" size="1280,502" title="Channel Selection">
@@ -2740,11 +2741,12 @@
     <widget source="IP" render="Label" position="560,450" size="200,25" zPosition="1" font="Regular;19" />
     <widget source="Mask" render="Label" position="560,480" size="200,25" zPosition="1" font="Regular;19" />
     <widget source="Gateway" render="Label" position="560,510" size="200,25" zPosition="1" font="Regular;19" />
-    <widget source="Adaptertext" render="Label" position="400,590" size="270,25" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;20" halign="right" />
-    <widget source="Adapter" render="Label" position="680,590" size="400,25" transparent="1" zPosition="10" font="Regular;20" halign="left" />
-    <widget source="introduction2" render="Label" position="440,645" size="400,27" transparent="1" zPosition="10" font="Regular;20" valign="center" halign="center" />
-    <widget name="VKeyIcon" pixmap="skin_default/vkey_icon.png" position="60,410" size="35,25" transparent="1" zPosition="10" alphatest="on" />
+    <widget source="Adaptertext" render="Label" position="400,550" size="270,25" transparent="1" zPosition="10" foregroundColor="grey" font="Regular;20" halign="right" />
+    <widget source="Adapter" render="Label" position="680,550" size="400,25" transparent="1" zPosition="10" font="Regular;20" halign="left" />
+    <widget source="introduction2" render="Label" position="400,590" size="400,27" transparent="1" zPosition="10" font="Regular;20" valign="center" halign="center" />
+<!--<widget name="VKeyIcon" pixmap="skin_default/vkey_icon.png" position="60,410" size="35,25" transparent="1" zPosition="10" alphatest="on" />-->
     <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="50,410" size="1,1" transparent="1" zPosition="1" alphatest="on" />
+    <eLabel text="'Text' = Virtual Keyboard" backgroundColor="secondBG" font="Regular;22" halign="left" position="390,645" size="290,26" transparent="1" zPosition="1" />
   </screen>
   <screen name="NameserverSetup" title="Nameserver Setup" position="0,0" size="1280,720" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="115,643" size="26,26" alphatest="on" />
@@ -3177,7 +3179,8 @@
     <widget source="key_red" render="Label" position="145,645" size="220,26" backgroundColor="black" zPosition="1" transparent="1" font="Regular;20" halign="left" />
     <widget name="config" position="590,110" size="600,350" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <widget name="HelpWindow" position="120,470" size="1,1" zPosition="1" transparent="1" alphatest="on" />
-    <widget name="VKeyIcon" pixmap="skin_default/vkey_icon.png" position="700,643" size="70,30" zPosition="10" transparent="1" alphatest="on" />
+<!--<widget name="VKeyIcon" pixmap="skin_default/vkey_icon.png" position="700,643" size="70,30" zPosition="10" transparent="1" alphatest="on" />-->
+		<eLabel text="'Text' = Virtual Keyboard" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="300,26" transparent="1" zPosition="1" />
     <widget source="introduction" render="Label" position="590,500" size="600,30" backgroundColor="background" transparent="1" font="Regular;22" halign="center" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
@@ -3196,7 +3199,8 @@
     <widget source="key_red" render="Label" position="145,645" size="220,26" backgroundColor="black" transparent="1" foregroundColor="grey" font="Regular;22" halign="left" />
     <widget source="key_green" render="Label" position="435,645" size="220,26" backgroundColor="black" transparent="1" foregroundColor="grey" font="Regular;22" halign="left" />
     <widget source="key_yellow" render="Label" position="725,645" size="320,54" backgroundColor="black" transparent="1" foregroundColor="grey" font="Regular;22" halign="left" />
-    <ePixmap pixmap="skin_default/vkey_text.png" position="617,197" size="542,52" zPosition="-4" alphatest="on" />
+		<eLabel text="'Text' = Virtual Keyboard" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="300,26" transparent="1" zPosition="1" />
+<!--<ePixmap pixmap="skin_default/vkey_text.png" position="617,197" size="542,52" zPosition="-4" alphatest="on" />-->
     <widget name="config" position="590,110" size="600,100" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
@@ -3268,9 +3272,10 @@
     <widget source="session.VideoPicture" render="Pig" position="85,110" size="417,243" backgroundColor="transparent" zPosition="1" />
     <widget name="config" position="590,110" size="600,275" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <widget name="HelpWindow" position="590,390" size="1,1" zPosition="1" transparent="1" alphatest="on" />
-    <widget source="introduction" render="Label" position="590,643" size="600,27" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;24" halign="center" />
+    <widget source="introduction" render="Label" position="675,643" size="550,27" backgroundColor="darkgrey" shadowColor="black" shadowOffset="-2,-2" zPosition="1" transparent="1" font="Regular;24" halign="center" />
     <widget source="key_red" render="Label" position="145,645" size="220,26" zPosition="1" transparent="1" backgroundColor="secondBG" font="Regular;24" />
-    <widget name="VKeyIcon" pixmap="skin_default/vkey_icon.png" position="435,645" size="35,25" zPosition="10" transparent="1" alphatest="on" />
+<!--<widget name="VKeyIcon" pixmap="skin_default/vkey_icon.png" position="435,645" size="35,25" zPosition="10" transparent="1" alphatest="on" />-->
+    <eLabel text="'Text' = Virtual Keyboard" backgroundColor="secondBG" font="Regular;22" halign="left" position="375,645" size="290,26" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" position="115,643" size="26,26" alphatest="on" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
@@ -6597,14 +6602,15 @@
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="115,643" size="26,26" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="390,643" size="26,26" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" alphatest="on" position="680,643" size="26,26" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" alphatest="on" position="970,643" size="26,26" />
+<!--<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" alphatest="on" position="970,643" size="26,26" />-->
     <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="65,635" size="35,25" />
     <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="65,665" size="35,25" />
     <widget name="key_red" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
     <widget name="key_green" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
     <widget name="key_yellow" backgroundColor="secondBG" font="Regular;22" halign="left" position="725,645" size="220,26" transparent="1" zPosition="1" />
-    <widget name="VKeyIcon" pixmap="skin_default/vkey_icon.png" backgroundColor="secondBG" position="1015,645" size="60,48" transparent="1" zPosition="1" />
+<!--<widget name="VKeyIcon" pixmap="skin_default/vkey_icon.png" backgroundColor="secondBG" position="1015,645" size="60,48" transparent="1" zPosition="1" />-->
     <widget name="HelpWindow" position="65,500" size="1,1" transparent="1" zPosition="3" alphatest="on" />
+    <eLabel text="'Text' = Virtual Keyboard" backgroundColor="secondBG" font="Regular;22" halign="left" position="970,645" size="290,26" transparent="1" zPosition="1" />
     <widget name="config" position="550,100" scrollbarMode="showNever" selectionPixmap="Magic-HD-Common/buttons/sel.png" size="680,30" transparent="1" zPosition="2" />
     <widget position="550,135" render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" size="680,470" source="feedlist" transparent="1" zPosition="1">
       <convert type="TemplatedMultiContent">
