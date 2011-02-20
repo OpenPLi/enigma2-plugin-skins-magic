@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-HD Vs 1.91.34 by VU+NL, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 1.91.35 by VU+NL, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -1497,10 +1497,10 @@
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
   <screen name="Dish" title="Dish" backgroundColor="transparent" flags="wfNoBorder" position="86,100" size="130,160" zPosition="100">
-    <widget name="Dishpixmap" pixmap="skin_default/icons/dish_scan.png" alphatest="off" position="0,0" size="130,160" />
+    <widget name="Dishpixmap" pixmap="Magic-HD-Common/icons/dish.png" alphatest="off" position="0,0" size="130,160" />
   </screen>
-  <screen name="UnhandledKey" title="UnhandledKey" position="1200,50" size="34,45" backgroundColor="transparent" zPosition="100" flags="wfNoBorder">
-    <widget name="UnhandledKeyPixmap" pixmap="skin_default/unhandled-key.png" position="0,0" size="34,45" alphatest="off" />
+  <screen name="UnhandledKey" title="UnhandledKey" position="1100,50" size="98,88" backgroundColor="transparent" zPosition="100" flags="wfNoBorder">
+    <widget name="UnhandledKeyPixmap" pixmap="Magic-HD-Common/icons/unhandled-key.png" position="0,0" size="98,88" alphatest="off" />
   </screen>
   <screen name="SubservicesQuickzap" title="Subservices" position="405,328" size="470,64" backgroundColor="transpBlack" flags="wfNoBorder">
     <widget source="session.RecordState" render="Pixmap" pixmap="skin_default/icons/record.png" position="450,3" size="14,14" zPosition="2" alphatest="on">

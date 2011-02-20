@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-EHD-Light (Extreme-HD) Vs 1.11 by VU+NL, based on Magic_EHD Vs 2.91.27 but now in "Light version" (not supporting as many screens)  -->
+  <!--  Skin:  Magic-EHD-Light (Extreme-HD) Vs 1.12 by VU+NL, based on Magic_EHD Vs 2.91.34 but now in "Light version" (not supporting as many screens)  -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -1347,10 +1348,10 @@
     <widget name="repeat" position="1120,682" size=" 70,30" zPosition="10" pixmaps="Magic-HD-Common/buttons/repeat-off.png,Magic-HD-Common/buttons/repeat-on.png" alphatest="blend" />
   </screen>
   <screen name="Dish" title="Dish" backgroundColor="transparent" flags="wfNoBorder" position="86,100" size="130,160" zPosition="100">
-    <widget name="Dishpixmap" pixmap="skin_default/icons/dish_scan.png" alphatest="off" position="0,0" size="130,160" />
+    <widget name="Dishpixmap" pixmap="Magic-HD-Common/icons/dish.png" alphatest="off" position="0,0" size="130,160" />
   </screen>
-  <screen name="UnhandledKey" title="UnhandledKey" position="1200,50" size="34,45" backgroundColor="transparent" zPosition="100" flags="wfNoBorder">
-    <widget name="UnhandledKeyPixmap" pixmap="skin_default/unhandled-key.png" position="0,0" size="34,45" alphatest="off" />
+  <screen name="UnhandledKey" title="UnhandledKey" position="1100,10" size="98,88" backgroundColor="transparent" zPosition="100" flags="wfNoBorder">
+    <widget name="UnhandledKeyPixmap" pixmap="Magic-HD-Common/icons/unhandled-key.png" position="0,0" size="98,88" alphatest="off" />
   </screen>
   <!-- ##GP2## -->
   <gstyle>
