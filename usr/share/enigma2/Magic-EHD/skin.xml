@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.91.35 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
+  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.91.36 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -1537,7 +1537,7 @@
     <widget name="key0" position="122,122" size="210,40" font="Console;20" valign="center" halign="center" />
     <widget name="help2" position="332,122" size="120,40" font="Console;20" valign="center" halign="center" />
   </screen>
-  <screen name="XXXVirtualKeyBoard" title="Virtual KeyBoard" position="3,0" size="1280,720" flags="wfNoBorder">
+  <screen name="VirtualKeyBoard" title="Virtual KeyBoard" position="3,0" size="1280,720" zPosition="99" flags="wfNoBorder">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" render="Label" position="15,15" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" halign="left" valign="center" />
@@ -6712,14 +6712,15 @@
     <ePixmap pixmap="Magic-HD-Common/buttons/red.png" alphatest="on" position="15,682" size="26,26" />
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="305,682" size="26,26" />
     <ePixmap pixmap="Magic-HD-Common/buttons/yellow.png" alphatest="on" position="580,682" size="26,26" />
-    <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" alphatest="on" position="840,682" size="26,26" />
-    <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1110,682" size="35,25" />
+<!--<ePixmap pixmap="Magic-HD-Common/buttons/blue.png" alphatest="on" position="840,682" size="26,26" />-->
+    <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="1225,682" size="35,25" />
+    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1190,682" size="35,25" />
 <!--<ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" position="1150,682" size="35,25" />-->
     <widget name="key_red" backgroundColor="secondBG" font="Regular;22" halign="left" position="50,682" size="220,26" transparent="1" zPosition="1" />
     <widget name="key_green" backgroundColor="secondBG" font="Regular;22" halign="left" position="340,682" size="220,26" transparent="1" zPosition="1" />
     <widget name="key_yellow" backgroundColor="secondBG" font="Regular;22" halign="left" position="614,682" size="220,26" transparent="1" zPosition="1" />
 <!--<widget name="VKeyIcon" pixmap="skin_default/vkey_icon.png" backgroundColor="secondBG" position="875,682" size="60,48" transparent="1" zPosition="1" />-->
-		<eLabel text="'Text' = Virtual Keyboard" backgroundColor="secondBG" font="Regular;22" halign="left" position="840,682" size="300,26" transparent="1" zPosition="1" />
+    <eLabel text="'Text' = Virtual Keyboard" backgroundColor="secondBG" font="Regular;22" halign="left" position="840,682" size="300,26" transparent="1" zPosition="1" />
     <widget name="HelpWindow" position="65,500" size="1,1" transparent="1" zPosition="3" alphatest="on" />
     <widget name="config" position="520,82" size="740,30" scrollbarMode="showNever" selectionPixmap="Magic-HD-Common/buttons/sel.png" transparent="1" zPosition="2" />
     <widget render="Listbox" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" position="520,112" size="740,553" source="feedlist" transparent="1" zPosition="1">
@@ -7133,7 +7134,7 @@
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <!-- ##Project Valerie## -->
-  <screen name="PVMC_Wizard" position="0,0" size="1280,720" title="Welcome" flags="wfNoBorder" backgroundColor="#ff000000" >
+  <screen name="XPVMC_Wizard" position="0,0" size="1280,720" title="Welcome" flags="wfNoBorder" backgroundColor="#ff000000" >
 		<widget name="showiframe" position="0,0" zPosition="0" size="1290,720" text="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/background.m1v" />
 		<eLabel text="Project Valerie" transparent="1" zPosition="1" halign="center" position="330,90" size="620,40" font="Regular;40" />
 		<widget name="text" transparent="1" zPosition="1" halign="center" position="330,150" size="620,60" font="Regular;30" />
@@ -7263,7 +7264,7 @@
 		<eLabel text="Select Category" backgroundColor="secondBG" font="Regular;22" halign="left" position="1015,645" size="220,26" transparent="1" zPosition="6" />
     <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" zPosition="6" position="65,665" size="35,25" />
   </screen>
-  <screen flags="wfNoBorder" name="ProjectValerieSyncSettingsConfPathsAdd" position="0,0" size="1280,720" title="Add Path">
+  <screen name="ProjectValerieSyncSettingsConfPathsAdd" flags="wfNoBorder" position="0,0" size="1280,720" title="Add Path">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7276,7 +7277,7 @@
     <widget name="folderList" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="740,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="ProjectValerieSyncSettingsConfPaths" position="0,0" size="1280,720" title="Settings - Paths">
+  <screen name="ProjectValerieSyncSettingsConfPaths" flags="wfNoBorder" position="0,0" size="1280,720" title="Settings - Paths">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7295,7 +7296,7 @@
     <widget name="pathsList" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="740,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="ProjectValerieSyncSettingsConfSettings" position="0,0" size="1280,720" title="Settings">
+  <screen name="ProjectValerieSyncSettingsConfSettings" flags="wfNoBorder" position="0,0" size="1280,720" title="Settings">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7310,7 +7311,7 @@
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="740,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="ProjectValerieSyncSettings" position="0,0" size="1280,720" title="Sync Settings">
+  <screen name="ProjectValerieSyncSettings" flags="wfNoBorder" position="0,0" size="1280,720" title="Sync Settings">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7323,7 +7324,7 @@
     <widget name="settingsMenu" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="520,82" size="740,583" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
-  <screen flags="wfNoBorder" name="ProjectValerieSyncManagerInfo" position="0,0" size="1280,720" title="ProjectValerie SyncManager Info">
+  <screen name="ProjectValerieSyncManagerInfo" flags="wfNoBorder" position="0,0" size="1280,720" title="ProjectValerie SyncManager Info">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7353,7 +7354,7 @@
 		<widget name="season"  position="685,290"  size="500,30" font="Regular;20"  />
 		v<widget name="episode"  position="685,320"  size="500,30" font="Regular;20"  />
 	</screen>
-  <screen flags="wfNoBorder" name="ProjectValerieSyncManager" position="0,0" size="1280,720" title="ProjectValerie SyncManager">
+  <screen name="ProjectValerieSyncManager" flags="wfNoBorder" position="0,0" size="1280,720" title="ProjectValerie SyncManager">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7380,7 +7381,7 @@
 			</convert>
     </widget>
   </screen>     
-  <screen flags="wfNoBorder" name="ProjectValerieSync" position="0,0" size="1280,720" title="ProjectValerie Sync">
+  <screen name="ProjectValerieSync" flags="wfNoBorder" position="0,0" size="1280,720" title="ProjectValerie Sync">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
@@ -7409,7 +7410,7 @@
 		<eLabel text="Name:" position="290,465" size="180,20" font="Regular;18" />
 	  <widget name="name" position="290,505" size="170,60" font="Regular;16"/>-->
   </screen>
-  <screen flags="wfNoBorder" name="PVMC_Settings" position="0,0" size="1280,720" title="System Settings">
+  <screen name="PVMC_Settings" flags="wfNoBorder" position="0,0" size="1280,720" title="System Settings">
     <ePixmap pixmap="Magic-HD-Common/border/top2_bg.png" position="0,0" size="1280,75" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,675" size="1280,2" />
     <widget source="Title" render="Label" position="15,15" size="700, 55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" />
