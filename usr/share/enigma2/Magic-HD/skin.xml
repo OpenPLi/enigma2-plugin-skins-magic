@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-HD Vs 1.91.36 by VU+NL, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 1.91.38 by VU+NL, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -7034,6 +7034,7 @@
   <screen name="PVMC_MainMenu" position="0,0" size="1280,720" title="Media Center - Home" flags="wfNoBorder" backgroundColor="#ff000000" >
 		<widget name="showiframe" position="0,0" zPosition="0" size="1280,720" text="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/background.m1v" />
 		<eLabel text="Project Valerie" transparent="1" zPosition="1" halign="left" valign="top" position="85,600" size="625,30" font="Regular;25" />
+    <widget name="API" text="2" position="0,0" zPosition="0" size="1,1"/>
 		<widget name= "version" transparent="1" zPosition="1" halign="left" valign="top" position="1050,600" size="90,30" font="Regular;25" />
 		<widget source="menu" render="Listbox" enableWrapAround="True" zPosition="2" transparent="0" position="540,90" size="540,500" scrollbarMode="showOnDemand" backgroundColor="#FF000000" backgroundColorSelected="#FF000000" foregroundColor="#A0424242" foregroundColorSelected="#00FFFFFF" >
 				<convert type="TemplatedMultiContent">
@@ -7061,8 +7062,8 @@
 		<widget name="current" transparent="1" zPosition="5" halign="left" position="432,644" size="72,30" font="Regular;23" foregroundColor="#8BCAF6"/>
 		<widget name="total" transparent="1" zPosition="5" halign="right" position="522,644" size="252,30" font="Regular;23" foregroundColor="#8BCAF6"/>
 		<eLabel name="movies" text="tv shows" transparent="1" zPosition="5" halign="right" position="180,38" size="612,63" font="Regular;57" foregroundColor="#006CA4C5"/>
-		<widget name="title" transparent="1" zPosition="5" halign="right" position="40,113" size="763,55" font="Regular;40" foregroundColor="#00FFFFFF" />
-		<widget name="tag" transparent="1" zPosition="5" halign="left" position="813,128" size="400,34" font="Regular;26" foregroundColor="#00FFFFFF" />
+		<widget name="title" render="Label" transparent="1" zPosition="5" halign="right" position="40,113" size="763,55" font="Regular;40" foregroundColor="#00FFFFFF" />
+		<widget name="tag" transparent="1" zPosition="5" halign="left" position="813,113" size="400,55" font="Regular;26" foregroundColor="#00FFFFFF" />
 		<widget name="star0" transparent="1" zPosition="6" position="828,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/Star.png" alphatest="on" />
 		<widget name="star1" transparent="1" zPosition="6" position="859,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/Star.png" alphatest="on" />
 		<widget name="star2" transparent="1" zPosition="6" position="890,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/Star.png" alphatest="on" />
@@ -7083,16 +7084,14 @@
 		<widget name="nostar7" transparent="1" zPosition="5" position="1042,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/NoStar.png" alphatest="on" />
 		<widget name="nostar8" transparent="1" zPosition="5" position="1073,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/NoStar.png" alphatest="on" />
 		<widget name="nostar9" transparent="1" zPosition="5" position="1103,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/NoStar.png" alphatest="on" />
-		<widget name="poster" transparent="1" zPosition="5" position="151,278" size="263,268"/>
+ 		<widget name="poster" transparent="1" zPosition="5" position="151,278" size="263,268"/>
 		<ePixmap name="posterborder" position="118,244" zPosition="6" size="385,354" alphatest="blend"  pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/blackborders_video_thumbnail-fs8.png" />
 		<widget name="shortDescription" text="" transparent="1" zPosition="5" halign="left" position="813,300" size="400,288" font="Regular;23" foregroundColor="#FFFFFF" />
-		<widget name="otitle" transparent="1" zPosition="5" halign="left" position="1280,402" size="196,16" font="Regular;16" foregroundColor="#FFFFFF"  backgroundColor="#F200FF"/>
-		<widget name="director" transparent="1" zPosition="5" halign="left" position="1280,425" size="196,16" font="Regular;16" foregroundColor="#FFFFFF"  backgroundColor="#F200FF"/>
-		<widget name="writer" transparent="1" zPosition="5" halign="left" position="1280,448" size="196,16" font="Regular;16" foregroundColor="#FFFFFF"  backgroundColor="#F200FF"/>
 		<widget name="genre" transparent="1" zPosition="5" halign="left" position="813,250" size="400,30" font="Regular;25" foregroundColor="#8BCAF6" />
 		<widget name="year" transparent="1" zPosition="5" halign="left" position="813,175" size="400,30" font="Regular;25" foregroundColor="#8BCAF6" />
 		<widget name="runtime" transparent="1" zPosition="5" halign="left" position="813,213" size="400,30" font="Regular;25" foregroundColor="#8BCAF6" />
     <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" zPosition="6" position="65,665" size="35,25" />
+    <widget name="API" text="2" position="0,0" zPosition="0" size="1,1"/>
 	</screen>
   <screen name="PVMC_Movies" position="0,0" size="1280,720" title="Media Center - Movies" flags="wfNoBorder" backgroundColor="#ff000000" >
 		<widget name="backdrop" position="0,0" zPosition="0" size="1280,720" text="/hdd/valerie/media/defaultbackdrop.m1v" />
@@ -7111,8 +7110,8 @@
 		<widget name="current" transparent="1" zPosition="5" halign="left" position="432,644" size="72,30" font="Regular;23" foregroundColor="#8BCAF6"/>
 		<widget name="total" transparent="1" zPosition="5" halign="right" position="522,644" size="252,30" font="Regular;23" foregroundColor="#8BCAF6"/>
 		<eLabel name="movies" text="movies" transparent="1" zPosition="5" halign="right" position="180,38" size="612,63" font="Regular;57" foregroundColor="#006CA4C5"/>
-		<widget name="title" transparent="1" zPosition="5" halign="right" position="40,113" size="763,55" font="Regular;40" foregroundColor="#00FFFFFF" />
-		<widget name="tag" transparent="1" zPosition="5" halign="left" position="813,128" size="400,34" font="Regular;26" foregroundColor="#00FFFFFF" />
+		<widget name="title" render="Label" transparent="1" zPosition="5" halign="right" position="40,113" size="763,55" font="Regular;40" foregroundColor="#00FFFFFF" />
+		<widget name="tag" transparent="1" zPosition="5" halign="left" position="813,113" size="400,55" font="Regular;26" foregroundColor="#00FFFFFF" />
 		<widget name="star0" transparent="1" zPosition="6" position="828,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/Star.png" alphatest="on" />
 		<widget name="star1" transparent="1" zPosition="6" position="859,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/Star.png" alphatest="on" />
 		<widget name="star2" transparent="1" zPosition="6" position="890,600" size="30,30" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/Star.png" alphatest="on" />
@@ -7136,9 +7135,6 @@
 		<widget name="poster" transparent="1" zPosition="5" position="151,278" size="263,268"/>
 		<ePixmap name="posterborder" position="118,244" zPosition="6" size="385,354" alphatest="blend"  pixmap="/usr/lib/enigma2/python/Plugins/Extensions/ProjectValerie/skins/default/1280x720/images/blackborders_video_thumbnail-fs8.png" />
 		<widget name="shortDescription" text="" transparent="1" zPosition="5" halign="left" position="813,300" size="400,288" font="Regular;23" foregroundColor="#FFFFFF" />
-		<widget name="otitle" transparent="1" zPosition="5" halign="left" position="1280,402" size="196,16" font="Regular;16" foregroundColor="#FFFFFF"  backgroundColor="#F200FF"/>
-		<widget name="director" transparent="1" zPosition="5" halign="left" position="1280,425" size="196,16" font="Regular;16" foregroundColor="#FFFFFF"  backgroundColor="#F200FF"/>
-		<widget name="writer" transparent="1" zPosition="5" halign="left" position="1280,448" size="196,16" font="Regular;16" foregroundColor="#FFFFFF"  backgroundColor="#F200FF"/>
 		<widget name="genre" transparent="1" zPosition="5" halign="left" position="813,250" size="400,30" font="Regular;25" foregroundColor="#8BCAF6" />
 		<widget name="year" transparent="1" zPosition="5" halign="left" position="813,175" size="400,30" font="Regular;25" foregroundColor="#8BCAF6" />
 		<widget name="runtime" transparent="1" zPosition="5" halign="left" position="813,213" size="400,30" font="Regular;25" foregroundColor="#8BCAF6" />
@@ -7147,6 +7143,7 @@
 	 	<eLabel text="Sort by Title/Year" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="6" />
 		<eLabel text="Select Category" backgroundColor="secondBG" font="Regular;22" halign="left" position="1015,645" size="220,26" transparent="1" zPosition="6" />
     <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" zPosition="6" position="65,665" size="35,25" />
+    <widget name="API" text="2" position="0,0" zPosition="0" size="1,1"/>
   </screen>
   <screen name="ProjectValerieSyncSettingsConfPathsAdd" flags="wfNoBorder" position="0,0" size="1280,720" title="Add Path">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
@@ -7159,6 +7156,7 @@
     <ePixmap pixmap="Magic-HD-Common/buttons/green.png" alphatest="on" position="390,643" size="26,26" />
     <widget source="key_green" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,643" size="220,26" transparent="1" zPosition="1" />
     <widget name="folderList" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="590,110" size="600,500" transparent="1" />
+    <widget name="API" text="2" position="0,0" zPosition="0" size="1,1"/>
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
   <screen name="ProjectValerieSyncSettingsConfPaths" flags="wfNoBorder" position="0,0" size="1280,720" title="Settings - Paths">
@@ -7178,6 +7176,7 @@
     <widget source="key_yellow" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="725,643" size="220,26" transparent="1" zPosition="1" />
     <widget source="key_blue" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="1015,643" size="220,26" transparent="1" zPosition="1" />
     <widget name="pathsList" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="590,110" size="600,500" transparent="1" />
+    <widget name="API" text="2" position="0,0" zPosition="0" size="1,1"/>
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
   <screen name="ProjectValerieSyncSettingsConfSettings" flags="wfNoBorder" position="0,0" size="1280,720" title="Settings">
@@ -7193,6 +7192,7 @@
     <widget source="key_red" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="150,643" size="220,26" transparent="1" zPosition="1" />
     <widget source="key_green" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,643" size="220,26" transparent="1" zPosition="1" />
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="590,110" size="600,500" transparent="1" />
+      <widget name="API" text="2" position="0,0" zPosition="0" size="1,1"/>
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
   <screen name="ProjectValerieSyncSettings" flags="wfNoBorder" position="0,0" size="1280,720" title="Sync Settings">
@@ -7207,6 +7207,7 @@
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
 		<eLabel text="'Exit' = Cancel" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="1" />
 		<eLabel text="'OK' = Accept" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
+    <widget name="API" text="2" position="0,0" zPosition="0" size="1,1"/>  
   </screen>
   <screen name="ProjectValerieSyncManagerInfo" flags="wfNoBorder" position="0,0" size="1280,720" title="ProjectValerie SyncManager Info">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
@@ -7226,18 +7227,19 @@
     <widget source="key_blue" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="1015,643" size="220,26" transparent="1" zPosition="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
 		<eLabel text="Path:"  position="570,150" size="110,40" font="Regular;20" />
-			<eLabel text="Filename:"  position="570,180" size="110,40" font="Regular;20" />
-			<eLabel text="Title:"  position="570,230" size="110,40" font="Regular;20" />
-			<eLabel text="Year:"  position="570,260" size="110,40" font="Regular;20" />
-			<eLabel text="Season:"  position="570,290" size="110,40" font="Regular;20" />
-			<eLabel text="Episode:"  position="570,320" size="110,40" font="Regular;20" />
-			<widget name="path" position="685,150" size="500,30" font="Regular;20" />
-			<widget name="filename" position="685,180" size="500,50" font="Regular;20" />
-			<widget name="title" position="685,230" size="500,30" font="Regular;20" />
-			<widget name="year"  position="685,260"  size="500,30" font="Regular;20"  />
-			<widget name="season"  position="685,290"  size="500,30" font="Regular;20"  />
-			v<widget name="episode"  position="685,320"  size="500,30" font="Regular;20"  />
-		</screen>
+		<eLabel text="Filename:"  position="570,180" size="110,40" font="Regular;20" />
+		<eLabel text="Title:"  position="570,230" size="110,40" font="Regular;20" />
+    <eLabel text="Year:"  position="570,260" size="110,40" font="Regular;20" />
+		<eLabel text="Season:"  position="570,290" size="110,40" font="Regular;20" />
+		<eLabel text="Episode:"  position="570,320" size="110,40" font="Regular;20" />
+		<widget name="path" position="685,150" size="500,30" font="Regular;20" />
+		<widget name="filename" position="685,180" size="500,50" font="Regular;20" />
+		<widget name="title" position="685,230" size="500,30" font="Regular;20" />
+		<widget name="year"  position="685,260"  size="500,30" font="Regular;20"  />
+		<widget name="season"  position="685,290"  size="500,30" font="Regular;20"  />
+		v<widget name="episode"  position="685,320"  size="500,30" font="Regular;20"  />
+    <widget name="API" text="2" position="0,0" zPosition="0" size="1,1"/>
+	</screen>
   <screen name="ProjectValerieSyncManager" flags="wfNoBorder" position="0,0" size="1280,720" title="ProjectValerie SyncManager">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
     <ePixmap pixmap="Magic-HD-Common/border/bottom_bg.png" position="0,630" size="1280,2" />
@@ -7264,6 +7266,7 @@
 				}
 			</convert>
     </widget>
+    <widget name="API" text="2" position="0,0" zPosition="0" size="1,1"/>
   </screen> 
   <screen name="ProjectValerieSync" flags="wfNoBorder" position="0,0" size="1280,720" title="ProjectValerie Sync">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
@@ -7286,6 +7289,8 @@
 		<widget name="console" position="590,120" size="645,465" font="Regular;18" />
 		<eLabel text="Progress:" position="500,600" size="100,20" font="Regular;18" />
 		<widget name="progress" position="635,607" size="600,6" borderWidth="1" borderColor="#bbbbbb" transparent="1" />
+    <widget name="API" text="2" position="0,0" zPosition="0" size="1,1"/>		
+    <ePixmap pixmap="skin_default/buttons/key_menu.png" alphatest="on" position="65,638" size="35,25" />
 		<!-- <eLabel text="" position="527,105" size="1,416" backgroundColor="#bbbbbb" />
 		<eLabel text="Last:" position="290,360" size="200,20" font="Regular;18" />
 		<widget name="poster" position="85,365" size="156,214" />
@@ -7308,7 +7313,8 @@
     <widget source="key_green" render="Label" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,643" size="220,26" transparent="1" zPosition="1" />
     <widget name="config" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" font="Regular;22" position="590,110" size="600,500" transparent="1" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
-  </screen>
+    <widget name="API" text="2" position="0,0" zPosition="0" size="1,1"/>
+  </screen>-->
   <!-- ## PiP ## -->
   <screen name="PictureInPictureZapping" flags="wfNoBorder" backgroundColor="transparent" position="580,60" size="120,26" title="PiPZap" zPosition="-1">
 	  <eLabel text="PiP-Zap" position="0,0" size="120,26" backgroundColor="transparent" transparent="1" font="Regular;22" borderColor="black" borderWidth="3" valign="center" halign="center" />
