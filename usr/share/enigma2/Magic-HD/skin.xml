@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-HD Vs 1.91.39 by VU+NL, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 1.91.40 by VU+NL, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -2033,7 +2033,7 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="85,110" size="417,243" backgroundColor="transparent" zPosition="1" />
-    <widget name="description" position="10,10" size="1080,40" font="Regular;25" />
+    <widget name="description" position="85,500" size="1080,40" font="Regular;25" />
     <widget name="lbegin" position="1005,140" size="103,30" foregroundColor="red" font="Regular;25" />
     <widget name="lend" position="1006,203" size="103,30" foregroundColor="green" font="Regular;25" />
     <widget name="begin" position="1111,144" size="72,35" font="Regular;25" />
@@ -3078,28 +3078,28 @@
     <widget source="session.VideoPicture" render="Pig" position="85,110" size="417,243" backgroundColor="transparent" zPosition="1" />
     <widget name="Adaptertext" position="420,460" size="250,23" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;21" halign="left" />
     <widget name="Adapter" position="671,460" size="306,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;21" halign="center" />
-    <widget name="AdapterInfo_Text" position="1020,460" size="200,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,#000000,#1cff1c" font="Regular;21" />
-    <widget name="AdapterInfo" position="1020,460" size="200,23" transparent="1" zPosition="2" />
+    <widget name="AdapterInfo_Text" position="1020,460" size="200,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;21" />
+    <widget name="AdapterInfo" position="1020,460" size="200,23" transparent="1" zPosition="1" />
     <widget name="AdapterInfo_OK" pixmap="skin_default/icons/lock_on.png" position="978,456" size="38,31" zPosition="2" alphatest="on" />
     <widget name="Networktext" position="420,495" size="250,23" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;19" halign="left" />
     <widget name="Network" position="671,495" size="306,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;21" halign="center" />
-    <widget name="NetworkInfo" position="1020,495" size="200,23" transparent="1" zPosition="2" />
-    <widget name="NetworkInfo_Text" position="1020,495" size="200,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,#000000,#1cff1c" font="Regular;21" />
+    <widget name="NetworkInfo" position="1020,495" size="200,23" transparent="1" zPosition="1" />
+    <widget name="NetworkInfo_Text" position="1020,495" size="200,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;21" />
     <widget name="NetworkInfo_Check" position="978,491" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on" />
     <widget name="Dhcptext" position="420,530" size="250,23" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;21" halign="left" />
     <widget name="Dhcp" position="671,530" size="306,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;21" halign="center" />
-    <widget name="DhcpInfo_Text" position="1020,530" size="200,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,#000000,#1cff1c" font="Regular;21" />
+    <widget name="DhcpInfo_Text" position="1020,530" size="200,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;21" />
     <widget name="DhcpInfo" position="1020,530" size="200,23" transparent="1" />
     <widget name="DhcpInfo_Check" position="978,526" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on" />
     <widget name="IPtext" position="420,565" size="250,23" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;21" halign="left" />
     <widget name="IP" position="671,565" size="306,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;21" halign="center" />
-    <widget name="IPInfo_Text" position="1020,565" size="200,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,#000000,#1cff1c" font="Regular;21" />
-    <widget name="IPInfo" position="1020,565" size="200,23" transparent="1" zPosition="2" />
+    <widget name="IPInfo_Text" position="1020,565" size="200,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;21" />
+    <widget name="IPInfo" position="1020,565" size="200,23" transparent="1" zPosition="1" />
     <widget name="IPInfo_Check" position="978,561" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on" />
     <widget name="DNStext" position="420,600" size="250,23" zPosition="1" foregroundColors="#8c8c93,#1cff1c" font="Regular;21" halign="left" />
     <widget name="DNS" position="671,600" size="306,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,#f23d21,#1cff1c" font="Regular;21" halign="center" />
-    <widget name="DNSInfo_Text" position="1020,600" size="200,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,#000000,#1cff1c" font="Regular;21" />
-    <widget name="DNSInfo" position="1020,600" size="200,23" transparent="1" zPosition="2"  />
+    <widget name="DNSInfo_Text" position="1020,600" size="200,23" transparent="1" zPosition="2" foregroundColors="#8c8c93,grey,#1cff1c" font="Regular;21" />
+    <widget name="DNSInfo" position="1020,600" size="200,23" transparent="1" zPosition="1"  />
     <widget name="DNSInfo_Check" position="978,596" size="38,31" zPosition="2" pixmaps="skin_default/icons/lock_on.png,skin_default/icons/lock_error.png" alphatest="on" />
     <widget name="EditSettingsButton" position="970,643" size="26,26" transparent="1" zPosition="1" pixmaps="Magic-HD-Common/buttons/grey.png,Magic-HD-Common/buttons/blue.png" alphatest="on" />
     <widget name="EditSettings_Text" position="1015,645" size="200,26" transparent="1" zPosition="2" foregroundColors="#000000,#8c8c93,#1cff1c" font="Regular;19" />
@@ -7142,7 +7142,7 @@
     <ePixmap pixmap="Magic-HD-Common/buttons/blue.png" position="970,643" size="26,26" zPosition="6" alphatest="on" />
 	 	<eLabel text="Sort by Title/Year" backgroundColor="secondBG" font="Regular;22" halign="left" position="145,645" size="220,26" transparent="1" zPosition="6" />
 		<eLabel text="Select Category" backgroundColor="secondBG" font="Regular;22" halign="left" position="1015,645" size="220,26" transparent="1" zPosition="6" />
-    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" zPosition="6" position="55,645 size="35,25" />
+    <ePixmap pixmap="skin_default/buttons/key_info.png" alphatest="on" zPosition="6" position="55,645" size="35,25" />
     <widget name="API" text="2" position="0,0" zPosition="0" size="1,1"/>
   </screen>
   <screen name="ProjectValerieSyncSettingsConfPathsAdd" flags="wfNoBorder" position="0,0" size="1280,720" title="Add Path">
