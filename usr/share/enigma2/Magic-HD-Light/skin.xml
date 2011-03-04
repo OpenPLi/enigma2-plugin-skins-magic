@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-HD-Light Vs 1.14 by VU+NL, based on Magic_HD Vs 1.91.41 but now in "Light version" (not supporting as many screens) -->
+  <!--  Skin:  Magic-HD-Light Vs 1.15 by VU+NL, based on Magic_HD Vs 1.91.42 but now in "Light version" (not supporting as many screens) -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THE SECOND LINE !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -527,8 +527,7 @@
     <widget name="key_green" position="435,645" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_yellow" position="725,645" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="1015,645" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="list" position="530,100" size="690,510" itemHeight="30" serviceNumberFont="Regular;23" serviceInfoFont="Crs;22" serviceNameFont="Regular;24" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" colorServiceDescription="grey" colorServiceDescriptionSelected="yellow" colorEventProgressbarBorder="grey" colorEventProgressbarBorderSelected="yellow" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />    
-<!--<widget name="list" position="530,100" size="690,510" itemHeight="30" serviceNumberFont="Regular;24"                                                                                                                                                                                                                                                                               scrollbarMode="showOnDemand" serviceInfoFont="Crs;24" serviceNameFont="Regular;24" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" selectionPixmap="Magic-HD-Common/buttons/sel.png" />-->
+    <widget name="list" position="530,100" size="690,510" itemHeight="30" serviceNumberFont="Regular;24" scrollbarMode="showOnDemand" serviceInfoFont="Crs;24" serviceNameFont="Regular;24" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <widget source="ServiceEvent" render="Label" position="85,370" size="435,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
