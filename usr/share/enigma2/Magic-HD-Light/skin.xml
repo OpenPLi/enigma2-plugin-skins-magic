@@ -99,21 +99,6 @@
       <pixmap filename="Magic-HD-Common/border/line.png" pos="bpBottom"></pixmap>
     </borderset>
   </windowstyle>
-  <!--  ## Display ## -->
-  <windowstyle id="1" type="skinned">
-    <color name="Background" color="un0"></color>
-    <color name="LabelForeground" color="unffffff"></color>
-    <color name="ListboxBackground" color="un0"></color>
-    <color name="ListboxForeground" color="unffffff"></color>
-    <color name="ListboxSelectedBackground" color="un0"></color>
-    <color name="ListboxSelectedForeground" color="unffffff"></color>
-    <color name="ListboxMarkedBackground" color="un0"></color>
-    <color name="ListboxMarkedForeground" color="unffffff"></color>
-    <color name="ListboxMarkedAndSelectedBackground" color="un0"></color>
-    <color name="ListboxMarkedAndSelectedForeground" color="unffffff"></color>
-    <color name="WindowTitleForeground" color="unffffff"></color>
-    <color name="WindowTitleBackground" color="un0"></color>
-  </windowstyle>
   <!--  ## Volume ## -->
   <screen name="Volume" title="Volume" position="80,245" size="35,230" backgroundColor="transpBlack" zPosition="1" flags="wfNoBorder">
     <widget name="Volume" pixmap="Magic-HD-Common/infobar/volumeslider.png" position="5,5" size="25,200" orientation="orBottomToTop" transparent="1" zPosition="1"></widget>

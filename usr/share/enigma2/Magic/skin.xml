@@ -63,20 +63,6 @@
 			<pixmap filename="Magic/window/unten_rechts.png" pos="bpBottomRight"/>
 		</borderset>
 	</windowstyle>	
-	<windowstyle id="1" type="skinned">
-		<color color="#000000" name="Background"/>
-		<color color="#ffffff" name="LabelForeground"/>
-		<color color="#000000" name="ListboxBackground"/>
-		<color color="#ffffff" name="ListboxForeground"/>
-		<color color="#000000" name="ListboxSelectedBackground"/>
-		<color color="#ffffff" name="ListboxSelectedForeground"/>
-		<color color="#000000" name="ListboxMarkedBackground"/>
-		<color color="#ffffff" name="ListboxMarkedForeground"/>
-		<color color="#000000" name="ListboxMarkedAndSelectedBackground"/>
-		<color color="#ffffff" name="ListboxMarkedAndSelectedForeground"/>
-		<color color="#ffffff" name="WindowTitleForeground"/>
-		<color color="#000000" name="WindowTitleBackground"/>
-	</windowstyle>
 	<screen flags="wfNoBorder" name="Volume" position="238,50" size="244,28" title="Volume" zPosition="1">
 		<ePixmap alphatest="off" pixmap="Magic/infobar/volumeslider.png" position="0,0" size="244,28" zPosition="0"/>
 		<widget name="Volume" pixmap="Magic/infobar/volumeslider_bar.png" position="61,16" size="167,7" transparent="1" zPosition="1"/>
