@@ -588,7 +588,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ClockToText">Format:%1H:%M</convert>
 		</widget>
 		<widget font="Enigma;17" position="3,377" render="Label" size="555,62" source="ServiceEvent">
-			<convert type="EventName">ExtendedDescription</convert>
+			<convert type="EventName">FullDescription</convert>
 		</widget>
                 <widget font="Enigma;17" noWrap="1" position="370,353" render="Label" size="80,20" source="ServiceEvent">
                         <convert type="ServiceOrbitalPosition"></convert>
@@ -704,7 +704,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget font="Regular;18" foregroundColor="#cccccc" position="0,384" render="Label" size="620,76" source="Event" zPosition="1">
-			<convert type="EventName">ExtendedDescription</convert>
+			<convert type="EventName">FullDescription</convert>
 		</widget>
 	</screen>
 	<screen name="EPGSelection" position="80,85" size="560,440" title="EPG Selection">
@@ -719,7 +719,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="list" position="5,38" scrollbarMode="showOnDemand" size="550,350"/>
 		<eLabel backgroundColor="darkgrey" position="0,389" size="560,2" zPosition="5"/>
 		<widget source="Event" render="Label" position="5,392" size="550,48" font="Enigma;18" foregroundColor="white">
-			<convert type="EventName">ExtendedDescription</convert>
+			<convert type="EventName">FullDescription</convert>
 		</widget>
 	</screen>
 	<screen name="EventView" position="80,85" size="560,440" title="Eventview">
