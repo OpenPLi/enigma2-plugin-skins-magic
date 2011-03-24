@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.91.42 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
+  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.91.43 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -5541,11 +5541,11 @@
     <widget name="ratinglabel" position="151,484" size="210,24" backgroundColor="darkgrey" transparent="1" font="Regular;20" halign="center" />
     <widget name="titellabel" position="550,110" size="660,28" backgroundColor="darkgrey" transparent="1" font="Regular;25" valign="center" />
     <widget name="poster" position="553,152" size="110,180" alphatest="blend" />
-    <widget name="detailslabel" position="700,150" size="510,175" backgroundColor="darkgrey" transparent="1" font="Regular;20" />
-    <widget name="menu" position="550,190" size="660,400" backgroundColor="darkgrey" zPosition="3" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
-    <widget name="castlabel" position="550,335" size="660,240" backgroundColor="darkgrey" transparent="1" font="Regular;20" />
-    <widget name="extralabel" position="550,150" size="660,450" backgroundColor="darkgrey" transparent="1" font="Regular;20" />
-    <widget name="statusbar" position="550,605" size="660,24" backgroundColor="darkgrey" transparent="1" font="Regular;20" halign="right" />
+    <widget name="detailslabel" position="700,150" size="510,175" backgroundColor="darkgrey" transparent="1" font="Regular;26" />
+    <widget name="menu" position="550,190" size="660,400" backgroundColor="darkgrey" zPosition="3" transparent="1" font="Regular;26" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+    <widget name="castlabel" position="550,335" size="660,240" backgroundColor="darkgrey" transparent="1" font="Regular;26" />
+    <widget name="extralabel" position="550,150" size="660,450" backgroundColor="darkgrey" transparent="1" font="Regular;26" />
+    <widget name="statusbar" position="550,605" size="660,24" backgroundColor="darkgrey" transparent="1" font="Regular;26" halign="right" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="25,650" size="300,25" alphatest="on" />
   </screen>
   <!-- ## WeatherPlugin ## -->
