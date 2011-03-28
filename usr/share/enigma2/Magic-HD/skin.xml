@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-HD Vs 1.91.44 by VU+NL, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 1.91.45 by VU+NL, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -4741,7 +4741,11 @@
 		<ePixmap pixmap="skin_default/buttons/key_0.png" zPosition="2" position="90,390" size="35,25" alphatest="on" />
   	<ePixmap pixmap="skin_default/buttons/key_1.png" zPosition="2" position="90,440" size="35,25" alphatest="on" />
 		<ePixmap pixmap="skin_default/buttons/key_2.png" zPosition="2" position="90,490" size="35,25" alphatest="on" />
-		<ePixmap pixmap="skin_default/buttons/key_3.png" zPosition="2" position="90,540" size="35,25" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/key_3.png" zPosition="2" position="90,540" size="35,25" alphatest="on" /> 
+    <eLabel text="INFO: On/Off" position="130,380" zPosition="2" size="180,40" font="Regular;20" halign="left" valign="center" transparent="1" />
+		<eLabel text="OK/EXIT: On/Off" position="130,430" zPosition="2" size="180,40" font="Regular;20" halign="left" valign="center" transparent="1" />
+		<eLabel text="Channels" position="130,480" zPosition="2" size="180,40" font="Regular;20" halign="left" valign="center" transparent="1" />
+		<eLabel text="About" position="130,530" zPosition="2" size="180,40" font="Regular;20" halign="left" valign="center" transparent="1" />
 <!--<widget name="key_0" position="130,380" zPosition="2" size="180,40" font="Regular;20" halign="left" valign="center" transparent="1" />
 		<widget name="key_1" position="130,430" zPosition="2" size="180,40" font="Regular;20" halign="left" valign="center" transparent="1" />
 		<widget name="key_2" position="130,480" zPosition="2" size="180,40" font="Regular;20" halign="left" valign="center" transparent="1" />

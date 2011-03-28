@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.91.44 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
+  <!--  Skin:  Magic-EHD (Extreme-HD) Vs 2.91.45 by VU+NL, based on Magic_HD Vs 1.14 but now in "real-HD"   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin, but don't tell it's yours, or your idea! -->
@@ -4851,6 +4851,10 @@
   	<ePixmap pixmap="skin_default/buttons/key_1.png" zPosition="2" position="90,460" size="35,25" alphatest="on" />
 		<ePixmap pixmap="skin_default/buttons/key_2.png" zPosition="2" position="90,510" size="35,25" alphatest="on" />
 		<ePixmap pixmap="skin_default/buttons/key_3.png" zPosition="2" position="90,560" size="35,25" alphatest="on" />
+    <eLabel text="INFO: On/Off" position="130,400" zPosition="2" size="180,40" font="Regular;20" halign="left" valign="center" transparent="1" />
+		<eLabel text="OK/EXIT: On/Off" position="130,450" zPosition="2" size="180,40" font="Regular;20" halign="left" valign="center" transparent="1" />
+		<eLabel text="Channels" position="130,500" zPosition="2" size="180,40" font="Regular;20" halign="left" valign="center" transparent="1" />
+		<eLabel text="About" position="130,550" zPosition="2" size="180,40" font="Regular;20" halign="left" valign="center" transparent="1" />-->
 <!--<widget name="key_0" position="130,400" zPosition="2" size="180,40" font="Regular;20" halign="left" valign="center" transparent="1" />
 		<widget name="key_1" position="130,450" zPosition="2" size="180,40" font="Regular;20" halign="left" valign="center" transparent="1" />
 		<widget name="key_2" position="130,500" zPosition="2" size="180,40" font="Regular;20" halign="left" valign="center" transparent="1" />
