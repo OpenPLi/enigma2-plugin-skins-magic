@@ -652,6 +652,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 		<widget font="Enigma;18" name="freeDiskSpace" position="4,421" size="270,23" transparent="1" zPosition="4"/>
+		<widget font="Enigma;18" position="350,421" render="Label" size="70,23" source="Service" halign="right" transparent="1" zPosition="4"> 
+			<convert type="MovieInfo">FileSize</convert>
+		</widget>
 		<ePixmap alphatest="on" pixmap="Magic/buttons/key-menu.png" position="515,421" size="41,22" transparent="1" zPosition="4"/>
 		<widget font="Enigma;18" halign="right" position="447,422" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
 			<convert type="ClockToText">Default</convert>
