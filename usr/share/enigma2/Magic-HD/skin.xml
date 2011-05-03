@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-HD Vs 1.91.46 by VU+NL, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 1.91.47 by VU+NL, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -527,7 +527,7 @@
     <widget name="key_green" position="435,645" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_yellow" position="725,645" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
     <widget name="key_blue" position="1015,645" size="220,26" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;22" halign="left" />
-    <widget name="list" position="530,100" size="690,510" itemHeight="30" serviceNumberFont="Regular;24" scrollbarMode="showOnDemand" serviceInfoFont="Crs;24" serviceNameFont="Regular;24" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+    <widget name="list" position="530,100" size="690,460" itemHeight="30" serviceNumberFont="Regular;24" scrollbarMode="showOnDemand" serviceInfoFont="Crs;24" serviceNameFont="Regular;24" serviceItemHeight="30" foregroundColorServiceNotAvail="#656565" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <widget source="ServiceEvent" render="Label" position="85,370" size="435,42" transparent="1" foregroundColor="secondFG" noWrap="1" font="Regular;22" valign="center">
       <convert type="EventName">Name</convert>
     </widget>
@@ -1795,7 +1795,7 @@
     <widget name="timeline3" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline4" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline5" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
-    <widget name="timeline_now" position="0,90" zPosition="2" size="19,480" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CoolTVGuide/timeline-now.png" alphatest="on" />
+    <widget name="timeline_now" position="0,90" zPosition="2" size="19,480" pixmap="Magic-HD-Common/window/timeline-now.png" alphatest="on" />
     <widget source="Event" render="Label" position="40,525" size="100,30" font="Regular;26" foregroundColor="#00e5b243" backgroundColor="#000000" shadowColor="#000000" halign="right" transparent="1">
 	    <convert type="EventTime">StartTime</convert>
 	    <convert type="ClockToText" />
@@ -1874,7 +1874,7 @@
     <widget name="timeline3" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline4" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline5" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
-    <widget name="timeline_now" position="0,313" zPosition="2" size="19,360" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CoolTVGuide/timeline-now.png" alphatest="on" />
+    <widget name="timeline_now" position="0,313" zPosition="2" size="19,360" pixmap="Magic-HD-Common/window/timeline-now.png" alphatest="on" />
   </screen>
   <screen flags="wfNoBorder" name="CoolPiconPath" position="0,0" size="1280,720" title="Cool Picon Path">
     <ePixmap pixmap="Magic-HD-Common/border/top_bg.png" position="0,0" size="1280,90" />
