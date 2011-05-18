@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-  <!--  Skin:  Magic-HD Vs 1.91.52 by VU+NL, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
+  <!--  Skin:  Magic-HD Vs 1.91.54 by VU+NL, based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 Ver: 1.7   -->
   <!--  This skin is a Freeware. Everyone can modify and use it in other images.    -->
   <!--  BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!    -->
   <!--  Do whatever you want with this skin,but don't tell it's yours,or your idea -->
@@ -6501,7 +6501,8 @@
       <convert type="ClockToText">Full</convert>
     </widget>
     <widget source="session.VideoPicture" backgroundColor="transparent" position="85,110" render="Pig" size="417,243" zPosition="1" />
-    <widget name="bouquetlist" position="590,110" size="600,500" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" transparent="1" />
+ 	  <widget name="text" position="590,110" size="600,500" zPosition="1" font="Regular;26" halign="center" valign="center" /> 
+    <widget name="bouquetlist" position="590,110" size="600,500" font="Regular;26" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" zPosition="2" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
   <screen flags="wfNoBorder" name="RemoteTimer" position="0,0" size="1280,720" title="RemoteTimer Timerlist">
@@ -6560,8 +6561,8 @@
     <widget name="key_green" backgroundColor="secondBG" font="Regular;22" halign="left" position="435,645" size="220,26" transparent="1" zPosition="1" />
     <widget name="key_yellow" backgroundColor="secondBG" font="Regular;22" halign="left" position="725,645" size="220,26" transparent="1" zPosition="1" />
     <widget name="key_blue" backgroundColor="secondBG" font="Regular;22" halign="left" position="1015,645" size="220,26" transparent="1" zPosition="1" />
-    <widget name="text" position="590,110" size="600,500" zPosition="3" valign="center" halign="center" />
-    <widget name="channellist" position="590,110" size="600,500" itemHeight="28" zPosition="5" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
+    <widget name="text" position="590,110" size="600,500" zPosition="1" font="Regular;26" valign="center" halign="center" />
+    <widget name="channellist" position="590,110" size="600,500" font="Regular;26" zPosition="2" scrollbarMode="showOnDemand" selectionPixmap="Magic-HD-Common/buttons/sel.png" />
     <ePixmap pixmap="Magic-HD-Common/logos/pli.png" position="85,590" size="300,25" alphatest="on" />
   </screen>
   <screen flags="wfNoBorder" name="RemoteTimerEventView" position="0,0" size="1280,720" title="Eventview">
