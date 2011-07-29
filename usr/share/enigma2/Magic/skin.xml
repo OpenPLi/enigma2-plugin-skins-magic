@@ -482,7 +482,7 @@ newwidth = wsize[0]
 self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</applet>
 	</screen>
-	<screen name="About" position="180,123" size="360,360" title="About">
+	<screen name="About" position="180,123" size="360,368" title="About">
 		<widget font="Enigma;18" position="10,20" render="Label" size="340,22" source="KernelVersion"/>
 		<widget font="Enigma;18" position="10,42" render="Label" size="340,22" source="EnigmaVersion"/>
 		<widget font="Enigma;18" position="10,64" render="Label" size="340,22" source="ImageVersion"/>
@@ -492,10 +492,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget font="Enigma;18" position="10,152" render="Label" size="340,22" source="Tuner1"/>
 		<widget font="Enigma;18" position="10,174" render="Label" size="340,22" source="Tuner2"/>
 		<widget font="Enigma;18" position="10,196" render="Label" size="340,22" source="Tuner3"/>
-		<widget font="Enigma;18" position="10,210" render="Label" size="340,22" source="HDDHeader"/>
-		<widget font="Enigma;18" position="10,232" render="Label" size="340,50" source="hddA"/>
-    <ePixmap pixmap="Magic/logos/pli.png" position="10,290" size="340,25" alphatest="on" />
-		<eLabel text="www.pli-images.org" foregroundColor="grey" backgroundColor="background" font="Regular;22" halign="center" position="10,320" size="340,25" transparent="1" zPosition="1" />
+		<widget font="Enigma;18" position="10,218" render="Label" size="340,22" source="HDDHeader"/>
+		<widget font="Enigma;18" position="10,240" render="Label" size="340,50" source="hddA"/>
+    <ePixmap pixmap="Magic/logos/pli.png" position="10,298" size="340,25" alphatest="on" />
+		<eLabel text="www.pli-images.org" foregroundColor="grey" backgroundColor="background" font="Regular;22" halign="center" position="10,328" size="340,25" transparent="1" zPosition="1" />
 
 	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="TimeshiftState" position="50,310" size="150,60" zPosition="2">
