@@ -482,23 +482,10 @@ newwidth = wsize[0]
 self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</applet>
 	</screen>
-	<screen name="About" position="180,60" size="360,480" title="About">
-		<widget font="Enigma;18" position="10,20" render="Label" size="500,22" source="BoxType"/>
-		<widget font="Enigma;18" position="10,42" render="Label" size="500,22" source="ImageType"/>
-		<widget font="Enigma;18" position="10,64" render="Label" size="500,22" source="KernelVersion"/>
-		<widget font="Enigma;18" position="10,86" render="Label" size="500,22" source="EnigmaVersion"/>
-		<widget font="Enigma;18" position="10,108" render="Label" size="500,22" source="ImageVersion"/>
-		<widget font="Enigma;18" position="10,130" render="Label" size="500,22" source="FPVersion"/>
-		<widget font="Enigma;18" position="10,152" render="Label" size="500,22" source="TunerHeader"/>
-		<widget font="Enigma;18" position="10,174" render="Label" size="500,22" source="Tuner0"/>
-		<widget font="Enigma;18" position="10,196" render="Label" size="500,22" source="Tuner1"/>
-		<widget font="Enigma;18" position="10,218" render="Label" size="500,22" source="Tuner2"/>
-		<widget font="Enigma;18" position="10,240" render="Label" size="500,22" source="Tuner3"/>
-		<widget font="Enigma;18" position="10,262" render="Label" size="500,22" source="HDDHeader"/>
-		<widget font="Enigma;18" position="10,284" render="Label" size="500,132" source="hddA"/>
-		<ePixmap pixmap="Magic/logos/pli.png" position="45,430" size="340,25" alphatest="on" />
-		<eLabel text="www.pli-images.org" foregroundColor="grey" backgroundColor="background" font="Regular;22" halign="center" position="10,450" size="340,25" transparent="1" zPosition="1" />
-
+	<screen name="About" position="180,100" size="360,400" title="About">
+		<widget name="AboutScrollLabel" font="Enigma;18" position="10,20" size="340,310" scrollbarMode="showOnDemand"/>
+		<ePixmap pixmap="Magic/logos/pli.png" position="45,345" size="340,25" alphatest="on" />
+		<eLabel text="www.pli-images.org" foregroundColor="grey" backgroundColor="background" font="Regular;22" halign="center" position="10,370" size="340,25" transparent="1" zPosition="1" />
 	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="TimeshiftState" position="50,310" size="150,60" zPosition="2">
 		<widget font="Enigma;24" halign="center" name="state" position="0,0" size="150,30" backgroundColor="transparent" borderColor="black" borderWidth="2" />
