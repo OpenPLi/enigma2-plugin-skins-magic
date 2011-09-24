@@ -800,15 +800,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	<screen name="TimerSanityConflict" position="80,85" size="560,440" title="Timer sanity error">
 		<ePixmap alphatest="on" name="red" pixmap="Magic/buttons/key-red.png" position="0,0" size="140,40" transparent="1"/>
 		<ePixmap alphatest="on" name="green" pixmap="Magic/buttons/key-green.png" position="140,0" size="140,40" transparent="1"/>
-		<ePixmap alphatest="on" name="yellow" pixmap="Magic/buttons/key-yellow.png" position="280,0" size="140,40" transparent="1"/>
-		<ePixmap alphatest="on" name="blue" pixmap="Magic/buttons/key-blue.png" position="420,0" size="140,40" transparent="1"/>
 		<widget backgroundColor="#7C1C1C" font="Enigma;18" halign="center" name="key_red" position="0,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
 		<widget backgroundColor="#266926" font="Enigma;18" halign="center" name="key_green" position="140,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
-		<widget backgroundColor="#8C5900" font="Enigma;18" halign="center" name="key_yellow" position="280,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
-		<widget backgroundColor="#254177" font="Enigma;18" halign="center" name="key_blue" position="420,0" size="140,40" transparent="1" valign="center" zPosition="2"/>
 		<widget name="timer1" position="5,45" scrollbarMode="showNever" size="550,75"/>
-		<widget name="timer2" position="5,135" scrollbarMode="showNever" size="550,75"/>
-		<widget name="list" position="5,230" scrollbarMode="showOnDemand" size="550,200"/>
+		<ePixmap alphatest="on" name="yellow" pixmap="Magic/buttons/key-yellow.png" position="280,120" size="140,40" transparent="1"/>
+		<ePixmap alphatest="on" name="blue" pixmap="Magic/buttons/key-blue.png" position="420,120" size="140,40" transparent="1"/>
+		<widget backgroundColor="#8C5900" font="Enigma;18" halign="center" name="key_yellow" position="280,120" size="140,40" transparent="1" valign="center" zPosition="2"/>
+		<widget backgroundColor="#254177" font="Enigma;18" halign="center" name="key_blue" position="420,120" size="140,40" transparent="1" valign="center" zPosition="2"/>
+		<widget name="timer2" position="5,165" scrollbarMode="showNever" size="550,75"/>
+		<widget name="list" position="5,255" scrollbarMode="showOnDemand" size="550,145"/>
 	</screen>
 	<!-- Network adapter selection -->
 	<screen name="NetworkAdapterSelection" position="center,center" size="560,400" title="Select Network Adapter">
