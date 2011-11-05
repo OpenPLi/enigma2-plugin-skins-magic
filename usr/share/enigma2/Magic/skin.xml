@@ -280,7 +280,7 @@
 		</widget>
 <!--<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="226,289" size="14,14" zPosition="4"/>-->
 		<eLabel backgroundColor="darkgrey" position="0,282" size="300,2" zPosition="5"/>
-    <ePixmap pixmap="Magic/logos/pli.png" position="-10,290" size="250,25" alphatest="on" />
+		<ePixmap pixmap="Magic/logos/pli.png" position="-10,290" size="250,25" alphatest="on" />
 	</screen>
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_mainmenu" position="0,128" size="720,320" title="Main menu">
 		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
@@ -331,120 +331,52 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
-    <ePixmap pixmap="Magic/logos/pli.png" position="110,290" size="340,25" alphatest="on" />
+		<ePixmap pixmap="Magic/logos/pli.png" position="110,290" size="340,25" alphatest="on" />
+	</screen>
+	<!-- Not really a screen, but a template that can be re-used as panel in another screen -->
+	<screen name="menu_template">
+		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
+		<widget font="Enigma;22" position="269,14" render="Label" size="310,26" source="title" transparent="1" zPosition="1"/>
+		<widget position="269,63" render="Listbox" scrollbarMode="showOnDemand" size="310,227" source="menu" transparent="1" zPosition="1">
+			<convert type="StringList"/>
+		</widget>
+		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,18" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
+		<ePixmap pixmap="Magic/logos/pli.png" position="110,290" size="340,25" alphatest="on" />
 	</screen>
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_information" position="0,128" size="720,320" title="Main menu">
-		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
+	        <panel name="menu_template" />
 		<ePixmap alphatest="on" pixmap="skin_default/menu/information.png" position="123,63" size="128,128" zPosition="1"/>
-		<widget font="Enigma;22" position="269,14" render="Label" size="310,26" source="title" transparent="1" zPosition="1"/>
-		<widget position="269,63" render="Listbox" scrollbarMode="showOnDemand" size="310,227" source="menu" transparent="1" zPosition="1">
-			<convert type="StringList"/>
-		</widget>
-		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,18" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
-    <ePixmap pixmap="Magic/logos/pli.png" position="110,290" size="340,25" alphatest="on" />
 	</screen>
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_shutdown" position="0,128" size="720,320" title="Main menu">
-		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
+	        <panel name="menu_template" />
 		<ePixmap alphatest="on" pixmap="skin_default/menu/shutdown.png" position="123,63" size="128,128" zPosition="1"/>
-		<widget font="Enigma;22" position="269,14" render="Label" size="310,26" source="title" transparent="1" zPosition="1"/>
-		<widget position="269,63" render="Listbox" scrollbarMode="showOnDemand" size="310,227" source="menu" transparent="1" zPosition="1">
-			<convert type="StringList"/>
-		</widget>
-		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,18" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
-    <ePixmap pixmap="Magic/logos/pli.png" position="110,290" size="340,25" alphatest="on" />
 	</screen>
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_harddisk" position="0,128" size="720,320" title="Main menu">
-		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
+	        <panel name="menu_template" />
 		<ePixmap alphatest="on" pixmap="Magic/menu/hdd_on.png" position="161,35" size="90,250" zPosition="1"/>
-		<widget font="Enigma;22" position="269,14" render="Label" size="310,26" source="title" transparent="1" zPosition="1"/>
-		<widget position="269,63" render="Listbox" scrollbarMode="showOnDemand" size="310,227" source="menu" transparent="1" zPosition="1">
-			<convert type="StringList"/>
-		</widget>
-		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,18" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
-    <ePixmap pixmap="Magic/logos/pli.png" position="110,290" size="340,25" alphatest="on" />
 	</screen>
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_network" position="0,128" size="720,320" title="Main menu">
-		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
+	        <panel name="menu_template" />
 		<ePixmap alphatest="on" pixmap="Magic/menu/network_on.png" position="123,63" size="128,128" zPosition="1"/>
-		<widget font="Enigma;22" position="269,14" render="Label" size="310,26" source="title" transparent="1" zPosition="1"/>
-		<widget position="269,63" render="Listbox" scrollbarMode="showOnDemand" size="310,227" source="menu" transparent="1" zPosition="1">
-			<convert type="StringList"/>
-		</widget>
-		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,18" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
-    <ePixmap pixmap="Magic/logos/pli.png" position="110,290" size="340,25" alphatest="on" />
 	</screen>
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_setup" position="0,128" size="720,320" title="Main menu">
-		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
+	        <panel name="menu_template" />
 		<ePixmap alphatest="on" pixmap="skin_default/menu/setup.png" position="123,63" size="128,128" zPosition="1"/>
-		<widget font="Enigma;22" position="269,14" render="Label" size="310,26" source="title" transparent="1" zPosition="1"/>
-		<widget position="269,63" render="Listbox" scrollbarMode="showOnDemand" size="310,227" source="menu" transparent="1" zPosition="1">
-			<convert type="StringList"/>
-		</widget>
-		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,18" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
-    <ePixmap pixmap="Magic/logos/pli.png" position="110,290" size="340,25" alphatest="on" />
 	</screen>
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_scan" position="0,128" size="720,320" title="Main menu">
-		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
+	        <panel name="menu_template" />
 		<ePixmap alphatest="on" pixmap="skin_default/menu/information.png" position="123,63" size="128,128" zPosition="1"/>
-		<widget font="Enigma;22" position="269,14" render="Label" size="310,26" source="title" transparent="1" zPosition="1"/>
-		<widget position="269,63" render="Listbox" scrollbarMode="showOnDemand" size="310,227" source="menu" transparent="1" zPosition="1">
-			<convert type="StringList"/>
-		</widget>
-		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,18" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
-    <ePixmap pixmap="Magic/logos/pli.png" position="110,290" size="340,25" alphatest="on" />
 	</screen>
 	<screen backgroundColor="transBG" flags="wfNoBorder" name="menu_system" position="0,128" size="720,320" title="Main menu">
-		<eLabel backgroundColor="background" position="120,10" size="480,302" zPosition="-1"/>
+	        <panel name="menu_template" />
 		<ePixmap alphatest="on" pixmap="skin_default/menu/setup.png" position="123,63" size="128,128" zPosition="1"/>
-		<widget font="Enigma;22" position="269,14" render="Label" size="310,26" source="title" transparent="1" zPosition="1"/>
-		<widget position="269,63" render="Listbox" scrollbarMode="showOnDemand" size="310,227" source="menu" transparent="1" zPosition="1">
-			<convert type="StringList"/>
-		</widget>
-		<widget font="Enigma;18" halign="right" position="524,14" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget alphatest="on" pixmap="Magic/buttons/red.png" position="510,18" render="Pixmap" size="14,14" source="session.RecordState" zPosition="3">
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<ePixmap alphatest="on" pixmap="skin_default/icons/clock.png" position="510,18" size="14,14" zPosition="4"/>
-    <ePixmap pixmap="Magic/logos/pli.png" position="110,290" size="340,25" alphatest="on" />
-	</screen>	
+	</screen>
 	<!--  ##### Input and Output Boxes #####  -->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="NumberZap" position="50,50" size="160,26" title="Channel">
 		<widget font="Enigma;22" halign="right" name="channel" noWrap="1" position="0,0" size="100,26" valign="center" zPosition="1" borderWidth="2" borderColor="black" backgroundColor="transparent" />
