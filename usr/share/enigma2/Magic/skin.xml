@@ -1031,6 +1031,28 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<ePixmap position="220,500" zPosition="4" size="140,40" pixmap="skin_default/buttons/red.png" transparent="1" alphatest="on" />
 			<widget name="key_red" position="220,500" zPosition="5" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" borderColor="black" borderWidth="2" />
 		</screen>
+  <!-- Foreca-->
+		<screen name="ForecaPreview" position="center,center" size="640,520" title="Foreca Weather Forecast">
+			<panel position="top" size="*,38" layout="stack">
+				<widget source="Titel" render="Label" position="fill" zPosition="3" font="Regular;28" valign="center" halign="left" transparent="1" foregroundColor="white"/>
+				<widget source="Titel2" render="Label" position="fill" zPosition="2" font="Regular;24" valign="center" halign="left" foregroundColor="yellow"/>
+			</panel>
+			<eLabel position="top" zPosition="2" size="*,2" backgroundColor="white" />
+			<panel position="bottom" size="*,25">
+				<ePixmap position="left" size="36,25" pixmap="skin_default/buttons/key_red.png" alphatest="on" />
+				<widget source="key_red" render="Label" position="left" zPosition="2" size="90,*" font="Regular;16" valign="center" halign="left" foregroundColor="white" />
+				<ePixmap position="left" size="36,25" pixmap="skin_default/buttons/key_green.png" alphatest="on" />
+				<widget source="key_green" render="Label" position="left" zPosition="2" size="90,*" font="Regular;16" valign="center" halign="left" foregroundColor="white"/>
+				<ePixmap position="left" size="36,25" pixmap="skin_default/buttons/key_yellow.png" alphatest="on" />
+				<widget source="key_yellow" render="Label" position="left" zPosition="2" size="90,*" font="Regular;16" valign="center" halign="left" foregroundColor="white"/>
+				<ePixmap position="left" size="36,25" pixmap="skin_default/buttons/key_blue.png" alphatest="on" />
+				<widget source="key_blue" render="Label" position="left" zPosition="2" size="90,*" font="Regular;16" valign="center" halign="left" foregroundColor="white"/>
+				<ePixmap position="left" size="36,25" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/Foreca/buttons/key_ok.png" transparent="1" alphatest="on" />
+				<widget source="key_ok" render="Label" position="left" zPosition="2" size="90,*" font="Regular;16" valign="center" halign="left" foregroundColor="white"/>
+			</panel>
+			<eLabel position="bottom" zPosition="2" size="870,2" backgroundColor="white" />
+			<widget name="MainList" position="fill" zPosition="3" backgroundColor="#40000000" backgroundColorSelected="#565656" selectionDisabled="1" scrollbarMode="showOnDemand" />
+		</screen>
   <!-- ## PiP ## -->
   <screen name="PictureInPictureZapping" flags="wfNoBorder" backgroundColor="transparent" position="300,60" size="120,26" title="PiPZap" zPosition="-1">
 	  <eLabel text="PiP-Zap" position="0,0" size="120,26" backgroundColor="transparent" transparent="1" font="Regular;22" borderColor="black" borderWidth="3" valign="center" halign="center" />
