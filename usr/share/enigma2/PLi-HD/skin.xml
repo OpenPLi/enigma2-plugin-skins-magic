@@ -121,8 +121,8 @@
   </screen>  
   <screen name="BasicTemplate">
     <eLabel position="0,0" size="1280,88" backgroundColor="dark" />
-    <ePixmap pixmap="PLi-HD/border/bottom_bg.png" position="0,88" size="1280,2" />
-    <ePixmap pixmap="PLi-HD/border/bottom_bg.png" position="0,630" size="1280,2" />
+    <ePixmap pixmap="PLi-HD/border/smallshadowline.png" position="0,88" size="1280,2" />
+    <ePixmap pixmap="PLi-HD/border/smallshadowline.png" position="0,630" size="1280,2" />
     <widget source="Title" render="Label" position="85,30" size="700,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;25" valign="center" halign="left" />
     <widget source="global.CurrentTime" render="Label" position="970,35" size="250,50" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="right">
       <convert type="ClockToText">Full</convert>
