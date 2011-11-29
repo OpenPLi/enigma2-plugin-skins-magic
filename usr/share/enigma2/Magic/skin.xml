@@ -15,7 +15,9 @@
 			height: font's line height in pixels (until we can calculate it...)
 			width: font's average character width in pixels
 		-->
-		<alias name="Body" font="Enigma" size="18" height="20" width="16" />
+		<alias name="Body" font="Enigma" size="18" height="22" width="16" />
+		<alias name="ChoiceList" font="Enigma" size="20" height="24" />
+		<alias name="TextNormal" font="Enigma" size="20" height="24" />
 	</fonts>
 	<colors>
 		<color name="background" value="#21090909"/>
@@ -277,7 +279,7 @@
 	<!--  ##### Menus #####  -->
 	<screen name="Menu" position="center,center" size="300,310" title="Main menu">
 		<widget font="Enigma;22" halign="center" position="10,5" render="Label" size="280,35" source="title" valign="center"/>
-		<widget position="10,55" render="Listbox" scrollbarMode="showOnDemand" size="280,225" source="menu">
+		<widget position="10,55" render="Listbox" scrollbarMode="showOnDemand" size="280,225" source="menu" font="TextNormal">
 			<convert type="StringList"/>
 		</widget>
 		<widget font="Body" halign="right" position="240,285" render="Label" size="55,22" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
@@ -552,7 +554,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 				<widget backgroundColor="buttonBlue" font="Body" halign="center" name="key_blue" position="left" size="140,40" transparent="1" valign="center" zPosition="1"/>
 			</panel>
 		</panel>
-		<panel position="bottom" size="*,23">
+		<panel position="bottom" font="Body" size="*,24h">
 			<widget font="Body" name="freeDiskSpace" position="left" size="270,*" transparent="1" zPosition="4"/>
 			<widget font="Body" halign="right" position="right" render="Label" size="55,*" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
 				<convert type="ClockToText">Default</convert>
