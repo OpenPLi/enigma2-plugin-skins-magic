@@ -554,7 +554,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 				<widget backgroundColor="buttonBlue" font="Body" halign="center" name="key_blue" position="left" size="140,40" transparent="1" valign="center" zPosition="1"/>
 			</panel>
 		</panel>
-		<panel position="bottom" font="Body" size="*,24h">
+		<panel position="bottom" font="Body" size="*,1h">
 			<widget font="Body" name="freeDiskSpace" position="left" size="270,*" transparent="1" zPosition="4"/>
 			<widget font="Body" halign="right" position="right" render="Label" size="55,*" source="global.CurrentTime" transparent="1" valign="center" zPosition="3">
 				<convert type="ClockToText">Default</convert>
