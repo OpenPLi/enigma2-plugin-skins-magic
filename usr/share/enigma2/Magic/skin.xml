@@ -178,7 +178,7 @@
 	</screen>
   <screen flags="wfNoBorder" name="SecondInfoBar" position="0,0" size="720,96" title="SecondInfoBar">
     <widget source="session.CurrentService" render="Label" position="50, 20" size="600,66" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;16" valign="top" halign="left">
-      <convert type="pliExpertInfo">ExpertInfo</convert>
+      <convert type="PliExtraInfo">All</convert>
     </widget>
 	</screen>	
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="MoviePlayer" position="60,40" size="600,102" title="MoviePlayer">
