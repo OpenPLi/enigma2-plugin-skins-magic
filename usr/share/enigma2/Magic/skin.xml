@@ -176,11 +176,12 @@
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 	</screen>
-  <screen flags="wfNoBorder" name="SecondInfoBar" position="0,0" size="720,96" title="SecondInfoBar">
-    <widget source="session.CurrentService" render="Label" position="50, 20" size="600,66" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;16" valign="top" halign="left">
-      <convert type="PliExtraInfo">All</convert>
-    </widget>
-	</screen>	
+	<screen flags="wfNoBorder" name="SecondInfoBar" position="0,0" size="720,96" title="SecondInfoBar">
+		<widget source="session.CurrentService" render="Label" position="50, 20" size="500,66" backgroundColor="transpBlack" transparent="1" zPosition="1" foregroundColor="foreground" font="Regular;16" valign="top" halign="left">
+			<convert type="PliExtraInfo">All</convert>
+		</widget>
+	<widget source="session.CurrentService" render="CiModuleControl" allVisible="0" position="600, 20" size="120,20" borderWidth="1" borderColor="black" zPosition="1" transparent="1" font="Regular;18"/>
+	</screen>
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="MoviePlayer" position="60,40" size="600,102" title="MoviePlayer">
 		<eLabel backgroundColor="infobarBG" position="6,44" size="588,14" zPosition="0"/>
 		<ePixmap alphatest="on" pixmap="Magic/dvr/scale.png" position="8,45" size="584,12" zPosition="1"/>
